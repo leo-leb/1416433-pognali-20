@@ -12,10 +12,33 @@
           <a href="#" class="header__logo logo">
             <img src="#" alt="Логотип компании" width="100" height="15" />
           </a>
-          <h1 class="header__title title-first">
+          <p class="header__moto">В путешествие с крутыми попутчиками!</p>
+          <h1 class="visually-hidden">
             О сервисе
           </h1>
-          <div class="header__menu">
+          <div class="header__menu header__menu--static">
+            <div class="header__actions actions--in-row">
+              <a href="#" class="header__entrance btn btn--round"
+                >Авторизация</a
+              >
+              <div class="header__contacts contact-us">
+                <div class="contact-us__wrapper phone">
+                  <a href="tel:+78005558628" class="contact-us__call"
+                    ><svg></svg
+                    ><span class="visually-hidden">Позвонить</span></a
+                  >
+                  <span class="contact-us__desc">8 800 555-86-28</span>
+                </div>
+                <div class="contact-us__wrapper email">
+                  <a href="#" class="contact-us__text"
+                    ><svg></svg><span class="visually-hidden">Написать</span></a
+                  >
+                  <span class="contact-us__desc">mail.@htmlacademy.ru</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__menu header__menu--popup">
             <button
               class="header__btn-close btn-close btn-close--header"
               type="button"
@@ -39,32 +62,25 @@
                 </li>
               </ul>
             </nav>
-            <a href="#" class="header__entrance btn btn--round">Авторизация</a>
-            <div class="header__contacts contacts">
-              <div class="contacts__wrapper">
-                <a href="tel:+78005558628" class="contacts__call"
-                  ><svg></svg><span class="visually-hidden">Позвонить</span></a
-                >
-                <span class="contacts__desc">8 800 555-86-28</span>
+            <div class="header__actions actions--in-column">
+              <a href="#" class="header__entrance btn btn--round"
+                >Авторизация</a
+              >
+              <div class="header__contacts contact-us">
+                <div class="contact-us__wrapper phone">
+                  <a href="tel:+78005558628" class="contact-us__call"
+                    ><svg></svg
+                    ><span class="visually-hidden">Позвонить</span></a
+                  >
+                  <span class="contact-us__desc">8 800 555-86-28</span>
+                </div>
+                <div class="contact-us__wrapper email">
+                  <a href="#" class="contact-us__text"
+                    ><svg></svg><span class="visually-hidden">Написать</span></a
+                  >
+                  <span class="contact-us__desc">mail.@htmlacademy.ru</span>
+                </div>
               </div>
-              <div class="contacts__wrapper">
-                <a href="#" class="contacts__text"
-                  ><svg></svg><span class="visually-hidden">Написать</span></a
-                >
-                <span class="contacts__desc">mail.@htmlacademy.ru</span>
-              </div>
-            </div>
-            <div class="header__social social">
-              <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-              <a href="#" class="social__link"
-                ><svg></svg><span class="visually-hidden">Вконтакте</span></a
-              >
-              <a href="#" class="social__link"
-                ><svg></svg><span class="visually-hidden">Facebook</span></a
-              >
-              <a href="#" class="social__link"
-                ><svg></svg><span class="visually-hidden">Instagram</span></a
-              >
             </div>
           </div>
           <button class="header__btn-menu" type="button">
