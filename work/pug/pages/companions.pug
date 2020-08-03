@@ -1,0 +1,70 @@
+extends ../main
+
+block variables
+	- var pageTitle = 'Погнали: Попутчики'
+	- var firstTitle = 'Попутчики'
+	- var hobby = ['Спортзал', 'Кальян', 'Диван']
+	- var music = ['Тяжелый рок', 'Русский рэп', 'Евроденс']
+	- var food = ['Мясоед', 'ПП', 'Веган-сыроед']
+	- var transport = ['Самолет', 'Автобус', 'Велосипед', 'Бег']
+
+include ../mixins/mixin-checkbox
+include ../mixins/mixin-radio
+
+block main
+	main.main-companions
+		.container
+			.main-companions__inner-wrapper
+				// FILTER-COUNTRY
+				.companions__filter-countrys
+					span.filter-countrys__hamburger
+					h4.filter-countrys__title.title-fourth фильтрация по странам
+					button.filter-countrys__btn.btn
+						p.filter-countrys__button-desc показать все
+						span.filter-countrys__button-hamburger
+				// FILTER-COUNTRY //
+				// FILTER-USERS
+				.companions__filter-users
+					h4.visually-hidden фильтрация по попутчикам
+					p.filter-users__title.title-third Подберите идеального попутчика
+					form.filter-users__users-form(action="https://echo.htmlacademy.ru" method="get")
+						// HOBBY
+						+fieldset-checkbox('хобби', 'hobby', hobby)
+						// HOBBY //
+						// MUSIC
+						+fieldset-checkbox('музыка', 'music', music)
+						// MUSIC //
+						// FOOD
+						+fieldset-checkbox('еда', 'food', food)
+						// FOOD //
+						// TRANSPORT
+						+fieldset-radio('транспорт', 'transport', transport)
+						// TRANSPORT //
+						// LEVEL
+						fieldset.filter-users__box.box-level
+							.box__heading-wrapper
+								h3.title-third левел
+								.box__btn.btn
+									svg
+							.box__value.value-level
+								.value-level__number
+									label.min-level
+										input.input(type="number" name="min-level" value="30" step="1")
+									label.max-level
+										input.input(type="number" name="max-level" value="100" step="1")
+								.value-level__line
+									// main-line
+									.active-line
+									// active-line
+									.toggle.toggle-min
+									.toggle.toggle-max
+						// LEVEL //
+						button.users-form__btn.btn.btn--round(type="submit") показать
+				// FILTER-USERS //
+				// USERS
+				.companions__users-wrapper
+					include ../modules/user-cards/user-card__tatyana-firsova/user-card--full--tatyana-firsova
+					include ../modules/user-cards/user-card__petya-demin/user-card--full--petya-demin
+					include ../modules/user-cards/user-card__mark-smolov/user-card--full--mark-smolov
+					include ../modules/user-cards/user-card__larisa-rogovaya/user-card--full--larisa-rogovaya
+				// USERS //

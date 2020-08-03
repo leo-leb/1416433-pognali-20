@@ -1,0 +1,13 @@
+mixin fieldset-radio(title, name, massive)
+	fieldset.filter-users__box
+		.box__heading-wrapper
+			h3.title-third= title
+			.box__btn.btn
+				svg
+		ul.box__line-wrapper
+			each n in massive
+				li
+					label.box__option
+						input.real-radio.visually-hidden(name= name type="radio" value= n)
+						span.custom-radio
+							svg

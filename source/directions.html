@@ -1,104 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Погнали: Направления</title>
   </head>
-  <body class="body">
+  <body>
     <header class="header">
       <div class="container">
         <div class="header__inner-wrapper">
-          <a href="./index.html" class="header__logo logo">
-            <img src="#" alt="Логотип компании" width="100" height="15" />
+          <a class="logo header__logo" href="#">
+            <img src="#" alt="Логотип компании" width="100" height="15">
           </a>
-          <h1 class="header__title title-first">
-            Направления
-          </h1>
-          <div class="header__menu header__menu--popup">
-            <button
-              class="header__btn-close btn-close btn-close--header"
-              type="button"
-            >
+          <h1 class="header__title title-first">Направления</h1>
+          <div class="header__menu-popup">
+            <button class="btn-close header__btn-close" type="button">
               <span class="visually-hidden">Скрыть шапку страницы</span>
             </button>
-            <nav class="header__nav">
-              <ul class="nav-list">
-                <li class="nav-list__item">
-                  <a href="#" class="nav-list__link">о сервисе</a>
+            <nav class="main-nav header__main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="link main-nav__link" href="#">о сервисе</a>
                 </li>
-                <li class="nav-list__item">
-                  <a href="./directions.html" class="nav-list__link"
-                    >направления</a
-                  >
+                <li class="main-nav__item">
+                  <a class="link main-nav__link" href="./directions.html">направления</a>
                 </li>
-                <li class="nav-list__item">
-                  <a href="./companions.html" class="nav-list__link"
-                    >попутчики</a
-                  >
+                <li class="main-nav__item">
+                  <a class="link main-nav__link" href="./companions.html">попутчики</a>
                 </li>
               </ul>
             </nav>
-            <div class="header__actions actions--in-column">
-              <a href="#" class="header__entrance btn btn--round"
-                >Авторизация</a
-              >
-              <div class="header__contacts contact-us">
-                <div class="contact-us__wrapper phone">
-                  <a href="tel:+78005558628" class="contact-us__call"
-                    ><svg></svg
-                    ><span class="visually-hidden">Позвонить</span></a
-                  >
-                  <span class="contact-us__desc">8 800 555-86-28</span>
+            <div class="action-buttons menu-popup__action-buttons">
+              <a class="btn btn_form--round btn_color--yellow action-buttons__entrance" href="#">авторизация</a>
+              <div class="contacts-full">
+                <div class="contacts__phone">
+                  <a class="contacts__call" href="tel:+78005558628">
+                    <svg></svg>
+                    <span class="visually-hidden">Позвонить</span>
+                  </a>
+                  <span class="contacts__desc">8 800 555-86-28</span>
                 </div>
-                <div class="contact-us__wrapper email">
-                  <a href="#" class="contact-us__text"
-                    ><svg></svg><span class="visually-hidden">Написать</span></a
-                  >
-                  <span class="contact-us__desc">mail.@htmlacademy.ru</span>
+                <div class="contacts__email">
+                  <a class="contacts__text" href="#">
+                    <svg></svg>
+                    <span class="visually-hidden">Написать</span>
+                  </a>
+                  <span class="contacts__desc">mail.@htmlacademy.ru</span>
                 </div>
               </div>
             </div>
           </div>
-          <button class="header__btn-menu" type="button">
+          <button class="btn-menu header__btn-menu" type="button">
             <span class="visually-hidden">Открыть шапку страницы</span>
           </button>
+          <div class="social header__social">
+            <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+            <a class="social__link" href="#">
+              <svg></svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+            <a class="social__link" href="#">
+              <svg></svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+            <a class="social__link" href="#">
+              <svg></svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </div>
         </div>
       </div>
     </header>
-    <main class="main-directions">
-      <div class="container">
-        <div class="main-directions__inner-wrapper"></div>
-      </div>
-    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner-wrapper">
-          <a href="./index.html" class="footer__logo logo">
-            <img src="#" alt="Логотип сервиса" width="100" height="15"
-          /></a>
-          <div class="footer__social social">
+          <a class="logo footer__logo" href="#">
+            <img src="#" alt="Логотип сервиса" width="100" height="15">
+          </a>
+          <div class="social footer__social">
             <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-            <a href="#" class="social__link social__link--orange"
-              ><svg></svg><span class="visually-hidden">Вконтакте</span></a
-            >
-            <a href="#" class="social__link social__link--orange"
-              ><svg></svg><span class="visually-hidden">Facebook</span></a
-            >
-            <a href="#" class="social__link social__link--orange"
-              ><svg></svg><span class="visually-hidden">Instagram</span></a
-            >
+            <a class="social__link link_color--orange" href="#">
+              <svg></svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+            <a class="social__link link_color--orange" href="#">
+              <svg></svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+            <a class="social__link link_color--orange" href="#">
+              <svg></svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
           </div>
-          <div class="footer__creator creator">
+          <div class="creator footer__creator">
             <h2 class="visually-hidden">Раздел об авторе сайта</h2>
             <p class="creator__desc">Сделано</p>
-            <a href="#"
-              ><img
-                src="#"
-                width="27"
-                height="33"
-                alt="Логотип создателя сайта"
-            /></a>
+            <a class="creator__logo" href="#">
+              <img src="#" width="27" height="33" alt="Логотип создателя сайта">
+            </a>
           </div>
         </div>
       </div>
