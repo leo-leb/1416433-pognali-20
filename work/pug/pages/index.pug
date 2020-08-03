@@ -14,10 +14,10 @@ block main
 					p.paragraph Лучшее приложение, что я видел в жизни!
 					p.paragraph.paragraph_weight--bold Мурат Эльтазин главный редактор газеты "гаджетлайф"
 					ol.process.about-us__process
-						li.process__step.process__step--first Выберите направление
-						li.process__step.process__step--second Изучите идеи путешественников
-						li.process__step.process__step--third Находите тех, кто похож на вас
-						li.process__step.process__step--fourth Путешествуйте вместе!
+						li.process__step Выберите направление
+						li.process__step Изучите идеи путешественников
+						li.process__step Находите тех, кто похож на вас
+						li.process__step Путешествуйте вместе!
 					h2.title-second.about-us__title-second О сервисе
 					p.paragraph Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
 					p.paragraph.paragraph_weight--bold А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
@@ -40,31 +40,41 @@ block main
 					.companions__users-wrapper
 						include ../modules/user-cards/user-card__tatyana-firsova/user-card--short--tatyana-firsova
 						include ../modules/user-cards/user-card__petya-demin/user-card--short--petya-demin
-					a.main-index__btn.btn.btn--square(href=".companions.html") Показать всех
+					a.btn.main-index__btn.btn--square(href=".companions.html") Показать всех
 				// COMPANIONS //
 				// ADVERTISING
 				section.advertising.main-index__advertising
-					h2.title-second.advertising__title-second Бизнес-тарифы
+					h2.visually-hidden Рекламные тарифы
 					.advertising__row
 						p.advertising__moto Добавьте свой профиль
-						img.advertising__profile-icon
+						img.advertising__profile
 					ol.advertising-list
 						li.advertising-item
-							.advertising-item__wrapper
-								p.advertising-item__option Базовое размещение
-								p.advertising-item__price Бесплатно
-							.advertising-item__number.btn--round 1
+							p Базовое размещение
+							p Бесплатно
 						li.advertising-item
-							.advertising-item__wrapper
-								p.advertising-item__option Вывод на первых позициях
-								p.advertising-item__price 99 руб./мес
-							.advertising-item__number.btn--round 2
+							p Вывод на первых позициях
+							p 99 руб./мес
 						li.advertising-item
-							.advertising-item__wrapper
-								p.advertising-item__option Кастомный цвет карточки
-								p.advertising-item__price 59 руб./мес
-							.advertising-item__number.btn--round 2
+							p Кастомный цвет карточки
+							p 59 руб./мес
 					button.advertising__button Показать тарифы для бизнеса
+					article.business.advertising__business
+						h2.title-second.business__title-second Бизнес-тарифы
+						ul.buisness-list
+							li.buisness-item
+								p Реклама у блогера
+								p 300 000 руб./пост
+							li.buisness-item
+								p Накрутка подписчиков
+								p от 1 руб./шт.
+							li.buisness-item
+								p Лайки от ботов
+								p от 20 коп./лайк
+							li.buisness-item
+								p Ваш продакт-плейсмент
+								p Индивидуально
+						button.business__button закрыть окно
 				// ADVERTISING //
 				// CHECK-IN
 				section.check-in.main-index__check-in
@@ -74,45 +84,23 @@ block main
 						| Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее 
 						a.check-in__link(href="#") авторизуйтесь
 						|.
-					form.check-in__email-form.btn--square(action="https://echo.htmlacademy.ru" method="post")
+					form.email-form.check-in__email-form(action="https://echo.htmlacademy.ru" method="post")
 						span.visually-hidden Форма ввода личных данных для входа (почта)
-						input.input(type="email" name="login" placeholder="E-mail" required)
+						input.email-form__input(type="email" name="login" placeholder="E-mail" required)
 						button.email-form__btn.btn.btn--square(type="submit")
 							svg
-					p.paragraph.
-						Остались вопросы?
-						Мы с радостью на них ответим!
-					.check-in__contacts.contact-us
-						.contact-us__wrapper.phone
-							a.contact-us__call(href="tel:+78005558628")
-								svg
-								span.visually-hidden Позвонить
-							span.contact-us__desc 8 800 555-86-28
-						.contact-us__wrapper.email
-							a.contact-us__text(href="#")
-								svg
-								span.visually-hidden Написать
-							span.contact-us__desc mail.@htmlacademy.ru
+					p.paragraph Остались вопросы? Мы с радостью на них ответим!
+					include ../modules/contacts/contacts-full
 				// CHECK-IN //
 				// ADRESS
 				section.adress.main-index__adress
 					h2.visually-hidden Раздел адреса и карты
 					.adress__desc
 						.adress__desc-wrapper
-								.adress__desc__icon
+								.adress__icon
 									svg
 									span.visually-hidden Метка
-								span.adress__desc__adress ул. Большая Конюшенная, 19/8
-						a.adress__desc__btn.btn.btn--square(href="#") Проложить маршрут
-					.adress__map#map
-				section.adress.main-index__adress
-					h2.visually-hidden Раздел адреса и карты
-					.adress__desc
-						.adress__desc-wrapper
-								.adress__desc__icon
-									svg
-									span.visually-hidden Метка
-								span.adress__desc__adress ул. Большая Конюшенная, 19/8
-						a.adress__desc__btn.btn.btn--square(href="#") Проложить маршрут
+								p.adress__adress ул. Большая Конюшенная, 19/8
+						a.btn.adress__btn.btn--square(href="#") Проложить маршрут
 					.adress__map#map
 				// ADRESS //

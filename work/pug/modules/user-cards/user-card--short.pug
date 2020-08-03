@@ -1,25 +1,25 @@
 block variables
 
-article.user-card.user-card--short
-		img.user-card__img.user-card__img_type--bg(class= userClass src="#" alt="Фото попутчика")
+article.user-card
+		img.user-card__img.user-card__img_type--bg(src="#" alt="Фото попутчика")
 		.user-card__skill-wrapper
 			.user-card__skill
 				progress.user-card__skill-graph(value= skillNumber max="100")
 				.user-card__level-wrapper
-					input.user-card__level(type="text" value= skillNumber)
+					span.user-card__level= skillNumber
 					p.user-card__unit level
-		ul.user-card__wish-list.wish-list
+		ul.wish-list.user-card__wish-list
 			each n in wishes
 				li.wish-list__country-item
-					img.countrys__flag(src="#" alt="Флаг")
+					img.wish-list__country-flag(src="#" alt="Флаг")
 		.user-card__name-wrapper
-			svg.user-card__user-status
+			svg.user-status.user-card__user-status(class= userStatus)
 			h3.user-card__name.title-third= userName
-		ul.user-card__like-list.like-list
+		ul.like-list.user-card__like-list
 			each n in likes
 				li.like-list__item= "#" + n
 		.user-card__move-list-wrapper
-			ul.user-card__move-list.move-list
+			ul.move-list.user-card__move-list
 				li.move-list__item
 					span.visually-hidden= "Иконка самолета"
 					svg.moves__icon.moves__icon--fly

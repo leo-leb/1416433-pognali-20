@@ -1,28 +1,28 @@
 block variables
 
-article.user-card.user-card--full
+article.user-card
 	.user-card__wrapper-row
 		.user-card__img-wrapper
 			img.user-card__img.user-card__img_type--avatar(src="#" alt="Фото попутчика")
 			button.user-card__like-clicker
 				svg
 		.user-card__name-wrapper
-			h3.user-card__name.title-third= userName
-			svg.user-card__user-status
+			h3.title-third.user-card__name userName
+			svg.user-status.user-card__user-status(class= userStatus)
 			input.user-card__like-counter(type="text" value= likeCounter)
-	ul.user-card__like-list.like-list
+	ul.like-list.user-card__like-list
 		each n in likes
 			li.like-list__item= "#" + n
 	.user-card__wish-list-wrapper
-		h4.user-card__title.title-fourth хочет посетить:
-		ul.user-card__wish-list.wish-list
+		h4.title-fourth.user-card__title хочет посетить:
+		ul.wish-list.user-card__wish-list
 			each n in wishes
 				li.wish-list__country-name= n
-					img.countrys__flag(src="#" alt= "Флаг" + " " + n)
+					img.wish-list__country-flag(src="#" alt= "Флаг" + " " + n)
 	.user-card__wrapper-row
 		.user-card__move-list-wrapper
-			h4.user-card__title.title-fourth транспорт:
-			ul.user-card__move-list.move-list
+			h4.title-fourth.user-card__title транспорт:
+			ul.move-list.user-card__move-list
 				li.move-list__item
 					span.visually-hidden= "Иконка самолета"
 					svg.moves__icon.moves__icon--fly
@@ -36,9 +36,9 @@ article.user-card.user-card--full
 					span.visually-hidden= "Иконка бега"
 					svg.moves__icon.moves__icon--run
 		.user-card__skill-wrapper
-			h4.user-card__title.title-fourth левел:
+			h4.title-fourth.user-card__title-fourth левел:
 			.user-card__skill
 				progress.user-card__skill-graph(value= skillNumber max="100")
 				.user-card__level-wrapper
-					input.user-card__level(type="text" value= skillNumber)
-	button.user-card__btn.btn.btn--round позвать!
+					span.user-card__level= skillNumber
+	button.btn.user-card__btn.btn--round позвать!

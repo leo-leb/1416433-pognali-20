@@ -1,4 +1,4 @@
-mixin fieldset-checkbox(title, name, massive)
+mixin fieldset-checkbox-without-name(title, name, massive)
 	fieldset.filter-users__box
 		.box__heading-wrapper
 			h3.title-third= title
@@ -10,4 +10,4 @@ mixin fieldset-checkbox(title, name, massive)
 					label.box__option
 						input.real-checkbox.visually-hidden(name= name type="checkbox" value= n)
 						span.custom-checkbox
-						= n
+						span.visually-hidden= n
