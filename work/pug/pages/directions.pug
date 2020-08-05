@@ -1,4 +1,37 @@
 extends ../main
+
 block variables
 	- var pageTitle = 'Погнали: Направления'
 	- var firstTitle = 'Направления'
+	//- - var countrysAlphabet = ['а', 'б', 'в', 'г', 'д', 'е', 'з', 'и', 'к', 'л', 'м', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ч', 'ш', 'э', 'ю', 'я']
+	//- - var countrysChosen = ['Австралия', 'Австрия', 'Азербайджан', 'Албания', 'Алжир', 'Ангола', 'Андорра', 'Антигуа и Барбуда', 'Аргентина', 'Армения', 'Афганистан']
+
+block main
+	main.main-directions
+		.container
+			.main-directions__inner-wrapper
+				// USER
+				include ../modules/user-cards/user-card__mark-smolov/user-card--short--mark-smolov
+				// PLANS-ACTUAL
+				section.plans-actual.main-directions__plans-actual
+					h2.title-second.title-second_color--blue-dark.plans-actual__title-second Мои планы:
+					include ../modules/user-cards/user-card__mark-smolov/user-plans--mark-smolov
+				// PLANS-ACTUAL //
+				// PLANS-CREATE
+				section.plans-create.main-directions__plans-create
+					h2.title-second.title-second_color--blue-dark.plans-actual__title-second Добавить план:
+					.plans-create__dots-wrapper
+						span.plans-create__dot.plans-create__dot--active
+						span.plans-create__dot
+						span.plans-create__dot
+					form.plans-create__form(id="form")
+						// CREATE: STEP 1
+						include ../modules/plans-create-steps/plans-create-step--first
+						// CREATE: STEP 1 //
+						// CREATE: STEP 2
+						include ../modules/plans-create-steps/plans-create-step--second
+						// CREATE: STEP 2 //
+						// CREATE: STEP 3
+						include ../modules/plans-create-steps/plans-create-step--third
+						// CREATE: STEP 3 //
+				// PLANS-CREATE //

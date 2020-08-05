@@ -1,0 +1,10 @@
+mixin fieldset-input-number(title, unit, amount)
+	fieldset.step-first__clicker
+		.step-first__clicker-wrapper
+			p.step-first__title= title
+			span.step-first__unit= unit
+		.step-first__stepper
+			input.step-first__input(type="number" min="0" max="100" step="1" value= amount autofocus)
+			.step-first__stepper-controls
+				button.step-first__stepper-control-right +
+				button.step-first__stepper-control-left -

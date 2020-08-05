@@ -23,9 +23,8 @@ block main
 					.filter-countrys__row
 						span.filter-countrys__hamburger
 						h4.filter-countrys__title.title-fourth фильтрация по странам
-						button.filter-countrys__btn.btn
-							p.filter-countrys__button-desc показать все
-							span.btn-hamburger.filter-countrys__btn-hamburger
+						button.btn-hamburger.filter-countrys__btn-hamburger
+							span.visually-hidden показать все
 					.countrys.filter-countrys__countrys
 						form.filter-countrys__countrys-form(action="https://echo.htmlacademy.ru" method="get")
 							fieldset.countrys__parts
@@ -35,20 +34,8 @@ block main
 											label.countrys__parts-item
 												input(name="parts" type="radio" value= n)
 												= n
-							fieldset.countrys__alphabet
-								ul.countrys__alphabet-list
-									each n in countrysAlphabet
-										li
-											label.countrys__alphabet-item
-												input(name="alphabet" type="radio" value= n)
-												= n
-							fieldset.countrys__chosen
-								ul.countrys__chosen-list
-									each n in countrysChosen
-										li
-											label.countrys__chosen-item
-												input(name= name type="checkbox" value= n)
-												= n
+							include ../modules/other/filter-countrys
+							.btn.btn_form--round.btn_color--blue.countrys__btn свернуть
 				// FILTER-COUNTRY //
 				// FILTER-USERS
 				.companions__filter-users
@@ -86,7 +73,7 @@ block main
 									.box-level__toggle-min
 									.box-level__toggle-max
 						// LEVEL //
-						button.btn.users-form__btn.btn--round(type="submit") показать
+						button.btn.btn_form--round.btn_form--white.users-form__btn(type="submit") показать
 				// FILTER-USERS //
 				// USERS
 				.companions__users-wrapper
@@ -94,4 +81,8 @@ block main
 					include ../modules/user-cards/user-card__petya-demin/user-card--full--petya-demin
 					include ../modules/user-cards/user-card__mark-smolov/user-card--full--mark-smolov
 					include ../modules/user-cards/user-card__larisa-rogovaya/user-card--full--larisa-rogovaya
+					button.btn.companions__button(type="submit") показать еще
+					.companions__clicker-wrapper
+						a.clicker.clicker--left.companions__clicker(href="#")
+						a.clicker.clicker--right.companions__clicker(href="#")
 				// USERS //

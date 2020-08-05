@@ -1,0 +1,23 @@
+extends plans-create-step-sample
+
+block variables
+	- var stepClass = 'step-second'
+	- var stepNumber = '2'
+	- var stepName = 'Маршрут'
+	- var stepDesc = 'Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.'
+	- var stepFirst = false
+	- var stepLast = false
+	- var countrysAlphabet = ['а', 'б', 'в', 'г', 'д', 'е', 'з', 'и', 'к', 'л', 'м', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ч', 'ш', 'э', 'ю', 'я']
+	- var countrysChosen = ['Австралия', 'Австрия', 'Азербайджан', 'Албания', 'Алжир', 'Ангола', 'Андорра', 'Антигуа и Барбуда', 'Аргентина', 'Армения', 'Афганистан']
+
+include ../../mixins/mixin-box-country-wrap
+
+block content
+	+box-country-wrap('active', 'passive', 'босния и герцеговина')
+	+box-country-wrap('active', 'passive', 'чехия')
+	+box-country-wrap('passive', 'active')
+	label.box-country__wrap.box-country__wrap_size--l.bg-color--blue-light.border--none
+		span.box-country__desc добавить страну
+		button.btn.box-country__btn
+			svg.btn-plus
+		span.box-country__status

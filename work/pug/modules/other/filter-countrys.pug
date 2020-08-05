@@ -1,0 +1,14 @@
+fieldset.countrys__alphabet
+	ul.countrys__alphabet-list
+		each n in countrysAlphabet
+			li
+				label.countrys__alphabet-item
+					input(name="alphabet" type="radio" value= n)
+					= n
+fieldset.countrys__chosen
+	ul.countrys__chosen-list
+		each n in countrysChosen
+			li
+				label.countrys__chosen-item
+					input(name= name type="checkbox" value= n)
+					= n

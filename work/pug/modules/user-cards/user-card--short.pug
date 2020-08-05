@@ -1,34 +1,31 @@
 block variables
 
 article.user-card
-		img.user-card__img.user-card__img_type--bg(src="#" alt="Фото попутчика")
+	.user-card__wrapper-row
 		.user-card__skill-wrapper
 			.user-card__skill
-				progress.user-card__skill-graph(value= skillNumber max="100")
+				svg.user-card__skill-graph
 				.user-card__level-wrapper
 					span.user-card__level= skillNumber
 					p.user-card__unit level
-		ul.wish-list.user-card__wish-list
-			each n in wishes
-				li.wish-list__country-item
-					img.wish-list__country-flag(src="#" alt="Флаг")
-		.user-card__name-wrapper
-			svg.user-status.user-card__user-status(class= userStatus)
-			h3.user-card__name.title-third= userName
-		ul.like-list.user-card__like-list
-			each n in likes
-				li.like-list__item= "#" + n
-		.user-card__move-list-wrapper
-			ul.move-list.user-card__move-list
-				li.move-list__item
-					span.visually-hidden= "Иконка самолета"
-					svg.moves__icon.moves__icon--fly
-				li.move-list__item
-					span.visually-hidden= "Иконка автобуса"
-					svg.moves__icon.moves__icon--drive
-				li.move-list__item
-					span.visually-hidden= "Иконка велосипеда"
-					svg.moves__icon.moves__icon--ride
-				li.move-list__item
-					span.visually-hidden= "Иконка бега"
-					svg.moves__icon.moves__icon--run
+		img.user-card__img.user-card__img_type--avatar(src="#" alt="Фото попутчика")
+	.btn.btn_form--round.btn_color--blue.user-card__btn сменить фото
+	ul.tag-list.user-card__tag-list
+		h4.title-fourth.user-card__title-fourth тэги
+		each n in tags
+			li.tag-list__item= "#" + n
+	.user-card__move-list-wrapper
+		h4.title-fourth.user-card__title-fourth транспорт
+		ul.move-list.user-card__move-list
+			li.move-list__item
+				span.visually-hidden= "Иконка самолета"
+				svg.moves__icon.moves__icon--fly
+			li.move-list__item
+				span.visually-hidden= "Иконка автобуса"
+				svg.moves__icon.moves__icon--drive
+			li.move-list__item
+				span.visually-hidden= "Иконка велосипеда"
+				svg.moves__icon.moves__icon--ride
+			li.move-list__item
+				span.visually-hidden= "Иконка бега"
+				svg.moves__icon.moves__icon--run

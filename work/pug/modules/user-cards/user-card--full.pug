@@ -10,18 +10,18 @@ article.user-card
 			h3.title-third.user-card__name userName
 			svg.user-status.user-card__user-status(class= userStatus)
 			input.user-card__like-counter(type="text" value= likeCounter)
-	ul.like-list.user-card__like-list
-		each n in likes
-			li.like-list__item= "#" + n
+	ul.tag-list.user-card__tag-list
+		each n in tags
+			li.tag-list__item= "#" + n
 	.user-card__wish-list-wrapper
-		h4.title-fourth.user-card__title хочет посетить:
+		h5.title-fifth.user-card__title-fifth хочет посетить:
 		ul.wish-list.user-card__wish-list
 			each n in wishes
 				li.wish-list__country-name= n
 					img.wish-list__country-flag(src="#" alt= "Флаг" + " " + n)
 	.user-card__wrapper-row
 		.user-card__move-list-wrapper
-			h4.title-fourth.user-card__title транспорт:
+			h5.title-fifth.user-card__title-fifth транспорт:
 			ul.move-list.user-card__move-list
 				li.move-list__item
 					span.visually-hidden= "Иконка самолета"
@@ -36,9 +36,9 @@ article.user-card
 					span.visually-hidden= "Иконка бега"
 					svg.moves__icon.moves__icon--run
 		.user-card__skill-wrapper
-			h4.title-fourth.user-card__title-fourth левел:
+			h5.title-fifth.user-card__title-fifth левел:
 			.user-card__skill
-				progress.user-card__skill-graph(value= skillNumber max="100")
+				svg.user-card__skill-graph
 				.user-card__level-wrapper
 					span.user-card__level= skillNumber
-	button.btn.user-card__btn.btn--round позвать!
+	button.btn.user-card__btn.btn_form--round.btn_color--yellow позвать!

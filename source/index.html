@@ -91,7 +91,7 @@
           <!-- ABOUT-US //-->
           <!-- DIRECTIONS-->
           <section class="directions main-index__directions">
-            <h2 class="title-second directions__title-second">Направления</h2>
+            <h2 class="title-second title-second_color--yellow directions__title-second">Направления</h2>
             <p class="paragraph">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
             <div class="directions__countrys-wrapper">
               <article class="country-card">
@@ -127,14 +127,14 @@
           <!-- DIRECTIONS //-->
           <!-- COMPANIONS-->
           <section class="companions main-index__companions">
-            <h2 class="title-second companions__title-second">Попутчики</h2>
+            <h2 class="title-second title-second_color--yellow companions__title-second">Попутчики</h2>
             <p class="paragraph">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
             <p class="paragraph paragraph_weight--bold">Теперь можно легко найти единомышленников!</p>
-            <div class="companions__users-wrapper">extends ../user-card--short <article class="user-card">
+            <div class="companions__users-wrapper">extends ../user-card--middle <article class="user-card">
                 <img class="user-card__img user-card__img_type--bg" src="#" alt="Фото попутчика">
                 <div class="user-card__skill-wrapper">
                   <div class="user-card__skill">
-                    <progress class="user-card__skill-graph" value="80" max="100"></progress>
+                    <svg class="user-card__skill-graph"></svg>
                     <div class="user-card__level-wrapper">
                       <span class="user-card__level">80</span>
                       <p class="user-card__unit">level</p>
@@ -153,12 +153,12 @@
                   <svg class="user-status user-card__user-status user-status--online"></svg>
                   <h3 class="user-card__name title-third">Петя Демин</h3>
                 </div>
-                <ul class="like-list user-card__like-list">
-                  <li class="like-list__item">#бургег</li>
-                  <li class="like-list__item">#бар</li>
-                  <li class="like-list__item">#футбол</li>
-                  <li class="like-list__item">#концерт</li>
-                  <li class="like-list__item">#крафт</li>
+                <ul class="tag-list user-card__tag-list">
+                  <li class="tag-list__item">#бургег</li>
+                  <li class="tag-list__item">#бар</li>
+                  <li class="tag-list__item">#футбол</li>
+                  <li class="tag-list__item">#концерт</li>
+                  <li class="tag-list__item">#крафт</li>
                 </ul>
                 <div class="user-card__move-list-wrapper">
                   <ul class="move-list user-card__move-list">
@@ -182,7 +182,7 @@
                 </div>
               </article>
             </div>
-            <a class="btn main-index__btn btn--square" href=".companions.html">Показать всех</a>
+            <a class="btn btn_form--square btn_color--yellow main-index__btn" href=".companions.html">Показать всех</a>
           </section>
           <!-- COMPANIONS //-->
           <!-- ADVERTISING-->
@@ -208,7 +208,7 @@
             </ol>
             <button class="advertising__button">Показать тарифы для бизнеса</button>
             <article class="business advertising__business">
-              <h2 class="title-second business__title-second">Бизнес-тарифы</h2>
+              <h2 class="title-second title-second_color--yellow business__title-second">Бизнес-тарифы</h2>
               <ul class="buisness-list">
                 <li class="buisness-item">
                   <p>Реклама у блогера</p>
@@ -234,12 +234,12 @@
           <!-- CHECK-IN-->
           <section class="check-in main-index__check-in">
             <h2 class="visually-hidden">Раздел регистрации</h2>
-            <p class="title-second check-in__title-second">Заинтересовались?</p>
+            <p class="title-second title-second_color--yellow check-in__title-second">Заинтересовались?</p>
             <p class="paragraph">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="check-in__link" href="#">авторизуйтесь</a>.</p>
             <form class="email-form check-in__email-form" action="https://echo.htmlacademy.ru" method="post">
               <span class="visually-hidden">Форма ввода личных данных для входа (почта)</span>
               <input class="email-form__input" type="email" name="login" placeholder="E-mail" required>
-              <button class="email-form__btn btn btn--square" type="submit">
+              <button class="email-form__btn btn btn_form--square btn_color--yellow" type="submit">
                 <svg></svg>
               </button>
             </form>
@@ -273,7 +273,7 @@
                 </div>
                 <p class="adress__adress">ул. Большая Конюшенная, 19/8</p>
               </div>
-              <a class="btn adress__btn btn--square" href="#">Проложить маршрут</a>
+              <a class="btn adress__btn btn--square btn_color--yellow" href="#">Проложить маршрут</a>
             </div>
             <div class="adress__map" id="map"></div>
           </section>
