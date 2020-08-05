@@ -1,0 +1,106 @@
+extends ../main
+
+block variables
+	- var pageIndex = true
+	- var pageTitle = 'Погнали: Главная'
+	- var firstTitle = 'О сервисе'
+
+block main
+	main.main-index
+		.container
+			.main-index__inner-wrapper
+				// ABOUT-US
+				section.about-us.main-index__about-us
+					p.paragraph Лучшее приложение, что я видел в жизни!
+					p.paragraph.paragraph_weight--bold Мурат Эльтазин главный редактор газеты "гаджетлайф"
+					ol.process.about-us__process
+						li.process__step Выберите направление
+						li.process__step Изучите идеи путешественников
+						li.process__step Находите тех, кто похож на вас
+						li.process__step Путешествуйте вместе!
+					h2.title-second.about-us__title-second О сервисе
+					p.paragraph Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+					p.paragraph.paragraph_weight--bold А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+				// ABOUT-US //
+				// DIRECTIONS
+				section.directions.main-index__directions
+					h2.title-second.title-second_color--yellow.directions__title-second Направления
+					p.paragraph Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+					.directions__countrys-wrapper
+						include ../modules/country-cards/country-card--thailand
+						include ../modules/country-cards/country-card--france
+						include ../modules/country-cards/country-card--chezh
+					a.btn.btn_form--square.btn_color--yellow.main-index__btn(href=".directions.html") Показать все
+				// DIRECTIONS //
+				// COMPANIONS
+				section.companions.main-index__companions
+					h2.title-second.title-second_color--yellow.companions__title-second Попутчики
+					p.paragraph Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+					p.paragraph.paragraph_weight--bold Теперь можно легко найти единомышленников!
+					.companions__users-wrapper
+						include ../modules/user-cards/user-card__tatyana-firsova/user-card--middle--tatyana-firsova
+						include ../modules/user-cards/user-card__petya-demin/user-card--middle--petya-demin
+					a.btn.btn_form--square.btn_color--yellow.main-index__btn(href=".companions.html") Показать всех
+				// COMPANIONS //
+				// ADVERTISING
+				section.advertising.main-index__advertising
+					h2.visually-hidden Рекламные тарифы
+					.advertising__row
+						p.advertising__moto Добавьте свой профиль
+						img.advertising__profile
+					ol.advertising-list
+						li.advertising-item
+							p Базовое размещение
+							p Бесплатно
+						li.advertising-item
+							p Вывод на первых позициях
+							p 99 руб./мес
+						li.advertising-item
+							p Кастомный цвет карточки
+							p 59 руб./мес
+					button.advertising__button Показать тарифы для бизнеса
+					article.business.advertising__business
+						h2.title-second.title-second_color--yellow.business__title-second Бизнес-тарифы
+						ul.buisness-list
+							li.buisness-item
+								p Реклама у блогера
+								p 300 000 руб./пост
+							li.buisness-item
+								p Накрутка подписчиков
+								p от 1 руб./шт.
+							li.buisness-item
+								p Лайки от ботов
+								p от 20 коп./лайк
+							li.buisness-item
+								p Ваш продакт-плейсмент
+								p Индивидуально
+						button.business__button закрыть окно
+				// ADVERTISING //
+				// CHECK-IN
+				section.check-in.main-index__check-in
+					h2.visually-hidden Раздел регистрации
+					p.title-second.title-second_color--yellow.check-in__title-second Заинтересовались?
+					p.paragraph
+						| Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее 
+						a.check-in__link(href="#") авторизуйтесь
+						|.
+					form.email-form.check-in__email-form(action="https://echo.htmlacademy.ru" method="post")
+						span.visually-hidden Форма ввода личных данных для входа (почта)
+						input.email-form__input(type="email" name="login" placeholder="E-mail" required)
+						button.email-form__btn.btn.btn_form--square.btn_color--yellow(type="submit")
+							svg
+					p.paragraph Остались вопросы? Мы с радостью на них ответим!
+					include ../modules/contacts/contacts-full
+				// CHECK-IN //
+				// ADRESS
+				section.adress.main-index__adress
+					h2.visually-hidden Раздел адреса и карты
+					.adress__desc
+						.adress__desc-wrapper
+								.adress__icon
+									svg
+									span.visually-hidden Метка
+								p.adress__adress ул. Большая Конюшенная, 19/8
+						a.btn.adress__btn.btn--square.btn_color--yellow(href="#") Проложить маршрут
+					.adress__map#map
+				// ADRESS //

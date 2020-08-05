@@ -1,0 +1,88 @@
+extends ../main
+
+block variables
+	- var pageTitle = 'Погнали: Попутчики'
+	- var firstTitle = 'Попутчики'
+	- var hobby = ['Спортзал', 'Кальян', 'Диван']
+	- var music = ['Тяжелый рок', 'Русский рэп', 'Евроденс']
+	- var food = ['Мясоед', 'ПП', 'Веган-сыроед']
+	- var transport = ['Самолет', 'Автобус', 'Велосипед', 'Бег']
+	- var countrysParts = ['европа', 'азия', 'америка', 'острова']
+	- var countrysAlphabet = ['а', 'б', 'в', 'г', 'д', 'е', 'з', 'и', 'к', 'л', 'м', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ч', 'ш', 'э', 'ю', 'я']
+	- var countrysChosen = ['Австралия', 'Австрия', 'Азербайджан', 'Албания', 'Алжир', 'Ангола', 'Андорра', 'Антигуа и Барбуда', 'Аргентина', 'Армения', 'Афганистан']
+
+include ../mixins/mixin-checkbox
+include ../mixins/mixin-checkbox-without-name
+
+block main
+	main.main-companions
+		.container
+			.main-companions__inner-wrapper
+				// FILTER-COUNTRY
+				.companions__filter-countrys
+					.filter-countrys__row
+						span.filter-countrys__hamburger
+						h4.filter-countrys__title.title-fourth фильтрация по странам
+						button.btn-hamburger.filter-countrys__btn-hamburger
+							span.visually-hidden показать все
+					.countrys.filter-countrys__countrys
+						form.filter-countrys__countrys-form(action="https://echo.htmlacademy.ru" method="get")
+							fieldset.countrys__parts
+								ul.countrys__parts-list
+									each n in countrysParts
+										li
+											label.countrys__parts-item
+												input(name="parts" type="radio" value= n)
+												= n
+							include ../modules/other/filter-countrys
+							.btn.btn_form--round.btn_color--blue.countrys__btn свернуть
+				// FILTER-COUNTRY //
+				// FILTER-USERS
+				.companions__filter-users
+					h4.visually-hidden фильтрация по попутчикам
+					p.title-third.filter-users__title Подберите идеального попутчика
+					form.filter-users__users-form(action="https://echo.htmlacademy.ru" method="get")
+						// HOBBY
+						+fieldset-checkbox('хобби', 'hobby', hobby)
+						// HOBBY //
+						// MUSIC
+						+fieldset-checkbox('музыка', 'music', music)
+						// MUSIC //
+						// FOOD
+						+fieldset-checkbox('еда', 'food', food)
+						// FOOD //
+						// TRANSPORT
+						+fieldset-checkbox-without-name('транспорт', 'transport', transport)
+						// TRANSPORT //
+						// LEVEL
+						fieldset.filter-users__box-level
+							.box__heading-wrapper
+								h3.title-third левел
+								.btn.box__btn
+									svg
+							.box-level__value
+								.box-level__number
+									label.box-level__min-level
+										input.input(type="number" name="min-level" value="30" step="1")
+									label.box-level__max-level
+										input.input(type="number" name="max-level" value="100" step="1")
+								.box-level__line
+									// main-line
+									.box-level__active-line
+									// active-line
+									.box-level__toggle-min
+									.box-level__toggle-max
+						// LEVEL //
+						button.btn.btn_form--round.btn_form--white.users-form__btn(type="submit") показать
+				// FILTER-USERS //
+				// USERS
+				.companions__users-wrapper
+					include ../modules/user-cards/user-card__tatyana-firsova/user-card--full--tatyana-firsova
+					include ../modules/user-cards/user-card__petya-demin/user-card--full--petya-demin
+					include ../modules/user-cards/user-card__mark-smolov/user-card--full--mark-smolov
+					include ../modules/user-cards/user-card__larisa-rogovaya/user-card--full--larisa-rogovaya
+					button.btn.companions__button(type="submit") показать еще
+					.companions__clicker-wrapper
+						a.clicker.clicker--left.companions__clicker(href="#")
+						a.clicker.clicker--right.companions__clicker(href="#")
+				// USERS //

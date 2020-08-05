@@ -1,0 +1,10 @@
+block variables
+
+ul.plans-actual__list
+	each n in planCounter
+		li.plans-actual__item
+			p.plans-actual__name= n + '. ' + direction[n]
+			.plans-actual__desc-wrapper
+				p.plans-actual__desc= companion[n]
+				p.plans-actual__desc= period[n]
+			button.btn.plans-actual__btn изменить
