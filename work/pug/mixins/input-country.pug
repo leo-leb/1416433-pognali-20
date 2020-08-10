@@ -1,0 +1,21 @@
+mixin input-country(chosenStatus, choseStatus, countryName)
+  .box-country-wrap
+    .box-country.box-country_chosen.directions__box-country(class="box-country--" + chosenStatus)
+      label.box-country__wrap.box-country__wrap_size--m
+        span.box-country__desc= countryName
+        button.btn.box-country__btn(alt="Раскрыть список стран")
+          svg
+        span.box-country__status.box-country__status--active
+      .box-country__wrap.box-country__wrap_size--s
+        img.box-country__flag(src="#" alt= "Флаг" + countryName)
+      button.btn-close
+    .box-country.box-country_chose.directions__box-country(class="box-country--" + choseStatus)
+      label.box-country__wrap.box-country__wrap_size--l
+        span.box-country__desc выберите страну
+        button.btn.box-country__btn(alt="Раскрыть список стран")
+          svg
+        span.box-country__status
+      button.btn-close
+    .box-country__filter
+      include ../blocks/filter-countries
+    img.box-country__arrow(alt="Переход к следующей стране")

@@ -2,20 +2,14 @@ block variables
 
 doctype html
 html(lang="ru")
-	head
-		meta(charset="utf-8")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		title= pageTitle
-	body
-		//----- HEADER
-		if pageIndex
-			include modules/header/header-full
-		else
-			include modules/header/header-short
-		//----- HEADER //
-		//----- MAIN
-		block main
-		//----- MAIN //
-		//----- FOOTER
-		include modules/footer/footer
-		//----- FOOTER //
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= pageTitle
+  body
+    if pageIndex
+      include blocks/header-full
+    else
+      include blocks/header-short
+    block content
+    include blocks/footer

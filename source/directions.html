@@ -8,40 +8,40 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__inner-wrapper">
+        <div class="header__inner">
           <a class="logo header__logo" href="#">
             <img src="#" alt="Логотип компании" width="100" height="15">
           </a>
           <h1 class="header__title title-first">Направления</h1>
           <div class="header__menu-popup">
-            <button class="btn-close header__btn-close" type="button">
+            <button class="btn-cross header__btn-cross" type="button">
               <span class="visually-hidden">Скрыть шапку страницы</span>
             </button>
-            <nav class="main-nav header__main-nav">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="link main-nav__link" href="#">о сервисе</a>
+            <nav class="nav header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">о сервисе</a>
                 </li>
-                <li class="main-nav__item">
-                  <a class="link main-nav__link" href="./directions.html">направления</a>
+                <li class="nav__item">
+                  <a class="nav__link" href="./directions.html">направления</a>
                 </li>
-                <li class="main-nav__item">
-                  <a class="link main-nav__link" href="./companions.html">попутчики</a>
+                <li class="nav__item">
+                  <a class="nav__link" href="./companions.html">попутчики</a>
                 </li>
               </ul>
             </nav>
-            <div class="action-buttons menu-popup__action-buttons">
-              <a class="btn btn_form--round btn_color--yellow" href="#">авторизация</a>
-              <div class="contacts">
-                <div class="contacts__phone">
-                  <a class="contacts__call" href="tel:+78005558628">
+            <div class="action-buttons-row menu-popup__action-buttons-row">
+              <a class="btn btn--form-round btn--color-yellow" href="#">авторизация</a>
+              <div class="contacts contacts--col">
+                <div class="contacts__wrap">
+                  <a class="btn-contact" href="tel:+78005558628">
                     <svg></svg>
                     <span class="visually-hidden">Позвонить</span>
                   </a>
                   <span class="contacts__desc">8 800 555-86-28</span>
                 </div>
-                <div class="contacts__email">
-                  <a class="contacts__text" href="#">
+                <div class="contacts__wrap">
+                  <a class="btn-contact" href="#">
                     <svg></svg>
                     <span class="visually-hidden">Написать</span>
                   </a>
@@ -49,136 +49,133 @@
                 </div>
               </div>
             </div>
+            <div class="social header__social">
+              <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+              <a class="social__link" href="#">
+                <svg></svg>
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+              <a class="social__link" href="#">
+                <svg></svg>
+                <span class="visually-hidden">Facebook</span>
+              </a>
+              <a class="social__link" href="#">
+                <svg></svg>
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </div>
           </div>
           <button class="btn-menu header__btn-menu" type="button">
             <span class="visually-hidden">Открыть шапку страницы</span>
           </button>
-          <div class="social header__social">
-            <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-            <a class="social__link" href="#">
-              <svg></svg>
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-            <a class="social__link" href="#">
-              <svg></svg>
-              <span class="visually-hidden">Facebook</span>
-            </a>
-            <a class="social__link" href="#">
-              <svg></svg>
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </div>
         </div>
       </div>
     </header>
     <main class="main-directions">
       <div class="container">
-        <div class="main-directions__inner-wrapper">
-          <!-- USER-->
+        <div class="main-directions__inner">
           <article class="user-card">
-            <div class="user-card__wrapper-row">
-              <div class="user-card__skill-wrapper">
+            <div class="user-card__row">
+              <div class="user-card__skill-wrap">
                 <div class="user-card__skill">
                   <svg class="user-card__skill-graph"></svg>
-                  <div class="user-card__level-wrapper">
+                  <div class="user-card__level-wrap">
                     <span class="user-card__level">25</span>
                     <p class="user-card__unit">level</p>
                   </div>
                 </div>
               </div>
-              <img class="user-card__img user-card__img_type--avatar" src="#" alt="Фото попутчика">
+              <img class="user-card__img user-card__img--type-avatar" src="#" alt="Фото попутчика">
             </div>
-            <div class="btn btn_form--round btn_color--blue user-card__btn">сменить фото</div>
-            <ul class="tag-list user-card__tag-list">
-              <h4 class="title-fourth user-card__title-fourth">тэги</h4>
-              <li class="tag-list__item">#рэп</li>
-              <li class="tag-list__item">#тату</li>
-              <li class="tag-list__item">#хайпбист</li>
-              <li class="tag-list__item">#кроссовки</li>
-              <li class="tag-list__item">#суприм</li>
-            </ul>
-            <div class="user-card__move-list-wrapper">
+            <div class="btn btn--form-round btn--color-blue user-card__btn">сменить фото</div>
+            <div class="user-card__tags-wrap">
+              <ul class="tags user-card__tags">
+                <h4 class="title-fourth user-card__title-fourth">тэги</h4>
+                <li class="tags__item">#рэп</li>
+                <li class="tags__item">#тату</li>
+                <li class="tags__item">#хайпбист</li>
+                <li class="tags__item">#кроссовки</li>
+                <li class="tags__item">#суприм</li>
+              </ul>
+            </div>
+            <div class="user-card__moves-wrap">
               <h4 class="title-fourth user-card__title-fourth">транспорт</h4>
-              <ul class="move-list user-card__move-list">
-                <li class="move-list__item">
-                  <span class="visually-hidden">Иконка самолета</span>
-                  <svg class="moves__icon moves__icon--fly"></svg>
+              <ul class="moves user-card__moves">
+                <li class="moves__item">
+                  <span class="visually-hidden">Иконка самолет</span>
+                  <svg class="moves__icon moves__icon--active"></svg>
                 </li>
-                <li class="move-list__item">
-                  <span class="visually-hidden">Иконка автобуса</span>
-                  <svg class="moves__icon moves__icon--drive"></svg>
+                <li class="moves__item">
+                  <span class="visually-hidden">Иконка автобус</span>
+                  <svg class="moves__icon"></svg>
                 </li>
-                <li class="move-list__item">
-                  <span class="visually-hidden">Иконка велосипеда</span>
-                  <svg class="moves__icon moves__icon--ride"></svg>
+                <li class="moves__item">
+                  <span class="visually-hidden">Иконка велосипед</span>
+                  <svg class="moves__icon moves__icon--active"></svg>
                 </li>
-                <li class="move-list__item">
-                  <span class="visually-hidden">Иконка бега</span>
-                  <svg class="moves__icon moves__icon--run"></svg>
+                <li class="moves__item">
+                  <span class="visually-hidden">Иконка бег</span>
+                  <svg class="moves__icon"></svg>
                 </li>
               </ul>
             </div>
           </article>
-          <!-- PLANS-ACTUAL-->
           <section class="plans-actual main-directions__plans-actual">
-            <h2 class="title-second title-second_color--blue-dark plans-actual__title-second">Мои планы:</h2>
+            <h2 class="title-second title-second--color-blue-dark plans-actual__title-second">Мои планы:</h2>
             <ul class="plans-actual__list">
               <li class="plans-actual__item">
                 <p class="plans-actual__name">1. Франция, Италия</p>
-                <div class="plans-actual__desc-wrapper">
+                <div class="plans-actual__desc-wrap">
                   <p class="plans-actual__desc">3 попутчика</p>
                   <p class="plans-actual__desc">26 МАР - 29 МАР</p>
                 </div>
-                <button class="btn plans-actual__btn">изменить</button>
+                <a class="btn plans-actual__btn" href="#">изменить</a>
               </li>
               <li class="plans-actual__item">
                 <p class="plans-actual__name">2. Таиланд, Индонезия</p>
-                <div class="plans-actual__desc-wrapper">
+                <div class="plans-actual__desc-wrap">
                   <p class="plans-actual__desc">1 попутчик</p>
                   <p class="plans-actual__desc">1 ИЮЛ - 15 ИЮЛ</p>
                 </div>
-                <button class="btn plans-actual__btn">изменить</button>
+                <a class="btn plans-actual__btn" href="#">изменить</a>
               </li>
             </ul>
           </section>
-          <!-- PLANS-ACTUAL //-->
-          <!-- PLANS-CREATE-->
           <section class="plans-create main-directions__plans-create">
-            <h2 class="title-second title-second_color--blue-dark plans-actual__title-second">Добавить план:</h2>
-            <div class="plans-create__dots-wrapper">
+            <h2 class="title-second title-second--color-blue-dark plans-actual__title-second">Добавить план:</h2>
+            <div class="plans-create__dots-wrap">
               <span class="plans-create__dot plans-create__dot--active"></span>
               <span class="plans-create__dot"></span>
               <span class="plans-create__dot"></span>
             </div>
             <form class="plans-create__form" id="form">
-              <!-- CREATE: STEP 1-->
               <article class="step-first plans-create__step-first">
                 <p class="title-sixth plans-create__title-sixth">Шаг 1.</p>
                 <h6 class="title-sixth plans-create__title-sixth">Даты пребывания</h6>
                 <p class="plans-create__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 <fieldset class="step-first__clicker">
-                  <div class="step-first__clicker-wrapper">
+                  <div class="step-first__clicker-wrap">
                     <p class="step-first__title">ищу попутчиков:</p>
                     <span class="step-first__unit">чел.</span>
                   </div>
                   <div class="step-first__stepper">
                     <input class="step-first__input" type="number" min="0" max="100" step="1" value="2" autofocus>
                     <div class="step-first__stepper-controls">
-                      <button class="step-first__stepper-control-right">+</button>
-                      <button class="step-first__stepper-control-left">-</button>
+                      <button class="btn-stepper btn-stepper--right">+</button>
+                      <button class="btn-stepper btn-stepper--left">-</button>
                     </div>
                   </div>
                 </fieldset>
                 <fieldset class="step-first__clicker">
-                  <div class="step-first__clicker-wrapper">
+                  <div class="step-first__clicker-wrap">
                     <p class="step-first__title">длительность:</p>
                     <span class="step-first__unit">дн.</span>
                   </div>
                   <div class="step-first__stepper">
                     <input class="step-first__input" type="number" min="0" max="100" step="1" value="2" autofocus>
                     <div class="step-first__stepper-controls">
-                      <button class="step-first__stepper-control-right">+</button>
-                      <button class="step-first__stepper-control-left">-</button>
+                      <button class="btn-stepper btn-stepper--right">+</button>
+                      <button class="btn-stepper btn-stepper--left">-</button>
                     </div>
                   </div>
                 </fieldset>
@@ -195,73 +192,71 @@
                 <fieldset class="month step-first__month">
                   <input type="month" value="2019-03">
                   <div class="month__stepper-controls">
-                    <button class="month__stepper-control-left">
+                    <button class="btn-stepper btn-stepper--right">
                       <svg></svg>
                     </button>
-                    <button class="month__stepper-control-right">
+                    <button class="btn-stepper btn-stepper--right">
                       <svg></svg>
                     </button>
                   </div>
                 </fieldset>
                 <div class="calendar step-first__calendar">
-                  <ul class="calendar__day day-list">
-                    <li class="day-item">П</li>
-                    <li class="day-item">В</li>
-                    <li class="day-item">С</li>
-                    <li class="day-item">Ч</li>
-                    <li class="day-item">П</li>
-                    <li class="day-item day-item--red">С</li>
-                    <li class="day-item day-item--red">В</li>
+                  <ul class="day calendar__day">
+                    <li class="day__item">П</li>
+                    <li class="day__item">В</li>
+                    <li class="day__item">С</li>
+                    <li class="day__item">Ч</li>
+                    <li class="day__item">П</li>
+                    <li class="day__item day__item--red">С</li>
+                    <li class="day__item day__item--red">В</li>
                   </ul>
-                  <ul class="calendar__date-list date-list">
-                    <li class="date-item date-item--blind">23</li>
-                    <li class="date-item date-item--blind">24</li>
-                    <li class="date-item date-item--blind">25</li>
-                    <li class="date-item date-item--blind">26</li>
-                    <li class="date-item date-item--blind">27</li>
-                    <li class="date-item date-item--blind">28</li>
-                    <li class="date-item date-item--blind">1</li>
-                    <li class="date-item date-item--blind">2</li>
-                    <li class="date-item date-item--blind">3</li>
-                    <li class="date-item date-item--blind">4</li>
-                    <li class="date-item date-item--blind">5</li>
-                    <li class="date-item date-item--blind">6</li>
-                    <li class="date-item date-item--blind">7</li>
-                    <li class="date-item date-item--blind">8</li>
-                    <li class="date-item date-item--blind">9</li>
-                    <li class="date-item date-item--blind">10</li>
-                    <li class="date-item date-item--blind">11</li>
-                    <li class="date-item date-item--blind">12</li>
-                    <li class="date-item date-item--blind">13</li>
-                    <li class="date-item date-item--blind">14</li>
-                    <li class="date-item date-item--blind">15</li>
-                    <li class="date-item date-item--blind">16</li>
-                    <li class="date-item date-item--blind">17</li>
-                    <li class="date-item date-item--blind">18</li>
-                    <li class="date-item date-item--blind">19</li>
-                    <li class="date-item date-item--blind">20</li>
-                    <li class="date-item date-item--blind">21</li>
-                    <li class="date-item date-item--blind">22</li>
-                    <li class="date-item date-item--blind">23</li>
-                    <li class="date-item date-item--blind">24</li>
-                    <li class="date-item date-item--blind">25</li>
-                    <li class="date-item date-item--colored date-item--active date-item--first">26</li>
-                    <li class="date-item date-item--colored date-item--active">27</li>
-                    <li class="date-item date-item--colored date-item--active">28</li>
-                    <li class="date-item date-item--colored">29</li>
-                    <li class="date-item date-item--colored">30</li>
-                    <li class="date-item date-item--colored">31</li>
-                    <li class="date-item date-item--colored">1</li>
-                    <li class="date-item date-item--colored">2</li>
-                    <li class="date-item date-item--colored">3</li>
-                    <li class="date-item date-item--colored">4</li>
-                    <li class="date-item date-item--colored">5</li>
+                  <ul class="date calendar__date">
+                    <li class="date__item date__item--blind">23</li>
+                    <li class="date__item date__item--blind">24</li>
+                    <li class="date__item date__item--blind">25</li>
+                    <li class="date__item date__item--blind">26</li>
+                    <li class="date__item date__item--blind">27</li>
+                    <li class="date__item date__item--blind">28</li>
+                    <li class="date__item date__item--blind">1</li>
+                    <li class="date__item date__item--blind">2</li>
+                    <li class="date__item date__item--blind">3</li>
+                    <li class="date__item date__item--blind">4</li>
+                    <li class="date__item date__item--blind">5</li>
+                    <li class="date__item date__item--blind">6</li>
+                    <li class="date__item date__item--blind">7</li>
+                    <li class="date__item date__item--blind">8</li>
+                    <li class="date__item date__item--blind">9</li>
+                    <li class="date__item date__item--blind">10</li>
+                    <li class="date__item date__item--blind">11</li>
+                    <li class="date__item date__item--blind">12</li>
+                    <li class="date__item date__item--blind">13</li>
+                    <li class="date__item date__item--blind">14</li>
+                    <li class="date__item date__item--blind">15</li>
+                    <li class="date__item date__item--blind">16</li>
+                    <li class="date__item date__item--blind">17</li>
+                    <li class="date__item date__item--blind">18</li>
+                    <li class="date__item date__item--blind">19</li>
+                    <li class="date__item date__item--blind">20</li>
+                    <li class="date__item date__item--blind">21</li>
+                    <li class="date__item date__item--blind">22</li>
+                    <li class="date__item date__item--blind">23</li>
+                    <li class="date__item date__item--blind">24</li>
+                    <li class="date__item date__item--blind">25</li>
+                    <li class="date__item date__item--colored date__item--active date__item--first">26</li>
+                    <li class="date__item date__item--colored date__item--active">27</li>
+                    <li class="date__item date__item--colored date__item--active">28</li>
+                    <li class="date__item date__item--colored">29</li>
+                    <li class="date__item date__item--colored">30</li>
+                    <li class="date__item date__item--colored">31</li>
+                    <li class="date__item date__item--colored">1</li>
+                    <li class="date__item date__item--colored">2</li>
+                    <li class="date__item date__item--colored">3</li>
+                    <li class="date__item date__item--colored">4</li>
+                    <li class="date__item date__item--colored">5</li>
                   </ul>
                 </div>
-                <button class="btn btn_form--round btn_color--yellow plans-create__btn">следующий шаг</button>
+                <a class="btn btn--form-round btn--color-yellow plans-create__btn" href="#">следующий шаг</a>
               </article>
-              <!-- CREATE: STEP 1 //-->
-              <!-- CREATE: STEP 2-->
               <article class="step-second plans-create__step-second">
                 <p class="title-sixth plans-create__title-sixth">Шаг 2.</p>
                 <h6 class="title-sixth plans-create__title-sixth">Маршрут</h6>
@@ -271,7 +266,7 @@
                     <label class="box-country__wrap box-country__wrap_size--m">
                       <span class="box-country__desc">босния и герцеговина</span>
                       <button class="btn box-country__btn" alt="Раскрыть список стран">
-                        <svg class="btn-arrow"></svg>
+                        <svg></svg>
                       </button>
                       <span class="box-country__status box-country__status--active"></span>
                     </label>
@@ -284,157 +279,157 @@
                     <label class="box-country__wrap box-country__wrap_size--l">
                       <span class="box-country__desc">выберите страну</span>
                       <button class="btn box-country__btn" alt="Раскрыть список стран">
-                        <svg class="btn-arrow"></svg>
+                        <svg></svg>
                       </button>
                       <span class="box-country__status"></span>
                     </label>
                     <button class="btn-close"></button>
                   </div>
                   <div class="box-country__filter">
-                    <fieldset class="countrys__alphabet">
-                      <ul class="countrys__alphabet-list">
+                    <fieldset class="countries__alphabet">
+                      <ul class="countries__alphabet-list">
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="а">а </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="б">б </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="в">в </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="г">г </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="д">д </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="е">е </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="з">з </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="и">и </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="к">к </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="л">л </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="м">м </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="о">о </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="п">п </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="р">р </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="с">с </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="т">т </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="у">у </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ф">ф </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="х">х </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ч">ч </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ш">ш </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="э">э </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ю">ю </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="я">я </label>
                         </li>
                       </ul>
                     </fieldset>
-                    <fieldset class="countrys__chosen">
-                      <ul class="countrys__chosen-list">
+                    <fieldset class="countries__chosen">
+                      <ul class="countries__chosen-list">
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Австралия">Австралия </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Австрия">Австрия </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Азербайджан">Азербайджан </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Албания">Албания </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Алжир">Алжир </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Ангола">Ангола </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Андорра">Андорра </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Антигуа и Барбуда">Антигуа и Барбуда </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Аргентина">Аргентина </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Армения">Армения </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Афганистан">Афганистан </label>
                         </li>
                       </ul>
@@ -447,7 +442,7 @@
                     <label class="box-country__wrap box-country__wrap_size--m">
                       <span class="box-country__desc">чехия</span>
                       <button class="btn box-country__btn" alt="Раскрыть список стран">
-                        <svg class="btn-arrow"></svg>
+                        <svg></svg>
                       </button>
                       <span class="box-country__status box-country__status--active"></span>
                     </label>
@@ -460,157 +455,157 @@
                     <label class="box-country__wrap box-country__wrap_size--l">
                       <span class="box-country__desc">выберите страну</span>
                       <button class="btn box-country__btn" alt="Раскрыть список стран">
-                        <svg class="btn-arrow"></svg>
+                        <svg></svg>
                       </button>
                       <span class="box-country__status"></span>
                     </label>
                     <button class="btn-close"></button>
                   </div>
                   <div class="box-country__filter">
-                    <fieldset class="countrys__alphabet">
-                      <ul class="countrys__alphabet-list">
+                    <fieldset class="countries__alphabet">
+                      <ul class="countries__alphabet-list">
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="а">а </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="б">б </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="в">в </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="г">г </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="д">д </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="е">е </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="з">з </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="и">и </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="к">к </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="л">л </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="м">м </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="о">о </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="п">п </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="р">р </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="с">с </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="т">т </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="у">у </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ф">ф </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="х">х </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ч">ч </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ш">ш </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="э">э </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ю">ю </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="я">я </label>
                         </li>
                       </ul>
                     </fieldset>
-                    <fieldset class="countrys__chosen">
-                      <ul class="countrys__chosen-list">
+                    <fieldset class="countries__chosen">
+                      <ul class="countries__chosen-list">
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Австралия">Австралия </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Австрия">Австрия </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Азербайджан">Азербайджан </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Албания">Албания </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Алжир">Алжир </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Ангола">Ангола </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Андорра">Андорра </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Антигуа и Барбуда">Антигуа и Барбуда </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Аргентина">Аргентина </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Армения">Армения </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Афганистан">Афганистан </label>
                         </li>
                       </ul>
@@ -623,7 +618,7 @@
                     <label class="box-country__wrap box-country__wrap_size--m">
                       <span class="box-country__desc"></span>
                       <button class="btn box-country__btn" alt="Раскрыть список стран">
-                        <svg class="btn-arrow"></svg>
+                        <svg></svg>
                       </button>
                       <span class="box-country__status box-country__status--active"></span>
                     </label>
@@ -636,157 +631,157 @@
                     <label class="box-country__wrap box-country__wrap_size--l">
                       <span class="box-country__desc">выберите страну</span>
                       <button class="btn box-country__btn" alt="Раскрыть список стран">
-                        <svg class="btn-arrow"></svg>
+                        <svg></svg>
                       </button>
                       <span class="box-country__status"></span>
                     </label>
                     <button class="btn-close"></button>
                   </div>
                   <div class="box-country__filter">
-                    <fieldset class="countrys__alphabet">
-                      <ul class="countrys__alphabet-list">
+                    <fieldset class="countries__alphabet">
+                      <ul class="countries__alphabet-list">
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="а">а </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="б">б </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="в">в </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="г">г </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="д">д </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="е">е </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="з">з </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="и">и </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="к">к </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="л">л </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="м">м </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="о">о </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="п">п </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="р">р </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="с">с </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="т">т </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="у">у </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ф">ф </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="х">х </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ч">ч </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ш">ш </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="э">э </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="ю">ю </label>
                         </li>
                         <li>
-                          <label class="countrys__alphabet-item">
+                          <label class="countries__alphabet-item">
                             <input name="alphabet" type="radio" value="я">я </label>
                         </li>
                       </ul>
                     </fieldset>
-                    <fieldset class="countrys__chosen">
-                      <ul class="countrys__chosen-list">
+                    <fieldset class="countries__chosen">
+                      <ul class="countries__chosen-list">
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Австралия">Австралия </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Австрия">Австрия </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Азербайджан">Азербайджан </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Албания">Албания </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Алжир">Алжир </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Ангола">Ангола </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Андорра">Андорра </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Антигуа и Барбуда">Антигуа и Барбуда </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Аргентина">Аргентина </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Армения">Армения </label>
                         </li>
                         <li>
-                          <label class="countrys__chosen-item">
+                          <label class="countries__chosen-item">
                             <input type="checkbox" value="Афганистан">Афганистан </label>
                         </li>
                       </ul>
@@ -794,18 +789,16 @@
                   </div>
                   <img class="box-country__arrow" alt="Переход к следующей стране">
                 </div>
-                <label class="box-country__wrap box-country__wrap_size--l bg-color--blue-light border--none">
+                <label class="box-country__wrap box-country__wrap--size-l box-country__wrap--color-blue-light box-country__wrap--border-none">
                   <span class="box-country__desc">добавить страну</span>
                   <button class="btn box-country__btn">
-                    <svg class="btn-plus"></svg>
+                    <svg></svg>
                   </button>
                   <span class="box-country__status"></span>
                 </label>
-                <button class="btn btn_form--round btn_color--yellow plans-create__btn">следующий шаг</button>
-                <button class="btn btn_color--blue plans-create__btn">на шаг назад</button>
+                <a class="btn btn--form-round btn--color-yellow plans-create__btn" href="#">следующий шаг</a>
+                <a class="btn plans-create__btn" href="#">на шаг назад</a>
               </article>
-              <!-- CREATE: STEP 2 //-->
-              <!-- CREATE: STEP 3-->
               <article class="step-third plans-create__step-third">
                 <p class="title-sixth plans-create__title-sixth">Шаг 3.</p>
                 <h6 class="title-sixth plans-create__title-sixth">Развлечения</h6>
@@ -824,19 +817,17 @@
                   </div>
                   <textarea class="country-plan-card__desc" name="plan-for-Chezh-Republic" rows="9" form="form" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </article>
-                <button class="btn btn_form--round btn_color--yellow plans-create__btn" type="submit">отправить</button>
-                <button class="btn btn_color--blue plans-create__btn">на шаг назад</button>
+                <button class="btn btn--form-round btn--color-yellow plans-create__btn" type="submit">отправить</button>
+                <a class="btn plans-create__btn" href="#">на шаг назад</a>
               </article>
-              <!-- CREATE: STEP 3 //-->
             </form>
           </section>
-          <!-- PLANS-CREATE //-->
         </div>
       </div>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__inner-wrapper">
+        <div class="footer__inner">
           <a class="logo footer__logo" href="#">
             <img src="#" alt="Логотип сервиса" width="100" height="15">
           </a>

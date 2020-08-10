@@ -1,0 +1,25 @@
+.header__menu-popup
+  button.btn-cross.header__btn-cross(type="button")
+    span.visually-hidden Скрыть шапку страницы
+  nav.nav.header__nav
+    ul.nav__list
+      li.nav__item
+        a.nav__link(href="#") о сервисе
+      li.nav__item
+        a.nav__link(href="./directions.html") направления
+      li.nav__item
+        a.nav__link(href="./companions.html") попутчики
+  .action-buttons-row.menu-popup__action-buttons-row
+    a.btn.btn--form-round.btn--color-yellow(href="#") авторизация
+    include contacts-full
+  .social.header__social
+    h2.visually-hidden Ссылки на социальные сети
+    a.social__link(href="#")
+      svg
+      span.visually-hidden Вконтакте
+    a.social__link(href="#")
+      svg
+      span.visually-hidden Facebook
+    a.social__link(href="#")
+      svg
+      span.visually-hidden Instagram

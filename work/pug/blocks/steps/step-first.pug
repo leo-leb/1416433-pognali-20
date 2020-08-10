@@ -1,0 +1,77 @@
+extends step-sample
+
+block variables
+  - var stepClass = 'step-first'
+  - var stepNumber = '1'
+  - var stepName = 'Даты пребывания'
+  - var stepDesc = 'Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.'
+  - var additional = ['Можно с детьми']
+  - var stepFirst = true
+  - var stepLast = false
+
+include ../../mixins/checkbox-without-title
+include ../../mixins/input-number
+
+block content
+  +input-number('ищу попутчиков:', 'чел.', '2')
+  +input-number('длительность:', 'дн.', '2')
+  +checkbox-without-title('additional', additional)
+  fieldset.month.step-first__month
+    input(type="month" value="2019-03")
+    .month__stepper-controls
+      button.btn-stepper.btn-stepper--right
+        svg
+      button.btn-stepper.btn-stepper--right
+        svg
+  .calendar.step-first__calendar
+    ul.day.calendar__day
+      li.day__item П
+      li.day__item В
+      li.day__item С
+      li.day__item Ч
+      li.day__item П
+      li.day__item.day__item--red С
+      li.day__item.day__item--red В
+    ul.date.calendar__date
+      li.date__item.date__item--blind 23
+      li.date__item.date__item--blind 24
+      li.date__item.date__item--blind 25
+      li.date__item.date__item--blind 26
+      li.date__item.date__item--blind 27
+      li.date__item.date__item--blind 28
+      li.date__item.date__item--blind 1
+      li.date__item.date__item--blind 2
+      li.date__item.date__item--blind 3
+      li.date__item.date__item--blind 4
+      li.date__item.date__item--blind 5
+      li.date__item.date__item--blind 6
+      li.date__item.date__item--blind 7
+      li.date__item.date__item--blind 8
+      li.date__item.date__item--blind 9
+      li.date__item.date__item--blind 10
+      li.date__item.date__item--blind 11
+      li.date__item.date__item--blind 12
+      li.date__item.date__item--blind 13
+      li.date__item.date__item--blind 14
+      li.date__item.date__item--blind 15
+      li.date__item.date__item--blind 16
+      li.date__item.date__item--blind 17
+      li.date__item.date__item--blind 18
+      li.date__item.date__item--blind 19
+      li.date__item.date__item--blind 20
+      li.date__item.date__item--blind 21
+      li.date__item.date__item--blind 22
+      li.date__item.date__item--blind 23
+      li.date__item.date__item--blind 24
+      li.date__item.date__item--blind 25
+      li.date__item.date__item--colored.date__item--active.date__item--first 26
+      li.date__item.date__item--colored.date__item--active 27
+      li.date__item.date__item--colored.date__item--active 28
+      li.date__item.date__item--colored 29
+      li.date__item.date__item--colored 30
+      li.date__item.date__item--colored 31
+      li.date__item.date__item--colored 1
+      li.date__item.date__item--colored 2
+      li.date__item.date__item--colored 3
+      li.date__item.date__item--colored 4
+      li.date__item.date__item--colored 5

@@ -8,6 +8,9 @@ const sourcemaps = require('gulp-sourcemaps');
 const pug = require('gulp-pug');
 const del = require('del');
 const prettify = require('gulp-prettify');
+const swig = require('gulp-swig');
+const data = require('gulp-data');
+const fs = require('fs');
 
 
 function cleanSource(){
@@ -45,6 +48,12 @@ function gulpPug(){
 				}
 			})
 		}))
+		.pipe(data(function(file) {
+			return JSON.parse(
+				fs.readFileSync('work/pug/data.json')
+			);
+		}))
+		.pipe(swig())
 		.pipe(pug({
 			pretty: true
 		}))
@@ -86,13 +95,12 @@ function gulpServer(){
 	});
 }
 function gulpWatch(){
-	gulp.watch('work/pug/**/*.pug', gulp.series(gulpPug));
-	gulp.watch('work/sass/**/*.scss', gulp.series(gulpSass));
-	gulp.watch('work/js/**/*.js', gulp.series(copyJS));
-	gulp.watch('work/libs/**/*.*', gulp.series(copyLibs));
-	gulp.watch('work/img/**/*.*', gulp.series(copyImg));
-	gulp.watch('work/fonts/**/*.*', gulp.series(copyFonts));
+	gulp.watch('work/pug/**/*.pug', gulpPug);
+	gulp.watch('work/sass/**/*.scss', gulpSass);
+	gulp.watch('work/js/**/*.js', copyJS);
+	gulp.watch('work/libs/**/*.*', copyLibs);
+	gulp.watch('work/img/**/*.*', copyImg);
+	gulp.watch('work/fonts/**/*.*', copyFonts);
 }
 
-
-gulp.task('default', gulp.series(cleanSource, gulpSass, gulpPug, copyJS, copyLibs, copyImg, copyFonts, gulp.parallel(gulpServer, gulpWatch)));
+gulp.task('default', gulp.series(cleanSource, gulpSass, gulpPug, gulp.parallel(copyJS, copyLibs, copyImg, copyFonts), gulp.parallel(gulpServer, gulpWatch)));

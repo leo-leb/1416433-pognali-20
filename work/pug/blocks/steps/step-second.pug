@@ -1,0 +1,21 @@
+extends step-sample
+
+block variables
+  - var stepClass = 'step-second'
+  - var stepNumber = '2'
+  - var stepName = 'Маршрут'
+  - var stepDesc = 'Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.'
+  - var stepFirst = false
+  - var stepLast = false
+
+include ../../mixins/input-country
+
+block content
+  +input-country('active', 'passive', 'босния и герцеговина')
+  +input-country('active', 'passive', 'чехия')
+  +input-country('passive', 'active')
+  label.box-country__wrap.box-country__wrap--size-l.box-country__wrap--color-blue-light.box-country__wrap--border-none
+    span.box-country__desc добавить страну
+    button.btn.box-country__btn
+      svg
+    span.box-country__status

@@ -1,88 +1,100 @@
 extends ../main
 
 block variables
-	- var pageTitle = 'Погнали: Попутчики'
-	- var firstTitle = 'Попутчики'
-	- var hobby = ['Спортзал', 'Кальян', 'Диван']
-	- var music = ['Тяжелый рок', 'Русский рэп', 'Евроденс']
-	- var food = ['Мясоед', 'ПП', 'Веган-сыроед']
-	- var transport = ['Самолет', 'Автобус', 'Велосипед', 'Бег']
-	- var countrysParts = ['европа', 'азия', 'америка', 'острова']
-	- var countrysAlphabet = ['а', 'б', 'в', 'г', 'д', 'е', 'з', 'и', 'к', 'л', 'м', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ч', 'ш', 'э', 'ю', 'я']
-	- var countrysChosen = ['Австралия', 'Австрия', 'Азербайджан', 'Албания', 'Алжир', 'Ангола', 'Андорра', 'Антигуа и Барбуда', 'Аргентина', 'Армения', 'Афганистан']
+  - var pageTitle = 'Погнали: Попутчики'
+  - var firstTitle = 'Попутчики'
 
-include ../mixins/mixin-checkbox
-include ../mixins/mixin-checkbox-without-name
+include ../mixins/checkbox
+include ../mixins/checkbox-without-name
 
-block main
-	main.main-companions
-		.container
-			.main-companions__inner-wrapper
-				// FILTER-COUNTRY
-				.companions__filter-countrys
-					.filter-countrys__row
-						span.filter-countrys__hamburger
-						h4.filter-countrys__title.title-fourth фильтрация по странам
-						button.btn-hamburger.filter-countrys__btn-hamburger
-							span.visually-hidden показать все
-					.countrys.filter-countrys__countrys
-						form.filter-countrys__countrys-form(action="https://echo.htmlacademy.ru" method="get")
-							fieldset.countrys__parts
-								ul.countrys__parts-list
-									each n in countrysParts
-										li
-											label.countrys__parts-item
-												input(name="parts" type="radio" value= n)
-												= n
-							include ../modules/other/filter-countrys
-							.btn.btn_form--round.btn_color--blue.countrys__btn свернуть
-				// FILTER-COUNTRY //
-				// FILTER-USERS
-				.companions__filter-users
-					h4.visually-hidden фильтрация по попутчикам
-					p.title-third.filter-users__title Подберите идеального попутчика
-					form.filter-users__users-form(action="https://echo.htmlacademy.ru" method="get")
-						// HOBBY
-						+fieldset-checkbox('хобби', 'hobby', hobby)
-						// HOBBY //
-						// MUSIC
-						+fieldset-checkbox('музыка', 'music', music)
-						// MUSIC //
-						// FOOD
-						+fieldset-checkbox('еда', 'food', food)
-						// FOOD //
-						// TRANSPORT
-						+fieldset-checkbox-without-name('транспорт', 'transport', transport)
-						// TRANSPORT //
-						// LEVEL
-						fieldset.filter-users__box-level
-							.box__heading-wrapper
-								h3.title-third левел
-								.btn.box__btn
-									svg
-							.box-level__value
-								.box-level__number
-									label.box-level__min-level
-										input.input(type="number" name="min-level" value="30" step="1")
-									label.box-level__max-level
-										input.input(type="number" name="max-level" value="100" step="1")
-								.box-level__line
-									// main-line
-									.box-level__active-line
-									// active-line
-									.box-level__toggle-min
-									.box-level__toggle-max
-						// LEVEL //
-						button.btn.btn_form--round.btn_form--white.users-form__btn(type="submit") показать
-				// FILTER-USERS //
-				// USERS
-				.companions__users-wrapper
-					include ../modules/user-cards/user-card__tatyana-firsova/user-card--full--tatyana-firsova
-					include ../modules/user-cards/user-card__petya-demin/user-card--full--petya-demin
-					include ../modules/user-cards/user-card__mark-smolov/user-card--full--mark-smolov
-					include ../modules/user-cards/user-card__larisa-rogovaya/user-card--full--larisa-rogovaya
-					button.btn.companions__button(type="submit") показать еще
-					.companions__clicker-wrapper
-						a.clicker.clicker--left.companions__clicker(href="#")
-						a.clicker.clicker--right.companions__clicker(href="#")
-				// USERS //
+block content
+  main.main-companions
+    .container
+      .main-companions__inner
+        .companions__filter-countries
+          .filter-countries__row
+            span.filter-countries__hamburger
+            h4.filter-countries__title.title-fourth фильтрация по странам
+            button.btn-dots.filter-countries__btn-dots
+              span.visually-hidden показать все
+          .countries.filter-countries__countrys
+            form.filter-countries__countries-form(action="https://echo.htmlacademy.ru" method="get")
+              button.btn-cross.header__btn-cross(type="button")
+                span.visually-hidden Скрыть фильтр стран
+              fieldset.countries__parts
+                ul.countries__parts-list
+                  each n in filterCountries.parts
+                    li
+                      label.countries__parts-item
+                        input(name="parts" type="radio" value= n)
+                        = n
+              include ../blocks/filter-countries
+              button.btn.btn--form-round.btn--color-blue.countries__btn свернуть
+        .companions__filter-users
+          h4.visually-hidden фильтрация по попутчикам
+          p.title-third.filter-users__title Подберите идеального попутчика
+          form.filter-users__users-form(action="https://echo.htmlacademy.ru" method="get")
+            +checkbox('хобби', 'hobby', filterUsers.hobby)
+            +checkbox('музыка', 'music', filterUsers.music)
+            +checkbox('еда', 'food', filterUsers.food)
+            +checkbox-without-name('транспорт', 'transport', filterUsers.transport)
+            fieldset.box-level.filter-users__box-level
+              label.box-level__heading-wrap
+                h3.title-third левел
+                .btn.box-level__btn
+                  svg
+              .box-level__value
+                .box-level__number
+                  label.box-level__min-level
+                    input.input(type="number" name="min-level" value="30" step="1")
+                  label.box-level__max-level
+                    input.input(type="number" name="max-level" value="100" step="1")
+                .box-level__line
+                  // main-line
+                  .box-level__active-line
+                  // active-line
+                  .box-level__toggle-min
+                  .box-level__toggle-max
+            button.btn.btn--form-round.btn--color-white.users-form__btn(type="submit") показать
+        .companions__users-wrap
+          each user in users.slice(0,4)
+            article.user-card
+              .user-card__row
+                .user-card__img-wrap
+                  img.user-card__img.user-card__img--type-avatar(src="#" alt="Фото попутчика")
+                  button.user-card__like-clicker
+                    svg
+                .user-card__name-wrap
+                  h3.title-third.user-card__name= user.name
+                  svg.user-status.user-card__user-status(class= user.status)
+                  input.user-card__like-counter(type="text" value= user.likes)
+              ul.tags.user-card__tags
+                each n in user.tags
+                  li.tags__item= "#" + n
+              .user-card__wishes-wrap
+                h5.title-fifth.user-card__title-fifth хочет посетить:
+                ul.wishes.user-card__wishes
+                  each n in user.wishes
+                    li.wishes__item= n
+                      img.wishes__country-flag(src="#" alt= "Флаг " + n)
+              .user-card__row
+                .user-card__moves-wrap
+                  h5.title-fifth.user-card__title-fifth транспорт:
+                  ul.moves.user-card__moves
+                    each n in user.moves
+                      li.moves__item
+                        span.visually-hidden= "Иконка " + n.name
+                        svg.moves__icon(class= n.condition?"moves__icon--active":null)
+                .user-card__skill-wrap
+                  h5.title-fifth.user-card__title-fifth левел:
+                  .user-card__skill
+                    svg.user-card__skill-graph
+                    .user-card__level-wrap
+                      span.user-card__level= user.skill
+              a.btn.user-card__btn.btn_form--round.btn_color--yellow(href="#") позвать!
+          a.btn.companions__btn(href="#") показать еще
+          .companions__clicker-wrap
+            a.btn-clicker(href="#")
+              svg
+            a.btn-clicker(href="#")
+              svg
