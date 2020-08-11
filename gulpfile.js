@@ -12,31 +12,22 @@ const swig = require('gulp-swig');
 const data = require('gulp-data');
 const fs = require('fs');
 
+// Styles
 
-function cleanSource(){
-	return del('./source');
+const styles = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(sync.stream());
 }
 
-function gulpSass(){
-	return gulp.src('./work/sass/main.scss')
-		.pipe(plumber({
-			errorHandler: notify.onError(function(err){
-				return{
-					title: 'Styles',
-					message: err.message
-				}
-			})
-		}))
-		.pipe(sourcemaps.init())
-		.pipe(sass())
-		.pipe(autoprefixer(
-			['last 3 versions'],
-			{cascade: false}
-		))
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('./source/css'))
-		.pipe(browserSync.stream());
-}
+exports.styles = styles;
 
 function gulpPug(){
 	return gulp.src('./work/pug/pages/*.pug')
@@ -67,27 +58,19 @@ function gulpPug(){
 		.pipe(browserSync.stream());
 }
 
-function copyJS(){
-	return gulp.src('./work/js/**/*.js')
-		.pipe(gulp.dest('./source/js'))
-		.pipe(browserSync.stream());
-}
-function copyLibs(){
-	return gulp.src('work/libs/**/*.*')
-		.pipe(gulp.dest('./source/libs'))
-		.pipe(browserSync.stream());
-}
-function copyImg(){
-	return gulp.src('work/img/**/*.*')
-		.pipe(gulp.dest('./source/img'))
-		.pipe(browserSync.stream());
+const server = (done) => {
+  sync.init({
+    server: {
+      baseDir: 'source'
+    },
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+  done();
 }
 
-function copyFonts(){
-	return gulp.src('work/fonts/**/*.*')
-		.pipe(gulp.dest('./source/fonts'))
-		.pipe(browserSync.stream());
-}
+exports.server = server;
 
 function gulpServer(){
 	browserSync.init({
