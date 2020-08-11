@@ -8,40 +8,40 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__inner-wrapper">
+        <div class="header__inner">
           <a class="logo header__logo" href="#">
             <img src="#" alt="Логотип компании" width="100" height="15">
           </a>
           <h1 class="header__title title-first">Попутчики</h1>
           <div class="header__menu-popup">
-            <button class="btn-close header__btn-close" type="button">
+            <button class="btn-cross header__btn-cross" type="button">
               <span class="visually-hidden">Скрыть шапку страницы</span>
             </button>
-            <nav class="main-nav header__main-nav">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="link main-nav__link" href="#">о сервисе</a>
+            <nav class="nav header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">о сервисе</a>
                 </li>
-                <li class="main-nav__item">
-                  <a class="link main-nav__link" href="./directions.html">направления</a>
+                <li class="nav__item">
+                  <a class="nav__link" href="./directions.html">направления</a>
                 </li>
-                <li class="main-nav__item">
-                  <a class="link main-nav__link" href="./companions.html">попутчики</a>
+                <li class="nav__item">
+                  <a class="nav__link" href="./companions.html">попутчики</a>
                 </li>
               </ul>
             </nav>
-            <div class="action-buttons menu-popup__action-buttons">
-              <a class="btn btn_form--round btn_color--yellow" href="#">авторизация</a>
-              <div class="contacts">
-                <div class="contacts__phone">
-                  <a class="contacts__call" href="tel:+78005558628">
+            <div class="action-buttons-row menu-popup__action-buttons-row">
+              <a class="btn btn--form-round btn--color-yellow" href="#">авторизация</a>
+              <div class="contacts contacts--col">
+                <div class="contacts__wrap">
+                  <a class="btn-contact" href="tel:+78005558628">
                     <svg></svg>
                     <span class="visually-hidden">Позвонить</span>
                   </a>
                   <span class="contacts__desc">8 800 555-86-28</span>
                 </div>
-                <div class="contacts__email">
-                  <a class="contacts__text" href="#">
+                <div class="contacts__wrap">
+                  <a class="btn-contact" href="#">
                     <svg></svg>
                     <span class="visually-hidden">Написать</span>
                   </a>
@@ -49,229 +49,228 @@
                 </div>
               </div>
             </div>
+            <div class="social header__social">
+              <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+              <a class="social__link" href="#">
+                <svg></svg>
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+              <a class="social__link" href="#">
+                <svg></svg>
+                <span class="visually-hidden">Facebook</span>
+              </a>
+              <a class="social__link" href="#">
+                <svg></svg>
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </div>
           </div>
           <button class="btn-menu header__btn-menu" type="button">
             <span class="visually-hidden">Открыть шапку страницы</span>
           </button>
-          <div class="social header__social">
-            <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-            <a class="social__link" href="#">
-              <svg></svg>
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-            <a class="social__link" href="#">
-              <svg></svg>
-              <span class="visually-hidden">Facebook</span>
-            </a>
-            <a class="social__link" href="#">
-              <svg></svg>
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </div>
         </div>
       </div>
     </header>
     <main class="main-companions">
       <div class="container">
-        <div class="main-companions__inner-wrapper">
-          <!-- FILTER-COUNTRY-->
-          <div class="companions__filter-countrys">
-            <div class="filter-countrys__row">
-              <span class="filter-countrys__hamburger"></span>
-              <h4 class="filter-countrys__title title-fourth">фильтрация по странам</h4>
-              <button class="btn-hamburger filter-countrys__btn-hamburger">
+        <div class="main-companions__inner">
+          <div class="companions__filter-countries">
+            <div class="filter-countries__row">
+              <span class="filter-countries__hamburger"></span>
+              <h4 class="filter-countries__title title-fourth">фильтрация по странам</h4>
+              <button class="btn-dots filter-countries__btn-dots">
                 <span class="visually-hidden">показать все</span>
               </button>
             </div>
-            <div class="countrys filter-countrys__countrys">
-              <form class="filter-countrys__countrys-form" action="https://echo.htmlacademy.ru" method="get">
-                <fieldset class="countrys__parts">
-                  <ul class="countrys__parts-list">
+            <div class="countries filter-countries__countrys">
+              <form class="filter-countries__countries-form" action="https://echo.htmlacademy.ru" method="get">
+                <button class="btn-cross header__btn-cross" type="button">
+                  <span class="visually-hidden">Скрыть фильтр стран</span>
+                </button>
+                <fieldset class="countries__parts">
+                  <ul class="countries__parts-list">
                     <li>
-                      <label class="countrys__parts-item">
+                      <label class="countries__parts-item">
                         <input name="parts" type="radio" value="европа">европа </label>
                     </li>
                     <li>
-                      <label class="countrys__parts-item">
+                      <label class="countries__parts-item">
                         <input name="parts" type="radio" value="азия">азия </label>
                     </li>
                     <li>
-                      <label class="countrys__parts-item">
+                      <label class="countries__parts-item">
                         <input name="parts" type="radio" value="америка">америка </label>
                     </li>
                     <li>
-                      <label class="countrys__parts-item">
+                      <label class="countries__parts-item">
                         <input name="parts" type="radio" value="острова">острова </label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="countrys__alphabet">
-                  <ul class="countrys__alphabet-list">
+                <fieldset class="countries__alphabet">
+                  <ul class="countries__alphabet-list">
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="а">а </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="б">б </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="в">в </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="г">г </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="д">д </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="е">е </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="з">з </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="и">и </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="к">к </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="л">л </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="м">м </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="о">о </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="п">п </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="р">р </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="с">с </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="т">т </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="у">у </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="ф">ф </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="х">х </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="ч">ч </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="ш">ш </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="э">э </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="ю">ю </label>
                     </li>
                     <li>
-                      <label class="countrys__alphabet-item">
+                      <label class="countries__alphabet-item">
                         <input name="alphabet" type="radio" value="я">я </label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="countrys__chosen">
-                  <ul class="countrys__chosen-list">
+                <fieldset class="countries__chosen">
+                  <ul class="countries__chosen-list">
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Австралия">Австралия </label>
                     </li>
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Австрия">Австрия </label>
                     </li>
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Азербайджан">Азербайджан </label>
                     </li>
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Албания">Албания </label>
                     </li>
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Алжир">Алжир </label>
                     </li>
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Ангола">Ангола </label>
                     </li>
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Андорра">Андорра </label>
                     </li>
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Антигуа и Барбуда">Антигуа и Барбуда </label>
                     </li>
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Аргентина">Аргентина </label>
                     </li>
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Армения">Армения </label>
                     </li>
                     <li>
-                      <label class="countrys__chosen-item">
+                      <label class="countries__chosen-item">
                         <input type="checkbox" value="Афганистан">Афганистан </label>
                     </li>
                   </ul>
                 </fieldset>
-                <div class="btn btn_form--round btn_color--blue countrys__btn">свернуть</div>
+                <button class="btn btn--form-round btn--color-blue countries__btn">свернуть</button>
               </form>
             </div>
           </div>
-          <!-- FILTER-COUNTRY //-->
-          <!-- FILTER-USERS-->
           <div class="companions__filter-users">
             <h4 class="visually-hidden">фильтрация по попутчикам</h4>
             <p class="title-third filter-users__title">Подберите идеального попутчика</p>
             <form class="filter-users__users-form" action="https://echo.htmlacademy.ru" method="get">
-              <!-- HOBBY-->
-              <fieldset class="filter-users__box">
-                <div class="box__heading-wrapper">
+              <fieldset class="box filter-users__box">
+                <label class="box__heading-wrap">
                   <h3 class="title-third">хобби</h3>
                   <div class="btn box__btn">
                     <svg></svg>
                   </div>
-                </div>
-                <ul class="box__value-wrapper">
+                </label>
+                <ul class="box__value-wrap">
                   <li>
                     <label class="box__option">
                       <input class="real-checkbox visually-hidden" name="hobby" type="checkbox" value="Спортзал" />
@@ -292,16 +291,14 @@
                   </li>
                 </ul>
               </fieldset>
-              <!-- HOBBY //-->
-              <!-- MUSIC-->
-              <fieldset class="filter-users__box">
-                <div class="box__heading-wrapper">
+              <fieldset class="box filter-users__box">
+                <label class="box__heading-wrap">
                   <h3 class="title-third">музыка</h3>
                   <div class="btn box__btn">
                     <svg></svg>
                   </div>
-                </div>
-                <ul class="box__value-wrapper">
+                </label>
+                <ul class="box__value-wrap">
                   <li>
                     <label class="box__option">
                       <input class="real-checkbox visually-hidden" name="music" type="checkbox" value="Тяжелый рок" />
@@ -322,16 +319,14 @@
                   </li>
                 </ul>
               </fieldset>
-              <!-- MUSIC //-->
-              <!-- FOOD-->
-              <fieldset class="filter-users__box">
-                <div class="box__heading-wrapper">
+              <fieldset class="box filter-users__box">
+                <label class="box__heading-wrap">
                   <h3 class="title-third">еда</h3>
                   <div class="btn box__btn">
                     <svg></svg>
                   </div>
-                </div>
-                <ul class="box__value-wrapper">
+                </label>
+                <ul class="box__value-wrap">
                   <li>
                     <label class="box__option">
                       <input class="real-checkbox visually-hidden" name="food" type="checkbox" value="Мясоед" />
@@ -352,16 +347,14 @@
                   </li>
                 </ul>
               </fieldset>
-              <!-- FOOD //-->
-              <!-- TRANSPORT-->
-              <fieldset class="filter-users__box">
-                <div class="box__heading-wrapper">
+              <fieldset class="box filter-users__box">
+                <div class="box__heading-wrap">
                   <h3 class="title-third">транспорт</h3>
                   <div class="btn box__btn">
                     <svg></svg>
                   </div>
                 </div>
-                <ul class="box__value-wrapper">
+                <ul class="box__value-wrap">
                   <li>
                     <label class="box__option">
                       <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Самолет" />
@@ -392,15 +385,13 @@
                   </li>
                 </ul>
               </fieldset>
-              <!-- TRANSPORT //-->
-              <!-- LEVEL-->
-              <fieldset class="filter-users__box-level">
-                <div class="box__heading-wrapper">
+              <fieldset class="box-level filter-users__box-level">
+                <label class="box-level__heading-wrap">
                   <h3 class="title-third">левел</h3>
-                  <div class="btn box__btn">
+                  <div class="btn box-level__btn">
                     <svg></svg>
                   </div>
-                </div>
+                </label>
                 <div class="box-level__value">
                   <div class="box-level__number">
                     <label class="box-level__min-level">
@@ -419,296 +410,296 @@
                   </div>
                 </div>
               </fieldset>
-              <!-- LEVEL //-->
-              <button class="btn btn_form--round btn_form--white users-form__btn" type="submit">показать</button>
+              <button class="btn btn--form-round btn--color-white users-form__btn" type="submit">показать</button>
             </form>
           </div>
-          <!-- FILTER-USERS //-->
-          <!-- USERS-->
-          <div class="companions__users-wrapper">
+          <div class="companions__users-wrap">
             <article class="user-card">
-              <div class="user-card__wrapper-row">
-                <div class="user-card__img-wrapper">
-                  <img class="user-card__img user-card__img_type--avatar" src="#" alt="Фото попутчика">
+              <div class="user-card__row">
+                <div class="user-card__img-wrap">
+                  <img class="user-card__img user-card__img--type-avatar" src="#" alt="Фото попутчика">
                   <button class="user-card__like-clicker">
                     <svg></svg>
                   </button>
                 </div>
-                <div class="user-card__name-wrapper">
-                  <h3 class="title-third user-card__name">userName</h3>
-                  <svg class="user-status user-card__user-status user-status--offline"></svg>
-                  <input class="user-card__like-counter" type="text" value="1,5M">
+                <div class="user-card__name-wrap">
+                  <h3 class="title-third user-card__name">Таня Фирсова</h3>
+                  <svg class="user-status user-card__user-status user--status-offline"></svg>
+                  <input class="user-card__like-counter" type="text" value="1500000">
                 </div>
               </div>
-              <ul class="tag-list user-card__tag-list">
-                <li class="tag-list__item">#ЗОЖ</li>
-                <li class="tag-list__item">#ПП</li>
-                <li class="tag-list__item">#Фитнес</li>
-                <li class="tag-list__item">#пляж</li>
-                <li class="tag-list__item">#авокадо</li>
-                <li class="tag-list__item">#смузи</li>
+              <ul class="tags user-card__tags">
+                <li class="tags__item">#ЗОЖ</li>
+                <li class="tags__item">#ПП</li>
+                <li class="tags__item">#Фитнес</li>
+                <li class="tags__item">#пляж</li>
+                <li class="tags__item">#авокадо</li>
+                <li class="tags__item">#смузи</li>
               </ul>
-              <div class="user-card__wish-list-wrapper">
+              <div class="user-card__wishes-wrap">
                 <h5 class="title-fifth user-card__title-fifth">хочет посетить:</h5>
-                <ul class="wish-list user-card__wish-list">
-                  <li class="wish-list__country-name">шри-ланка
-                    <img class="wish-list__country-flag" src="#" alt="Флаг шри-ланка">
+                <ul class="wishes user-card__wishes">
+                  <li class="wishes__item">шри-ланка
+                    <img class="wishes__country-flag" src="#" alt="Флаг шри-ланка">
                   </li>
-                  <li class="wish-list__country-name">тайланд
-                    <img class="wish-list__country-flag" src="#" alt="Флаг тайланд">
+                  <li class="wishes__item">тайланд
+                    <img class="wishes__country-flag" src="#" alt="Флаг тайланд">
                   </li>
-                  <li class="wish-list__country-name">сейшелы
-                    <img class="wish-list__country-flag" src="#" alt="Флаг сейшелы">
+                  <li class="wishes__item">сейшелы
+                    <img class="wishes__country-flag" src="#" alt="Флаг сейшелы">
                   </li>
                 </ul>
               </div>
-              <div class="user-card__wrapper-row">
-                <div class="user-card__move-list-wrapper">
+              <div class="user-card__row">
+                <div class="user-card__moves-wrap">
                   <h5 class="title-fifth user-card__title-fifth">транспорт:</h5>
-                  <ul class="move-list user-card__move-list">
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка самолета</span>
-                      <svg class="moves__icon moves__icon--fly"></svg>
+                  <ul class="moves user-card__moves">
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка самолет</span>
+                      <svg class="moves__icon moves__icon--active"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка автобуса</span>
-                      <svg class="moves__icon moves__icon--drive"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка автобус</span>
+                      <svg class="moves__icon"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка велосипеда</span>
-                      <svg class="moves__icon moves__icon--ride"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка велосипед</span>
+                      <svg class="moves__icon"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка бега</span>
-                      <svg class="moves__icon moves__icon--run"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка бег</span>
+                      <svg class="moves__icon"></svg>
                     </li>
                   </ul>
                 </div>
-                <div class="user-card__skill-wrapper">
+                <div class="user-card__skill-wrap">
                   <h5 class="title-fifth user-card__title-fifth">левел:</h5>
                   <div class="user-card__skill">
                     <svg class="user-card__skill-graph"></svg>
-                    <div class="user-card__level-wrapper">
+                    <div class="user-card__level-wrap">
                       <span class="user-card__level">99</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <button class="btn user-card__btn btn_form--round btn_color--yellow">позвать!</button>
+              <a class="btn user-card__btn btn_form--round btn_color--yellow" href="#">позвать!</a>
             </article>
             <article class="user-card">
-              <div class="user-card__wrapper-row">
-                <div class="user-card__img-wrapper">
-                  <img class="user-card__img user-card__img_type--avatar" src="#" alt="Фото попутчика">
+              <div class="user-card__row">
+                <div class="user-card__img-wrap">
+                  <img class="user-card__img user-card__img--type-avatar" src="#" alt="Фото попутчика">
                   <button class="user-card__like-clicker">
                     <svg></svg>
                   </button>
                 </div>
-                <div class="user-card__name-wrapper">
-                  <h3 class="title-third user-card__name">userName</h3>
-                  <svg class="user-status user-card__user-status user-status--online"></svg>
+                <div class="user-card__name-wrap">
+                  <h3 class="title-third user-card__name">Петя Демин</h3>
+                  <svg class="user-status user-card__user-status user--status-online"></svg>
                   <input class="user-card__like-counter" type="text" value="1500">
                 </div>
               </div>
-              <ul class="tag-list user-card__tag-list">
-                <li class="tag-list__item">#бургег</li>
-                <li class="tag-list__item">#бар</li>
-                <li class="tag-list__item">#футбол</li>
-                <li class="tag-list__item">#концерт</li>
-                <li class="tag-list__item">#крафт</li>
+              <ul class="tags user-card__tags">
+                <li class="tags__item">#бургег</li>
+                <li class="tags__item">#бар</li>
+                <li class="tags__item">#футбол</li>
+                <li class="tags__item">#концерт</li>
+                <li class="tags__item">#крафт</li>
               </ul>
-              <div class="user-card__wish-list-wrapper">
+              <div class="user-card__wishes-wrap">
                 <h5 class="title-fifth user-card__title-fifth">хочет посетить:</h5>
-                <ul class="wish-list user-card__wish-list">
-                  <li class="wish-list__country-name">бельгия
-                    <img class="wish-list__country-flag" src="#" alt="Флаг бельгия">
+                <ul class="wishes user-card__wishes">
+                  <li class="wishes__item">бельгия
+                    <img class="wishes__country-flag" src="#" alt="Флаг бельгия">
                   </li>
-                  <li class="wish-list__country-name">чехия
-                    <img class="wish-list__country-flag" src="#" alt="Флаг чехия">
+                  <li class="wishes__item">чехия
+                    <img class="wishes__country-flag" src="#" alt="Флаг чехия">
                   </li>
                 </ul>
               </div>
-              <div class="user-card__wrapper-row">
-                <div class="user-card__move-list-wrapper">
+              <div class="user-card__row">
+                <div class="user-card__moves-wrap">
                   <h5 class="title-fifth user-card__title-fifth">транспорт:</h5>
-                  <ul class="move-list user-card__move-list">
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка самолета</span>
-                      <svg class="moves__icon moves__icon--fly"></svg>
+                  <ul class="moves user-card__moves">
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка самолет</span>
+                      <svg class="moves__icon moves__icon--active"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка автобуса</span>
-                      <svg class="moves__icon moves__icon--drive"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка автобус</span>
+                      <svg class="moves__icon moves__icon--active"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка велосипеда</span>
-                      <svg class="moves__icon moves__icon--ride"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка велосипед</span>
+                      <svg class="moves__icon"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка бега</span>
-                      <svg class="moves__icon moves__icon--run"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка бег</span>
+                      <svg class="moves__icon moves__icon--active"></svg>
                     </li>
                   </ul>
                 </div>
-                <div class="user-card__skill-wrapper">
+                <div class="user-card__skill-wrap">
                   <h5 class="title-fifth user-card__title-fifth">левел:</h5>
                   <div class="user-card__skill">
                     <svg class="user-card__skill-graph"></svg>
-                    <div class="user-card__level-wrapper">
+                    <div class="user-card__level-wrap">
                       <span class="user-card__level">80</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <button class="btn user-card__btn btn_form--round btn_color--yellow">позвать!</button>
+              <a class="btn user-card__btn btn_form--round btn_color--yellow" href="#">позвать!</a>
             </article>
             <article class="user-card">
-              <div class="user-card__wrapper-row">
-                <div class="user-card__img-wrapper">
-                  <img class="user-card__img user-card__img_type--avatar" src="#" alt="Фото попутчика">
+              <div class="user-card__row">
+                <div class="user-card__img-wrap">
+                  <img class="user-card__img user-card__img--type-avatar" src="#" alt="Фото попутчика">
                   <button class="user-card__like-clicker">
                     <svg></svg>
                   </button>
                 </div>
-                <div class="user-card__name-wrapper">
-                  <h3 class="title-third user-card__name">userName</h3>
-                  <svg class="user-status user-card__user-status user-status--offline"></svg>
+                <div class="user-card__name-wrap">
+                  <h3 class="title-third user-card__name">Марк Смолов</h3>
+                  <svg class="user-status user-card__user-status user--status-offline"></svg>
                   <input class="user-card__like-counter" type="text" value="170">
                 </div>
               </div>
-              <ul class="tag-list user-card__tag-list">
-                <li class="tag-list__item">#рэп</li>
-                <li class="tag-list__item">#тату</li>
-                <li class="tag-list__item">#хайпбист</li>
-                <li class="tag-list__item">#кроссовки</li>
-                <li class="tag-list__item">#суприм</li>
+              <ul class="tags user-card__tags">
+                <li class="tags__item">#рэп</li>
+                <li class="tags__item">#тату</li>
+                <li class="tags__item">#хайпбист</li>
+                <li class="tags__item">#кроссовки</li>
+                <li class="tags__item">#суприм</li>
               </ul>
-              <div class="user-card__wish-list-wrapper">
+              <div class="user-card__wishes-wrap">
                 <h5 class="title-fifth user-card__title-fifth">хочет посетить:</h5>
-                <ul class="wish-list user-card__wish-list">
-                  <li class="wish-list__country-name">сша
-                    <img class="wish-list__country-flag" src="#" alt="Флаг сша">
+                <ul class="wishes user-card__wishes">
+                  <li class="wishes__item">сша
+                    <img class="wishes__country-flag" src="#" alt="Флаг сша">
                   </li>
-                  <li class="wish-list__country-name">австралия
-                    <img class="wish-list__country-flag" src="#" alt="Флаг австралия">
+                  <li class="wishes__item">австралия
+                    <img class="wishes__country-flag" src="#" alt="Флаг австралия">
                   </li>
-                  <li class="wish-list__country-name">доминикана
-                    <img class="wish-list__country-flag" src="#" alt="Флаг доминикана">
+                  <li class="wishes__item">доминикана
+                    <img class="wishes__country-flag" src="#" alt="Флаг доминикана">
                   </li>
                 </ul>
               </div>
-              <div class="user-card__wrapper-row">
-                <div class="user-card__move-list-wrapper">
+              <div class="user-card__row">
+                <div class="user-card__moves-wrap">
                   <h5 class="title-fifth user-card__title-fifth">транспорт:</h5>
-                  <ul class="move-list user-card__move-list">
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка самолета</span>
-                      <svg class="moves__icon moves__icon--fly"></svg>
+                  <ul class="moves user-card__moves">
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка самолет</span>
+                      <svg class="moves__icon moves__icon--active"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка автобуса</span>
-                      <svg class="moves__icon moves__icon--drive"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка автобус</span>
+                      <svg class="moves__icon"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка велосипеда</span>
-                      <svg class="moves__icon moves__icon--ride"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка велосипед</span>
+                      <svg class="moves__icon moves__icon--active"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка бега</span>
-                      <svg class="moves__icon moves__icon--run"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка бег</span>
+                      <svg class="moves__icon"></svg>
                     </li>
                   </ul>
                 </div>
-                <div class="user-card__skill-wrapper">
+                <div class="user-card__skill-wrap">
                   <h5 class="title-fifth user-card__title-fifth">левел:</h5>
                   <div class="user-card__skill">
                     <svg class="user-card__skill-graph"></svg>
-                    <div class="user-card__level-wrapper">
+                    <div class="user-card__level-wrap">
                       <span class="user-card__level">25</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <button class="btn user-card__btn btn_form--round btn_color--yellow">позвать!</button>
+              <a class="btn user-card__btn btn_form--round btn_color--yellow" href="#">позвать!</a>
             </article>
             <article class="user-card">
-              <div class="user-card__wrapper-row">
-                <div class="user-card__img-wrapper">
-                  <img class="user-card__img user-card__img_type--avatar" src="#" alt="Фото попутчика">
+              <div class="user-card__row">
+                <div class="user-card__img-wrap">
+                  <img class="user-card__img user-card__img--type-avatar" src="#" alt="Фото попутчика">
                   <button class="user-card__like-clicker">
                     <svg></svg>
                   </button>
                 </div>
-                <div class="user-card__name-wrapper">
-                  <h3 class="title-third user-card__name">userName</h3>
-                  <svg class="user-status user-card__user-status user-status--online"></svg>
+                <div class="user-card__name-wrap">
+                  <h3 class="title-third user-card__name">Лариса Роговая</h3>
+                  <svg class="user-status user-card__user-status user--status-online"></svg>
                   <input class="user-card__like-counter" type="text" value="23">
                 </div>
               </div>
-              <ul class="tag-list user-card__tag-list">
-                <li class="tag-list__item">#образование</li>
-                <li class="tag-list__item">#карьера</li>
-                <li class="tag-list__item">#учеба</li>
-                <li class="tag-list__item">#линкедин</li>
+              <ul class="tags user-card__tags">
+                <li class="tags__item">#образование</li>
+                <li class="tags__item">#карьера</li>
+                <li class="tags__item">#учеба</li>
+                <li class="tags__item">#линкедин</li>
               </ul>
-              <div class="user-card__wish-list-wrapper">
+              <div class="user-card__wishes-wrap">
                 <h5 class="title-fifth user-card__title-fifth">хочет посетить:</h5>
-                <ul class="wish-list user-card__wish-list">
-                  <li class="wish-list__country-name">великобритания
-                    <img class="wish-list__country-flag" src="#" alt="Флаг великобритания">
+                <ul class="wishes user-card__wishes">
+                  <li class="wishes__item">великобритания
+                    <img class="wishes__country-flag" src="#" alt="Флаг великобритания">
                   </li>
-                  <li class="wish-list__country-name">германия
-                    <img class="wish-list__country-flag" src="#" alt="Флаг германия">
+                  <li class="wishes__item">германия
+                    <img class="wishes__country-flag" src="#" alt="Флаг германия">
                   </li>
                 </ul>
               </div>
-              <div class="user-card__wrapper-row">
-                <div class="user-card__move-list-wrapper">
+              <div class="user-card__row">
+                <div class="user-card__moves-wrap">
                   <h5 class="title-fifth user-card__title-fifth">транспорт:</h5>
-                  <ul class="move-list user-card__move-list">
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка самолета</span>
-                      <svg class="moves__icon moves__icon--fly"></svg>
+                  <ul class="moves user-card__moves">
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка самолет</span>
+                      <svg class="moves__icon moves__icon--active"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка автобуса</span>
-                      <svg class="moves__icon moves__icon--drive"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка автобус</span>
+                      <svg class="moves__icon moves__icon--active"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка велосипеда</span>
-                      <svg class="moves__icon moves__icon--ride"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка велосипед</span>
+                      <svg class="moves__icon"></svg>
                     </li>
-                    <li class="move-list__item">
-                      <span class="visually-hidden">Иконка бега</span>
-                      <svg class="moves__icon moves__icon--run"></svg>
+                    <li class="moves__item">
+                      <span class="visually-hidden">Иконка бег</span>
+                      <svg class="moves__icon"></svg>
                     </li>
                   </ul>
                 </div>
-                <div class="user-card__skill-wrapper">
+                <div class="user-card__skill-wrap">
                   <h5 class="title-fifth user-card__title-fifth">левел:</h5>
                   <div class="user-card__skill">
                     <svg class="user-card__skill-graph"></svg>
-                    <div class="user-card__level-wrapper">
+                    <div class="user-card__level-wrap">
                       <span class="user-card__level">50</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <button class="btn user-card__btn btn_form--round btn_color--yellow">позвать!</button>
+              <a class="btn user-card__btn btn_form--round btn_color--yellow" href="#">позвать!</a>
             </article>
-            <button class="btn companions__button" type="submit">показать еще</button>
-            <div class="companions__clicker-wrapper">
-              <a class="clicker clicker--left companions__clicker" href="#"></a>
-              <a class="clicker clicker--right companions__clicker" href="#"></a>
+            <a class="btn companions__btn" href="#">показать еще</a>
+            <div class="companions__clicker-wrap">
+              <a class="btn-clicker" href="#">
+                <svg></svg>
+              </a>
+              <a class="btn-clicker" href="#">
+                <svg></svg>
+              </a>
             </div>
           </div>
-          <!-- USERS //-->
         </div>
       </div>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__inner-wrapper">
+        <div class="footer__inner">
           <a class="logo footer__logo" href="#">
             <img src="#" alt="Логотип сервиса" width="100" height="15">
           </a>
