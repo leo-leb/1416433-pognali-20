@@ -1,0 +1,34 @@
+.contacts{
+}
+
+.contacts--row{
+  display: flex;
+}
+
+.contacts__wrap{
+  display: flex;
+}
+
+.btn-contact{
+  display: block;
+  width: 40px; // ВРЕМЕННО
+  height: 40px; // ВРЕМЕННО
+
+  background-color: gray; // ВРЕМЕННО
+  border: 1px solid red; // ВРЕМЕННО
+  border-radius: 50%;
+}
+
+.contacts--col .btn-contact{
+  margin-right: 16px;
+}
+
+.contacts svg{
+  display: none; // ВРЕМЕННО
+}
+
+.contacts__desc{
+  @include font(700, normal);
+  @include font-size(16px, 40px);
+  text-transform: uppercase;
+}

@@ -5,6 +5,5 @@ mixin input-number(title, unit, amount)
       span.step-first__unit= unit
     .step-first__stepper
       input.step-first__input(type="number" min="0" max="100" step="1" value= amount autofocus)
-      .step-first__stepper-controls
-        button.btn-stepper.btn-stepper--right +
-        button.btn-stepper.btn-stepper--left -
+      button.btn-stepper.btn-stepper--right +
+      button.btn-stepper.btn-stepper--left -

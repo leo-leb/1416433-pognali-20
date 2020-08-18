@@ -1,0 +1,69 @@
+// ENVIRONMENT
+
+@mixin environment-blue ($background: $blue-high, $color: $white-middle){
+  background-color: $background;
+  color: $color;
+}
+
+@mixin environment-white-dirty ($background: $white-dirty, $color: $black-low){
+  background-color: $white-dirty;
+  color: $black-low;
+}
+
+@mixin environment-white ($background: $white-dirty, $color: $black-low){
+  background-color: $white-middle;
+  color: $black-low;
+}
+
+@mixin environment-white-alt ($background: $white-dirty, $color: $black-low){
+  background-color: $white-middle;
+  color: $blue-middle;
+}
+
+@mixin environment-yellow ($background: $yellow-low, $color: $blue-middle){
+  background-color: $yellow-low;
+  color: $blue-middle;
+}
+
+// SHAPES
+
+@mixin shape-bottom ($radius: 30px){
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+@mixin shape-top ($radius: 30px){
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+// TITLES
+
+// @mixin title-second-index (){
+//   margin: 0;
+//   margin-top: 72px;
+//   margin-bottom: 19px;
+// }
+
+// POSITION
+
+@mixin zero-centered() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+// FONTS
+
+@mixin font($weight: "400", $style: "normal") {
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin font-size($size: "16px", $height: "1") {
+  font-size: $size;
+  line-height: $height;
+}

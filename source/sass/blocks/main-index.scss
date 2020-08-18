@@ -1,0 +1,46 @@
+.main-index{
+  position: relative;
+	min-width: 320px;
+  margin: 0 auto;
+}
+
+.main-index__about{
+  z-index: 7;
+  @include shape-bottom;
+}
+
+.main-index__directions{
+  transform: translateY(-30px);
+  z-index: 6;
+  @include shape-bottom;
+}
+
+.main-index__companions{
+  transform: translateY(-60px);
+  z-index: 5;
+  @include shape-bottom;
+}
+
+.main-index__advertising{
+  transform: translateY(-90px);
+  z-index: 4;
+  @include shape-bottom;
+}
+
+.main-index__check-in{
+  transform: translateY(-120px);
+  z-index: 3;
+  @include shape-bottom;
+}
+
+.main-index__adress{
+  transform: translateY(-150px);
+  z-index: 2;
+  @include shape-bottom;
+}
+
+.main-index__map{
+  transform: translateY(-180px);
+  height: 310px;
+  background-color: gray;
+}

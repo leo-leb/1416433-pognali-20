@@ -2,7 +2,7 @@ mixin checkbox-without-title(name, massive)
   fieldset(class= "step-first__" + name)
     ul(class= "step-first__" + name + "-list")
       each n in massive
-        li
+        li(class= "step-first__" + name + "-item")
           label(class= "step-first__" + name + "-item")
             input.real-checkbox.visually-hidden(name= name type="checkbox" value= n)
             span.custom-checkbox

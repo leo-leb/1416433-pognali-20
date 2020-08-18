@@ -3,11 +3,11 @@ mixin checkbox(title, name, massive)
     label.box__heading-wrap
       h3.title-third= title
       .btn.box__btn
-        svg
-    ul.box__value-wrap
+        img(src="../../img/triangle-arrow-right.svg" width="10" height="7")
+    ul.box__value-list
       each n in massive
-        li
+        li.box__value-item
           label.box__option
-            input.real-checkbox.visually-hidden(name= name type="checkbox" value= n)
+            input.real-checkbox(name= name type="checkbox" value= n)
             span.custom-checkbox
             = n

@@ -1,0 +1,37 @@
+.main-directions{
+  position: relative;
+	min-width: 320px;
+  margin: 0 auto;
+}
+
+.main-directions__user-box{
+  transform: translateY(-30px);
+}
+
+.main-directions__plans-actual{
+  z-index: 2;
+  @include shape-top;
+  transform: translateY(-60px);
+}
+
+.main-directions__plans-create{
+  z-index: 3;
+  @include shape-top;
+  transform: translateY(-90px);
+}
+
+.main-directions + .footer{
+  transform: translateY(-120px);
+}
+
+.user-box__btn{
+  margin-bottom: 25px;
+}
+
+.user-box__tags-wrap{
+  margin-bottom: 18px;
+}
+
+.plans-actual__title-second{
+  margin-bottom: 25px;
+}

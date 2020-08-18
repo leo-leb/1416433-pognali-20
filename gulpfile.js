@@ -16,7 +16,7 @@ function cleanSource(){
   return del('./source');
 }
 
-function gulpSass(){
+function styles(){
   return gulp.src('./work/sass/style.scss')
     .pipe(plumber({
       errorHandler: notify.onError(function(err){
@@ -35,6 +35,8 @@ function gulpSass(){
     .pipe(gulp.dest('./source/css'))
     .pipe(browserSync.stream());
 }
+
+exports.styles = styles;
 
 function gulpPug(){
   return gulp.src('./work/pug/pages/*.pug')
@@ -89,8 +91,13 @@ function copyFonts(){
     .pipe(gulp.dest('./source/fonts'))
     .pipe(browserSync.stream());
 }
+function copyNormalize(){
+  return gulp.src('work/normalize.css')
+    .pipe(gulp.dest('./source/css'))
+    .pipe(browserSync.stream());
+}
 
-function gulpServer(){
+function server(){
   browserSync.init({
     server: {
       baseDir: './source/'
@@ -101,13 +108,16 @@ function gulpServer(){
   })
 }
 
-function gulpWatch(){
+exports.server = server;
+
+function watcher(){
   gulp.watch('work/pug/**/*.pug', gulpPug);
-  gulp.watch('work/sass/**/*.scss', gulpSass);
+  gulp.watch('work/sass/**/*.scss', styles);
+  gulp.watch('work/sass/**/*.*', copySass);
   gulp.watch('work/js/**/*.js', copyJS);
   gulp.watch('work/libs/**/*.*', copyLibs);
   gulp.watch('work/img/**/*.*', copyImg);
   gulp.watch('work/fonts/**/*.*', copyFonts);
 }
 
-gulp.task('default', gulp.series(cleanSource, gulpSass, gulpPug, gulp.parallel(copyJS, copySass, copyLibs, copyImg, copyFonts), gulp.parallel(gulpServer, gulpWatch)));
+gulp.task('default', gulp.series(cleanSource, styles, gulpPug, gulp.parallel(copyJS, copySass, copyLibs, copyImg, copyFonts, copyNormalize), gulp.parallel(server, watcher)));

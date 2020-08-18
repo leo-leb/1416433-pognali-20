@@ -1,0 +1,350 @@
+.plans-create{
+  position: relative;
+
+  padding-top: 30px;
+  padding-bottom: 73px;
+
+  background-color: $main-bg-third;
+}
+
+.step-first,
+.step-second,
+.step-third{
+  margin-bottom: 10px;
+  padding: 23px 0;
+  border-radius: 10px;
+  @include environment-white-alt;
+}
+
+.step-third{
+  margin-bottom: 0;
+}
+
+.plans-create .title-sixth{
+  margin: 0;
+}
+
+.step-first__clicker,
+.step-first__additional,
+.step-first__month {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+// STEP-FIRST
+
+.step-first__clicker{
+  margin-bottom: 20px;
+}
+
+.step-first__clicker-wrap{
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  @include font(500, normal);
+  text-transform: uppercase;
+}
+
+.step-first__unit{
+  color: $black-middle;
+  opacity: 0.3;
+}
+
+.step-first__title{
+  margin: 0;
+}
+
+.step-first__stepper{
+  display: flex;
+}
+
+.btn-stepper--left{
+  order: 1;
+}
+
+.step-first__input{
+  order: 2;
+  flex-grow: 1;
+}
+
+.btn-stepper--right{
+  order: 3;
+}
+
+.step-first__additional{
+  margin-bottom: 24px;
+}
+
+.step-first__additional-list{
+  margin: 0;
+  padding: 0;
+}
+
+.step-first__additional-item{
+  list-style-type: none;
+}
+
+.month{
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.month input{
+  display: inline-block;
+  height: 42px;
+}
+
+.btn-stepper{
+  height: 42px;
+  width: 20px;
+}
+
+.step-first__calendar{
+  margin-bottom: 22px;
+}
+
+.day{
+  display: grid;
+  grid-template-columns: 32px 32px 32px 32px 32px 32px 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.day__item{
+  width: 32px;
+  line-height: 32px;
+  list-style-type: none;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.date{
+  display: grid;
+  grid-template-columns: 32px 32px 32px 32px 32px 32px 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.date__item{
+  width: 32px;
+
+  border: 1px solid #000;
+  border-top: none;
+
+  line-height: 32px;
+  list-style-type: none;
+  text-align: center;
+
+  &:not(:nth-child(7n)){
+    border-right: none;
+  };
+}
+
+// STEP-SECOND
+
+.box-country-wrap{
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.box-country{
+  display: flex;
+  position: relative;
+}
+
+.box-country__wrap{
+  position: relative;
+  border: 1px solid $gray-light;
+  border-radius: 4px;
+  height: 42px;
+}
+
+.box-country__desc{
+  display: inline-block;
+  height: 100%;
+  line-height: 42px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.box-country__btn{
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+
+  width: 16px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+
+.box-country__btn img{
+  transform: rotate(90deg);
+}
+
+.box-country__status{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(60%, -50%);
+  z-index: 1;
+
+
+  width: 8px;
+  height: 8px;
+  border: 1px solid $gray-light;
+  border-radius: 50%;
+
+  background-color: inherit;
+}
+
+.box-country__status--active{
+  border: none;
+  background-color: $blue-middle;
+}
+
+.box-country__flag{
+  @include zero-centered;
+}
+
+.box-country__wrap--size-l{
+  width: 100%;
+  padding-right: 53px;
+  padding-left: 11px;
+}
+
+.box-country__wrap--size-l .box-country__status{
+  right: 53px;
+  transform: translate(60%, -50%);
+}
+
+.box-country__wrap--size-l .box-country__btn{
+  right: 13px;
+}
+
+.box-country__wrap--size-m{
+  width: 168px;
+  padding-right: 33px;
+  padding-left: 11px;
+}
+
+.box-country__wrap--size-s{
+  width: 53px;
+}
+
+.box-country .btn-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+
+  width: 10px;
+  height: 10px;
+  border: none;
+
+  background-color: black;
+}
+
+.box-country__arrow{
+  position: absolute;
+  bottom: -21px;
+  right: 53px;
+  transform: translateX(40%);
+}
+
+.box-country--add{
+  margin-bottom: 25px;
+
+  background-color: $white-dirty;
+}
+
+
+
+// FILTER
+
+.box-country__filter{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  width: 100%;
+}
+
+.countries__alphabet,
+.countries__chosen,
+.countries__alphabet-list,
+.countries__chosen-list{
+  margin: 0;
+  padding: 0;
+}
+
+.countries__alphabet{
+  border: 1px solid $gray-light;
+  border-bottom: none;
+}
+
+.countries__chosen{
+  border: 1px solid $gray-light;
+}
+
+.countries__alphabet-item,
+.countries__chosen-item{
+  list-style-type: none;
+}
+
+// STEP-THIRD
+
+.step-third__country-plan-card:not(:last-child){
+  margin-bottom: 23px;
+}
+
+.country-plan-card__row{
+  display: flex;
+  justify-content: space-between;
+
+  height: 24px;
+  margin-bottom: 14px;
+  padding-left: 10px;
+}
+
+.country-plan-card__name{
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 100%;
+
+  line-height: 24px;
+}
+
+.country-plan-card__desc{
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid $black-light;
+}
+
+.plans-create__btn{
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn--form{
+  width: 100%;
+}
+
+.plans-create__btn--back{
+  margin-top: 13px;
+  line-height: 1;
+}
+
+// COMMON
+
+.plans-create__description{
+  color: $black-low;
+}

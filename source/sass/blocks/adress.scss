@@ -1,0 +1,49 @@
+.adress{
+  position: relative;
+
+  padding-top: 48px;
+  padding-bottom: 47px;
+
+  @include environment-yellow;
+}
+
+.adress__desc-wrapper{
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.adress__btn{
+  border: 3px solid $blue-high;
+  line-height: 56px;
+}
+
+.adress__icon{
+  position: relative;
+
+  display: inline-block;
+
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+  border-radius: 50%;
+
+  background-color: $blue-high;
+}
+
+.adress__icon svg{
+  @include zero-centered;
+
+  width: 15.75px;
+  height: 21px;
+
+  color: $yellow-low;
+}
+
+.adress__adress{
+  margin: 0;
+
+  @include font(700, normal);
+  @include font-size(16px, 22px);
+  text-transform: uppercase;
+  white-space: break-spaces;
+}

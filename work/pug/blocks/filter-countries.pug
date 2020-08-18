@@ -1,14 +1,14 @@
 fieldset.countries__alphabet
   ul.countries__alphabet-list
     each n in filterCountries.alphabet
-      li
-        label.countries__alphabet-item
+      li.countries__alphabet-item
+        label.countries__alphabet-desc
           input(name="alphabet" type="radio" value= n)
           = n
 fieldset.countries__chosen
   ul.countries__chosen-list
     each n in filterCountries.a
-      li
-        label.countries__chosen-item
+      li.countries__chosen-item
+        label.countries__chosen-desc
           input(name= name type="checkbox" value= n)
           = n

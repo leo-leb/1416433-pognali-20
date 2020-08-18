@@ -1,14 +1,15 @@
 block variables
 
 article(class= stepClass + ' plans-create__' + stepClass)
-  p.title-sixth.plans-create__title-sixth= 'Шаг ' + stepNumber + '.'
-  h6.title-sixth.plans-create__title-sixth= stepName
-  p.plans-create__description= stepDesc
-  block content
-  if stepLast
-    button.btn.btn--form-round.btn--color-yellow.plans-create__btn(type="submit") отправить
-  else
-    a.btn.btn--form-round.btn--color-yellow.plans-create__btn(href="#") следующий шаг
-  if stepFirst
-  else
-    a.btn.plans-create__btn(href="#") на шаг назад
+  .container-inner
+    p.title-sixth.plans-create__title-sixth= 'Шаг ' + stepNumber + '.'
+    h6.title-sixth.plans-create__title-sixth= stepName
+    p.plans-create__description= stepDesc
+    block content
+    if stepLast
+      button.btn.btn--form-round.btn--color-back-yellow.btn--font-18-bold.btn--color-font-blue-middle.btn--form.plans-create__btn(type="submit") отправить
+    else
+      a.btn.btn--form-round.btn--color-back-yellow.btn--font-18-bold.btn--color-font-blue-middle.plans-create__btn(href="#") следующий шаг
+    if stepFirst
+    else
+      a.btn.plans-create__btn.btn--font-18-bold.btn--color-font-blue-middle.plans-create__btn--back(href="#") на шаг назад

@@ -1,0 +1,163 @@
+.header{
+  min-width: 320px;
+  // height: 762px;
+  padding-top: 27px;
+
+  background-color: $blue-dark;
+  color: $white-middle;
+}
+
+.header--full{
+  position: relative;
+  // z-index: -1;
+
+  &::before,
+  &::after{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-285px);
+    // z-index: -1;
+    content: "";
+    display: none;
+  }
+
+  &::before{
+    width: 100%;
+    height: 478px;
+
+    background-image: url(../../img/globe-back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  };
+
+  &::after{
+    left: 54px;
+
+    width: 192px;
+    height: 255px;
+
+    background-image: url(../../img/traveller-illustration-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.header--short{
+  @include environment-blue;
+}
+
+.header__row{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 26px;
+}
+
+.header__moto{
+  height: 118px;
+  margin: 0;
+  margin-top: 52px;
+  margin-bottom: 313px;
+
+  @include font(700, normal);
+  @include font-size(36px, 40px);
+  white-space: break-spaces;
+  text-align: center;
+}
+
+.header__review{
+  width: 72.525%;
+  padding-bottom: 109px;
+}
+
+.header__review .paragraph:first-child{
+  margin-bottom: 18px;
+}
+
+// .header__btn-menu{
+//   position: absolute;
+//   top: 26px;
+//   right: 26px;
+// }
+
+// MENU-POPUP
+
+.header__menu-popup{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  width: 100%;
+  height: 569px;
+  padding-top: 27px;
+  padding-bottom: 41px;
+  border: 1px solid red; // ВРЕМЕННО
+
+  background-color: $white-middle;
+}
+
+// .header__btn-cross{
+//   position: absolute;
+//   top: 25px;
+//   right: 28px;
+// }
+
+.header__nav{
+  margin-top: 76px;
+  margin-bottom: 51px;
+}
+
+.nav__list{
+  margin: 0;
+  padding: 0;
+
+  @include font(500, normal);
+  @include font-size(30px, 35px);
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav__link{
+  color: $blue-high;
+}
+
+// ACTION-BUTTON'S
+
+.row-row{
+  position: relative;
+}
+
+.header__action-buttons-row{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(363px);
+
+  display: flex;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__action-buttons-col{
+  margin-bottom: 41px;
+  color: $blue-high;
+}
+
+.header__action-buttons-col .btn,
+.header__action-buttons-row .btn {
+  flex-grow: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__action-buttons-col .btn{
+  margin-bottom: 51px;
+  line-height: 50px;
+}
+
+.header__action-buttons-row .btn{
+  line-height: 40px;
+}

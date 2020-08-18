@@ -1,0 +1,25 @@
+.directions{
+  position: relative;
+
+  padding-top: 89px;
+  padding-bottom: 46px;
+
+  @include environment-white-dirty;
+}
+
+.directions__title-second{
+  margin-bottom: 19px;
+}
+
+.directions__countries-wrap{
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.country-card:not(:last-child){
+  margin-bottom: 9px;
+}
+
+.directions__btn{
+  line-height: 61px;
+}

@@ -1,0 +1,56 @@
+.plans-actual{
+  position: relative;
+
+  padding-top: 28px;
+  padding-bottom: 60px;
+
+  background-color: $main-bg-second;
+}
+
+.plans-actual__list{
+  margin: 0;
+  padding: 0;
+}
+
+.plans-actual__item{
+  padding: 23px 0;
+  border-radius: 10px;
+  @include environment-white-alt;
+  list-style-type: none;
+
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+
+.plans-actual__name{
+  margin: 0;
+  margin-bottom: 20px;
+  @include font(700, normal);
+  @include font-size;
+}
+
+.plans-actual__desc-wrap{
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  @include font(500, normal);
+  @include font-size(14px, 14px);
+}
+
+.plans-actual__desc{
+  margin: 0;
+
+  &:not(:last-child){
+    margin-bottom: 3px;
+  }
+}
+
+.plans-actual__item .btn{
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0;
+  @include font(500, normal);
+  @include font-size(14px, 14px);
+  color: $black-middle;
+  opacity: 0.3;
+}
