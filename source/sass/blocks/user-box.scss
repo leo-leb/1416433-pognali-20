@@ -15,48 +15,9 @@
   padding-bottom: 18px;
 }
 
-.user-box__img-avatar{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 1px solid red;
-
-  background-image: url(../../img/demin-tablet@1x.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .user-box__skill {
-  position: relative;
-  top: 0;
-  left: 0;
-
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  border: 1px solid red;
-
-  background-color: gray;
-  text-align: center;
-}
-
-.user-box__level{
-  @include font(700, normal);
-  @include font-size(38px, 38px);
-}
-
-.user-box__unit{
-  margin: 0;
-  @include font;
-  @include font-size(18px, 18px);
-}
-
-.user-box .btn{
-  @include font(500, normal);
-  @include font-size(20px, 40px)
-  background-color: $blue-light-two;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .user-box__tags-wrap,
@@ -77,5 +38,13 @@
   padding: 0 18px;
 
   background-color: $main-bg-first;
+  text-align: center;
+}
+
+.user-box .btn{
+  @include font(500, normal);
+  @include font-size(20px, 40px);
+  background-color: $blue-light-two;
+  text-transform: uppercase;
   text-align: center;
 }

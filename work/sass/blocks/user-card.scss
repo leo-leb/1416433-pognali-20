@@ -1,58 +1,39 @@
-.user-card{
-  position: relative;
-  border-radius: 10px;
-  @include environment-white;
-  text-align: center;
+.user-img-bg{
+  display: block;
+  height: 270px;
+  @include shape-top(10px);
+
+  background-image: url(../../img/demin-desktop@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.user-card__info{
-  position: relative;
+.user-img-avatar{
+  border-radius: 50%;
+  border: 1px solid red;
 
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 20px;
-  @include shape-bottom(10px);
-
-  background-color: $white-middle;
-  color: $black-low;
+  background-image: url(../../img/demin-tablet@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.wishes{
-  display: flex;
+.user-img-avatar--small{
+  width: 70px;
+  height: 70px;
+}
 
+.user-img-avatar--big{
+  width: 100px;
+  height: 100px;
+}
+
+.user-name{
   margin: 0;
-  padding: 0;
-
-  list-style-type: none;
+  @include font(700, normal);
+  @include font-size(21px, 21px);
 }
 
-.user-card__wishes{
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.wishes__item{
-
-  &:not(:last-child){
-    margin-right: 20px;
-  }
-}
-
-.user-card__name-wrap{
-  position: relative;
-  display: inline-block;
-  margin-bottom: 15px;
-  color: $blue-middle;
-}
-
-.user-card__user-status{
-  position: absolute;
-  top: 50%;
-  left: -16px;
-  transform: translateY(-50%);
-
+.user-status{
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -64,11 +45,6 @@
 
 .user--status-online{
   background-color: $status-online;
-}
-
-.user-card__tags{
-  margin: 0;
-  margin-bottom: 14px;
 }
 
 .tags{
@@ -91,174 +67,17 @@
   }
 }
 
-.user-card__moves{
-  margin: 0;
-}
-
-.moves{
+.wishes{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
+  margin: 0;
   padding: 0;
 
   list-style-type: none;
 }
 
-.moves__item{ // ВРЕМЕННО
-  width: 20px;
-  height: 20px;
-  background-color: gray;
-
-  &:not(:last-child){
-    margin-right: 13px;
-  }
-}
-
-.user-card__skill{
-  position: absolute;
-  top: 10px;
-  left: 20px;
-
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-
-  background-color: gray;
-  text-align: center;
-}
-
-.user-card__level{
-  @include font(700, normal);
-  @include font-size(24px, 24px);
-}
-
-.user-card__unit{
-  margin: 0;
-  @include font;
-  @include font-size(14px, 14px);
-}
-
-.user-card__img-bg{
-  display: block;
-  height: 270px;
-  @include shape-top(10px);
-
-  background-image: url(../../img/demin-desktop@1x.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.user-card__name{
-  margin: 0;
-  @include font(700, normal);
-  @include font-size(21px, 21px);
-}
-
-// USER-CARD-FULL
-
-.user-card--full{
-  padding-top: 15px;
-  padding-bottom: 22px;
-  text-align: left;
-
-  & .user-card__name-wrap{
-    position: relative;
-    display: inline;
-  }
-
-  & .user-card__user-status{
-    position: absolute;
-    top: 8px;
-    left: 100%;
-    transform: none;
-  }
-
-  & .tags{
-    justify-content: flex-start;
-  }
-
-  & .use-card__tags{
-    margin-bottom: 15px;
-  }
-
-  & .user-card__wishes-wrap{
-    position: relative;
-    padding: 20px 0;
-    border-top: 1px solid $white-dirty;
-    border-bottom: 1px solid $white-dirty;
-  }
-
-  & .user-card__wishes{
-    position: relative;
-    left: 0;
-    transform: none;
-  }
-
-  & .wishes{
-    flex-direction: column;
-  }
-
-  & .wishes__item{
-    display: flex;
-    margin-right: 0;
-
-    &:not(:last-child){
-      margin-bottom: 10px;
-    }
-  }
-
-  & .user-card__skill{
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-
-  & .user-card__level{
-    @include font(700, normal);
-    @include font-size(24px, 24px);
-  }
-
-  & .user-card__unit{
-    @include font;
-    @include font-size(14px, 14px);
-  }
-
-  & .user-card__btn{
-    line-height: 40px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-}
-
-.user-card__row{
-  position: relative;
-
-  display: inline-flex;
-  justify-content: flex-start;
-
-  margin-bottom: 13px;
-}
-
-.user-card__row-alt{
-  position: relative;
+.wishes__item{
   display: flex;
-  justify-content: space-between;
-
-  padding-top: 17px;
-  padding-bottom: 13px;
-}
-
-.user-card__img-avatar{
-  width: 70px;
-  height: 70px;
-  margin-right: 16px;
-  border-radius: 50%;
-  border: 1px solid red;
-
-  background-image: url(../../img/demin-tablet@1x.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .wishes__country-name{
@@ -269,8 +88,230 @@
   @include font-size(15px, 24px);
 }
 
-.user-card__title-fifth{
+.moves{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.moves__item{
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+
+  &:not(:last-child){
+    margin-right: 13px;
+  }
+}
+
+.skill{
+  border-radius: 50%;
+  border: 1px solid red;
+
+  background-color: gray;
+  text-align: center;
+}
+
+.skill__level{
+  @include font(700, normal);
+}
+
+.skill__level--small{
+  @include font-size(24px, 24px);
+}
+
+.skill__level--big{
+  @include font-size(38px, 38px);
+}
+
+.skill__unit{
+  margin: 0;
+  @include font;
+}
+
+.skill__unit--small{
+  @include font-size(14px, 14px);
+}
+
+.skill__unit--big{
+  @include font-size(18px, 18px);
+}
+
+// USER_CARD_SHORT
+
+.user-card-short{
+  position: relative;
+
+  border-radius: 10px;
+
+  @include environment-white;
+  text-align: center;
+
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+
+.user-card-short__info{
+  position: relative;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 20px;
+  @include shape-bottom(10px);
+
+  background-color: $white-middle;
+  color: $black-low;
+}
+
+.user-card-short__name-wrap{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: $blue-middle;
+}
+
+.user-card-short__user-status{
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  transform: translateY(-50%);
+}
+
+.user-card-short__tags{
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.user-card-short__wishes{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-card-short__wishes .wishes__item:not(:last-child){
+  margin-right: 20px;
+}
+
+.user-card-short__skill{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+  width: 60px;
+  height: 60px;
+}
+
+// USER_CARD_FULL
+
+.user-card-full{
+  position: relative;
+
+  padding-top: 15px;
+  padding-bottom: 22px;
+  border-radius: 10px;
+
+  @include environment-white;
+  text-align: left;
+
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+
+.user-card-full__user-img-avatar{
+  margin-right: 16px;
+}
+
+.user-card-full__name-wrap{
+  position: relative;
+  flex-grow: 1;
+  color: $blue-middle;
+}
+
+.user-card-full__user-status{
+  position: absolute;
+  top: 8px;
+  left: 100%;
+}
+
+.user-card-full__tags {
+  margin-bottom: 15px;
+  justify-content: flex-start;
+}
+
+.user-card-full__wishes-wrap{
+  position: relative;
+  padding: 20px 0;
+  border-top: 1px solid $white-dirty;
+  border-bottom: 1px solid $white-dirty;
+}
+
+.user-card-full__wishes{
+  flex-direction: column;
+}
+
+.user-card-full__title-fifth{
   position: absolute;
   top: 0;
   transform: translateY(-50%);
+}
+
+.user-card-full__wishes .wishes__item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.user-card-full__wishes-wrap{
+  position: relative;
+  padding: 20px 0;
+  border-top: 1px solid $white-dirty;
+  border-bottom: 1px solid $white-dirty;
+}
+
+.user-card-full__row{
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+
+  margin-bottom: 13px;
+}
+
+.user-card-full__row-alt{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.user-card-full__moves{
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin: 0;
+}
+
+.user-card-full__skill{
+  width: 45px;
+  height: 45px;
+}
+
+.user-card-full__title-fifth{
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.user-card-full__btn{
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
 }

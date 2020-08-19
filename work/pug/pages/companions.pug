@@ -62,39 +62,38 @@ block content
               button.btn.btn--form-round.btn--color-font-blue-dark.btn--color-back-white.users-form__btn(type="submit") показать
         .companions__users-wrap
           each user in users.slice(0,4)
-            article.user-card.user-card--full
+            article.user-card-full
               .container-inner
-                .user-card__row
-                  .user-card__img-avatar
-                  .user-card__name-wrap
-                    p.user-card__name= user.name
-                    svg.user-status.user-card__user-status(class= user.status)
+                .user-card-full__row
+                  .user-img-avatar.user-card-full__user-img-avatar.user-img-avatar--small
+                  .user-card-full__name-wrap
+                    p.user-name= user.firstname
+                    p.user-name= user.lastname
+                    svg.user-status.user-card-full__user-status(class= user.status)
                     //- input.user-card__like-counter(type="text" value= user.likes)
-                ul.tags.user-card__tags
+                ul.tags.user-card-full__tags
                   each n in user.tags
                     li.tags__item= "#" + n
-                .user-card__wishes-wrap
-                  h5.title-fifth.user-card__title-fifth хочет посетить:
-                  ul.wishes.user-card__wishes
+                .user-card-full__wishes-wrap
+                  h5.title-fifth.user-card-full__title-fifth хочет посетить:
+                  ul.wishes.user-card-full__wishes
                     each n in user.wishes
                       li.wishes__item
                         img.wishes__country-flag(src="../../img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
                         p.wishes__country-name= n
-                .user-card__row-alt
-                  .user-card__moves-wrap
-                    h5.title-fifth.user-card__title-fifth транспорт:
-                    ul.moves.user-card__moves
+                .user-card-full__row-alt
+                  .user-card-full__moves-wrap
+                    h5.title-fifth.user-card-full__title-fifth транспорт:
+                    ul.moves.user-card-full__moves
                       each n in user.moves
                         li.moves__item
                           span.visually-hidden= "Иконка " + n.name
                           //- svg.moves__icon(class= n.condition?"moves__icon--active":null)
-                  .user-card__skill-wrap
-                    h5.title-fifth.user-card__title-fifth левел:
-                    .user-card__skill
-                      //- svg.user-card__skill-graph
-                      .user-card__level-wrap
-                        span.user-card__level= user.skill
-                a.btn.user-card__btn.btn--form-round.btn--color-back-yellow.btn--color-font-blue-dark.btn--font-17-bold(href="#") позвать!
+                  .skill.user-card-full__skill
+                    h5.title-fifth.user-card-full__title-fifth левел:
+                    .skill__level-wrap
+                      span.skill__level.skill__level--small= user.skill
+                a.btn.user-card-full__btn.btn--form-round.btn--color-back-yellow.btn--color-font-blue-dark.btn--font-17-bold(href="#") позвать!
         a.btn.btn--font-18-bold.btn--color-font-blue-middle.companions__btn(href="#") показать еще
         .companions__clicker-wrap
             a.btn-clicker(href="#")

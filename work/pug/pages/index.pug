@@ -45,30 +45,29 @@ block content
           p.paragraph.paragraph--weight-bold Теперь можно легко найти единомышленников!
         .companions__users-wrap
           each user in users.slice(0,2)
-            article.user-card
-              .user-card__img-bg
-              .user-card__info
+            article.user-card-short
+              .user-img-bg
+              .user-card-short__info
                 .container-inner
-                  ul.wishes.user-card__wishes
+                  ul.wishes.user-card-short__wishes
                     each n in user.wishes
                       li.wishes__item
                         img.wishes__country-flag(src="../../img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
-                  .user-card__name-wrap
-                    p.user-card__name= user.name
-                    span.user-status.user-card__user-status(class= user.status)
-                  ul.tags.user-card__tags
+                  .user-card-short__name-wrap
+                    p.user-name= user.firstname + " " + user.lastname
+                    span.user-status.user-card-short__user-status(class= user.status)
+                  ul.tags.user-card-short__tags
                     each n in user.tags
                       li.tags__item= "#" + n
-                  ul.moves.user-card__moves
+                  ul.moves
                     each n in user.moves
                       li.moves__item
                         span.visually-hidden= "Иконка " + n.name
                         //- svg.moves__icon(class= n.condition?"moves__icon--active":null)
-              .user-card__skill-wrap
-                .user-card__skill
-                  .user-card__level-wrap
-                    span.user-card__level= user.skill
-                    p.user-card__unit level
+              .skill.user-card-short__skill
+                .skill__level-wrap
+                  span.skill__level.skill__level--small= user.skill
+                  p.skill__unit.skill__unit--small level
         a.btn.btn--form-square.btn--color-back-yellow.btn--font-18-bold.btn--color-font-blue-middle.companions__btn(href=".companions.html") Показать всех
         article.business.advertising__business
           .container-inner

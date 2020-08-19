@@ -21,8 +21,9 @@
   },
   "users": [
     {
-      "name": "Таня Фирсова",
       "class": "tanya-firsova",
+      "firstname": "Таня",
+      "lastname": "Фирсова",
       "status": "user--status-offline",
       "likes": 1500000,
       "skill": 99,
@@ -37,8 +38,9 @@
         }
     },
     {
-      "name": "Петя Демин",
       "class": "petya-demin",
+      "firstname": "Петя",
+      "lastname": "Демин",
       "status": "user--status-online",
       "likes": 1500,
       "skill": 80,
@@ -53,8 +55,9 @@
         }
     },
     {
-      "name": "Марк Смолов",
       "class": "mark-smolov",
+      "firstname": "Марк",
+      "lastname": "Смолов",
       "status": "user--status-offline",
       "likes": 170,
       "skill": 25,
@@ -73,8 +76,9 @@
       "period": {"1": "26 МАР - 29 МАР", "2": "1 ИЮЛ - 15 ИЮЛ"}
     },
     {
-      "name": "Лариса Роговая",
       "class": "larisa-rogovaya",
+      "firstname": "Лариса",
+      "lastname": "Роговая",
       "status": "user--status-online",
       "likes": 23,
       "skill": 50,
