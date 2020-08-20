@@ -90,7 +90,7 @@
 }
 
 .countries__alphabet-item:active{
-  border: none;
+  border-color: $blue-middle;
   background-color: $blue-middle;
   color: white;
 }
