@@ -20,16 +20,17 @@ block content
             span.visually-hidden показать все
         .countries.filter-countries__countrys
           form.filter-countries__countries-form(action="https://echo.htmlacademy.ru" method="get")
-            button.btn-cross.header__btn-cross(type="button")
-              span.visually-hidden Скрыть фильтр стран
-            fieldset.countries__parts
-              ul.countries__parts-list
-                each n in filterCountries.parts
-                  li
-                    label.countries__parts-item
-                      input(name="parts" type="radio" value= n)
-                      = n
-            include ../blocks/filter-countries
+            //- button.btn-cross.header__btn-cross(type="button")
+            //-   span.visually-hidden Скрыть фильтр стран
+            .container-inner
+              fieldset.countries__parts
+                ul.countries__parts-list
+                  each n in filterCountries.parts
+                    li
+                      label
+                        input(name="parts" type="radio" class="radio visually-hidden" value= n)
+                        span.countries__parts-item= n
+              include ../blocks/filter-countries
             button.btn.btn--form-round.btn--color-blue.countries__btn свернуть
     .main-companions__content-wrap
       .container-outter

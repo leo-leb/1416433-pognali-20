@@ -108,7 +108,7 @@
 
 .day{
   display: grid;
-  grid-template-columns: 32px 32px 32px 32px 32px 32px 32px;
+  grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;
   margin: 0;
   padding: 0;
 }
@@ -118,14 +118,15 @@
   line-height: 32px;
   list-style-type: none;
   text-align: center;
-  border-bottom: 1px solid #000;
 }
 
 .date{
   display: grid;
-  grid-template-columns: 32px 32px 32px 32px 32px 32px 32px;
+  grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;
   margin: 0;
   padding: 0;
+
+  border-top: 1px solid #000;
 }
 
 .date__item{
@@ -133,6 +134,7 @@
 
   border: 1px solid #000;
   border-top: none;
+
 
   line-height: 32px;
   list-style-type: none;
@@ -273,28 +275,6 @@
   bottom: 0;
   transform: translateY(100%);
   width: 100%;
-}
-
-.countries__alphabet,
-.countries__chosen,
-.countries__alphabet-list,
-.countries__chosen-list{
-  margin: 0;
-  padding: 0;
-}
-
-.countries__alphabet{
-  border: 1px solid $gray-light;
-  border-bottom: none;
-}
-
-.countries__chosen{
-  border: 1px solid $gray-light;
-}
-
-.countries__alphabet-item,
-.countries__chosen-item{
-  list-style-type: none;
 }
 
 // STEP-THIRD

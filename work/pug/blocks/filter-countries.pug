@@ -1,14 +1,14 @@
 fieldset.countries__alphabet
-  ul.countries__alphabet-list
+  table.countries__alphabet-table
     each n in filterCountries.alphabet
-      li.countries__alphabet-item
-        label.countries__alphabet-desc
-          input(name="alphabet" type="radio" value= n)
-          = n
+      tr.countries__alphabet-list
+        each b in n
+          td.countries__alphabet-item
+            a.countries__alphabet-desc(href="#")= b
 fieldset.countries__chosen
   ul.countries__chosen-list
     each n in filterCountries.a
       li.countries__chosen-item
-        label.countries__chosen-desc
-          input(name= name type="checkbox" value= n)
-          = n
+        label
+          input(name= name type="checkbox" class="checkbox visually-hidden" value= n)
+          span.countries__chosen-desc= n

@@ -24,24 +24,6 @@
   transform: translateY(-90px);
 }
 
-// filter-countries
-
-.filter-countries{
-  padding-top: 53px;
-  padding-bottom: 17px;
-
-  background-color: $white-dirty-two;
-}
-
-.filter-countries__row{
-  display: flex;
-  justify-content: space-between;
-}
-
-.countries{
-  display: none;
-}
-
 // companions__filter-users
 
 .companions__filter-users{

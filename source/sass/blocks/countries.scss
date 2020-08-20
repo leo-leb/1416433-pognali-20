@@ -1,0 +1,114 @@
+.filter-countries{
+  padding-top: 53px;
+  padding-bottom: 17px;
+
+  background-color: $white-dirty-two;
+}
+
+.filter-countries__row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.countries{
+  padding-top: 17px;
+  padding-bottom: 28px;
+}
+
+.countries__parts,
+.countries__alphabet,
+.countries__chosen{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.countries__parts,
+.countries__alphabet{
+  text-transform: uppercase;
+}
+
+.countries__parts-list,
+.countries__alphabet-list,
+.countries__chosen-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.countries__parts{
+  margin-bottom: 21px;
+}
+
+.countries__alphabet{
+  margin-bottom: 14px;
+}
+
+.countries__btn{
+  margin-top: 28px;
+}
+
+// countries__parts
+
+.countries__parts-item{
+  color: $blue-high;
+  opacity: 0.3;
+}
+
+.radio:hover + .countries__parts-item{
+  opacity: 0.6;
+}
+
+.radio:checked + .countries__parts-item{
+  opacity: 1;
+}
+
+// countries__alphabet
+
+.countries__alphabet-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.countries__alphabet-item{
+  width: 20%;
+  background-color: $white-middle;
+  line-height: 40px;
+  text-align: center;
+  padding: 0;
+  border: 1px solid $gray-light;
+}
+
+.countries__alphabet-desc{
+  display: block;
+  cursor: pointer;
+  color: $blue-middle;
+}
+
+.countries__alphabet-item:hover{
+  border: 1px solid #959BB2;
+}
+
+.countries__alphabet-item:active{
+  border: none;
+  background-color: $blue-middle;
+  color: white;
+}
+
+.countries__alphabet-item:active .countries__alphabet-desc{
+  color: white;
+}
+
+// countries__chosen
+
+.countries__chosen-desc{
+  color: $black-low;
+}
+
+.checkbox:hover + .countries__chosen-desc {
+  color: $blue-middle;
+}
+
+.checkbox:checked + .countries__chosen-desc {
+  opacity: 0.3;
+}
