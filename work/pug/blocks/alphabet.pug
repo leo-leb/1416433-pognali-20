@@ -1,0 +1,15 @@
+.alphabet(class= pageDirections?"countries--short":null)
+  fieldset.alphabet__letters
+    table.alphabet__table
+      each n in filterCountries.alphabet
+        tr.alphabet__letters-list
+          each b in n
+            td.alphabet__letters-item
+              a.alphabet__letters-desc(href="#")= b
+  fieldset.alphabet__names
+    ul.alphabet__names-list
+      each n in filterCountries.a
+        li.alphabet__names-item
+          label
+            input(name= name type="checkbox" class="alphabet__names-checkbox visually-hidden" value= n)
+            span.alphabet__names-desc= n

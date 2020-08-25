@@ -1,23 +1,24 @@
 extends ../main
 
 block variables
+  - var pageDirections = true
   - var pageTitle = 'Погнали: Направления'
   - var firstTitle = 'Направления'
   - var person = users[2]
 
 block content
-  main.main-directions
-    .title-first-block
-      h1.title-first.header__title-first= firstTitle
-    section.user-box.main-directions__user-box
+  main.directions
+    .directions__title-first-block
+      h1.title-first= firstTitle
+    section.user-box.directions__user-box
       .container-outter
         .user-box__row
-          .skill.user-box__skill
-            .skill__level-wrap
-              span.skill__level.skill__level--big= person.skill
-              p.skill__unit.skill__unit--big level
-          .user-img-avatar.user-img-avatar--big
-        .btn.btn--form-round.btn--color-font-blue-dark.user-box__btn сменить фото
+          .user-box__skill
+            .user-box__skill-wrap
+              span.user-box__skill-level= person.skill
+              p.user-box__skill-unit level
+          .user-avatar.user-avatar--big
+        .user-box__btn сменить фото
         .user-box__tags-wrap
             ul.tags
               h4.title-fourth.user-box__title-fourth тэги
@@ -30,7 +31,7 @@ block content
               li.moves__item
                 span.visually-hidden= "Иконка " + n.name
                 //- svg.moves__icon(class= n.condition?"moves__icon--active":null)
-    section.plans-actual.main-directions__plans-actual
+    section.plans-actual.directions__plans-actual
       .container-outter
         h2.title-second.title-second--color-blue-middle.plans-actual__title-second Мои планы:
         ul.plans-actual__list
@@ -38,11 +39,11 @@ block content
             li.plans-actual__item
               .container-inner
                 p.plans-actual__name= n + '. ' + person.direction[n]
-                .plans-actual__desc-wrap
+                .plans-actual__wrap
                   p.plans-actual__desc= person.companion[n]
                   p.plans-actual__desc= person.period[n]
-                a.btn(href="#") изменить
-    section.plans-create.main-directions__plans-create
+                a.plans-actual__btn-correct(href="#") изменить
+    section.plans-create.directions__plans-create
       .container-outter
         h2.title-second.title-second--color-blue-dark.plans-actual__title-second Добавить план:
         .plans-create__dots-wrap

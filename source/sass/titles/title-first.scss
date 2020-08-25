@@ -1,0 +1,24 @@
+.title-first {
+  display: inline-block;
+
+  position: relative;
+
+  margin: 0;
+
+  @include font(700, normal);
+  @include font-size(36px, 36px);
+
+  &::after {
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+
+    height: 5px;
+    width: 100%;
+    border-radius: 4px;
+
+    content: "";
+
+    background-color: $orange-middle;
+  };
+}

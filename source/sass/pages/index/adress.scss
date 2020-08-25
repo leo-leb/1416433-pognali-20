@@ -1,0 +1,38 @@
+.adress {
+  position: relative;
+
+  padding-top: 48px;
+  padding-bottom: 47px;
+
+  @include environment-yellow;
+}
+
+.adress__desc {
+  margin: 0;
+  margin-bottom: 32px;
+  margin-left: 61px;
+
+  text-transform: uppercase;
+  white-space: break-spaces;
+
+  @include font(700, normal);
+  @include font-size(16px, 22px);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    content: "";
+
+    background-color: $blue-dark;
+    background-image: url(../img/contacts-location.svg);
+    background-repeat: no-repeat;
+    background-size: 15.75px 21px;
+    background-position: center;
+  }
+}

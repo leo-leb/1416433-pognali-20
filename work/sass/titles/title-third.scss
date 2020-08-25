@@ -1,0 +1,5 @@
+.title-third {
+  margin: 0;
+  @include font(700, normal);
+  @include font-size(21px, 21px);
+}

@@ -8,37 +8,36 @@ include ../mixins/checkbox
 include ../mixins/checkbox-without-name
 
 block content
-  main.main-companions
-    .title-first-block
-      h1.title-first.header__title-first= firstTitle
+  main.companions
+    .companions__title-first-block
+      h1.title-first= firstTitle
     .filter-countries.companions__filter-countries
       .container-outter
         .filter-countries__row
           span.filter-countries__hamburger
           h4.title-fourth.filter-countries__title-fourth фильтрация по странам
-          button.btn-dots.filter-countries__btn-dots
+          button.filter-countries__btn-dots
             span.visually-hidden показать все
-        .countries.filter-countries__countrys
-          form.filter-countries__countries-form(action="https://echo.htmlacademy.ru" method="get")
-            //- button.btn-cross.header__btn-cross(type="button")
-            //-   span.visually-hidden Скрыть фильтр стран
-            .container-inner
-              fieldset.countries__parts
-                ul.countries__parts-list
-                  each n in filterCountries.parts
-                    li
-                      label
-                        input(name="parts" type="radio" class="radio visually-hidden" value= n)
-                        span.countries__parts-item= n
-              include ../blocks/filter-countries
-            button.btn.btn--form-round.btn--color-blue.countries__btn свернуть
-    .main-companions__content-wrap
+            span.filter-countries__btn-dots-img
+      form.filter-countries__form(action="https://echo.htmlacademy.ru" method="get")
+        .container-outter
+          .container-inner
+            fieldset.filter-countries__parts
+              ul.filter-countries__parts-list
+                each n in filterCountries.parts
+                  li
+                    label
+                      input(name="parts" type="radio" class="filter-countries__parts-radio visually-hidden" value= n)
+                      span.filter-countries__parts-item= n
+            include ../blocks/alphabet
+          button.filter-countries__btn свернуть
+    .companions__content-wrap
       .container-outter
-        .companions__filter-users
+        .filter-users.companions__filter-users
           .container-inner
             h4.visually-hidden фильтрация по попутчикам
             p.title-third.filter-users__title-third Подберите идеального попутчика
-            form.filter-users__users-form(action="https://echo.htmlacademy.ru" method="get")
+            form(action="https://echo.htmlacademy.ru" method="get")
               +checkbox('хобби', 'hobby', filterUsers.hobby)
               +checkbox('музыка', 'music', filterUsers.music)
               +checkbox('еда', 'food', filterUsers.food)
@@ -46,8 +45,8 @@ block content
               fieldset.box-level.filter-users__box-level
                 label.box-level__heading-wrap
                   h3.title-third левел
-                  .btn.box-level__btn
-                    img(src="../../img/triangle-arrow-right.svg" width="10" height="7")
+                  .box__btn.box__btn--close
+                    img.box__img(src="./img/triangle-arrow-right.svg" width="10" height="7")
                 .box-level__value
                   .box-level__number
                     label.box-level__min-level
@@ -60,44 +59,40 @@ block content
                     // active-line
                     .box-level__toggle-min
                     .box-level__toggle-max
-              button.btn.btn--form-round.btn--color-font-blue-dark.btn--color-back-white.users-form__btn(type="submit") показать
+              button.filter-users__btn(type="submit") показать
         .companions__users-wrap
           each user in users.slice(0,4)
-            article.user-card-full
+            article.user-full
               .container-inner
-                .user-card-full__row
-                  .user-img-avatar.user-card-full__user-img-avatar.user-img-avatar--small
-                  .user-card-full__name-wrap
-                    p.user-name= user.firstname
-                    p.user-name= user.lastname
-                    svg.user-status.user-card-full__user-status(class= user.status)
-                    //- input.user-card__like-counter(type="text" value= user.likes)
-                ul.tags.user-card-full__tags
+                .user-full__row
+                  .user-avatar.user-avatar--small
+                  .user-full__name-wrap
+                    p.user.user-full__user(class= "user--" + user.status)= user.firstname
+                    p.user.user-full__user= user.lastname
+                ul.tags.user-full__tags
                   each n in user.tags
                     li.tags__item= "#" + n
-                .user-card-full__wishes-wrap
-                  h5.title-fifth.user-card-full__title-fifth хочет посетить:
-                  ul.wishes.user-card-full__wishes
+                .user-full__wishes-wrap
+                  h5.title-fifth.user-full__title-fifth хочет посетить:
+                  ul.wishes.user-full__wishes
                     each n in user.wishes
                       li.wishes__item
-                        img.wishes__country-flag(src="../../img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
+                        img.wishes__country-flag(src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
                         p.wishes__country-name= n
-                .user-card-full__row-alt
-                  .user-card-full__moves-wrap
-                    h5.title-fifth.user-card-full__title-fifth транспорт:
-                    ul.moves.user-card-full__moves
+                .user-full__row-alt
+                  .user-full__moves-wrap
+                    h5.title-fifth.user-full__title-fifth транспорт:
+                    ul.moves.user-full__moves
                       each n in user.moves
                         li.moves__item
                           span.visually-hidden= "Иконка " + n.name
                           //- svg.moves__icon(class= n.condition?"moves__icon--active":null)
-                  .skill.user-card-full__skill
-                    h5.title-fifth.user-card-full__title-fifth левел:
-                    .skill__level-wrap
-                      span.skill__level.skill__level--small= user.skill
-                a.btn.user-card-full__btn.btn--form-round.btn--color-back-yellow.btn--color-font-blue-dark.btn--font-17-bold(href="#") позвать!
-        a.btn.btn--font-18-bold.btn--color-font-blue-middle.companions__btn(href="#") показать еще
+                  .user-full__skill
+                    h5.title-fifth.user-full__title-fifth левел:
+                    .user-full__level-wrap
+                      span.user-full__skill-level= user.skill
+                a.user-full__btn-user(href="#") позвать!
+        a.companions__btn-open(href="#") показать еще
         .companions__clicker-wrap
-            a.btn-clicker(href="#")
-              //- svg
-            a.btn-clicker(href="#")
-              //- svg
+          a.companions__btn-clicker.companions__btn-clicker--left(href="#")
+          a.companions__btn-clicker.companions__btn-clicker--right(href="#")

@@ -1,0 +1,8 @@
+.paragraph {
+  @include font(300, normal);
+  @include font-size(16px, 22px);
+
+  &--bold {
+    @include font(700, normal);
+  };
+}

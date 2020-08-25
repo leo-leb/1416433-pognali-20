@@ -1,9 +1,9 @@
 mixin input-number(title, unit, amount)
-  fieldset.step-first__clicker
-    .step-first__clicker-wrap
-      p.step-first__title= title
-      span.step-first__unit= unit
-    .step-first__stepper
-      input.step-first__input(type="number" min="0" max="100" step="1" value= amount autofocus)
-      button.btn-stepper.btn-stepper--right +
-      button.btn-stepper.btn-stepper--left -
+  fieldset.plans-create__clicker
+    .plans-create__clicker-wrap
+      p.plans-create__title= title
+      span.plans-create__unit= unit
+    .plans-create__stepper
+      input.plans-create__input(type="number" min="0" max="100" step="1" value= amount autofocus)
+      button.plans-create__btn-stepper.plans-create__btn-stepper--right
+      button.plans-create__btn-stepper.plans-create__btn-stepper--left

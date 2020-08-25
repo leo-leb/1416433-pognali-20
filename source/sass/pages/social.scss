@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  position: relative;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  &--orange{
+    background-color: $yellow-low;
+  };
+}
+
+.social__svg {
+  @include zero-centered;
+
+  width: 23px;
+  height: 21px;
+
+  color: $blue-high;
+}

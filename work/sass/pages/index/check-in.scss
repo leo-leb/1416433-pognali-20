@@ -1,0 +1,62 @@
+.check-in {
+  position: relative;
+
+  padding-top: 90px;
+  padding-bottom: 50px;
+
+  text-align: center;
+
+  @include environment-blue;
+}
+
+.check-in__title-second {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.check-in__email {
+  position: relative;
+  display: block;
+  margin: 29px 0;
+}
+
+.check-in__email + .container-inner {
+  margin-bottom: 17px;
+}
+
+.check-in__input {
+  width: 100%;
+  padding-left: 25px;
+  border: none;
+  border-radius: 10px;
+
+  @include font(700, normal);
+  @include font-size(18px, 62px);
+}
+
+.check-in__btn {
+  position: absolute;
+  right: 0;
+
+  width: 60px;
+  height: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  background-color: $yellow-low;
+
+  &::after {
+    @include zero-centered;
+
+    width: 14px;
+    height: 16px;
+
+    content: "";
+
+    background-image: url(../img/triangle-arrow-right.svg);
+    background-repeat: no-repeat;
+  }
+}

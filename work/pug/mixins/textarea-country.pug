@@ -1,7 +1,4 @@
 mixin textarea-country(countryNameRu, countryNameEn, countryPlan)
-  article.country-plan-card.step-third__country-plan-card
-    .country-plan-card__row
-      span.country-plan-card__name= countryNameRu
-      .country-plan-card__flag
-        img.country-plan-card__flag(src="../../img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + countryNameRu)
-    textarea.country-plan-card__desc(name="plan-for-" + countryNameEn rows="9" form="form" placeholder="План действий")= countryPlan
+  article.plans-create__plan-country
+    p.plans-create__country-name= countryNameRu
+    textarea.plans-create__country-spec(name="plan-for-" + countryNameEn rows="9" form="form" placeholder="План действий")= countryPlan

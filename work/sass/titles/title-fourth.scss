@@ -1,0 +1,8 @@
+.title-fourth {
+  margin: 0;
+
+  text-transform: uppercase;
+
+  @include font(700, normal);
+  @include font-size(16px, 18px);
+}

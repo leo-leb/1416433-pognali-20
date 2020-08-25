@@ -2,8 +2,8 @@ mixin checkbox-without-name(title, name, massive)
   fieldset.box.filter-users__box
     .box__heading-wrap
       h3.title-third= title
-      .btn.box__btn
-        img(src="../../img/triangle-arrow-right.svg" width="10" height="7")
+      .box__btn.box__btn--close
+        img.box__img(src="./img/triangle-arrow-right.svg" width="10" height="7")
     ul.box__value-wrap
       each n in massive
         li

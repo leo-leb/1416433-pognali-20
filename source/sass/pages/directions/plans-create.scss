@@ -1,0 +1,412 @@
+.plans-create {
+  position: relative;
+
+  padding-top: 30px;
+  padding-bottom: 73px;
+
+  background-color: $main-bg-third;
+}
+
+.plans-create__step-first,
+.plans-create__step-second,
+.plans-create__step-third {
+  margin-bottom: 10px;
+  padding: 23px 0;
+  border-radius: 10px;
+
+  @include environment-white-alt;
+}
+
+.plans-create .title-sixth {
+  margin: 0;
+}
+
+.plans-create__clicker,
+.plans-create__additional,
+.plans-create__month {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+// STEP-FIRST
+
+.plans-create__clicker {
+  margin-bottom: 20px;
+}
+
+.plans-create__clicker-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  text-transform: uppercase;
+
+  @include font(500, normal);
+}
+
+.plans-create__unit {
+  color: $black-middle;
+  opacity: 0.3;
+}
+
+.plans-create__title {
+  margin: 0;
+}
+
+.plans-create__additional {
+  margin-bottom: 24px;
+}
+
+.plans-create__additional-list {
+  margin: 0;
+  padding: 0;
+}
+
+.plans-create__additional-item {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.plans-create__additional-content {
+  display: flex;
+  line-height: 26px;
+}
+
+.plans-create__custom-checkbox {
+  display: block;
+
+  width: 26px;
+  height: 26px;
+  margin-right: 13px;
+  border: 1px solid $gray-light;
+  border-radius: 4px;
+}
+
+.plans-create__real-checkbox:checked ~ .plans-create__custom-checkbox {
+  background-image: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px;
+}
+
+.plans-create__month {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.plans-create__input {
+  display: inline-block;
+  height: 42px;
+}
+
+.btn-stepper {
+  width: 20px;
+  height: 42px;
+}
+
+.plans-create__calendar {
+  margin-bottom: 22px;
+}
+
+// STEP-SECOND
+
+.plans-create__box-country-wrap {
+  position: relative;
+
+  margin-bottom: 22px;
+
+  &::after {
+    position: absolute;
+    bottom: -6px;
+    right: 53px;
+    transform: translate(40%, 100%);
+
+    width: 8px;
+    height: 10px;
+
+    content: "";
+
+    background-image: url(../img/small-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.plans-create__box-country {
+  display: flex;
+  position: relative;
+
+  &--add{
+    margin-bottom: 25px;
+    background-color: $white-dirty;
+  };
+}
+
+.plans-create__wrap {
+  position: relative;
+
+  height: 42px;
+  border: 1px solid $gray-light;
+  border-radius: 4px;
+}
+
+.plans-create__country-desc {
+  display: inline-block;
+
+  height: 100%;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  line-height: 42px;
+}
+
+.plans-create__status {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(60%, -50%);
+  z-index: 1;
+
+  width: 8px;
+  height: 8px;
+  border: 1px solid $gray-light;
+  border-radius: 50%;
+
+  background-color: inherit;
+
+  &--active{
+    border: none;
+    background-color: $blue-middle;
+  };
+}
+
+.plans-create__flag {
+  @include zero-centered;
+}
+
+.plans-create__wrap {
+  &--size-s {
+    width: 53px;
+  };
+
+  &--size-m {
+    width: 168px;
+    padding-right: 33px;
+    padding-left: 11px;
+  };
+
+  &--size-l {
+    width: 100%;
+    padding-right: 53px;
+    padding-left: 11px;
+  };
+}
+
+.plans-create__wrap--size-l .plans-create__status {
+  right: 53px;
+  transform: translate(60%, -50%);
+}
+
+.plans-create__wrap--size-l .plans-create__btn {
+  right: 13px;
+}
+
+// FILTER
+
+.plans-create__filter {
+  display: none;
+
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+
+  width: 100%;
+}
+
+// STEP-THIRD
+
+.plans-create__plan-country {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+
+.plans-create__country-name {
+  display: inline-block;
+
+  width: 70%;
+  margin: 0;
+  margin-bottom: 14px;
+  margin-left: 10px;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  line-height: 24px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    content: "";
+    width: 35px;
+    height: 24px;
+
+    background-image: url(../img/flag-bosnia-and-herzegovina.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.plans-create__country-spec {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid $black-light;
+}
+
+// COMMON
+
+.plans-create__desc {
+  color: $black-low;
+}
+
+// BUTTONS
+
+.plans-create__btn {
+  &--back{
+    margin-top: 13px;
+    line-height: 1;
+  };
+}
+
+.plans-create__stepper {
+  position: relative;
+  height: 43px;
+}
+
+.plans-create__input {
+  display: block;
+
+  height: 100%;
+  width: 100%;
+  border: 1px solid #CBCED9;
+  border-radius: 4px;
+
+  text-align: center;
+}
+
+.plans-create__btn-stepper {
+  position: absolute;
+  top: 0;
+
+  width: 20px;
+  height: 100%;
+  border: none;
+
+  content: "";
+  cursor: pointer;
+
+  background-color: inherit;
+
+  &--left,
+  &--right {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+  }
+
+  &--left {
+    left: 13px;
+    background-image: url(../img/qty-minus-mobile.svg);
+  };
+
+  &--right {
+    right: 13px;
+    background-image: url(../img/qty-plus-mobile.svg);
+  }
+}
+
+.plans-create__btn-cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+
+  width: 21px;
+  height: 21px;
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  background-color: $white-dirty;
+
+  &::after{
+    @include zero-centered;
+
+    width: 9px;
+    height: 9px;
+
+    content: "";
+
+    background-image: url(../img/small-cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.plans-create__btn-arrow {
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+
+  width: 16px;
+  height: 12px;
+  padding: 0;
+  border: none;
+
+  background-color: inherit;
+}
+
+.plans-create__btn-arrow img {
+  transform: rotate(90deg);
+}
+
+.plans-create__btn-plus {
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+
+  width: 14px;
+  height: 14px;
+  border: none;
+
+  background-color: inherit;
+
+  &::after {
+    @include zero-centered;
+
+    width: 14px;
+    height: 14px;
+
+    content: "";
+
+    background-image: url(../img/qty-plus-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}

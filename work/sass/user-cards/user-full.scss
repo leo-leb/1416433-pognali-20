@@ -1,0 +1,140 @@
+.user-full {
+  position: relative;
+
+  padding-top: 15px;
+  padding-bottom: 22px;
+  border-radius: 10px;
+
+  text-align: left;
+
+  @include environment-white;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.user-full__user-img-avatar {
+  margin-right: 16px;
+}
+
+.user-full__tags {
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.user-full__wishes-wrap {
+  position: relative;
+
+  padding: 20px 0;
+  border-top: 1px solid $white-dirty;
+  border-bottom: 1px solid $white-dirty;
+}
+
+.user-full__wishes {
+  flex-direction: column;
+}
+
+.user-full__title-fifth {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.user-full__wishes .wishes__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.user-full__wishes-wrap {
+  position: relative;
+
+  padding: 20px 0;
+  border-top: 1px solid $white-dirty;
+  border-bottom: 1px solid $white-dirty;
+}
+
+.user-full__row {
+  display: flex;
+  justify-content: flex-start;
+
+  position: relative;
+
+  margin-bottom: 13px;
+}
+
+.user-full__row-alt {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.user-full__moves {
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin: 0;
+}
+
+.user-full__title-fifth {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.user-full__name-wrap {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+  position: relative;
+
+  color: $blue-middle;
+}
+
+.user-full__user {
+  &::after {
+    position: absolute;
+    top: 8px;
+    left: 100%;
+    content: "";
+
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  };
+}
+
+.user-full__skill {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid red;
+
+  text-align: center;
+
+  background-color: gray;
+}
+
+.user-full__skill-level {
+  @include font(700, normal);
+  @include font-size(24px, 24px);
+}
+
+.user-full__btn-user {
+  display: block;
+
+  width: 100%;
+  border-radius: 25px;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  @include font-size(17px, 40px);
+  @include font(700, normal);
+  color: $blue-dark;
+  background-color: $yellow-low;
+}

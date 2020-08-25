@@ -1,0 +1,22 @@
+.wishes {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.wishes__item {
+  display: flex;
+}
+
+.wishes__country-name {
+  margin: 0;
+  margin-left: 14px;
+
+  text-transform: uppercase;
+
+  @include font(500, normal);
+  @include font-size(15px, 24px);
+}

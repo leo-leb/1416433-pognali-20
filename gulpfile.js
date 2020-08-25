@@ -120,4 +120,4 @@ function watcher(){
   gulp.watch('work/fonts/**/*.*', copyFonts);
 }
 
-gulp.task('default', gulp.series(cleanSource, styles, gulpPug, gulp.parallel(copyJS, copySass, copyLibs, copyImg, copyFonts, copyNormalize), gulp.parallel(server, watcher)));
+gulp.task('default', gulp.series(cleanSource, styles, gulpPug, gulp.parallel(copyJS, copyLibs, copySass, copyImg, copyFonts, copyNormalize), gulp.parallel(server, watcher)));

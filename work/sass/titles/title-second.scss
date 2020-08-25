@@ -1,0 +1,13 @@
+.title-second {
+  margin: 0;
+  @include font(700, normal);
+  @include font-size(24px, 24px);
+
+  &--orange {
+    color: $orange-middle;
+  };
+
+  &--blue {
+    color: $blue-middle;
+  };
+}

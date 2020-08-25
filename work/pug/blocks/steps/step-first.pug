@@ -16,61 +16,59 @@ block content
   +input-number('ищу попутчиков:', 'чел.', '2')
   +input-number('длительность:', 'дн.', '2')
   +checkbox-without-title('additional', additional)
-  fieldset.month.step-first__month
-    input(type="month" value="2019-03")
-    button.btn-stepper.btn-stepper--right
-      svg
-    button.btn-stepper.btn-stepper--right
-      svg
-  .calendar.step-first__calendar
-    ul.day.calendar__day
-      li.day__item П
-      li.day__item В
-      li.day__item С
-      li.day__item Ч
-      li.day__item П
-      li.day__item.day__item--red С
-      li.day__item.day__item--red В
-    ul.date.calendar__date
-      li.date__item.date__item--blind 23
-      li.date__item.date__item--blind 24
-      li.date__item.date__item--blind 25
-      li.date__item.date__item--blind 26
-      li.date__item.date__item--blind 27
-      li.date__item.date__item--blind 28
-      li.date__item.date__item--blind 1
-      li.date__item.date__item--blind 2
-      li.date__item.date__item--blind 3
-      li.date__item.date__item--blind 4
-      li.date__item.date__item--blind 5
-      li.date__item.date__item--blind 6
-      li.date__item.date__item--blind 7
-      li.date__item.date__item--blind 8
-      li.date__item.date__item--blind 9
-      li.date__item.date__item--blind 10
-      li.date__item.date__item--blind 11
-      li.date__item.date__item--blind 12
-      li.date__item.date__item--blind 13
-      li.date__item.date__item--blind 14
-      li.date__item.date__item--blind 15
-      li.date__item.date__item--blind 16
-      li.date__item.date__item--blind 17
-      li.date__item.date__item--blind 18
-      li.date__item.date__item--blind 19
-      li.date__item.date__item--blind 20
-      li.date__item.date__item--blind 21
-      li.date__item.date__item--blind 22
-      li.date__item.date__item--blind 23
-      li.date__item.date__item--blind 24
-      li.date__item.date__item--blind 25
-      li.date__item.date__item--colored.date__item--active.date__item--first 26
-      li.date__item.date__item--colored.date__item--active 27
-      li.date__item.date__item--colored.date__item--active 28
-      li.date__item.date__item--colored 29
-      li.date__item.date__item--colored 30
-      li.date__item.date__item--colored 31
-      li.date__item.date__item--colored 1
-      li.date__item.date__item--colored 2
-      li.date__item.date__item--colored 3
-      li.date__item.date__item--colored 4
-      li.date__item.date__item--colored 5
+  fieldset.plans-create__month
+    input.plans-create__input(type="month" value="2019-03")
+    //- button.plans-create__btn-stepper-alt.plans-create__btn-stepper-alt--right
+    //- button.plans-create__btn-stepper-alt.plans-create__btn-stepper-alt--right
+  .calendar.plans-create__calendar
+    ul.calendar__days-list
+      li.calendar__days-item П
+      li.calendar__days-item В
+      li.calendar__days-item С
+      li.calendar__days-item Ч
+      li.calendar__days-item П
+      li.calendar__days-item.calendar__days-item--red С
+      li.calendar__days-item.calendar__days-item--red В
+    ul.calendar__dates-list
+      li.calendar__dates-item 23
+      li.calendar__dates-item 24
+      li.calendar__dates-item 25
+      li.calendar__dates-item 26
+      li.calendar__dates-item 27
+      li.calendar__dates-item 28
+      li.calendar__dates-item 1
+      li.calendar__dates-item 2
+      li.calendar__dates-item 3
+      li.calendar__dates-item 4
+      li.calendar__dates-item 5
+      li.calendar__dates-item 6
+      li.calendar__dates-item 7
+      li.calendar__dates-item 8
+      li.calendar__dates-item 9
+      li.calendar__dates-item 10
+      li.calendar__dates-item 11
+      li.calendar__dates-item 12
+      li.calendar__dates-item 13
+      li.calendar__dates-item 14
+      li.calendar__dates-item 15
+      li.calendar__dates-item 16
+      li.calendar__dates-item 17
+      li.calendar__dates-item 18
+      li.calendar__dates-item 19
+      li.calendar__dates-item 20
+      li.calendar__dates-item 21
+      li.calendar__dates-item 22
+      li.calendar__dates-item 23
+      li.calendar__dates-item 24
+      li.calendar__dates-item 25
+      li.calendar__dates-item.calendar__dates-item--colored.calendar__dates-item--active.calendar__dates-item--first 26
+      li.calendar__dates-item.calendar__dates-item--colored.calendar__dates-item--active 27
+      li.calendar__dates-item.calendar__dates-item--colored.calendar__dates-item--active 28
+      li.calendar__dates-item.calendar__dates-item--colored 29
+      li.calendar__dates-item.calendar__dates-item--colored 30
+      li.calendar__dates-item.calendar__dates-item--colored 31
+      li.calendar__dates-item.calendar__dates-item--colored 1
+      li.calendar__dates-item.calendar__dates-item--colored 2
+      li.calendar__dates-item.calendar__dates-item--colored 3
+      li.calendar__dates-item.calendar__dates-item--colored 4
+      li.calendar__dates-item.calendar__dates-item--colored 5
