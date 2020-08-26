@@ -4,4 +4,12 @@
   width: 268px;
   height: 100%;  // ВРЕМЕННО
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 668px;
+  };
+
+  @media (min-width: 1440px) {
+    width: 1320px;
+  };
 }

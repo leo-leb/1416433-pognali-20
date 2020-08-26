@@ -7,17 +7,36 @@ block variables
 
 block content
   main.index
+    section.first-block.first-block--special
+      h1.visually-hidden= firstTitle
+      .first-block__wrap
+        .first-block__content
+          p.first-block__moto
+            | В путешествие
+            br
+            | с крутыми
+            br
+            | попутчиками!
+          .first-block__review
+            p.paragraph
+              | &#171;Лучшее приложение,
+              br
+              | что я видел в жизни!&#187;
+            p.paragraph.paragraph--bold
+              | Мурат Эльтазин
+              br
+              | главный редактор газеты &#171;гаджетлайф&#187;
+        ol.first-block__list
+          li.first-block__item
+            span.first-block__desc Выберите направление
+          li.first-block__item
+            span.first-block__desc Изучите идеи путешественников
+          li.first-block__item
+            span.first-block__desc Находите тех, кто похож на вас
+          li.first-block__item
+            span.first-block__desc Путешествуйте вместе!
     section.about.index__about
       .container-outter
-        ol.about__list
-          li.about__item
-            span.about__desc Выберите направление
-          li.about__item
-            span.about__desc Изучите идеи путешественников
-          li.about__item
-            span.about__desc Находите тех, кто похож на вас
-          li.about__item
-            span.about__desc Путешествуйте вместе!
         .container-inner
           h2.title-second.title-second--color-orange.about__title-second О сервисе
           p.paragraph.about__paragraph Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.

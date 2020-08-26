@@ -4,20 +4,6 @@
   margin: 0 auto;
 }
 
-.companions__title-first-block {
-  position: relative;
-
-  z-index: 2;
-
-  min-width: 320px;
-  padding: 0 26px;
-  padding-top: 61px;
-  padding-bottom: 12px;
-  @include shape-bottom;
-
-  @include environment-blue;
-}
-
 .companions__filter-countries {
   position: relative;
   transform: translateY(-30px);

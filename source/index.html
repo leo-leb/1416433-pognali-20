@@ -8,20 +8,14 @@
     <title>Погнали: Главная</title>
   </head>
   <body>
-    <header class="header header--full">
+    <header class="header header--main">
       <div class="header__row">
-        <a class="logo" href="#">
-          <img src="./img/logo-mobile-white@1x.png" alt="Логотип компании" width="96" height="15">
-        </a>
+        <a class="logo logo--white" href="#"></a>
         <div class="header__btn-menu" type="button">
           <span class="header__btn-menu-line"></span>
           <span class="visually-hidden">Открыть шапку страницы</span>
         </div>
-      </div>
-      <div class="container-outter">
-        <p class="header__moto">В путешествие с крутыми попутчиками!</p>
-        <h1 class="visually-hidden">О сервисе</h1>
-        <div class="header__action-buttons-row">
+        <div class="action-buttons action-buttons--row">
           <div class="contacts contacts--row">
             <a class="contacts__action" href="tel:+78005558628">
               <div class="contacts__img contacts__img--phone">
@@ -52,20 +46,12 @@
               <span class="visually-hidden">Написать</span>
             </a>
           </div>
-          <a class="header__btn-action" href="#">авторизация</a>
-        </div>
-        <div class="container-inner">
-          <div class="header__review">
-            <p class="paragraph">Лучшее приложение, что я видел в жизни!</p>
-            <p class="paragraph paragraph--weight-bold">Мурат Эльтазин главный редактор газеты "гаджетлайф"</p>
-          </div>
+          <a class="action-buttons__btn" href="#">авторизация</a>
         </div>
       </div>
       <div class="header__menu-popup">
         <div class="header__row">
-          <a class="logo" href="#">
-            <img src="./img/logo-mobile-blue@1x.png" alt="Логотип компании" width="96" height="15">
-          </a>
+          <a class="logo logo--blue" href="#"></a>
           <div class="header__btn-cross" type="button">
             <span class="visually-hidden">Скрыть шапку страницы</span>
             <svg class="btn__img" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.6 18.6" style="enable-background:new 0 0 18.6 18.6;" xml:space="preserve">
@@ -87,8 +73,8 @@
               </li>
             </ul>
           </nav>
-          <div class="header__action-buttons-col">
-            <a class="header__btn-action" href="#">авторизация</a>
+          <div class="action-buttons action-buttons--col">
+            <a class="action-buttons__btn" href="#">авторизация</a>
             <div class="contacts contacts--col">
               <a class="contacts__action" href="tel:+78005558628">
                 <div class="contacts__img">
@@ -159,22 +145,38 @@
       </div>
     </header>
     <main class="index">
-      <section class="about index__about">
-        <div class="container-outter">
-          <ol class="about__list">
-            <li class="about__item">
-              <span class="about__desc">Выберите направление</span>
+      <section class="first-block first-block--special">
+        <h1 class="visually-hidden">О сервисе</h1>
+        <div class="first-block__wrap">
+          <div class="first-block__content">
+            <p class="first-block__moto">В путешествие
+              <br>с крутыми
+              <br>попутчиками!</p>
+            <div class="first-block__review">
+              <p class="paragraph">&#171;Лучшее приложение,
+                <br>что я видел в жизни!&#187;</p>
+              <p class="paragraph paragraph--bold">Мурат Эльтазин
+                <br>главный редактор газеты &#171;гаджетлайф&#187;</p>
+            </div>
+          </div>
+          <ol class="first-block__list">
+            <li class="first-block__item">
+              <span class="first-block__desc">Выберите направление</span>
             </li>
-            <li class="about__item">
-              <span class="about__desc">Изучите идеи путешественников</span>
+            <li class="first-block__item">
+              <span class="first-block__desc">Изучите идеи путешественников</span>
             </li>
-            <li class="about__item">
-              <span class="about__desc">Находите тех, кто похож на вас</span>
+            <li class="first-block__item">
+              <span class="first-block__desc">Находите тех, кто похож на вас</span>
             </li>
-            <li class="about__item">
-              <span class="about__desc">Путешествуйте вместе!</span>
+            <li class="first-block__item">
+              <span class="first-block__desc">Путешествуйте вместе!</span>
             </li>
           </ol>
+        </div>
+      </section>
+      <section class="about index__about">
+        <div class="container-outter">
           <div class="container-inner">
             <h2 class="title-second title-second--color-orange about__title-second">О сервисе</h2>
             <p class="paragraph about__paragraph">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
@@ -428,9 +430,7 @@
       <div class="index__map" id="map"></div>
     </main>
     <footer class="footer">
-      <a class="logo" href="#">
-        <img src="./img/logo-mobile-blue@1x.png" alt="Логотип компании" width="96" height="15">
-      </a>
+      <a class="logo logo--blue footer__logo" href="#"></a>
       <div class="social footer__social">
         <h2 class="visually-hidden">Ссылки на социальные сети</h2>
         <a class="social__link social__link--orange" href="#">

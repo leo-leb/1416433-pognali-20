@@ -1,20 +1,10 @@
-header.header(class= pageIndex?"header--full":"header--short")
+header.header(class= pageIndex?"header--main":null)
   .header__row
-    a.logo(href="#")
-      img(src="./img/logo-mobile-white@1x.png" alt="Логотип компании" width="96" height="15")
+    a.logo.logo--white(href="#")
     .header__btn-menu(type="button")
       span.header__btn-menu-line
       span.visually-hidden Открыть шапку страницы
-  if pageIndex
-    .container-outter
-      p.header__moto В путешествие с крутыми попутчиками!
-      h1.visually-hidden= firstTitle
-      .header__action-buttons-row
-        include contacts-short
-        a.header__btn-action(href="#") авторизация
-      .container-inner
-        .header__review
-          p.paragraph Лучшее приложение, что я видел в жизни!
-          p.paragraph.paragraph--weight-bold Мурат Эльтазин главный редактор газеты "гаджетлайф"
-  else
+    .action-buttons.action-buttons--row
+      include contacts-short
+      a.action-buttons__btn(href="#") авторизация
   include menu-popup

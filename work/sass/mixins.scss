@@ -5,6 +5,11 @@
   color: $color;
 }
 
+@mixin environment-blue-special ($background: $blue-dark, $color: $white-middle) {
+  background-color: $background;
+  color: $color;
+}
+
 @mixin environment-white-dirty ($background: $white-dirty, $color: $black-low) {
   background-color: $white-dirty;
   color: $black-low;
