@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

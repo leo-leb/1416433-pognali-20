@@ -1,0 +1,58 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+@import "./fonts.scss";
+
+
+@import "./common/general.scss";
+@import "./common/container-outter";
+@import "./common/container-inner";
+@import "./common/visually-hidden";
+@import "./common/paragraph";
+@import "./common/logo";
+@import "./common/first-block";
+@import "./common/action-buttons";
+
+@import "./pages/header";
+@import "./pages/footer";
+@import "./pages/social";
+@import "./pages/contacts";
+
+@import "./pages/index/index";
+@import "./pages/index/about";
+@import "./pages/index/countries";
+@import "./pages/index/country-card";
+@import "./pages/index/travelers";
+@import "./pages/index/advertising";
+@import "./pages/index/business";
+@import "./pages/index/check-in";
+@import "./pages/index/adress";
+
+@import "./pages/directions/directions";
+@import "./pages/directions/plans-actual";
+@import "./pages/directions/plans-create";
+@import "./pages/directions/calendar";
+@import "./pages/directions/alphabet";
+
+@import "./pages/companions/companions";
+@import "./pages/companions/filter-countries";
+@import "./pages/companions/filter-users";
+@import "./pages/companions/box";
+@import "./pages/companions/box-level";
+
+
+@import "./titles/title-first";
+@import "./titles/title-second";
+@import "./titles/title-third";
+@import "./titles/title-fourth";
+@import "./titles/title-fifth";
+@import "./titles/title-sixth";
+
+
+@import "./user-cards/user-short";
+@import "./user-cards/user-full";
+@import "./user-cards/user-box";
+@import "./user-cards/user-avatar";
+@import "./user-cards/user";
+@import "./user-cards/tags";
+@import "./user-cards/wishes";
+@import "./user-cards/moves";

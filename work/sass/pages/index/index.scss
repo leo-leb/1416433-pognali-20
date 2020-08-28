@@ -1,0 +1,95 @@
+.index {
+  position: relative;
+	min-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    min-width: 768px;
+  };
+
+  @media (min-width: 1440px) {
+    min-width: 1440px;
+  };
+}
+
+.index__about {
+  z-index: 7;
+  @include shape-bottom;
+}
+
+.index__countries {
+  transform: translateY(-30px);
+  z-index: 6;
+  @include shape-bottom;
+}
+
+.index__travelers {
+  transform: translateY(-60px);
+  z-index: 5;
+  @include shape-bottom;
+}
+
+.index__advertising {
+  transform: translateY(-90px);
+  z-index: 4;
+  @include shape-bottom;
+}
+
+.index__business {
+	bottom: 210px;
+	left: 0;
+	right: 0;
+	transform: translateY(-989px);
+  z-index: 6;
+}
+
+.index__check-in {
+  transform: translateY(-120px);
+  z-index: 3;
+  @include shape-bottom;
+}
+
+.index__adress {
+  transform: translateY(-150px);
+  z-index: 2;
+  @include shape-bottom;
+}
+
+.index__map {
+  transform: translateY(-180px);
+  height: 310px;
+  background-color: gray;
+}
+
+.index__btn-content {
+  display: block;
+
+  position: relative;
+
+  padding-left: 22px;
+  border-radius: 10px;
+
+  @include font-size(18px, 60px);
+  @include font(700, normal);
+  background-color: $yellow-low;
+  color: $blue-middle;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    transform: translateY(-50%);
+
+    width: 14px;
+    height: 13px;
+
+    background-image: url(../img/triangle-arrow-right.svg);
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+
+  &--border {
+    border: 3px solid $blue-high;
+  }
+}

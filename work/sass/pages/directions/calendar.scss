@@ -1,0 +1,40 @@
+.calendar__days-list {
+  display: grid;
+  grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.calendar__days-item {
+  width: 32px;
+
+  list-style-type: none;
+  text-align: center;
+
+  line-height: 32px;
+}
+
+.calendar__dates-list {
+  display: grid;
+  grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;
+
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #000;
+}
+
+.calendar__dates-item {
+  width: 32px;
+  border: 1px solid #000;
+  border-top: none;
+
+  list-style-type: none;
+  text-align: center;
+
+  line-height: 32px;
+
+  &:not(:nth-child(7n)) {
+    border-right: none;
+  };
+}

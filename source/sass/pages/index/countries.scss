@@ -1,0 +1,25 @@
+.countries {
+  position: relative;
+
+  padding-top: 89px;
+  padding-bottom: 46px;
+
+  @include environment-white-dirty;
+}
+
+.countries__title-second {
+  margin-bottom: 19px;
+}
+
+.countries__wrap {
+  margin-bottom: 25px;
+}
+
+.countries__country-card:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.countries__paragraph {
+  margin: 0;
+  margin-bottom: 50px;
+}

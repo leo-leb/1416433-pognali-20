@@ -1,140 +1,150 @@
 {
-	"countries": {
-		"thailand": {
-			"name": "Тайланд",
-			"class": "thailand",
-			"moto": "Джунгли зовут!",
-			"visitors": 18321
-		},
-		"france": {
-			"name": "Франция",
-			"class": "france",
-			"moto": "Трэ бьен, манифик!",
-			"visitors": 12518
-		},
-		"chezh": {
-			"name": "Чехия",
-			"class": "chezh",
-			"moto": "Закоулки старой Европы",
-			"visitors": 5326
-		}
-	},
-	"users": [
-		{
-			"name": "Таня Фирсова",
-			"class": "tanya-firsova",
-			"status": "user--status-offline",
-			"likes": 1500000,
-			"skill": 99,
-			"tags": ["ЗОЖ", "ПП", "Фитнес", "пляж", "авокадо", "смузи"],
-			"wishes": ["шри-ланка", "тайланд", "сейшелы"],
-			"moves":
-				{
-					"fly": {"name": "самолет", "condition": true},
-					"drive": {"name": "автобус", "condition": false},
-					"ride": {"name": "велосипед", "condition": false},
-					"run": {"name": "бег", "condition": false}
-				}
-		},
-		{
-			"name": "Петя Демин",
-			"class": "petya-demin",
-			"status": "user--status-online",
-			"likes": 1500,
-			"skill": 80,
-			"tags": ["бургег", "бар", "футбол", "концерт", "крафт"],
-			"wishes": ["бельгия", "чехия"],
-			"moves":
-				{
-					"fly": {"name": "самолет", "condition": true},
-					"drive": {"name": "автобус", "condition": true},
-					"ride": {"name": "велосипед", "condition": false},
-					"run": {"name": "бег", "condition": true}
-				}
-		},
-		{
-			"name": "Марк Смолов",
-			"class": "mark-smolov",
-			"status": "user--status-offline",
-			"likes": 170,
-			"skill": 25,
-			"tags": ["рэп", "тату", "хайпбист", "кроссовки", "суприм"],
-			"wishes": ["сша", "австралия", "доминикана"],
-			"moves":
-				{
-					"fly": {"name": "самолет", "condition": true},
-					"drive": {"name": "автобус", "condition": false},
-					"ride": {"name": "велосипед", "condition": true},
-					"run": {"name": "бег", "condition": false}
-				},
-			"plans": ["1", "2"],
-			"direction": {"1": "Франция, Италия", "2": "Таиланд, Индонезия"},
-			"companion": {"1": "3 попутчика", "2": "1 попутчик"},
-			"period": {"1": "26 МАР - 29 МАР", "2": "1 ИЮЛ - 15 ИЮЛ"}
-		},
-		{
-			"name": "Лариса Роговая",
-			"class": "larisa-rogovaya",
-			"status": "user--status-online",
-			"likes": 23,
-			"skill": 50,
-			"tags": ["образование", "карьера", "учеба", "линкедин"],
-			"wishes": ["великобритания", "германия"],
-			"moves":
-				{
-					"fly": {"name": "самолет", "condition": true},
-					"drive": {"name": "автобус", "condition": true},
-					"ride": {"name": "велосипед", "condition": false},
-					"run": {"name": "бег", "condition": false}
-				}
-		}
-	],
-	"filterCountries":
-		{
-			"parts": ["европа", "азия", "америка", "острова"],
-			"alphabet": ["а", "б", "в", "г", "д", "е", "з", "и", "к", "л", "м", "о", "п", "р", "с", "т", "у", "ф", "х", "ч", "ш", "э", "ю", "я"],
-			"a": ["Австралия", "Австрия", "Азербайджан", "Албания", "Алжир", "Ангола", "Андорра", "Антигуа и Барбуда", "Аргентина", "Армения", "Афганистан"]
-		},
-	"filterUsers":
-		{
-			"hobby": ["Спортзал", "Кальян", "Диван"],
-			"music": ["Тяжелый рок", "Русский рэп", "Евроденс"],
-			"food": ["Мясоед", "ПП", "Веган-сыроед"],
-			"transport": ["Самолет", "Автобус", "Велосипед", "Бег"]
-		},
-	"advertising":
-		{
-			"general": [
-				{
-					"desc": "Базовое размещение",
-					"price": "Бесплатно"
-				},
-				{
-					"desc": "Вывод на первых позициях",
-					"price": "99 руб./мес"
-				},
-				{
-					"desc": "Кастомный цвет карточки",
-					"price": "59 руб./мес"
-				}
-			],
-			"business": [
-				{
-					"desc": "Реклама у блогера",
-					"price": "300 000 руб./пост"
-				},
-				{
-					"desc": "Накрутка подписчиков",
-					"price": "от 1 руб./шт."
-				},
-				{
-					"desc": "Лайки от ботов",
-					"price": "от 20 коп./лайк"
-				},
-				{
-					"desc": "Ваш продакт-плейсмент",
-					"price": "Индивидуально"
-				}
-			]
-		}
+  "countries": {
+    "thailand": {
+      "name": "Тайланд",
+      "class": "thailand",
+      "moto": "Джунгли зовут!",
+      "visitors": 18321
+    },
+    "france": {
+      "name": "Франция",
+      "class": "france",
+      "moto": "Трэ бьен, манифик!",
+      "visitors": 12518
+    },
+    "chezh": {
+      "name": "Чехия",
+      "class": "chezh",
+      "moto": "Закоулки старой Европы",
+      "visitors": 5326
+    }
+  },
+  "users": [
+    {
+      "class": "tanya-firsova",
+      "firstname": "Таня",
+      "lastname": "Фирсова",
+      "status": "offline",
+      "likes": 1500000,
+      "skill": 99,
+      "tags": ["ЗОЖ", "ПП", "Фитнес", "пляж", "авокадо", "смузи"],
+      "wishes": ["шри-ланка", "тайланд", "сейшелы"],
+      "moves":
+        {
+          "fly": {"name": "самолет", "condition": true},
+          "drive": {"name": "автобус", "condition": false},
+          "ride": {"name": "велосипед", "condition": false},
+          "run": {"name": "бег", "condition": false}
+        }
+    },
+    {
+      "class": "petya-demin",
+      "firstname": "Петя",
+      "lastname": "Демин",
+      "status": "online",
+      "likes": 1500,
+      "skill": 80,
+      "tags": ["бургег", "бар", "футбол", "концерт", "крафт"],
+      "wishes": ["бельгия", "чехия"],
+      "moves":
+        {
+          "fly": {"name": "самолет", "condition": true},
+          "drive": {"name": "автобус", "condition": true},
+          "ride": {"name": "велосипед", "condition": false},
+          "run": {"name": "бег", "condition": true}
+        }
+    },
+    {
+      "class": "mark-smolov",
+      "firstname": "Марк",
+      "lastname": "Смолов",
+      "status": "offline",
+      "likes": 170,
+      "skill": 25,
+      "tags": ["рэп", "тату", "хайпбист", "кроссовки", "суприм"],
+      "wishes": ["сша", "австралия", "доминикана"],
+      "moves":
+        {
+          "fly": {"name": "самолет", "condition": true},
+          "drive": {"name": "автобус", "condition": false},
+          "ride": {"name": "велосипед", "condition": true},
+          "run": {"name": "бег", "condition": false}
+        },
+      "plans": ["1", "2"],
+      "direction": {"1": "Франция, Италия", "2": "Таиланд, Индонезия"},
+      "companion": {"1": "3 попутчика", "2": "1 попутчик"},
+      "period": {"1": "26 МАР - 29 МАР", "2": "1 ИЮЛ - 15 ИЮЛ"}
+    },
+    {
+      "class": "larisa-rogovaya",
+      "firstname": "Лариса",
+      "lastname": "Роговая",
+      "status": "online",
+      "likes": 23,
+      "skill": 50,
+      "tags": ["образование", "карьера", "учеба", "линкедин"],
+      "wishes": ["великобритания", "германия"],
+      "moves":
+        {
+          "fly": {"name": "самолет", "condition": true},
+          "drive": {"name": "автобус", "condition": true},
+          "ride": {"name": "велосипед", "condition": false},
+          "run": {"name": "бег", "condition": false}
+        }
+    }
+  ],
+  "filterCountries":
+    {
+      "parts": ["европа", "азия", "америка", "острова"],
+      "alphabet": {
+        "first": ["а", "б", "в", "г", "д"],
+        "second": ["е", "з", "и", "к", "л"],
+        "third": ["м", "н", "о", "п", "р"],
+        "fourth": ["с", "т", "у", "ф", "х"],
+        "fifth": ["ч", "ш", "э", "ю", "я"]
+      },
+      "a": ["Австралия", "Австрия", "Азербайджан", "Албания", "Алжир", "Ангола", "Андорра", "Антигуа и Барбуда", "Аргентина", "Армения", "Афганистан"]
+    },
+  "filterUsers":
+    {
+      "hobby": ["Спортзал", "Кальян", "Диван"],
+      "music": ["Тяжелый рок", "Русский рэп", "Евроденс"],
+      "food": ["Мясоед", "ПП", "Веган-сыроед"],
+      "transport": ["Самолет", "Автобус", "Велосипед", "Бег"]
+    },
+  "advertising":
+    {
+      "general": [
+        {
+          "desc": "Базовое размещение",
+          "price": "Бесплатно"
+        },
+        {
+          "desc": "Вывод на первых позициях",
+          "price": "99 руб./мес"
+        },
+        {
+          "desc": "Кастомный цвет карточки",
+          "price": "59 руб./мес"
+        }
+      ],
+      "business": [
+        {
+          "desc": "Реклама у блогера",
+          "price": "300 000 руб./пост"
+        },
+        {
+          "desc": "Накрутка подписчиков",
+          "price": "от 1 руб./шт."
+        },
+        {
+          "desc": "Лайки от ботов",
+          "price": "от 20 коп./лайк"
+        },
+        {
+          "desc": "Ваш продакт-плейсмент",
+          "price": "Индивидуально"
+        }
+      ]
+    }
 }

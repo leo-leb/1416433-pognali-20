@@ -1,0 +1,28 @@
+.filter-users{
+  padding-top: 26px;
+  padding-bottom: 22px;
+  border-radius: 20px;
+  @include environment-yellow;
+}
+
+.filter-users .title-third{
+  width: 40%;
+}
+
+.filter-users__title-third{
+  margin-bottom: 23px;
+}
+
+.filter-users__btn {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include font-size(17px, 40px);
+  @include font(700, normal);
+  color: $blue-dark;
+  background-color: $white-middle;
+}

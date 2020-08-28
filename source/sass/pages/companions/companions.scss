@@ -1,0 +1,113 @@
+.companions {
+  position: relative;
+	min-width: 320px;
+  margin: 0 auto;
+}
+
+.companions__filter-countries {
+  position: relative;
+  transform: translateY(-30px);
+  z-index: 1;
+
+  @include shape-bottom;
+}
+
+.companions__filter-users {
+  margin-bottom: 28px;
+}
+
+.companions__content-wrap {
+  transform: translateY(-60px);
+
+  padding-top: 51px;
+  padding-bottom: 76px;
+  background-color: $white-dirty;
+}
+
+.companions + .footer {
+  transform: translateY(-90px);
+}
+
+// BUTTONS
+
+.companions__btn-open {
+  position: relative;
+
+  display: block;
+
+  padding-left: 31px;
+
+  @include font(700, normal);
+  @include font-size(18px, 66px);
+  color: $blue-middle;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 49%;
+    left: 60px;
+    transform: translateY(-50%);
+
+    width: 18px;
+    height: 18px;
+
+    background-image: url(../img/show-more-plus.svg);
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+}
+
+.companions__clicker-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 51px;
+  border-radius: 20px;
+
+  background-color: $white-middle;
+
+  &::after {
+    @include zero-centered;
+
+    height: 100%;
+    width: 1px;
+    background-color: $white-dirty;
+
+    content: "";
+  }
+}
+
+.companions__btn-clicker{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: block;
+
+  &--left,
+  &--right {
+    &::after {
+      @include zero-centered;
+
+      width: 10px;
+      height: 18px;
+
+      background-image: url(../img/triangle-arrow-right.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+
+      content: "";
+    }
+  }
+
+  &--left {
+    &::after {
+      transform: rotate(180deg);
+    }
+  };
+}

@@ -1,0 +1,55 @@
+.directions {
+  position: relative;
+	min-width: 320px;
+  margin: 0 auto;
+}
+
+.directions__user-box {
+  transform: translateY(-30px);
+}
+
+.directions__plans-actual {
+  z-index: 2;
+  transform: translateY(-60px);
+  @include shape-top;
+}
+
+.directions__plans-create {
+  z-index: 3;
+  transform: translateY(-90px);
+  @include shape-top;
+}
+
+.directions + .footer {
+  transform: translateY(-120px);
+}
+
+// BUTTONS
+
+.directions__btn-step {
+  display: block;
+
+  width: 100%;
+  margin-bottom: 17px;
+  border: none;
+  border-radius: 25px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include font-size(18px, 40px);
+  @include font(700, normal);
+  color: $blue-middle;
+  background-color: $yellow-low;
+}
+
+.directions__btn-step-back {
+  display: block;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include font-size(18px, 1);
+  @include font(700, normal);
+  color: $blue-middle;
+}

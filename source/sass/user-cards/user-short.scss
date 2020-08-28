@@ -1,0 +1,110 @@
+.user-short {
+  position: relative;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  @include environment-white;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.user-short__img {
+  display: block;
+
+  height: 270px;
+  @include shape-top(10px);
+
+  background-image: url(../../img/demin-desktop@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.user-short__info {
+  position: relative;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 20px;
+  @include shape-bottom(10px);
+
+  background-color: $white-middle;
+  color: $black-low;
+}
+
+.user-short__name-wrap {
+  display: inline-block;
+
+  position: relative;
+
+  margin-bottom: 15px;
+
+  color: $blue-middle;
+}
+
+.user-short__user-status {
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  transform: translateY(-50%);
+}
+
+.user-short__tags {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.user-short__wishes {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-short__wishes .wishes__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.user-short__user {
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    transform: translateY(-50%);
+
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    content: "";
+  };
+}
+
+.user-short__skill {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid red;
+
+  text-align: center;
+
+  background-color: gray;
+}
+
+.user-short__skill-level {
+  @include font(700, normal);
+  @include font-size(24px, 24px);
+}
+
+.user-short__skill-unit {
+  margin: 0;
+  @include font;
+  @include font-size(14px, 14px);
+}

@@ -1,0 +1,91 @@
+.advertising {
+  position: relative;
+
+  padding-top: 71px;
+  padding-bottom: 45px;
+
+  @include environment-white-dirty;
+}
+
+.advertising__moto {
+  position: relative;
+
+  margin: 0;
+  margin-left: 23px;
+
+  @include font(700, normal);
+  @include font-size(24px, 24px);
+  color: $orange-middle;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    width: 100px;
+    height: 100px;
+
+    content: "";
+
+    background-image: url(../img/rates@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.advertising__list {
+  width: 200px;
+  margin: 0;
+  margin-top: 46px;
+  margin-bottom: 31px;
+  margin-left: 23px;
+  padding: 0;
+
+  counter-reset: myCounter;
+
+  @include font(300, normal);
+  @include font-size;
+}
+
+.advertising__item {
+  position: relative;
+
+  padding: 13px 0;
+
+  list-style: none;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    right: -43px;
+
+    width: 34px;
+    border-radius: 50%;
+
+    content:counter(myCounter);
+    counter-increment: myCounter;
+    text-align: center;
+
+    @include font;
+    background-color: orange; // ВРЕМЕННО
+    line-height: 34px;
+  }
+}
+
+.advertising__desc {
+  margin: 0;
+}
+
+.advertising__btn {
+  display: block;
+
+  width: 100%;
+  border: none;
+
+  text-align: center;
+
+  @include font-size;
+  @include font(700, normal);
+  color: $blue-middle-two;
+}

@@ -3,729 +3,804 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Погнали: Попутчики</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a class="logo header__logo" href="#">
-            <img src="#" alt="Логотип компании" width="100" height="15">
-          </a>
-          <h1 class="header__title title-first">Попутчики</h1>
-          <div class="header__menu-popup">
-            <button class="btn-cross header__btn-cross" type="button">
-              <span class="visually-hidden">Скрыть шапку страницы</span>
-            </button>
-            <nav class="nav header__nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="#">о сервисе</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./directions.html">направления</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./companions.html">попутчики</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="action-buttons-row menu-popup__action-buttons-row">
-              <a class="btn btn--form-round btn--color-yellow" href="#">авторизация</a>
-              <div class="contacts contacts--col">
-                <div class="contacts__wrap">
-                  <a class="btn-contact" href="tel:+78005558628">
-                    <svg></svg>
-                    <span class="visually-hidden">Позвонить</span>
-                  </a>
-                  <span class="contacts__desc">8 800 555-86-28</span>
-                </div>
-                <div class="contacts__wrap">
-                  <a class="btn-contact" href="#">
-                    <svg></svg>
-                    <span class="visually-hidden">Написать</span>
-                  </a>
-                  <span class="contacts__desc">mail.@htmlacademy.ru</span>
-                </div>
+      <div class="header__row">
+        <a class="logo logo--white" href="#"></a>
+        <div class="header__btn-menu" type="button">
+          <span class="header__btn-menu-line"></span>
+          <span class="visually-hidden">Открыть шапку страницы</span>
+        </div>
+        <div class="action-buttons action-buttons--row">
+          <div class="contacts contacts--row">
+            <a class="contacts__action" href="tel:+78005558628">
+              <div class="contacts__img contacts__img--phone">
+                <svg class="contacts__svg" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0 {
+                      fill: currentColor;
+                    }
+
+                  </style>
+                  <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5        c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3        c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3        c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z        M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9        c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3        c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6        c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"></path>
+                </svg>
               </div>
-            </div>
-            <div class="social header__social">
-              <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-              <a class="social__link" href="#">
-                <svg></svg>
-                <span class="visually-hidden">Вконтакте</span>
+              <span class="visually-hidden">Позвонить</span>
+            </a>
+            <a class="contacts__action" href="mailto:mail@htmlacademy.ru">
+              <div class="contacts__img contacts__img--mail">
+                <svg class="contacts__svg" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0 {
+                      fill: #010101;
+                    }
+
+                  </style>
+                  <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2        c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2        L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1        c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"></path>
+                </svg>
+              </div>
+              <span class="visually-hidden">Написать</span>
+            </a>
+          </div>
+          <a class="action-buttons__btn" href="#">авторизация</a>
+        </div>
+      </div>
+      <div class="header__menu-popup">
+        <div class="header__row">
+          <a class="logo logo--blue" href="#"></a>
+          <div class="header__btn-cross" type="button">
+            <span class="visually-hidden">Скрыть шапку страницы</span>
+            <svg class="btn__img" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.6 18.6" style="enable-background:new 0 0 18.6 18.6;" xml:space="preserve">
+              <path fill="#CCCCCC" d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7        L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="container-outter">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li>
+                <a class="header__nav-link" href="#">о сервисе</a>
+              </li>
+              <li>
+                <a class="header__nav-link" href="directions.html">направления</a>
+              </li>
+              <li>
+                <a class="header__nav-link" href="companions.html">попутчики</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="action-buttons action-buttons--col">
+            <a class="action-buttons__btn" href="#">авторизация</a>
+            <div class="contacts contacts--col">
+              <a class="contacts__action" href="tel:+78005558628">
+                <div class="contacts__img">
+                  <svg class="contacts__svg" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0 {
+                        fill: currentColor;
+                      }
+
+                    </style>
+                    <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5        c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3        c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3        c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z        M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9        c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3        c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6        c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"></path>
+                  </svg>
+                </div>
+                <span class="contacts__desc">8 800 555-86-28</span>
+                <span class="visually-hidden">Позвонить</span>
               </a>
-              <a class="social__link" href="#">
-                <svg></svg>
-                <span class="visually-hidden">Facebook</span>
-              </a>
-              <a class="social__link" href="#">
-                <svg></svg>
-                <span class="visually-hidden">Instagram</span>
+              <a class="contacts__action" href="mailto:mail@htmlacademy.ru">
+                <div class="contacts__img">
+                  <svg class="contacts__svg" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0 {
+                        fill: #010101;
+                      }
+
+                    </style>
+                    <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2        c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2        L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1        c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"></path>
+                  </svg>
+                </div>
+                <span class="contacts__desc">mail@htmlacademy.ru</span>
+                <span class="visually-hidden">Написать</span>
               </a>
             </div>
           </div>
-          <button class="btn-menu header__btn-menu" type="button">
-            <span class="visually-hidden">Открыть шапку страницы</span>
-          </button>
+          <div class="social">
+            <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+            <a class="social__link" href="#">
+              <svg class="social__svg" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                <g fill="currentColor">
+                  <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8            V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3            C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"></path>
+                </g>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+            <a class="social__link" href="#">
+              <svg class="social__svg" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                <g fill="currentColor">
+                  <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6            c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1            c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6            c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4            C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5            c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0            c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10            c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9            c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2            c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3            c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1            c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0            c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1            c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0            C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3            C18.4,10.9,18.5,10.9,18.6,10.9z"></path>
+                </g>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+            <a class="social__link" href="#">
+              <svg class="social__svg" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: currentColor;
+                  }
+
+                </style>
+                <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5          M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"></path>
+                <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6          c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"></path>
+                <circle class="st0" cx="17.6" cy="5.4" r="1.3"></circle>
+              </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </div>
         </div>
       </div>
     </header>
-    <main class="main-companions">
-      <div class="container">
-        <div class="main-companions__inner">
-          <div class="companions__filter-countries">
-            <div class="filter-countries__row">
-              <span class="filter-countries__hamburger"></span>
-              <h4 class="filter-countries__title title-fourth">фильтрация по странам</h4>
-              <button class="btn-dots filter-countries__btn-dots">
-                <span class="visually-hidden">показать все</span>
-              </button>
+    <main class="companions">
+      <section class="first-block">
+        <h1 class="title-first">Попутчики</h1>
+      </section>
+      <div class="filter-countries companions__filter-countries">
+        <div class="container-outter">
+          <div class="filter-countries__row">
+            <span class="filter-countries__hamburger"></span>
+            <h4 class="title-fourth filter-countries__title-fourth">фильтрация по странам</h4>
+            <button class="filter-countries__btn-dots">
+              <span class="visually-hidden">показать все</span>
+              <span class="filter-countries__btn-dots-img"></span>
+            </button>
+          </div>
+        </div>
+        <form class="filter-countries__form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="container-outter">
+            <div class="container-inner">
+              <fieldset class="filter-countries__parts">
+                <ul class="filter-countries__parts-list">
+                  <li>
+                    <label>
+                      <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="европа">
+                      <span class="filter-countries__parts-item">европа</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="азия">
+                      <span class="filter-countries__parts-item">азия</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="америка">
+                      <span class="filter-countries__parts-item">америка</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="острова">
+                      <span class="filter-countries__parts-item">острова</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="alphabet">
+                <fieldset class="alphabet__letters">
+                  <table class="alphabet__table">
+                    <tr class="alphabet__letters-list">
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">а</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">б</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">в</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">г</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">д</a>
+                      </td>
+                    </tr>
+                    <tr class="alphabet__letters-list">
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">е</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">з</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">и</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">к</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">л</a>
+                      </td>
+                    </tr>
+                    <tr class="alphabet__letters-list">
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">м</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">н</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">о</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">п</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">р</a>
+                      </td>
+                    </tr>
+                    <tr class="alphabet__letters-list">
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">с</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">т</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">у</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">ф</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">х</a>
+                      </td>
+                    </tr>
+                    <tr class="alphabet__letters-list">
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">ч</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">ш</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">э</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">ю</a>
+                      </td>
+                      <td class="alphabet__letters-item">
+                        <a class="alphabet__letters-desc" href="#">я</a>
+                      </td>
+                    </tr>
+                  </table>
+                </fieldset>
+                <fieldset class="alphabet__names">
+                  <ul class="alphabet__names-list">
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Австралия">
+                        <span class="alphabet__names-desc">Австралия</span>
+                      </label>
+                    </li>
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Австрия">
+                        <span class="alphabet__names-desc">Австрия</span>
+                      </label>
+                    </li>
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Азербайджан">
+                        <span class="alphabet__names-desc">Азербайджан</span>
+                      </label>
+                    </li>
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Албания">
+                        <span class="alphabet__names-desc">Албания</span>
+                      </label>
+                    </li>
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Алжир">
+                        <span class="alphabet__names-desc">Алжир</span>
+                      </label>
+                    </li>
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Ангола">
+                        <span class="alphabet__names-desc">Ангола</span>
+                      </label>
+                    </li>
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Андорра">
+                        <span class="alphabet__names-desc">Андорра</span>
+                      </label>
+                    </li>
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Антигуа и Барбуда">
+                        <span class="alphabet__names-desc">Антигуа и Барбуда</span>
+                      </label>
+                    </li>
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Аргентина">
+                        <span class="alphabet__names-desc">Аргентина</span>
+                      </label>
+                    </li>
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Армения">
+                        <span class="alphabet__names-desc">Армения</span>
+                      </label>
+                    </li>
+                    <li class="alphabet__names-item">
+                      <label>
+                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Афганистан">
+                        <span class="alphabet__names-desc">Афганистан</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
             </div>
-            <div class="countries filter-countries__countrys">
-              <form class="filter-countries__countries-form" action="https://echo.htmlacademy.ru" method="get">
-                <button class="btn-cross header__btn-cross" type="button">
-                  <span class="visually-hidden">Скрыть фильтр стран</span>
-                </button>
-                <fieldset class="countries__parts">
-                  <ul class="countries__parts-list">
-                    <li>
-                      <label class="countries__parts-item">
-                        <input name="parts" type="radio" value="европа">европа </label>
+            <button class="filter-countries__btn">свернуть</button>
+          </div>
+        </form>
+      </div>
+      <div class="companions__content-wrap">
+        <div class="container-outter">
+          <div class="filter-users companions__filter-users">
+            <div class="container-inner">
+              <h4 class="visually-hidden">фильтрация по попутчикам</h4>
+              <p class="title-third filter-users__title-third">Подберите идеального попутчика</p>
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <fieldset class="box filter-users__box">
+                  <label class="box__heading-wrap">
+                    <h3 class="title-third">хобби</h3>
+                    <div class="box__btn box__btn--open">
+                      <img class="box__img" src="./img/triangle-arrow-left.svg" width="10" height="7" />
+                    </div>
+                  </label>
+                  <ul class="box__value-list">
+                    <li class="box__value-item">
+                      <label class="box__option">
+                        <input class="real-checkbox" name="hobby" type="checkbox" value="Спортзал" />
+                        <span class="custom-checkbox"></span>Спортзал
+                      </label>
                     </li>
-                    <li>
-                      <label class="countries__parts-item">
-                        <input name="parts" type="radio" value="азия">азия </label>
+                    <li class="box__value-item">
+                      <label class="box__option">
+                        <input class="real-checkbox" name="hobby" type="checkbox" value="Кальян" />
+                        <span class="custom-checkbox"></span>Кальян
+                      </label>
                     </li>
-                    <li>
-                      <label class="countries__parts-item">
-                        <input name="parts" type="radio" value="америка">америка </label>
-                    </li>
-                    <li>
-                      <label class="countries__parts-item">
-                        <input name="parts" type="radio" value="острова">острова </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="countries__alphabet">
-                  <ul class="countries__alphabet-list">
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="а">а </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="б">б </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="в">в </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="г">г </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="д">д </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="е">е </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="з">з </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="и">и </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="к">к </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="л">л </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="м">м </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="о">о </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="п">п </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="р">р </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="с">с </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="т">т </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="у">у </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="ф">ф </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="х">х </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="ч">ч </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="ш">ш </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="э">э </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="ю">ю </label>
-                    </li>
-                    <li>
-                      <label class="countries__alphabet-item">
-                        <input name="alphabet" type="radio" value="я">я </label>
+                    <li class="box__value-item">
+                      <label class="box__option">
+                        <input class="real-checkbox" name="hobby" type="checkbox" value="Диван" />
+                        <span class="custom-checkbox"></span>Диван
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="countries__chosen">
-                  <ul class="countries__chosen-list">
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Австралия">Австралия </label>
+                <fieldset class="box filter-users__box">
+                  <label class="box__heading-wrap">
+                    <h3 class="title-third">музыка</h3>
+                    <div class="box__btn box__btn--open">
+                      <img class="box__img" src="./img/triangle-arrow-left.svg" width="10" height="7" />
+                    </div>
+                  </label>
+                  <ul class="box__value-list">
+                    <li class="box__value-item">
+                      <label class="box__option">
+                        <input class="real-checkbox" name="music" type="checkbox" value="Тяжелый рок" />
+                        <span class="custom-checkbox"></span>Тяжелый рок
+                      </label>
                     </li>
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Австрия">Австрия </label>
+                    <li class="box__value-item">
+                      <label class="box__option">
+                        <input class="real-checkbox" name="music" type="checkbox" value="Русский рэп" />
+                        <span class="custom-checkbox"></span>Русский рэп
+                      </label>
                     </li>
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Азербайджан">Азербайджан </label>
-                    </li>
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Албания">Албания </label>
-                    </li>
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Алжир">Алжир </label>
-                    </li>
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Ангола">Ангола </label>
-                    </li>
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Андорра">Андорра </label>
-                    </li>
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Антигуа и Барбуда">Антигуа и Барбуда </label>
-                    </li>
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Аргентина">Аргентина </label>
-                    </li>
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Армения">Армения </label>
-                    </li>
-                    <li>
-                      <label class="countries__chosen-item">
-                        <input type="checkbox" value="Афганистан">Афганистан </label>
+                    <li class="box__value-item">
+                      <label class="box__option">
+                        <input class="real-checkbox" name="music" type="checkbox" value="Евроденс" />
+                        <span class="custom-checkbox"></span>Евроденс
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
-                <button class="btn btn--form-round btn--color-blue countries__btn">свернуть</button>
+                <fieldset class="box filter-users__box">
+                  <label class="box__heading-wrap">
+                    <h3 class="title-third">еда</h3>
+                    <div class="box__btn box__btn--open">
+                      <img class="box__img" src="./img/triangle-arrow-left.svg" width="10" height="7" />
+                    </div>
+                  </label>
+                  <ul class="box__value-list">
+                    <li class="box__value-item">
+                      <label class="box__option">
+                        <input class="real-checkbox" name="food" type="checkbox" value="Мясоед" />
+                        <span class="custom-checkbox"></span>Мясоед
+                      </label>
+                    </li>
+                    <li class="box__value-item">
+                      <label class="box__option">
+                        <input class="real-checkbox" name="food" type="checkbox" value="ПП" />
+                        <span class="custom-checkbox"></span>ПП
+                      </label>
+                    </li>
+                    <li class="box__value-item">
+                      <label class="box__option">
+                        <input class="real-checkbox" name="food" type="checkbox" value="Веган-сыроед" />
+                        <span class="custom-checkbox"></span>Веган-сыроед
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="box filter-users__box">
+                  <div class="box__heading-wrap">
+                    <h3 class="title-third">транспорт</h3>
+                    <div class="box__btn box__btn--close">
+                      <img class="box__img" src="./img/triangle-arrow-right.svg" width="10" height="7" />
+                    </div>
+                  </div>
+                  <ul class="box__value-wrap">
+                    <li>
+                      <label class="box__option">
+                        <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Самолет" />
+                        <span class="custom-checkbox"></span>
+                        <span class="visually-hidden">Самолет</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="box__option">
+                        <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Автобус" />
+                        <span class="custom-checkbox"></span>
+                        <span class="visually-hidden">Автобус</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="box__option">
+                        <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Велосипед" />
+                        <span class="custom-checkbox"></span>
+                        <span class="visually-hidden">Велосипед</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="box__option">
+                        <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Бег" />
+                        <span class="custom-checkbox"></span>
+                        <span class="visually-hidden">Бег</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="box-level filter-users__box-level">
+                  <label class="box-level__heading-wrap">
+                    <h3 class="title-third">левел</h3>
+                    <div class="box__btn box__btn--close">
+                      <img class="box__img" src="./img/triangle-arrow-right.svg" width="10" height="7">
+                    </div>
+                  </label>
+                  <div class="box-level__value">
+                    <div class="box-level__number">
+                      <label class="box-level__min-level">
+                        <input class="input" type="number" name="min-level" value="30" step="1">
+                      </label>
+                      <label class="box-level__max-level">
+                        <input class="input" type="number" name="max-level" value="100" step="1">
+                      </label>
+                    </div>
+                    <div class="box-level__line">
+                      <!-- main-line-->
+                      <div class="box-level__active-line"></div>
+                      <!-- active-line-->
+                      <div class="box-level__toggle-min"></div>
+                      <div class="box-level__toggle-max"></div>
+                    </div>
+                  </div>
+                </fieldset>
+                <button class="filter-users__btn" type="submit">показать</button>
               </form>
             </div>
           </div>
-          <div class="companions__filter-users">
-            <h4 class="visually-hidden">фильтрация по попутчикам</h4>
-            <p class="title-third filter-users__title">Подберите идеального попутчика</p>
-            <form class="filter-users__users-form" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="box filter-users__box">
-                <label class="box__heading-wrap">
-                  <h3 class="title-third">хобби</h3>
-                  <div class="btn box__btn">
-                    <svg></svg>
-                  </div>
-                </label>
-                <ul class="box__value-wrap">
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="hobby" type="checkbox" value="Спортзал" />
-                      <span class="custom-checkbox"></span>Спортзал
-                    </label>
-                  </li>
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="hobby" type="checkbox" value="Кальян" />
-                      <span class="custom-checkbox"></span>Кальян
-                    </label>
-                  </li>
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="hobby" type="checkbox" value="Диван" />
-                      <span class="custom-checkbox"></span>Диван
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="box filter-users__box">
-                <label class="box__heading-wrap">
-                  <h3 class="title-third">музыка</h3>
-                  <div class="btn box__btn">
-                    <svg></svg>
-                  </div>
-                </label>
-                <ul class="box__value-wrap">
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="music" type="checkbox" value="Тяжелый рок" />
-                      <span class="custom-checkbox"></span>Тяжелый рок
-                    </label>
-                  </li>
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="music" type="checkbox" value="Русский рэп" />
-                      <span class="custom-checkbox"></span>Русский рэп
-                    </label>
-                  </li>
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="music" type="checkbox" value="Евроденс" />
-                      <span class="custom-checkbox"></span>Евроденс
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="box filter-users__box">
-                <label class="box__heading-wrap">
-                  <h3 class="title-third">еда</h3>
-                  <div class="btn box__btn">
-                    <svg></svg>
-                  </div>
-                </label>
-                <ul class="box__value-wrap">
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="food" type="checkbox" value="Мясоед" />
-                      <span class="custom-checkbox"></span>Мясоед
-                    </label>
-                  </li>
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="food" type="checkbox" value="ПП" />
-                      <span class="custom-checkbox"></span>ПП
-                    </label>
-                  </li>
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="food" type="checkbox" value="Веган-сыроед" />
-                      <span class="custom-checkbox"></span>Веган-сыроед
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="box filter-users__box">
-                <div class="box__heading-wrap">
-                  <h3 class="title-third">транспорт</h3>
-                  <div class="btn box__btn">
-                    <svg></svg>
-                  </div>
-                </div>
-                <ul class="box__value-wrap">
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Самолет" />
-                      <span class="custom-checkbox"></span>
-                      <span class="visually-hidden">Самолет</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Автобус" />
-                      <span class="custom-checkbox"></span>
-                      <span class="visually-hidden">Автобус</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Велосипед" />
-                      <span class="custom-checkbox"></span>
-                      <span class="visually-hidden">Велосипед</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="box__option">
-                      <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Бег" />
-                      <span class="custom-checkbox"></span>
-                      <span class="visually-hidden">Бег</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="box-level filter-users__box-level">
-                <label class="box-level__heading-wrap">
-                  <h3 class="title-third">левел</h3>
-                  <div class="btn box-level__btn">
-                    <svg></svg>
-                  </div>
-                </label>
-                <div class="box-level__value">
-                  <div class="box-level__number">
-                    <label class="box-level__min-level">
-                      <input class="input" type="number" name="min-level" value="30" step="1">
-                    </label>
-                    <label class="box-level__max-level">
-                      <input class="input" type="number" name="max-level" value="100" step="1">
-                    </label>
-                  </div>
-                  <div class="box-level__line">
-                    <!-- main-line-->
-                    <div class="box-level__active-line"></div>
-                    <!-- active-line-->
-                    <div class="box-level__toggle-min"></div>
-                    <div class="box-level__toggle-max"></div>
-                  </div>
-                </div>
-              </fieldset>
-              <button class="btn btn--form-round btn--color-white users-form__btn" type="submit">показать</button>
-            </form>
-          </div>
           <div class="companions__users-wrap">
-            <article class="user-card">
-              <div class="user-card__row">
-                <div class="user-card__img-wrap">
-                  <img class="user-card__img user-card__img--type-avatar" src="#" alt="Фото попутчика">
-                  <button class="user-card__like-clicker">
-                    <svg></svg>
-                  </button>
+            <article class="user-full">
+              <div class="container-inner">
+                <div class="user-full__row">
+                  <div class="user-avatar user-avatar--small"></div>
+                  <div class="user-full__name-wrap">
+                    <p class="user user-full__user user--offline">Таня</p>
+                    <p class="user user-full__user">Фирсова</p>
+                  </div>
                 </div>
-                <div class="user-card__name-wrap">
-                  <h3 class="title-third user-card__name">Таня Фирсова</h3>
-                  <svg class="user-status user-card__user-status user--status-offline"></svg>
-                  <input class="user-card__like-counter" type="text" value="1500000">
-                </div>
-              </div>
-              <ul class="tags user-card__tags">
-                <li class="tags__item">#ЗОЖ</li>
-                <li class="tags__item">#ПП</li>
-                <li class="tags__item">#Фитнес</li>
-                <li class="tags__item">#пляж</li>
-                <li class="tags__item">#авокадо</li>
-                <li class="tags__item">#смузи</li>
-              </ul>
-              <div class="user-card__wishes-wrap">
-                <h5 class="title-fifth user-card__title-fifth">хочет посетить:</h5>
-                <ul class="wishes user-card__wishes">
-                  <li class="wishes__item">шри-ланка
-                    <img class="wishes__country-flag" src="#" alt="Флаг шри-ланка">
-                  </li>
-                  <li class="wishes__item">тайланд
-                    <img class="wishes__country-flag" src="#" alt="Флаг тайланд">
-                  </li>
-                  <li class="wishes__item">сейшелы
-                    <img class="wishes__country-flag" src="#" alt="Флаг сейшелы">
-                  </li>
+                <ul class="tags user-full__tags">
+                  <li class="tags__item">#ЗОЖ</li>
+                  <li class="tags__item">#ПП</li>
+                  <li class="tags__item">#Фитнес</li>
+                  <li class="tags__item">#пляж</li>
+                  <li class="tags__item">#авокадо</li>
+                  <li class="tags__item">#смузи</li>
                 </ul>
-              </div>
-              <div class="user-card__row">
-                <div class="user-card__moves-wrap">
-                  <h5 class="title-fifth user-card__title-fifth">транспорт:</h5>
-                  <ul class="moves user-card__moves">
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка самолет</span>
-                      <svg class="moves__icon moves__icon--active"></svg>
+                <div class="user-full__wishes-wrap">
+                  <h5 class="title-fifth user-full__title-fifth">хочет посетить:</h5>
+                  <ul class="wishes user-full__wishes">
+                    <li class="wishes__item">
+                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг шри-ланка">
+                      <p class="wishes__country-name">шри-ланка</p>
                     </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка автобус</span>
-                      <svg class="moves__icon"></svg>
+                    <li class="wishes__item">
+                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг тайланд">
+                      <p class="wishes__country-name">тайланд</p>
                     </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка велосипед</span>
-                      <svg class="moves__icon"></svg>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка бег</span>
-                      <svg class="moves__icon"></svg>
+                    <li class="wishes__item">
+                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг сейшелы">
+                      <p class="wishes__country-name">сейшелы</p>
                     </li>
                   </ul>
                 </div>
-                <div class="user-card__skill-wrap">
-                  <h5 class="title-fifth user-card__title-fifth">левел:</h5>
-                  <div class="user-card__skill">
-                    <svg class="user-card__skill-graph"></svg>
-                    <div class="user-card__level-wrap">
-                      <span class="user-card__level">99</span>
+                <div class="user-full__row-alt">
+                  <div class="user-full__moves-wrap">
+                    <h5 class="title-fifth user-full__title-fifth">транспорт:</h5>
+                    <ul class="moves user-full__moves">
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка самолет</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка автобус</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка велосипед</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка бег</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="user-full__skill">
+                    <h5 class="title-fifth user-full__title-fifth">левел:</h5>
+                    <div class="user-full__level-wrap">
+                      <span class="user-full__skill-level">99</span>
                     </div>
                   </div>
                 </div>
+                <a class="user-full__btn-user" href="#">позвать!</a>
               </div>
-              <a class="btn user-card__btn btn_form--round btn_color--yellow" href="#">позвать!</a>
             </article>
-            <article class="user-card">
-              <div class="user-card__row">
-                <div class="user-card__img-wrap">
-                  <img class="user-card__img user-card__img--type-avatar" src="#" alt="Фото попутчика">
-                  <button class="user-card__like-clicker">
-                    <svg></svg>
-                  </button>
+            <article class="user-full">
+              <div class="container-inner">
+                <div class="user-full__row">
+                  <div class="user-avatar user-avatar--small"></div>
+                  <div class="user-full__name-wrap">
+                    <p class="user user-full__user user--online">Петя</p>
+                    <p class="user user-full__user">Демин</p>
+                  </div>
                 </div>
-                <div class="user-card__name-wrap">
-                  <h3 class="title-third user-card__name">Петя Демин</h3>
-                  <svg class="user-status user-card__user-status user--status-online"></svg>
-                  <input class="user-card__like-counter" type="text" value="1500">
-                </div>
-              </div>
-              <ul class="tags user-card__tags">
-                <li class="tags__item">#бургег</li>
-                <li class="tags__item">#бар</li>
-                <li class="tags__item">#футбол</li>
-                <li class="tags__item">#концерт</li>
-                <li class="tags__item">#крафт</li>
-              </ul>
-              <div class="user-card__wishes-wrap">
-                <h5 class="title-fifth user-card__title-fifth">хочет посетить:</h5>
-                <ul class="wishes user-card__wishes">
-                  <li class="wishes__item">бельгия
-                    <img class="wishes__country-flag" src="#" alt="Флаг бельгия">
-                  </li>
-                  <li class="wishes__item">чехия
-                    <img class="wishes__country-flag" src="#" alt="Флаг чехия">
-                  </li>
+                <ul class="tags user-full__tags">
+                  <li class="tags__item">#бургег</li>
+                  <li class="tags__item">#бар</li>
+                  <li class="tags__item">#футбол</li>
+                  <li class="tags__item">#концерт</li>
+                  <li class="tags__item">#крафт</li>
                 </ul>
-              </div>
-              <div class="user-card__row">
-                <div class="user-card__moves-wrap">
-                  <h5 class="title-fifth user-card__title-fifth">транспорт:</h5>
-                  <ul class="moves user-card__moves">
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка самолет</span>
-                      <svg class="moves__icon moves__icon--active"></svg>
+                <div class="user-full__wishes-wrap">
+                  <h5 class="title-fifth user-full__title-fifth">хочет посетить:</h5>
+                  <ul class="wishes user-full__wishes">
+                    <li class="wishes__item">
+                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг бельгия">
+                      <p class="wishes__country-name">бельгия</p>
                     </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка автобус</span>
-                      <svg class="moves__icon moves__icon--active"></svg>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка велосипед</span>
-                      <svg class="moves__icon"></svg>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка бег</span>
-                      <svg class="moves__icon moves__icon--active"></svg>
+                    <li class="wishes__item">
+                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг чехия">
+                      <p class="wishes__country-name">чехия</p>
                     </li>
                   </ul>
                 </div>
-                <div class="user-card__skill-wrap">
-                  <h5 class="title-fifth user-card__title-fifth">левел:</h5>
-                  <div class="user-card__skill">
-                    <svg class="user-card__skill-graph"></svg>
-                    <div class="user-card__level-wrap">
-                      <span class="user-card__level">80</span>
+                <div class="user-full__row-alt">
+                  <div class="user-full__moves-wrap">
+                    <h5 class="title-fifth user-full__title-fifth">транспорт:</h5>
+                    <ul class="moves user-full__moves">
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка самолет</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка автобус</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка велосипед</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка бег</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="user-full__skill">
+                    <h5 class="title-fifth user-full__title-fifth">левел:</h5>
+                    <div class="user-full__level-wrap">
+                      <span class="user-full__skill-level">80</span>
                     </div>
                   </div>
                 </div>
+                <a class="user-full__btn-user" href="#">позвать!</a>
               </div>
-              <a class="btn user-card__btn btn_form--round btn_color--yellow" href="#">позвать!</a>
             </article>
-            <article class="user-card">
-              <div class="user-card__row">
-                <div class="user-card__img-wrap">
-                  <img class="user-card__img user-card__img--type-avatar" src="#" alt="Фото попутчика">
-                  <button class="user-card__like-clicker">
-                    <svg></svg>
-                  </button>
+            <article class="user-full">
+              <div class="container-inner">
+                <div class="user-full__row">
+                  <div class="user-avatar user-avatar--small"></div>
+                  <div class="user-full__name-wrap">
+                    <p class="user user-full__user user--offline">Марк</p>
+                    <p class="user user-full__user">Смолов</p>
+                  </div>
                 </div>
-                <div class="user-card__name-wrap">
-                  <h3 class="title-third user-card__name">Марк Смолов</h3>
-                  <svg class="user-status user-card__user-status user--status-offline"></svg>
-                  <input class="user-card__like-counter" type="text" value="170">
-                </div>
-              </div>
-              <ul class="tags user-card__tags">
-                <li class="tags__item">#рэп</li>
-                <li class="tags__item">#тату</li>
-                <li class="tags__item">#хайпбист</li>
-                <li class="tags__item">#кроссовки</li>
-                <li class="tags__item">#суприм</li>
-              </ul>
-              <div class="user-card__wishes-wrap">
-                <h5 class="title-fifth user-card__title-fifth">хочет посетить:</h5>
-                <ul class="wishes user-card__wishes">
-                  <li class="wishes__item">сша
-                    <img class="wishes__country-flag" src="#" alt="Флаг сша">
-                  </li>
-                  <li class="wishes__item">австралия
-                    <img class="wishes__country-flag" src="#" alt="Флаг австралия">
-                  </li>
-                  <li class="wishes__item">доминикана
-                    <img class="wishes__country-flag" src="#" alt="Флаг доминикана">
-                  </li>
+                <ul class="tags user-full__tags">
+                  <li class="tags__item">#рэп</li>
+                  <li class="tags__item">#тату</li>
+                  <li class="tags__item">#хайпбист</li>
+                  <li class="tags__item">#кроссовки</li>
+                  <li class="tags__item">#суприм</li>
                 </ul>
-              </div>
-              <div class="user-card__row">
-                <div class="user-card__moves-wrap">
-                  <h5 class="title-fifth user-card__title-fifth">транспорт:</h5>
-                  <ul class="moves user-card__moves">
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка самолет</span>
-                      <svg class="moves__icon moves__icon--active"></svg>
+                <div class="user-full__wishes-wrap">
+                  <h5 class="title-fifth user-full__title-fifth">хочет посетить:</h5>
+                  <ul class="wishes user-full__wishes">
+                    <li class="wishes__item">
+                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг сша">
+                      <p class="wishes__country-name">сша</p>
                     </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка автобус</span>
-                      <svg class="moves__icon"></svg>
+                    <li class="wishes__item">
+                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг австралия">
+                      <p class="wishes__country-name">австралия</p>
                     </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка велосипед</span>
-                      <svg class="moves__icon moves__icon--active"></svg>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка бег</span>
-                      <svg class="moves__icon"></svg>
+                    <li class="wishes__item">
+                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг доминикана">
+                      <p class="wishes__country-name">доминикана</p>
                     </li>
                   </ul>
                 </div>
-                <div class="user-card__skill-wrap">
-                  <h5 class="title-fifth user-card__title-fifth">левел:</h5>
-                  <div class="user-card__skill">
-                    <svg class="user-card__skill-graph"></svg>
-                    <div class="user-card__level-wrap">
-                      <span class="user-card__level">25</span>
+                <div class="user-full__row-alt">
+                  <div class="user-full__moves-wrap">
+                    <h5 class="title-fifth user-full__title-fifth">транспорт:</h5>
+                    <ul class="moves user-full__moves">
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка самолет</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка автобус</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка велосипед</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка бег</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="user-full__skill">
+                    <h5 class="title-fifth user-full__title-fifth">левел:</h5>
+                    <div class="user-full__level-wrap">
+                      <span class="user-full__skill-level">25</span>
                     </div>
                   </div>
                 </div>
+                <a class="user-full__btn-user" href="#">позвать!</a>
               </div>
-              <a class="btn user-card__btn btn_form--round btn_color--yellow" href="#">позвать!</a>
             </article>
-            <article class="user-card">
-              <div class="user-card__row">
-                <div class="user-card__img-wrap">
-                  <img class="user-card__img user-card__img--type-avatar" src="#" alt="Фото попутчика">
-                  <button class="user-card__like-clicker">
-                    <svg></svg>
-                  </button>
+            <article class="user-full">
+              <div class="container-inner">
+                <div class="user-full__row">
+                  <div class="user-avatar user-avatar--small"></div>
+                  <div class="user-full__name-wrap">
+                    <p class="user user-full__user user--online">Лариса</p>
+                    <p class="user user-full__user">Роговая</p>
+                  </div>
                 </div>
-                <div class="user-card__name-wrap">
-                  <h3 class="title-third user-card__name">Лариса Роговая</h3>
-                  <svg class="user-status user-card__user-status user--status-online"></svg>
-                  <input class="user-card__like-counter" type="text" value="23">
-                </div>
-              </div>
-              <ul class="tags user-card__tags">
-                <li class="tags__item">#образование</li>
-                <li class="tags__item">#карьера</li>
-                <li class="tags__item">#учеба</li>
-                <li class="tags__item">#линкедин</li>
-              </ul>
-              <div class="user-card__wishes-wrap">
-                <h5 class="title-fifth user-card__title-fifth">хочет посетить:</h5>
-                <ul class="wishes user-card__wishes">
-                  <li class="wishes__item">великобритания
-                    <img class="wishes__country-flag" src="#" alt="Флаг великобритания">
-                  </li>
-                  <li class="wishes__item">германия
-                    <img class="wishes__country-flag" src="#" alt="Флаг германия">
-                  </li>
+                <ul class="tags user-full__tags">
+                  <li class="tags__item">#образование</li>
+                  <li class="tags__item">#карьера</li>
+                  <li class="tags__item">#учеба</li>
+                  <li class="tags__item">#линкедин</li>
                 </ul>
-              </div>
-              <div class="user-card__row">
-                <div class="user-card__moves-wrap">
-                  <h5 class="title-fifth user-card__title-fifth">транспорт:</h5>
-                  <ul class="moves user-card__moves">
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка самолет</span>
-                      <svg class="moves__icon moves__icon--active"></svg>
+                <div class="user-full__wishes-wrap">
+                  <h5 class="title-fifth user-full__title-fifth">хочет посетить:</h5>
+                  <ul class="wishes user-full__wishes">
+                    <li class="wishes__item">
+                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг великобритания">
+                      <p class="wishes__country-name">великобритания</p>
                     </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка автобус</span>
-                      <svg class="moves__icon moves__icon--active"></svg>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка велосипед</span>
-                      <svg class="moves__icon"></svg>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка бег</span>
-                      <svg class="moves__icon"></svg>
+                    <li class="wishes__item">
+                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг германия">
+                      <p class="wishes__country-name">германия</p>
                     </li>
                   </ul>
                 </div>
-                <div class="user-card__skill-wrap">
-                  <h5 class="title-fifth user-card__title-fifth">левел:</h5>
-                  <div class="user-card__skill">
-                    <svg class="user-card__skill-graph"></svg>
-                    <div class="user-card__level-wrap">
-                      <span class="user-card__level">50</span>
+                <div class="user-full__row-alt">
+                  <div class="user-full__moves-wrap">
+                    <h5 class="title-fifth user-full__title-fifth">транспорт:</h5>
+                    <ul class="moves user-full__moves">
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка самолет</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка автобус</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка велосипед</span>
+                      </li>
+                      <li class="moves__item">
+                        <span class="visually-hidden">Иконка бег</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="user-full__skill">
+                    <h5 class="title-fifth user-full__title-fifth">левел:</h5>
+                    <div class="user-full__level-wrap">
+                      <span class="user-full__skill-level">50</span>
                     </div>
                   </div>
                 </div>
+                <a class="user-full__btn-user" href="#">позвать!</a>
               </div>
-              <a class="btn user-card__btn btn_form--round btn_color--yellow" href="#">позвать!</a>
             </article>
-            <a class="btn companions__btn" href="#">показать еще</a>
-            <div class="companions__clicker-wrap">
-              <a class="btn-clicker" href="#">
-                <svg></svg>
-              </a>
-              <a class="btn-clicker" href="#">
-                <svg></svg>
-              </a>
-            </div>
+          </div>
+          <a class="companions__btn-open" href="#">показать еще</a>
+          <div class="companions__clicker-wrap">
+            <a class="companions__btn-clicker companions__btn-clicker--left" href="#"></a>
+            <a class="companions__btn-clicker companions__btn-clicker--right" href="#"></a>
           </div>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <a class="logo footer__logo" href="#">
-            <img src="#" alt="Логотип сервиса" width="100" height="15">
-          </a>
-          <div class="social footer__social">
-            <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-            <a class="social__link link_color--orange" href="#">
-              <svg></svg>
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-            <a class="social__link link_color--orange" href="#">
-              <svg></svg>
-              <span class="visually-hidden">Facebook</span>
-            </a>
-            <a class="social__link link_color--orange" href="#">
-              <svg></svg>
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </div>
-          <div class="creator footer__creator">
-            <h2 class="visually-hidden">Раздел об авторе сайта</h2>
-            <p class="creator__desc">Сделано</p>
-            <a class="creator__logo" href="#">
-              <img src="#" width="27" height="33" alt="Логотип создателя сайта">
-            </a>
-          </div>
-        </div>
+      <a class="logo logo--blue footer__logo" href="#"></a>
+      <div class="social footer__social">
+        <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+        <a class="social__link social__link--orange" href="#">
+          <svg class="social__svg" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+            <g fill="currentColor">
+              <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8          V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3          C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"></path>
+            </g>
+          </svg>
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+        <a class="social__link social__link--orange" href="#">
+          <svg class="social__svg" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+            <g fill="currentColor">
+              <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6          c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1          c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6          c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4          C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5          c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0          c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10          c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9          c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2          c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3          c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1          c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0          c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1          c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0          C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3          C18.4,10.9,18.5,10.9,18.6,10.9z"></path>
+            </g>
+          </svg>
+          <span class="visually-hidden">Facebook</span>
+        </a>
+        <a class="social__link social__link--orange" href="#">
+          <svg class="social__svg" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+            <style type="text/css">
+              .st0 {
+                fill: currentColor;
+              }
+
+            </style>
+            <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5        M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"></path>
+            <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6        c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"></path>
+            <circle class="st0" cx="17.6" cy="5.4" r="1.3"></circle>
+          </svg>
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </div>
+      <div class="footer__creator">
+        <h2 class="visually-hidden">Раздел об авторе сайта</h2>
+        <p class="footer__creator-desc">Разработано</p>
+        <a class="footer__creator-logo" href="#">
+          <img src="./img/htmlacademy.svg" width="27" height="33" alt="Логотип создателя сайта">
+        </a>
       </div>
     </footer>
   </body>

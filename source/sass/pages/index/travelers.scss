@@ -1,0 +1,25 @@
+.travelers {
+  position: relative;
+
+  padding-top: 86px;
+  padding-bottom: 45px;
+
+  @include environment-blue;
+}
+
+.travelers__title-second {
+  margin-bottom: 19px;
+}
+
+.travelers__wrap {
+  margin-top: 54px;
+  margin-bottom: 20px;
+}
+
+.travelers__paragraph {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 22.5px;
+  };
+}

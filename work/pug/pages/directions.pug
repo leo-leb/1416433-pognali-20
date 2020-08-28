@@ -1,53 +1,56 @@
 extends ../main
 
 block variables
+  - var pageDirections = true
   - var pageTitle = 'Погнали: Направления'
   - var firstTitle = 'Направления'
   - var person = users[2]
 
 block content
-  main.main-directions
-    .container
-      .main-directions__inner
-        article.user-card
-          .user-card__row
-            .user-card__skill-wrap
-              .user-card__skill
-                svg.user-card__skill-graph
-                .user-card__level-wrap
-                  span.user-card__level= person.skill
-                  p.user-card__unit level
-            img.user-card__img.user-card__img--type-avatar(src="#" alt="Фото попутчика")
-          .btn.btn--form-round.btn--color-blue.user-card__btn сменить фото
-          .user-card__tags-wrap
-            ul.tags.user-card__tags
-              h4.title-fourth.user-card__title-fourth тэги
+  main.directions
+    section.first-block
+      h1.title-first= firstTitle
+    section.user-box.directions__user-box
+      .container-outter
+        .user-box__row
+          .user-box__skill
+            .user-box__skill-wrap
+              span.user-box__skill-level= person.skill
+              p.user-box__skill-unit level
+          .user-avatar.user-avatar--big
+        .user-box__btn сменить фото
+        .user-box__tags-wrap
+            ul.tags
+              h4.title-fourth.user-box__title-fourth тэги
               each n in person.tags
                 li.tags__item= "#" + n
-          .user-card__moves-wrap
-            h4.title-fourth.user-card__title-fourth транспорт
-            ul.moves.user-card__moves
-              each n in person.moves
-                li.moves__item
-                  span.visually-hidden= "Иконка " + n.name
-                  svg.moves__icon(class= n.condition?"moves__icon--active":null)
-        section.plans-actual.main-directions__plans-actual
-          h2.title-second.title-second--color-blue-dark.plans-actual__title-second Мои планы:
-          ul.plans-actual__list
-            each n in person.plans
-              li.plans-actual__item
+        .user-box__moves-wrap
+          h4.title-fourth.user-box__title-fourth транспорт
+          ul.moves
+            each n in person.moves
+              li.moves__item
+                span.visually-hidden= "Иконка " + n.name
+                //- svg.moves__icon(class= n.condition?"moves__icon--active":null)
+    section.plans-actual.directions__plans-actual
+      .container-outter
+        h2.title-second.title-second--color-blue-middle.plans-actual__title-second Мои планы:
+        ul.plans-actual__list
+          each n in person.plans
+            li.plans-actual__item
+              .container-inner
                 p.plans-actual__name= n + '. ' + person.direction[n]
-                .plans-actual__desc-wrap
+                .plans-actual__wrap
                   p.plans-actual__desc= person.companion[n]
                   p.plans-actual__desc= person.period[n]
-                a.btn.plans-actual__btn(href="#") изменить
-        section.plans-create.main-directions__plans-create
-          h2.title-second.title-second--color-blue-dark.plans-actual__title-second Добавить план:
-          .plans-create__dots-wrap
-            span.plans-create__dot.plans-create__dot--active
-            span.plans-create__dot
-            span.plans-create__dot
-          form.plans-create__form(id="form")
-            include ../blocks/steps/step-first
-            include ../blocks/steps/step-second
-            include ../blocks/steps/step-third
+                a.plans-actual__btn-correct(href="#") изменить
+    section.plans-create.directions__plans-create
+      .container-outter
+        h2.title-second.title-second--color-blue-dark.plans-actual__title-second Добавить план:
+        .plans-create__dots-wrap
+          span.plans-create__dot.plans-create__dot--active
+          span.plans-create__dot
+          span.plans-create__dot
+        form.plans-create__form(id="form")
+          include ../blocks/steps/step-first
+          include ../blocks/steps/step-second
+          include ../blocks/steps/step-third

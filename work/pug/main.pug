@@ -5,11 +5,10 @@ html(lang="ru")
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/style.css")
     title= pageTitle
   body
-    if pageIndex
-      include blocks/header-full
-    else
-      include blocks/header-short
+    include blocks/header
     block content
     include blocks/footer

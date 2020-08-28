@@ -1,6 +1,4 @@
 mixin textarea-country(countryNameRu, countryNameEn, countryPlan)
-  article.country-plan-card.step-third__country-plan-card
-    .country-plan-card__row
-      span.country-plan-card__name= countryNameRu
-      img.country-plan-card__flag(src="#" alt= "Флаг " + countryNameRu)
-    textarea.country-plan-card__desc(name="plan-for-" + countryNameEn rows="9" form="form" placeholder="План действий")= countryPlan
+  article.plans-create__plan-country
+    p.plans-create__country-name= countryNameRu
+    textarea.plans-create__country-spec(name="plan-for-" + countryNameEn rows="9" form="form" placeholder="План действий")= countryPlan

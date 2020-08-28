@@ -1,0 +1,75 @@
+.country-card {
+  position: relative;
+
+  height: 189px;
+  border-radius: 10px;
+
+  background-image: url(../../img/thailand-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.country-card__info {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 24px;
+  border-radius: 10px;
+
+  @include font(500, normal);
+  background-color: $white-middle;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 23px;
+    transform: translateY(-50%);
+
+    width: 35px;
+    height: 24px;
+
+    content: "";
+
+    background-image: url(../img/flag-bosnia-and-herzegovina.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.country-card__title-third {
+  margin-bottom: 2px;
+  color: $black-middle;
+}
+
+.country-card__moto {
+  margin: 0;
+
+  @include font-size(16px, 18px);
+  color: $black-low;
+  opacity: 0.3;
+}
+
+.country-card__visitors {
+  position: absolute;
+  top: 28px;
+  right: 24px;
+
+  @include font-size(16px, 20px);
+  color: $black-low;
+  opacity: 0.3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    transform: translateY(-50%);
+
+    width: 14px;
+    height: 14px;
+
+    background-image: url(../../img/user.svg);
+  }
+}

@@ -1,23 +1,30 @@
 mixin input-country(countryName)
-  .box-country-wrap
+  .plans-create__box-country-wrap
     if countryName
-      .box-country.directions__box-country
-        label.box-country__wrap.box-country__wrap--size-m
-          span.box-country__desc= countryName
-          button.btn.box-country__btn(alt="Раскрыть список стран")
-            svg
-          span.box-country__status.box-country__status--active
-        .box-country__wrap.box-country__wrap--size-s
-          img.box-country__flag(src="#" alt= "Флаг " + countryName)
-        button.btn-close
+      .plans-create__box-country
+        label.plans-create__wrap.plans-create__wrap--size-m
+          span.plans-create__country-desc= countryName
+          button.plans-create__btn-arrow(alt="Раскрыть список стран")
+            img(src="./img/month-arrow-right.svg" width="16" height="12")
+          span.plans-create__status.plans-create__status--active
+        .plans-create__wrap.plans-create__wrap--size-s
+          img.plans-create__flag(src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + countryName)
+        button.plans-create__btn-cross
+          span.visually-hidden Удалить выбранную страну
     else
-      .box-country.directions__box-country
-        label.box-country__wrap.box-country__wrap--size-l
-          span.box-country__desc выберите страну
-          button.btn.box-country__btn(alt="Раскрыть список стран")
-            svg
-          span.box-country__status
-        button.btn-close
-    .box-country__filter
-      include ../blocks/filter-countries
-    img.box-country__arrow(alt="Переход к следующей стране")
+      .plans-create__box-country
+        label.plans-create__wrap.plans-create__wrap--size-l
+          span.plans-create__country-desc выберите страну
+          button.plans-create__btn-arrow(alt="Раскрыть список стран")
+            img(src="./img/month-arrow-right.svg" width="16" height="12")
+          span.plans-create__status
+    .plans-create__filter
+      .plans-create__box-country
+        label.plans-create__wrap.plans-create__wrap--size-l
+          span.plans-create__country-desc выберите страну
+          button.plans-create__btn-arrow(alt="Раскрыть список стран")
+            img(src="./img/month-arrow-right.svg" width="16" height="12")
+          span.plans-create__status
+        button.plans-create__btn-cross
+          span.visually-hidden Удалить выбранную страну
+      include ../blocks/alphabet

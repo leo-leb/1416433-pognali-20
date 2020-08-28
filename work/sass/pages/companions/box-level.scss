@@ -1,0 +1,40 @@
+.box-level {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid $separator-line;
+}
+
+.box-level__heading-wrap {
+  display: flex;
+
+  justify-content: space-between;
+
+  @include font(500, normal);
+  text-transform: uppercase;
+}
+
+.box-level__heading-wrap {
+  width: 100%;
+}
+
+.box-level__heading-wrap .title-third {
+  line-height: 40px;
+}
+
+.box-level__number {
+  display: flex;
+}
+
+.box-level__min-level,
+.box-level__max-level {
+  width: 50%;
+}
+
+.box-level__value input {
+  width: 100%;
+}
+
+.box-level__line {
+  margin-bottom: 21px;
+}
