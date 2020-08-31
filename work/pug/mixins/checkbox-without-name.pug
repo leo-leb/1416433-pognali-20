@@ -1,12 +1,12 @@
 mixin checkbox-without-name(title, name, massive)
-  fieldset.box.filter-users__box
+  .box.filter-users__box
     .box__heading-wrap
-      h3.title-third= title
+      h3.title-third= title + ":"
       .box__btn.box__btn--close
         img.box__img(src="./img/triangle-arrow-right.svg" width="10" height="7")
-    ul.box__value-wrap
+    ul.box__list
       each n in massive
-        li
+        li.box__item
           label.box__option
             input.real-checkbox.visually-hidden(name= name type="checkbox" value= n)
             span.custom-checkbox

@@ -1,32 +1,90 @@
 .header {
   position: relative;
+  z-index: 8;
 
   min-width: 320px;
   padding-top: 27px;
 
   @include environment-blue;
 
+  @media (min-width: 768px) {
+    padding-top: 40px;
+  };
+
+  @media (min-width: 1440px) {
+    padding-top: 46px;
+  };
+
+  & .header__nav-list {
+    display: none;
+
+    @media (min-width: 1440px) {
+      display: flex;
+      flex-grow: 1;
+
+      @include font-size(20px, 20px);
+
+      &::before {
+        width: 60px;
+        height: 2px;
+        margin-left: 40px;
+        margin-right: 45px;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        background-color: #fff;
+
+        content: "";
+      }
+    };
+  }
+
+  & .header__nav-link-wrap {
+    @media (min-width: 1440px) {
+      margin-right: 34px;
+    };
+  }
+
+  & .header__nav-link {
+    @media (min-width: 1440px) {
+      color: $white-middle;
+    };
+  }
+
+  & .action-buttons--row {
+    @media (min-width: 768px) {
+      display: flex;
+    };
+  }
+
   &--main {
     @include environment-blue-special;
 
-    & .action-buttons--row{
+    @media (min-width: 768px) {
+      @include environment-blue;
+    };
+
+    @media (min-width: 1440px) {
+      @include environment-blue-special;
+    };
+
+    & .action-buttons--row {
       display: flex;
     }
   }
 }
 
-.header__row {
+.header .container-outter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 26px;
 
   @media (min-width: 768px) {
-    padding: 0 40px;
+    padding: 0;
   };
 
   @media (min-width: 1440px) {
-    padding: 0 60px;
+    padding: 0;
   };
 }
 
@@ -77,6 +135,10 @@
   height: 11px;
 
   cursor: pointer;
+
+  @media (min-width: 1440px) {
+    display: none;
+  };
 }
 
 .header__btn-menu-line {

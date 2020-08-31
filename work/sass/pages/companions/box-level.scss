@@ -3,6 +3,12 @@
   padding: 0;
   border: none;
   border-top: 1px solid $separator-line;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  };
 }
 
 .box-level__heading-wrap {
@@ -33,8 +39,4 @@
 
 .box-level__value input {
   width: 100%;
-}
-
-.box-level__line {
-  margin-bottom: 21px;
 }

@@ -13,52 +13,87 @@
 }
 
 .index__about {
-  z-index: 7;
+  z-index: 6;
   @include shape-bottom;
+
+  @media (min-width: 768px) {
+    @include shape-bottom(55px);
+  };
 }
 
 .index__countries {
-  transform: translateY(-30px);
-  z-index: 6;
+  z-index: 5;
+  margin-top: -30px;
   @include shape-bottom;
+
+  @media (min-width: 768px) {
+    margin-top: -55px;
+    @include shape-bottom(55px);
+  };
 }
 
 .index__travelers {
-  transform: translateY(-60px);
-  z-index: 5;
+  z-index: 4;
+  margin-top: -30px;
   @include shape-bottom;
+
+  @media (min-width: 768px) {
+    margin-top: -55px;
+    @include shape-bottom(55px);
+  };
 }
 
 .index__advertising {
-  transform: translateY(-90px);
-  z-index: 4;
+  z-index: 3;
+  margin-top: -30px;
   @include shape-bottom;
+
+  @media (min-width: 768px) {
+    margin-top: -55px;
+    @include shape-bottom(55px);
+  };
 }
 
 .index__business {
-	bottom: 210px;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	transform: translateY(-989px);
-  z-index: 6;
+  z-index: 5;
 }
 
 .index__check-in {
-  transform: translateY(-120px);
-  z-index: 3;
+  z-index: 2;
+  margin-top: -30px;
   @include shape-bottom;
+
+  @media (min-width: 768px) {
+    margin-top: -55px;
+    @include shape-bottom(55px);
+  };
 }
 
 .index__adress {
-  transform: translateY(-150px);
-  z-index: 2;
+  z-index: 1;
+  margin-top: -30px;
   @include shape-bottom;
+
+  @media (min-width: 768px) {
+    margin-top: -55px;
+    @include shape-bottom(55px);
+  };
 }
 
 .index__map {
-  transform: translateY(-180px);
+  margin-top: -30px;
+  margin-bottom: -30px;
   height: 310px;
   background-color: gray;
+
+  @media (min-width: 768px) {
+    margin-top: -55px;
+    margin-bottom: -55px;
+  };
 }
 
 .index__btn-content {
@@ -92,4 +127,12 @@
   &--border {
     border: 3px solid $blue-high;
   }
+
+  @media (min-width: 768px) {
+    border-radius: 20px;
+  };
+
+  @media (min-width: 1440px) {
+    width: 275px;
+  };
 }

@@ -5,14 +5,63 @@
   padding-bottom: 46px;
 
   @include environment-white-dirty;
+
+  @media (min-width: 768px) {
+    padding-top: 128px;
+    padding-bottom: 80px;
+  };
+
+  @media (min-width: 1440px) {
+    padding-top: 216px;
+    padding-bottom: 138px;
+  };
+}
+
+.countries .container-outter {
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: flex-end;
+  };
+}
+
+// .countries .container-inner {
+//   @media (min-width: 1440px) {
+//     display: inline-block;
+//     width: auto;
+//     margin-right: 140px;
+//   };
+// }
+
+// .countries .wrap-inner {
+//   @media (min-width: 1440px) {
+//     margin: 0;
+//     margin-right: 140px;
+//   };
+// }
+
+.countries-wrap {
+  @media (min-width: 1440px) {
+    margin-right: 140px;
+  };
 }
 
 .countries__title-second {
-  margin-bottom: 19px;
+  margin: 0 25px 19px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-bottom: 55px;
+  };
 }
 
 .countries__wrap {
   margin-bottom: 25px;
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    top: 0;
+    left: 70px;
+  };
 }
 
 .countries__country-card:not(:last-child) {
@@ -20,6 +69,16 @@
 }
 
 .countries__paragraph {
-  margin: 0;
-  margin-bottom: 50px;
+  margin: 0 25px 50px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-bottom: 104px;
+  };
+}
+
+.countries .paragraph {
+  @media (min-width: 768px) {
+    width: 350px;
+  };
 }
