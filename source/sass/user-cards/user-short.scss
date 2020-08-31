@@ -9,7 +9,15 @@
 
   &:not(:last-child) {
     margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    };
   }
+
+  @media (min-width: 768px) {
+    flex-grow: 1;
+  };
 }
 
 .user-short__img {

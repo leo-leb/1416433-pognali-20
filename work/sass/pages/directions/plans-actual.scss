@@ -5,10 +5,20 @@
   padding-bottom: 60px;
 
   background-color: $main-bg-second;
+
+  @media (min-width: 768px) {
+    padding-top: 57px;
+    padding-bottom: 106px;
+  };
 }
 
 .plans-actual__title-second {
+  margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  };
 }
 
 .plans-actual__list {
@@ -17,24 +27,79 @@
 }
 
 .plans-actual__item {
-  padding: 23px 0;
+  padding: 23px 25px;
   border-radius: 10px;
 
   list-style-type: none;
 
   @include environment-white-alt;
 
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 40px 35px 15px;
+
+    &::after {
+      position: absolute;
+    }
+  };
+
+  @media (min-width: 1440px) {
+    align-items: center;
+    padding: 36px 43px;
+  };
+
   &:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 
-.plans-actual__name {
-  margin: 0;
+.plans-actual__row {
+  display: flex;
+
   margin-bottom: 20px;
 
   @include font(700, normal);
   @include font-size;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    width: 100%;
+    margin-bottom: 53px;
+
+    @include font-size(24px, 24px);
+  };
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    flex-grow: 0.6;
+    justify-content: flex-start;
+
+    width: auto;
+    margin-bottom: 0;
+  };
+}
+
+.plans-actual__number,
+.plans-actual__name {
+  margin: 0;
+}
+
+.plans-actual__number {
+  margin-right: 7px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  };
+
+  @media (min-width: 1440px) {
+    margin-right: 7px;
+  };
 }
 
 .plans-actual__wrap {
@@ -44,13 +109,35 @@
 
   @include font(500, normal);
   @include font-size(14px, 14px);
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.55;
+
+    margin: 0;
+
+    @include font-size(20px, 20px);
+  };
+
+  @media (min-width: 1440px) {
+    flex-grow: 0.15;
+  };
 }
 
 .plans-actual__desc {
   margin: 0;
 
+  letter-spacing: 0.06em;
+
   &:not(:last-child) {
     margin-bottom: 3px;
+
+    @media (min-width: 768px) {
+      margin: 0;
+
+      letter-spacing: 0.1em;
+    };
   }
 }
 
@@ -65,4 +152,17 @@
   @include font-size(14px, 14px);
   color: $black-middle;
   opacity: 0.3;
+  letter-spacing: 0.1em;
+
+  @media (min-width: 768px) {
+    flex-grow: 0.45;
+    text-align: right;
+
+    @include font-size(20px, 20px);
+    letter-spacing: 0.03em;
+  };
+
+  @media (min-width: 1440px) {
+    flex-grow: 0.15;
+  };
 }

@@ -7,8 +7,8 @@ mixin input-country(countryName)
           button.plans-create__btn-arrow(alt="Раскрыть список стран")
             img(src="./img/month-arrow-right.svg" width="16" height="12")
           span.plans-create__status.plans-create__status--active
-        .plans-create__wrap.plans-create__wrap--size-s
-          img.plans-create__flag(src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + countryName)
+        .plans-create__wrap.plans-create__wrap--flag.plans-create__wrap--size-s
+          img.plans-create__flag(src="./img/flag-bosnia-and-herzegovina.png" alt= "Флаг " + countryName)
         button.plans-create__btn-cross
           span.visually-hidden Удалить выбранную страну
     else
@@ -18,6 +18,8 @@ mixin input-country(countryName)
           button.plans-create__btn-arrow(alt="Раскрыть список стран")
             img(src="./img/month-arrow-right.svg" width="16" height="12")
           span.plans-create__status
+        button.plans-create__btn-cross
+          span.visually-hidden Удалить выбранную страну
     .plans-create__filter
       .plans-create__box-country
         label.plans-create__wrap.plans-create__wrap--size-l

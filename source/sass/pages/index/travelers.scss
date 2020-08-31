@@ -5,21 +5,86 @@
   padding-bottom: 45px;
 
   @include environment-blue;
+
+  @media (min-width: 768px) {
+    padding-top: 196px;
+    padding-bottom: 87px;
+  };
+
+  @media (min-width: 1440px) {
+    padding-top: 189px;
+    padding-bottom: 134px;
+  };
 }
 
 .travelers__title-second {
-  margin-bottom: 19px;
+  margin: 0 25px 19px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-bottom: 55px;
+  };
 }
 
 .travelers__wrap {
-  margin-top: 54px;
+  margin-top: 55px;
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 60px;
+    margin-bottom: 80px;
+  };
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin: 0;
+  };
+}
+
+.user-short:not(:last-child) {
+  @media (min-width: 768px) {
+    margin-right: 50px;
+  };
+  @media (min-width: 1440px) {
+    margin-right: 60px;
+  };
 }
 
 .travelers__paragraph {
-  margin: 0;
+  margin: 0 25px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  };
 
   &:not(:last-child) {
     margin-bottom: 22.5px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 39px;
+    };
+
+    @media (min-width: 1440px) {
+      margin-bottom: 42px;
+    };
+  };
+}
+
+.travelers .paragraph:not(:last-of-type) {
+  @media (min-width: 768px) {
+    width: 427px;
+  };
+}
+
+.travelers .paragraph:last-of-type {
+  @media (min-width: 768px) {
+    width: 260px;
   };
 }

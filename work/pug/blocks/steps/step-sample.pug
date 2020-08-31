@@ -1,15 +1,16 @@
 block variables
 
 article(class= 'plans-create__' + stepClass)
-  .container-inner
+  .plans-create__title-wrap
     p.title-sixth.plans-create__title-sixth= 'Шаг ' + stepNumber + '.'
     h6.title-sixth.plans-create__title-sixth= stepName
-    p.plans-create__desc= stepDesc
-    block content
+  p.plans-create__desc= stepDesc
+  block content
+  .plans-create__buttons-wrap
     if stepLast
-      button.directions__btn-step(type="submit") отправить
+      button.plans-create__btn-step(type="submit") Отправить
     else
-      a.directions__btn-step(href="#") следующий шаг
+      a.plans-create__btn-step(href="#") Следующий шаг
     if stepFirst
     else
-      a.directions__btn-step-back(href="#") на шаг назад
+      a.plans-create__btn-step-back(href="#") На шаг назад

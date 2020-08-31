@@ -9,12 +9,24 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__row">
+      <div class="container-outter">
         <a class="logo logo--white" href="#"></a>
         <div class="header__btn-menu" type="button">
           <span class="header__btn-menu-line"></span>
-          <span class="visually-hidden">Открыть шапку страницы</span>
+          <span class="visually-hidden">Открыть шапку страницы <nav class="header__nav"></nav>
+          </span>
         </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-link-wrap">
+            <a class="header__nav-link" href="#">о сервисе</a>
+          </li>
+          <li class="header__nav-link-wrap">
+            <a class="header__nav-link" href="directions.html">направления</a>
+          </li>
+          <li class="header__nav-link-wrap">
+            <a class="header__nav-link" href="companions.html">попутчики</a>
+          </li>
+        </ul>
         <div class="action-buttons action-buttons--row">
           <div class="contacts contacts--row">
             <a class="contacts__action" href="tel:+78005558628">
@@ -146,7 +158,9 @@
     </header>
     <main class="companions">
       <section class="first-block">
-        <h1 class="title-first">Попутчики</h1>
+        <div class="container-outter">
+          <h1 class="title-first">Попутчики</h1>
+        </div>
       </section>
       <div class="filter-countries companions__filter-countries">
         <div class="container-outter">
@@ -161,196 +175,194 @@
         </div>
         <form class="filter-countries__form" action="https://echo.htmlacademy.ru" method="get">
           <div class="container-outter">
-            <div class="container-inner">
-              <fieldset class="filter-countries__parts">
-                <ul class="filter-countries__parts-list">
-                  <li>
+            <fieldset class="filter-countries__parts">
+              <ul class="filter-countries__parts-list">
+                <li>
+                  <label>
+                    <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="европа">
+                    <span class="filter-countries__parts-item">европа</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="азия">
+                    <span class="filter-countries__parts-item">азия</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="америка">
+                    <span class="filter-countries__parts-item">америка</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="острова">
+                    <span class="filter-countries__parts-item">острова</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="alphabet">
+              <fieldset class="alphabet__letters">
+                <table class="alphabet__table">
+                  <tr class="alphabet__letters-list">
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">а</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">б</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">в</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">г</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">д</a>
+                    </td>
+                  </tr>
+                  <tr class="alphabet__letters-list">
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">е</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">з</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">и</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">к</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">л</a>
+                    </td>
+                  </tr>
+                  <tr class="alphabet__letters-list">
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">м</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">н</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">о</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">п</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">р</a>
+                    </td>
+                  </tr>
+                  <tr class="alphabet__letters-list">
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">с</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">т</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">у</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">ф</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">х</a>
+                    </td>
+                  </tr>
+                  <tr class="alphabet__letters-list">
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">ч</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">ш</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">э</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">ю</a>
+                    </td>
+                    <td class="alphabet__letters-item">
+                      <a class="alphabet__letters-desc" href="#">я</a>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+              <fieldset class="alphabet__names">
+                <ul class="alphabet__names-list">
+                  <li class="alphabet__names-item">
                     <label>
-                      <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="европа">
-                      <span class="filter-countries__parts-item">европа</span>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Австралия">
+                      <span class="alphabet__names-desc">Австралия</span>
                     </label>
                   </li>
-                  <li>
+                  <li class="alphabet__names-item">
                     <label>
-                      <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="азия">
-                      <span class="filter-countries__parts-item">азия</span>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Австрия">
+                      <span class="alphabet__names-desc">Австрия</span>
                     </label>
                   </li>
-                  <li>
+                  <li class="alphabet__names-item">
                     <label>
-                      <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="америка">
-                      <span class="filter-countries__parts-item">америка</span>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Азербайджан">
+                      <span class="alphabet__names-desc">Азербайджан</span>
                     </label>
                   </li>
-                  <li>
+                  <li class="alphabet__names-item">
                     <label>
-                      <input class="filter-countries__parts-radio visually-hidden" name="parts" type="radio" value="острова">
-                      <span class="filter-countries__parts-item">острова</span>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Албания">
+                      <span class="alphabet__names-desc">Албания</span>
+                    </label>
+                  </li>
+                  <li class="alphabet__names-item">
+                    <label>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Алжир">
+                      <span class="alphabet__names-desc">Алжир</span>
+                    </label>
+                  </li>
+                  <li class="alphabet__names-item">
+                    <label>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Ангола">
+                      <span class="alphabet__names-desc">Ангола</span>
+                    </label>
+                  </li>
+                  <li class="alphabet__names-item">
+                    <label>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Андорра">
+                      <span class="alphabet__names-desc">Андорра</span>
+                    </label>
+                  </li>
+                  <li class="alphabet__names-item">
+                    <label>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Антигуа и Барбуда">
+                      <span class="alphabet__names-desc">Антигуа и Барбуда</span>
+                    </label>
+                  </li>
+                  <li class="alphabet__names-item">
+                    <label>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Аргентина">
+                      <span class="alphabet__names-desc">Аргентина</span>
+                    </label>
+                  </li>
+                  <li class="alphabet__names-item">
+                    <label>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Армения">
+                      <span class="alphabet__names-desc">Армения</span>
+                    </label>
+                  </li>
+                  <li class="alphabet__names-item">
+                    <label>
+                      <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Афганистан">
+                      <span class="alphabet__names-desc">Афганистан</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <div class="alphabet">
-                <fieldset class="alphabet__letters">
-                  <table class="alphabet__table">
-                    <tr class="alphabet__letters-list">
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">а</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">б</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">в</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">г</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">д</a>
-                      </td>
-                    </tr>
-                    <tr class="alphabet__letters-list">
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">е</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">з</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">и</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">к</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">л</a>
-                      </td>
-                    </tr>
-                    <tr class="alphabet__letters-list">
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">м</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">н</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">о</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">п</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">р</a>
-                      </td>
-                    </tr>
-                    <tr class="alphabet__letters-list">
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">с</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">т</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">у</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">ф</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">х</a>
-                      </td>
-                    </tr>
-                    <tr class="alphabet__letters-list">
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">ч</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">ш</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">э</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">ю</a>
-                      </td>
-                      <td class="alphabet__letters-item">
-                        <a class="alphabet__letters-desc" href="#">я</a>
-                      </td>
-                    </tr>
-                  </table>
-                </fieldset>
-                <fieldset class="alphabet__names">
-                  <ul class="alphabet__names-list">
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Австралия">
-                        <span class="alphabet__names-desc">Австралия</span>
-                      </label>
-                    </li>
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Австрия">
-                        <span class="alphabet__names-desc">Австрия</span>
-                      </label>
-                    </li>
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Азербайджан">
-                        <span class="alphabet__names-desc">Азербайджан</span>
-                      </label>
-                    </li>
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Албания">
-                        <span class="alphabet__names-desc">Албания</span>
-                      </label>
-                    </li>
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Алжир">
-                        <span class="alphabet__names-desc">Алжир</span>
-                      </label>
-                    </li>
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Ангола">
-                        <span class="alphabet__names-desc">Ангола</span>
-                      </label>
-                    </li>
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Андорра">
-                        <span class="alphabet__names-desc">Андорра</span>
-                      </label>
-                    </li>
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Антигуа и Барбуда">
-                        <span class="alphabet__names-desc">Антигуа и Барбуда</span>
-                      </label>
-                    </li>
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Аргентина">
-                        <span class="alphabet__names-desc">Аргентина</span>
-                      </label>
-                    </li>
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Армения">
-                        <span class="alphabet__names-desc">Армения</span>
-                      </label>
-                    </li>
-                    <li class="alphabet__names-item">
-                      <label>
-                        <input class="alphabet__names-checkbox visually-hidden" type="checkbox" value="Афганистан">
-                        <span class="alphabet__names-desc">Афганистан</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
             </div>
             <button class="filter-countries__btn">свернуть</button>
           </div>
@@ -359,13 +371,13 @@
       <div class="companions__content-wrap">
         <div class="container-outter">
           <div class="filter-users companions__filter-users">
-            <div class="container-inner">
-              <h4 class="visually-hidden">фильтрация по попутчикам</h4>
-              <p class="title-third filter-users__title-third">Подберите идеального попутчика</p>
-              <form action="https://echo.htmlacademy.ru" method="get">
-                <fieldset class="box filter-users__box">
+            <h4 class="visually-hidden">фильтрация по попутчикам</h4>
+            <p class="title-third filter-users__title-third">Подберите идеального попутчика</p>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="filter-users__fieldset">
+                <div class="box filter-users__box">
                   <label class="box__heading-wrap">
-                    <h3 class="title-third">хобби</h3>
+                    <h3 class="title-third">хобби:</h3>
                     <div class="box__btn box__btn--open">
                       <img class="box__img" src="./img/triangle-arrow-left.svg" width="10" height="7" />
                     </div>
@@ -390,10 +402,10 @@
                       </label>
                     </li>
                   </ul>
-                </fieldset>
-                <fieldset class="box filter-users__box">
+                </div>
+                <div class="box filter-users__box">
                   <label class="box__heading-wrap">
-                    <h3 class="title-third">музыка</h3>
+                    <h3 class="title-third">музыка:</h3>
                     <div class="box__btn box__btn--open">
                       <img class="box__img" src="./img/triangle-arrow-left.svg" width="10" height="7" />
                     </div>
@@ -418,10 +430,10 @@
                       </label>
                     </li>
                   </ul>
-                </fieldset>
-                <fieldset class="box filter-users__box">
+                </div>
+                <div class="box filter-users__box">
                   <label class="box__heading-wrap">
-                    <h3 class="title-third">еда</h3>
+                    <h3 class="title-third">еда:</h3>
                     <div class="box__btn box__btn--open">
                       <img class="box__img" src="./img/triangle-arrow-left.svg" width="10" height="7" />
                     </div>
@@ -446,37 +458,37 @@
                       </label>
                     </li>
                   </ul>
-                </fieldset>
-                <fieldset class="box filter-users__box">
+                </div>
+                <div class="box filter-users__box">
                   <div class="box__heading-wrap">
-                    <h3 class="title-third">транспорт</h3>
+                    <h3 class="title-third">транспорт:</h3>
                     <div class="box__btn box__btn--close">
                       <img class="box__img" src="./img/triangle-arrow-right.svg" width="10" height="7" />
                     </div>
                   </div>
-                  <ul class="box__value-wrap">
-                    <li>
+                  <ul class="box__list">
+                    <li class="box__item">
                       <label class="box__option">
                         <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Самолет" />
                         <span class="custom-checkbox"></span>
                         <span class="visually-hidden">Самолет</span>
                       </label>
                     </li>
-                    <li>
+                    <li class="box__item">
                       <label class="box__option">
                         <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Автобус" />
                         <span class="custom-checkbox"></span>
                         <span class="visually-hidden">Автобус</span>
                       </label>
                     </li>
-                    <li>
+                    <li class="box__item">
                       <label class="box__option">
                         <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Велосипед" />
                         <span class="custom-checkbox"></span>
                         <span class="visually-hidden">Велосипед</span>
                       </label>
                     </li>
-                    <li>
+                    <li class="box__item">
                       <label class="box__option">
                         <input class="real-checkbox visually-hidden" name="transport" type="checkbox" value="Бег" />
                         <span class="custom-checkbox"></span>
@@ -484,10 +496,10 @@
                       </label>
                     </li>
                   </ul>
-                </fieldset>
-                <fieldset class="box-level filter-users__box-level">
+                </div>
+                <div class="box-level filter-users__box-level">
                   <label class="box-level__heading-wrap">
-                    <h3 class="title-third">левел</h3>
+                    <h3 class="title-third">левел:</h3>
                     <div class="box__btn box__btn--close">
                       <img class="box__img" src="./img/triangle-arrow-right.svg" width="10" height="7">
                     </div>
@@ -509,29 +521,29 @@
                       <div class="box-level__toggle-max"></div>
                     </div>
                   </div>
-                </fieldset>
-                <button class="filter-users__btn" type="submit">показать</button>
-              </form>
-            </div>
+                </div>
+              </fieldset>
+              <button class="filter-users__btn" type="submit">показать</button>
+            </form>
           </div>
           <div class="companions__users-wrap">
             <article class="user-full">
-              <div class="container-inner">
-                <div class="user-full__row">
-                  <div class="user-avatar user-avatar--small"></div>
+              <div class="user-avatar user-avatar--small"></div>
+              <div class="user-full__row--alt">
+                <div class="user-full__row--alt-1">
                   <div class="user-full__name-wrap">
                     <p class="user user-full__user user--offline">Таня</p>
                     <p class="user user-full__user">Фирсова</p>
                   </div>
+                  <ul class="tags user-full__tags">
+                    <li class="tags__item">#ЗОЖ</li>
+                    <li class="tags__item">#ПП</li>
+                    <li class="tags__item">#Фитнес</li>
+                    <li class="tags__item">#пляж</li>
+                    <li class="tags__item">#авокадо</li>
+                    <li class="tags__item">#смузи</li>
+                  </ul>
                 </div>
-                <ul class="tags user-full__tags">
-                  <li class="tags__item">#ЗОЖ</li>
-                  <li class="tags__item">#ПП</li>
-                  <li class="tags__item">#Фитнес</li>
-                  <li class="tags__item">#пляж</li>
-                  <li class="tags__item">#авокадо</li>
-                  <li class="tags__item">#смузи</li>
-                </ul>
                 <div class="user-full__wishes-wrap">
                   <h5 class="title-fifth user-full__title-fifth">хочет посетить:</h5>
                   <ul class="wishes user-full__wishes">
@@ -549,7 +561,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="user-full__row-alt">
+                <div class="user-full__row--alt-2">
                   <div class="user-full__moves-wrap">
                     <h5 class="title-fifth user-full__title-fifth">транспорт:</h5>
                     <ul class="moves user-full__moves">
@@ -578,21 +590,21 @@
               </div>
             </article>
             <article class="user-full">
-              <div class="container-inner">
-                <div class="user-full__row">
-                  <div class="user-avatar user-avatar--small"></div>
+              <div class="user-avatar user-avatar--small"></div>
+              <div class="user-full__row--alt">
+                <div class="user-full__row--alt-1">
                   <div class="user-full__name-wrap">
                     <p class="user user-full__user user--online">Петя</p>
                     <p class="user user-full__user">Демин</p>
                   </div>
+                  <ul class="tags user-full__tags">
+                    <li class="tags__item">#бургег</li>
+                    <li class="tags__item">#бар</li>
+                    <li class="tags__item">#футбол</li>
+                    <li class="tags__item">#концерт</li>
+                    <li class="tags__item">#крафт</li>
+                  </ul>
                 </div>
-                <ul class="tags user-full__tags">
-                  <li class="tags__item">#бургег</li>
-                  <li class="tags__item">#бар</li>
-                  <li class="tags__item">#футбол</li>
-                  <li class="tags__item">#концерт</li>
-                  <li class="tags__item">#крафт</li>
-                </ul>
                 <div class="user-full__wishes-wrap">
                   <h5 class="title-fifth user-full__title-fifth">хочет посетить:</h5>
                   <ul class="wishes user-full__wishes">
@@ -606,7 +618,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="user-full__row-alt">
+                <div class="user-full__row--alt-2">
                   <div class="user-full__moves-wrap">
                     <h5 class="title-fifth user-full__title-fifth">транспорт:</h5>
                     <ul class="moves user-full__moves">
@@ -635,21 +647,21 @@
               </div>
             </article>
             <article class="user-full">
-              <div class="container-inner">
-                <div class="user-full__row">
-                  <div class="user-avatar user-avatar--small"></div>
+              <div class="user-avatar user-avatar--small"></div>
+              <div class="user-full__row--alt">
+                <div class="user-full__row--alt-1">
                   <div class="user-full__name-wrap">
                     <p class="user user-full__user user--offline">Марк</p>
                     <p class="user user-full__user">Смолов</p>
                   </div>
+                  <ul class="tags user-full__tags">
+                    <li class="tags__item">#рэп</li>
+                    <li class="tags__item">#тату</li>
+                    <li class="tags__item">#хайпбист</li>
+                    <li class="tags__item">#кроссовки</li>
+                    <li class="tags__item">#суприм</li>
+                  </ul>
                 </div>
-                <ul class="tags user-full__tags">
-                  <li class="tags__item">#рэп</li>
-                  <li class="tags__item">#тату</li>
-                  <li class="tags__item">#хайпбист</li>
-                  <li class="tags__item">#кроссовки</li>
-                  <li class="tags__item">#суприм</li>
-                </ul>
                 <div class="user-full__wishes-wrap">
                   <h5 class="title-fifth user-full__title-fifth">хочет посетить:</h5>
                   <ul class="wishes user-full__wishes">
@@ -667,7 +679,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="user-full__row-alt">
+                <div class="user-full__row--alt-2">
                   <div class="user-full__moves-wrap">
                     <h5 class="title-fifth user-full__title-fifth">транспорт:</h5>
                     <ul class="moves user-full__moves">
@@ -696,20 +708,20 @@
               </div>
             </article>
             <article class="user-full">
-              <div class="container-inner">
-                <div class="user-full__row">
-                  <div class="user-avatar user-avatar--small"></div>
+              <div class="user-avatar user-avatar--small"></div>
+              <div class="user-full__row--alt">
+                <div class="user-full__row--alt-1">
                   <div class="user-full__name-wrap">
                     <p class="user user-full__user user--online">Лариса</p>
                     <p class="user user-full__user">Роговая</p>
                   </div>
+                  <ul class="tags user-full__tags">
+                    <li class="tags__item">#образование</li>
+                    <li class="tags__item">#карьера</li>
+                    <li class="tags__item">#учеба</li>
+                    <li class="tags__item">#линкедин</li>
+                  </ul>
                 </div>
-                <ul class="tags user-full__tags">
-                  <li class="tags__item">#образование</li>
-                  <li class="tags__item">#карьера</li>
-                  <li class="tags__item">#учеба</li>
-                  <li class="tags__item">#линкедин</li>
-                </ul>
                 <div class="user-full__wishes-wrap">
                   <h5 class="title-fifth user-full__title-fifth">хочет посетить:</h5>
                   <ul class="wishes user-full__wishes">
@@ -723,7 +735,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="user-full__row-alt">
+                <div class="user-full__row--alt-2">
                   <div class="user-full__moves-wrap">
                     <h5 class="title-fifth user-full__title-fifth">транспорт:</h5>
                     <ul class="moves user-full__moves">

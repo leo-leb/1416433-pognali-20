@@ -1,7 +1,7 @@
 .about {
   position: relative;
 
-  padding-top: 279px;
+  padding-top: 312px;
   padding-bottom: 82px;
 
   @include environment-blue;
@@ -22,16 +22,82 @@
     background-image: url(../../img/about-mobile@1x.png);
     background-repeat: no-repeat;
   }
+
+  @media (min-width: 768px) {
+    padding-top: 278px;
+    padding-bottom: 89px;
+  };
+
+  @media (min-width: 1440px) {
+    padding-top: 132px;
+    padding-bottom: 163px;
+  };
 }
 
 .about__title-second {
-  margin-bottom: 19px;
+  margin: 0 25px 19px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-bottom: 40px;
+  };
+
+  @media (min-width: 1440px) {
+    margin-bottom: 55px;
+  };
 }
 
 .about__paragraph {
-  margin: 0;
+  margin: 0 25px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  };
 
   &:not(:last-child) {
     margin-bottom: 22.5px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 31px;
+    };
+
+    @media (min-width: 768px) {
+      margin-bottom: 38px;
+    };
+  };
+}
+
+.about .container-inner {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  };
+}
+
+.about .paragraph:not(:last-of-type) {
+  @media (min-width: 768px) {
+    width: 310px;
+  };
+  @media (min-width: 1440px) {
+    width: 619px;
+  };
+}
+
+.about .paragraph:last-of-type {
+  @media (min-width: 768px) {
+    width: 310px;
+  };
+  @media (min-width: 1440px) {
+    width: 425px;
+  };
+}
+
+.about .index__btn-content {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 275px;
   };
 }

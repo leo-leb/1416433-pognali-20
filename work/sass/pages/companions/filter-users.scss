@@ -1,8 +1,35 @@
 .filter-users{
-  padding-top: 26px;
-  padding-bottom: 22px;
+  padding: 26px 25px 22px;
   border-radius: 20px;
   @include environment-yellow;
+
+  @media (min-width: 768px) {
+    padding: 37px 35px;
+  };
+
+  @media (min-width: 768px) {
+    padding: 46px;
+  };
+}
+
+.filter-users__fieldset {
+  margin: 22px 0;
+  padding: 0;
+  border: none;
+
+  @media (min-width: 768px) {
+    margin: 37px 0;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    border-top: 1px solid $separator-line;
+    border-bottom: 1px solid $separator-line;
+  };
+
+  @media (min-width: 1440px) {
+    margin: 34px 0 38px;
+    padding: 0;
+    border: none;
+  };
 }
 
 .filter-users .title-third{
@@ -25,4 +52,25 @@
   @include font(700, normal);
   color: $blue-dark;
   background-color: $white-middle;
+}
+
+.box__list {
+  display: flex;
+
+  margin: 0;
+  margin-left: 18px;
+  margin-right: auto;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.box__item {
+  display: block;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background-color: gray;
 }
