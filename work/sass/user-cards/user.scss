@@ -1,12 +1,16 @@
 .user {
   display: inline-block;
 
-  position: relative;
+  // position: relative;
 
   margin: 0;
 
   @include font(700, normal);
   @include font-size(21px, 21px);
+
+  @media (min-width: 768px) {
+    @include font-size(30px, 30px);
+  };
 
   &--online {
     &::after {

@@ -10,7 +10,8 @@ include ../mixins/checkbox-without-name
 block content
   main.companions
     section.first-block
-      h1.title-first= firstTitle
+      .container-outter
+        h1.title-first= firstTitle
     .filter-countries.companions__filter-countries
       .container-outter
         .filter-countries__row
@@ -21,30 +22,29 @@ block content
             span.filter-countries__btn-dots-img
       form.filter-countries__form(action="https://echo.htmlacademy.ru" method="get")
         .container-outter
-          .container-inner
-            fieldset.filter-countries__parts
-              ul.filter-countries__parts-list
-                each n in filterCountries.parts
-                  li
-                    label
-                      input(name="parts" type="radio" class="filter-countries__parts-radio visually-hidden" value= n)
-                      span.filter-countries__parts-item= n
-            include ../blocks/alphabet
+          fieldset.filter-countries__parts
+            ul.filter-countries__parts-list
+              each n in filterCountries.parts
+                li
+                  label
+                    input(name="parts" type="radio" class="filter-countries__parts-radio visually-hidden" value= n)
+                    span.filter-countries__parts-item= n
+          include ../blocks/alphabet
           button.filter-countries__btn свернуть
     .companions__content-wrap
       .container-outter
         .filter-users.companions__filter-users
-          .container-inner
-            h4.visually-hidden фильтрация по попутчикам
-            p.title-third.filter-users__title-third Подберите идеального попутчика
-            form(action="https://echo.htmlacademy.ru" method="get")
+          h4.visually-hidden фильтрация по попутчикам
+          p.title-third.filter-users__title-third Подберите идеального попутчика
+          form(action="https://echo.htmlacademy.ru" method="get")
+            fieldset.filter-users__fieldset
               +checkbox('хобби', 'hobby', filterUsers.hobby)
               +checkbox('музыка', 'music', filterUsers.music)
               +checkbox('еда', 'food', filterUsers.food)
               +checkbox-without-name('транспорт', 'transport', filterUsers.transport)
-              fieldset.box-level.filter-users__box-level
+              .box-level.filter-users__box-level
                 label.box-level__heading-wrap
-                  h3.title-third левел
+                  h3.title-third левел:
                   .box__btn.box__btn--close
                     img.box__img(src="./img/triangle-arrow-right.svg" width="10" height="7")
                 .box-level__value
@@ -59,19 +59,19 @@ block content
                     // active-line
                     .box-level__toggle-min
                     .box-level__toggle-max
-              button.filter-users__btn(type="submit") показать
+            button.filter-users__btn(type="submit") показать
         .companions__users-wrap
           each user in users.slice(0,4)
             article.user-full
-              .container-inner
-                .user-full__row
-                  .user-avatar.user-avatar--small
+              .user-avatar.user-avatar--small
+              .user-full__row--alt
+                .user-full__row--alt-1
                   .user-full__name-wrap
                     p.user.user-full__user(class= "user--" + user.status)= user.firstname
                     p.user.user-full__user= user.lastname
-                ul.tags.user-full__tags
-                  each n in user.tags
-                    li.tags__item= "#" + n
+                  ul.tags.user-full__tags
+                    each n in user.tags
+                      li.tags__item= "#" + n
                 .user-full__wishes-wrap
                   h5.title-fifth.user-full__title-fifth хочет посетить:
                   ul.wishes.user-full__wishes
@@ -79,7 +79,7 @@ block content
                       li.wishes__item
                         img.wishes__country-flag(src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
                         p.wishes__country-name= n
-                .user-full__row-alt
+                .user-full__row--alt-2
                   .user-full__moves-wrap
                     h5.title-fifth.user-full__title-fifth транспорт:
                     ul.moves.user-full__moves

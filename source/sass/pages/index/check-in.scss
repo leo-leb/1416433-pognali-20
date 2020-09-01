@@ -7,21 +7,40 @@
   text-align: center;
 
   @include environment-blue;
+
+  @media (min-width: 768px) {
+    padding-top: 134px;
+    padding-bottom: 60px;
+  };
+
+  @media (min-width: 1440px) {
+    padding-top: 164px;
+    padding-bottom: 102px;
+  };
 }
 
 .check-in__title-second {
   margin: 0;
   margin-bottom: 19px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 58px;
+  };
 }
 
 .check-in__email {
   position: relative;
   display: block;
-  margin: 29px 0;
-}
+  margin-top: 29px;
+  margin-bottom: 29px;
 
-.check-in__email + .container-inner {
-  margin-bottom: 17px;
+  @media (min-width: 768px) {
+    margin: 29px 35px;
+  };
+
+  @media (min-width: 1440px) {
+    margin: 29px 0;
+  };
 }
 
 .check-in__input {
@@ -59,4 +78,16 @@
     background-image: url(../img/triangle-arrow-right.svg);
     background-repeat: no-repeat;
   }
+}
+
+.check-in .contacts {
+  @media (min-width: 768px) {
+    margin: 0 35px;
+  };
+
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  };
 }

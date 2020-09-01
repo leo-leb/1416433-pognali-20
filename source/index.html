@@ -9,12 +9,24 @@
   </head>
   <body>
     <header class="header header--main">
-      <div class="header__row">
+      <div class="container-outter">
         <a class="logo logo--white" href="#"></a>
         <div class="header__btn-menu" type="button">
           <span class="header__btn-menu-line"></span>
-          <span class="visually-hidden">Открыть шапку страницы</span>
+          <span class="visually-hidden">Открыть шапку страницы <nav class="header__nav"></nav>
+          </span>
         </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-link-wrap">
+            <a class="header__nav-link" href="#">о сервисе</a>
+          </li>
+          <li class="header__nav-link-wrap">
+            <a class="header__nav-link" href="directions.html">направления</a>
+          </li>
+          <li class="header__nav-link-wrap">
+            <a class="header__nav-link" href="companions.html">попутчики</a>
+          </li>
+        </ul>
         <div class="action-buttons action-buttons--row">
           <div class="contacts contacts--row">
             <a class="contacts__action" href="tel:+78005558628">
@@ -147,7 +159,7 @@
     <main class="index">
       <section class="first-block first-block--special">
         <h1 class="visually-hidden">О сервисе</h1>
-        <div class="first-block__wrap">
+        <div class="container">
           <div class="first-block__content">
             <p class="first-block__moto">В путешествие
               <br>с крутыми
@@ -161,114 +173,112 @@
           </div>
           <ol class="first-block__list">
             <li class="first-block__item">
-              <span class="first-block__desc">Выберите направление</span>
+              <p class="first-block__desc">Выберите направление</p>
             </li>
             <li class="first-block__item">
-              <span class="first-block__desc">Изучите идеи путешественников</span>
+              <p class="first-block__desc">Изучите идеи путешественников</p>
             </li>
             <li class="first-block__item">
-              <span class="first-block__desc">Находите тех, кто похож на вас</span>
+              <p class="first-block__desc">Находите тех, кто похож на вас</p>
             </li>
             <li class="first-block__item">
-              <span class="first-block__desc">Путешествуйте вместе!</span>
+              <p class="first-block__desc">Путешествуйте вместе!</p>
             </li>
           </ol>
         </div>
       </section>
       <section class="about index__about">
         <div class="container-outter">
-          <div class="container-inner">
-            <h2 class="title-second title-second--color-orange about__title-second">О сервисе</h2>
-            <p class="paragraph about__paragraph">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-            <p class="paragraph paragraph--bold about__paragraph">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-          </div>
+          <h2 class="title-second title-second--orange about__title-second">О сервисе</h2>
+          <p class="paragraph about__paragraph">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="paragraph paragraph--bold about__paragraph">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <a class="index__btn-content" href=".directions.html">Подробнее</a>
         </div>
       </section>
       <section class="countries index__countries">
         <div class="container-outter">
-          <div class="container-inner">
-            <h2 class="title-second title-second--color-orange countries__title-second">Направления</h2>
+          <div class="countries-wrap">
+            <h2 class="title-second title-second--orange countries__title-second">Направления</h2>
             <p class="paragraph countries__paragraph">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-          </div>
-          <div class="countries__wrap">
-            <article class="country-card countries__country-card">
-              <div class="country-card__info">
-                <div class="container-inner">
-                  <h3 class="title-third country-card__title-third">Тайланд</h3>
-                  <p class="country-card__moto">Джунгли зовут!</p>
+            <div class="countries__wrap">
+              <article class="country-card countries__country-card">
+                <div class="country__img"></div>
+                <div class="country-card__info">
+                  <div class="country-card__info-wrap">
+                    <h3 class="title-third country-card__title-third">Тайланд</h3>
+                    <p class="country-card__moto">Джунгли зовут!</p>
+                  </div>
                   <span class="country-card__visitors">18321</span>
                 </div>
-              </div>
-            </article>
-            <article class="country-card countries__country-card">
-              <div class="country-card__info">
-                <div class="container-inner">
-                  <h3 class="title-third country-card__title-third">Франция</h3>
-                  <p class="country-card__moto">Трэ бьен, манифик!</p>
+              </article>
+              <article class="country-card countries__country-card">
+                <div class="country__img"></div>
+                <div class="country-card__info">
+                  <div class="country-card__info-wrap">
+                    <h3 class="title-third country-card__title-third">Франция</h3>
+                    <p class="country-card__moto">Трэ бьен, манифик!</p>
+                  </div>
                   <span class="country-card__visitors">12518</span>
                 </div>
-              </div>
-            </article>
-            <article class="country-card countries__country-card">
-              <div class="country-card__info">
-                <div class="container-inner">
-                  <h3 class="title-third country-card__title-third">Чехия</h3>
-                  <p class="country-card__moto">Закоулки старой Европы</p>
+              </article>
+              <article class="country-card countries__country-card">
+                <div class="country__img"></div>
+                <div class="country-card__info">
+                  <div class="country-card__info-wrap">
+                    <h3 class="title-third country-card__title-third">Чехия</h3>
+                    <p class="country-card__moto">Закоулки старой Европы</p>
+                  </div>
                   <span class="country-card__visitors">5326</span>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
+            <a class="index__btn-content" href=".directions.html">Показать все</a>
           </div>
-          <a class="index__btn-content" href=".directions.html">Показать все</a>
         </div>
       </section>
       <section class="travelers index__travelers">
         <div class="container-outter">
-          <div class="container-inner">
-            <h2 class="title-second title-second--color-orange travelers__title-second">Попутчики</h2>
-            <p class="paragraph travelers__paragraph">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-            <p class="paragraph paragraph--bold travelers__paragraph">Теперь можно легко найти единомышленников!</p>
-          </div>
+          <h2 class="title-second title-second--orange travelers__title-second wrap-inner">Попутчики</h2>
+          <p class="paragraph travelers__paragraph wrap-inner">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p class="paragraph paragraph--bold travelers__paragraph wrap-inner">Теперь можно легко найти единомышленников!</p>
           <div class="travelers__wrap">
             <article class="user-short">
               <div class="user-short__img"></div>
               <div class="user-short__info">
-                <div class="container-inner">
-                  <ul class="wishes user-short__wishes">
-                    <li class="wishes__item">
-                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг шри-ланка">
-                    </li>
-                    <li class="wishes__item">
-                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг тайланд">
-                    </li>
-                    <li class="wishes__item">
-                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг сейшелы">
-                    </li>
-                  </ul>
-                  <p class="user user-short__user user--offline">Таня Фирсова</p>
-                  <ul class="tags user-short__tags">
-                    <li class="tags__item">#ЗОЖ</li>
-                    <li class="tags__item">#ПП</li>
-                    <li class="tags__item">#Фитнес</li>
-                    <li class="tags__item">#пляж</li>
-                    <li class="tags__item">#авокадо</li>
-                    <li class="tags__item">#смузи</li>
-                  </ul>
-                  <ul class="moves">
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка самолет</span>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка автобус</span>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка велосипед</span>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка бег</span>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="wishes user-short__wishes">
+                  <li class="wishes__item">
+                    <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг шри-ланка">
+                  </li>
+                  <li class="wishes__item">
+                    <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг тайланд">
+                  </li>
+                  <li class="wishes__item">
+                    <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг сейшелы">
+                  </li>
+                </ul>
+                <p class="user user-short__user user--offline">Таня Фирсова</p>
+                <ul class="tags user-short__tags">
+                  <li class="tags__item">#ЗОЖ</li>
+                  <li class="tags__item">#ПП</li>
+                  <li class="tags__item">#Фитнес</li>
+                  <li class="tags__item">#пляж</li>
+                  <li class="tags__item">#авокадо</li>
+                  <li class="tags__item">#смузи</li>
+                </ul>
+                <ul class="moves">
+                  <li class="moves__item">
+                    <span class="visually-hidden">Иконка самолет</span>
+                  </li>
+                  <li class="moves__item">
+                    <span class="visually-hidden">Иконка автобус</span>
+                  </li>
+                  <li class="moves__item">
+                    <span class="visually-hidden">Иконка велосипед</span>
+                  </li>
+                  <li class="moves__item">
+                    <span class="visually-hidden">Иконка бег</span>
+                  </li>
+                </ul>
               </div>
               <div class="user-short__skill">
                 <div class="user-short__level-wrap">
@@ -280,38 +290,36 @@
             <article class="user-short">
               <div class="user-short__img"></div>
               <div class="user-short__info">
-                <div class="container-inner">
-                  <ul class="wishes user-short__wishes">
-                    <li class="wishes__item">
-                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг бельгия">
-                    </li>
-                    <li class="wishes__item">
-                      <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг чехия">
-                    </li>
-                  </ul>
-                  <p class="user user-short__user user--online">Петя Демин</p>
-                  <ul class="tags user-short__tags">
-                    <li class="tags__item">#бургег</li>
-                    <li class="tags__item">#бар</li>
-                    <li class="tags__item">#футбол</li>
-                    <li class="tags__item">#концерт</li>
-                    <li class="tags__item">#крафт</li>
-                  </ul>
-                  <ul class="moves">
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка самолет</span>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка автобус</span>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка велосипед</span>
-                    </li>
-                    <li class="moves__item">
-                      <span class="visually-hidden">Иконка бег</span>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="wishes user-short__wishes">
+                  <li class="wishes__item">
+                    <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг бельгия">
+                  </li>
+                  <li class="wishes__item">
+                    <img class="wishes__country-flag" src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг чехия">
+                  </li>
+                </ul>
+                <p class="user user-short__user user--online">Петя Демин</p>
+                <ul class="tags user-short__tags">
+                  <li class="tags__item">#бургег</li>
+                  <li class="tags__item">#бар</li>
+                  <li class="tags__item">#футбол</li>
+                  <li class="tags__item">#концерт</li>
+                  <li class="tags__item">#крафт</li>
+                </ul>
+                <ul class="moves">
+                  <li class="moves__item">
+                    <span class="visually-hidden">Иконка самолет</span>
+                  </li>
+                  <li class="moves__item">
+                    <span class="visually-hidden">Иконка автобус</span>
+                  </li>
+                  <li class="moves__item">
+                    <span class="visually-hidden">Иконка велосипед</span>
+                  </li>
+                  <li class="moves__item">
+                    <span class="visually-hidden">Иконка бег</span>
+                  </li>
+                </ul>
               </div>
               <div class="user-short__skill">
                 <div class="user-short__level-wrap">
@@ -327,21 +335,25 @@
       <section class="advertising index__advertising">
         <div class="container-outter">
           <h2 class="visually-hidden">Рекламные тарифы</h2>
-          <p class="advertising__moto">Добавьте
-            <br>свой
-            <br>профиль</p>
+          <p class="advertising__moto">Добавьте свой профиль</p>
           <ol class="advertising__list">
             <li class="advertising__item">
-              <p class="advertising__desc">Базовое размещение</p>
-              <p class="advertising__desc">Бесплатно</p>
+              <div class="advertising__desc-wrap">
+                <p class="advertising__desc">Базовое размещение</p>
+                <p class="advertising__desc">Бесплатно</p>
+              </div>
             </li>
             <li class="advertising__item">
-              <p class="advertising__desc">Вывод на первых позициях</p>
-              <p class="advertising__desc">99 руб./мес</p>
+              <div class="advertising__desc-wrap">
+                <p class="advertising__desc">Вывод на первых позициях</p>
+                <p class="advertising__desc">99 руб./мес</p>
+              </div>
             </li>
             <li class="advertising__item">
-              <p class="advertising__desc">Кастомный цвет карточки</p>
-              <p class="advertising__desc">59 руб./мес</p>
+              <div class="advertising__desc-wrap">
+                <p class="advertising__desc">Кастомный цвет карточки</p>
+                <p class="advertising__desc">59 руб./мес</p>
+              </div>
             </li>
           </ol>
           <a class="advertising__btn" href="#">Показать тарифы для бизнеса</a>
@@ -349,7 +361,7 @@
       </section>
       <section class="business index__business">
         <div class="container-inner">
-          <h2 class="title-second title-second--color-orange business__title-second">Бизнес-тарифы</h2>
+          <h2 class="title-second title-second--orange business__title-second">Бизнес-тарифы</h2>
           <ul class="business__list">
             <li class="business__item">
               <p class="paragraph business__paragraph">Реклама у блогера</p>
@@ -374,18 +386,15 @@
       <section class="check-in index__check-in">
         <div class="container-outter">
           <h2 class="visually-hidden">Раздел регистрации</h2>
-          <div class="container-inner">
-            <p class="title-second title-second--color-orange check-in__title-second">Заинтересовались?</p>
-            <p class="paragraph">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее<a class="check-in__link" href="#">авторизуйтесь</a>.</p>
-          </div>
+          <p class="title-second title-second--orange check-in__title-second">Заинтересовались?</p>
+          <p class="paragraph">Зарегистрируйтесь, это быстро и бесплатно!
+            <br>Уже зарегистрированы? Тогда скорее<a class="check-in__link" href="#">авторизуйтесь</a>.</p>
           <form class="check-in__email" action="https://echo.htmlacademy.ru" method="post">
             <span class="visually-hidden">Форма ввода личных данных для входа (почта)</span>
             <input class="check-in__input" type="email" name="login" placeholder="E-mail" required>
             <button class="check-in__btn" type="submit"></button>
           </form>
-          <div class="container-inner">
-            <p class="paragraph">Остались вопросы? Мы с радостью на них ответим!</p>
-          </div>
+          <p class="paragraph">Остались вопросы? Мы с радостью на них ответим!</p>
           <div class="contacts contacts--col">
             <a class="contacts__action" href="tel:+78005558628">
               <div class="contacts__img">

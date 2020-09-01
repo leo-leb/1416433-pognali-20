@@ -1,5 +1,4 @@
 .title-second {
-  margin: 0;
   @include font(700, normal);
   @include font-size(24px, 24px);
 
@@ -9,5 +8,9 @@
 
   &--blue {
     color: $blue-middle;
+  };
+
+  @media (min-width: 768px) {
+    @include font-size(45px, 45px);
   };
 }

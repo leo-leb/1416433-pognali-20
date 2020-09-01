@@ -5,16 +5,64 @@
   padding-bottom: 73px;
 
   background-color: $main-bg-third;
+
+  @media (min-width: 768px) {
+    padding-top: 53px;
+    padding-bottom: 118px;
+  };
+}
+
+.plans-create__title-second {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 56px;
+  };
+}
+
+.plans-create__title-wrap {
+  @media (min-width: 1440px) {
+    display: flex;
+  };
+}
+
+.plans-create__title-wrap .title-sixth:first-child {
+  @media (min-width: 1440px) {
+    margin-right: 13px;
+  };
+}
+
+.plans-create__step-first,
+.plans-create__step-second {
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 39px;
+  };
+
+  @media (min-width: 1440px) {
+    margin-bottom: 44px;
+  };
 }
 
 .plans-create__step-first,
 .plans-create__step-second,
 .plans-create__step-third {
-  margin-bottom: 10px;
-  padding: 23px 0;
+  padding: 23px 25px;
   border-radius: 10px;
 
   @include environment-white-alt;
+
+  @media (min-width: 768px) {
+    border-radius: 30px;
+    padding: 48px 43px 56px;
+  };
+
+  @media (min-width: 1440px) {
+    border-radius: 30px;
+    padding: 101px 160px 106px;
+  };
 }
 
 .plans-create .title-sixth {
@@ -131,17 +179,24 @@
     background-image: url(../img/small-arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: 768px) {
+      display: none;
+    };
   }
 }
 
 .plans-create__box-country {
   display: flex;
   position: relative;
+}
 
-  &--add{
-    margin-bottom: 25px;
+.plans-create__box-country--add {
+  margin-bottom: 25px;
+
+  & .plans-create__wrap--size-l {
     background-color: $white-dirty;
-  };
+  }
 }
 
 .plans-create__wrap {
@@ -150,6 +205,21 @@
   height: 42px;
   border: 1px solid $gray-light;
   border-radius: 4px;
+
+  @media (min-width: 768px) {
+    height: 70px;
+    vertical-align: middle;
+  };
+
+  &--flag {
+    @media (min-width: 768px) {
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+
+      border: none;
+    };
+  }
 }
 
 .plans-create__country-desc {
@@ -177,6 +247,14 @@
 
   background-color: inherit;
 
+  @media (min-width: 768px) {
+    right: -19px;
+    transform: translate(100%, -50%);
+
+    width: 14px;
+    height: 14px;
+  };
+
   &--active{
     border: none;
     background-color: $blue-middle;
@@ -185,29 +263,70 @@
 
 .plans-create__flag {
   @include zero-centered;
+
+  width: 35px;
+  height: 24px;
+
+  @media (min-width: 768px) {
+    position: relative;
+    margin: 0;
+
+    width: 70px;
+    height: 47px;
+  };
 }
 
 .plans-create__wrap {
   &--size-s {
     width: 53px;
+
+    @media (min-width: 768px) {
+      width: 114px;
+    };
   };
 
   &--size-m {
     width: 168px;
     padding-right: 33px;
     padding-left: 11px;
+
+    @media (min-width: 768px) {
+      width: 369px;
+      margin-right: 52px;
+    };
+
+    @media (min-width: 1440px) {
+      width: 730px;
+    };
   };
 
   &--size-l {
     width: 100%;
     padding-right: 53px;
     padding-left: 11px;
+
+    @media (min-width: 768px) {
+      width: 369px;
+      margin-right: 52px;
+    };
+
+    @media (min-width: 1440px) {
+      width: 730px;
+    };
   };
 }
 
 .plans-create__wrap--size-l .plans-create__status {
   right: 53px;
   transform: translate(60%, -50%);
+
+  @media (min-width: 768px) {
+    right: -19px;
+    transform: translate(100%, -50%);
+
+    width: 14px;
+    height: 14px;
+  };
 }
 
 .plans-create__wrap--size-l .plans-create__btn {
@@ -231,15 +350,20 @@
 .plans-create__plan-country {
   position: relative;
 
+  @media (min-width: 768px) {
+    padding-right: 30px;
+  };
+
   &:not(:last-child) {
     margin-bottom: 23px;
   }
 }
 
 .plans-create__country-name {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  width: 70%;
   margin: 0;
   margin-bottom: 14px;
   margin-left: 10px;
@@ -247,12 +371,12 @@
   white-space: nowrap;
   overflow: hidden;
 
-  line-height: 24px;
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  };
 
   &::after {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: relative;
 
     content: "";
     width: 35px;
@@ -261,6 +385,11 @@
     background-image: url(../img/flag-bosnia-and-herzegovina.png);
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: 768px) {
+      width: 70px;
+      height: 47px;
+    };
   }
 }
 
@@ -274,9 +403,105 @@
 
 .plans-create__desc {
   color: $black-low;
+  margin: 15px 0 20px;
+
+  @media (min-width: 768px) {
+    margin: 35px 0;
+  };
+
+  @media (min-width: 1440px) {
+    margin: 35px 0 55px;
+  };
 }
 
 // BUTTONS
+
+.plans-create__buttons-wrap {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  };
+}
+
+.plans-create__btn-step {
+  display: block;
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 17px;
+  border: none;
+  border-radius: 25px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include font-size(18px, 40px);
+  @include font(700, normal);
+  color: $blue-middle;
+  background-color: $yellow-low;
+
+  @media (min-width: 768px) {
+    width: 286px;
+    margin-bottom: 0;
+    padding-left: 34px;
+    border-radius: 20px;
+    text-transform: none;
+    text-align: left;
+    @include font-size(24px, 80px);
+  };
+
+  &::after {
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 50%;
+      right: 22px;
+      transform: translateY(-50%);
+
+      width: 14px;
+      height: 13px;
+
+      background-image: url(../img/triangle-arrow-right.svg);
+      background-repeat: no-repeat;
+
+      content: "";
+    };
+  }
+}
+
+.plans-create__btn-step-back {
+  display: block;
+  position: relative;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include font-size(18px, 1);
+  @include font(700, normal);
+  color: $blue-middle;
+
+  @media (min-width: 768px) {
+    margin-left: 66px;
+    text-transform: none;
+    @include font-size(24px, 80px);
+  };
+
+  &::after {
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 50%;
+      left: -19px;
+      transform: translate(-100%, -50%);
+
+      width: 14px;
+      height: 13px;
+
+      background-image: url(../img/triangle-arrow-left.svg);
+      background-repeat: no-repeat;
+
+      content: "";
+    };
+  };
+}
 
 .plans-create__btn {
   &--back{
@@ -347,6 +572,13 @@
 
   background-color: $white-dirty;
 
+  @media (min-width: 768px) {
+    top: 50%;
+    transform: translate(0, -50%);
+
+    background-color: inherit;
+  };
+
   &::after{
     @include zero-centered;
 
@@ -359,6 +591,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    @media (min-width: 768px) {
+      width: 18px;
+      height: 18px;
+    };
   }
 }
 

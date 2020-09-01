@@ -15,11 +15,30 @@
   };
 }
 
+.header .social__link{
+  @media (min-width: 768px) {
+    width: 68px;
+    height: 68px;
+  };
+}
+
+.footer .social__link{
+  @media (min-width: 768px) {
+    width: 62px;
+    height: 62px;
+  };
+}
+
 .social__svg {
   @include zero-centered;
 
-  width: 23px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
 
   color: $blue-high;
+
+  @media (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
 }
