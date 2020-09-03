@@ -7,7 +7,7 @@
   z-index: 5;
 
   min-width: 320px;
-  padding: 37px 26px 18px;
+  padding: 37px 25px 18px;
 
   @include shape-top;
 
@@ -24,7 +24,7 @@
   };
 
   @media (min-width: 1440px) {
-    padding: 60px 47px 43px;
+    padding: 60px 60px 43px;
   };
 }
 

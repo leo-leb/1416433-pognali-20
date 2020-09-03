@@ -24,9 +24,6 @@ mixin input-country(countryName)
       .plans-create__box-country
         label.plans-create__wrap.plans-create__wrap--size-l
           span.plans-create__country-desc выберите страну
-          button.plans-create__btn-arrow(alt="Раскрыть список стран")
-            img(src="./img/month-arrow-right.svg" width="16" height="12")
-          span.plans-create__status
-        button.plans-create__btn-cross
-          span.visually-hidden Удалить выбранную страну
-      include ../blocks/alphabet
+          button.plans-create__btn-cross-alt
+            span.visually-hidden Удалить выбранную страну
+      include ../blocks/alphabet-short

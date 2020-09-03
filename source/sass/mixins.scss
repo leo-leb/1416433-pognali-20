@@ -5,29 +5,39 @@
   color: $color;
 }
 
+@mixin environment-blue-middle ($background: $blue-middle, $color: $white-middle) {
+  background-color: $background;
+  color: $color;
+}
+
 @mixin environment-blue-special ($background: $blue-dark, $color: $white-middle) {
   background-color: $background;
   color: $color;
 }
 
 @mixin environment-white-dirty ($background: $white-dirty, $color: $black-low) {
-  background-color: $white-dirty;
-  color: $black-low;
+  background-color: $background;
+  color: $color;
 }
 
 @mixin environment-white ($background: $white-dirty, $color: $black-low) {
-  background-color: $white-middle;
-  color: $black-low;
+  background-color: $background;
+  color: $color;
+}
+
+@mixin environment-white-middle ($background: $white-middle, $color: $blue-middle) {
+  background-color: $background;
+  color: $color;
 }
 
 @mixin environment-white-alt ($background: $white-dirty, $color: $black-low) {
-  background-color: $white-middle;
-  color: $blue-middle;
+  background-color: $background;
+  color: $color;
 }
 
 @mixin environment-yellow ($background: $yellow-low, $color: $blue-middle) {
-  background-color: $yellow-low;
-  color: $blue-middle;
+  background-color: $background;
+  color: $color;
 }
 
 // SHAPES

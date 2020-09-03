@@ -7,8 +7,15 @@
     padding: 37px 35px;
   };
 
-  @media (min-width: 768px) {
-    padding: 46px;
+  @media (min-width: 1440px) {
+    width: 285px;
+    padding: 45px;
+  };
+}
+
+.companions__filter-users {
+  @media (min-width: 1440px) {
+    align-self: flex-start;
   };
 }
 
@@ -32,12 +39,8 @@
   };
 }
 
-.filter-users .title-third{
+.filter-users .title-fourth{ 
   width: 40%;
-}
-
-.filter-users__title-third{
-  margin-bottom: 23px;
 }
 
 .filter-users__btn {
@@ -52,25 +55,4 @@
   @include font(700, normal);
   color: $blue-dark;
   background-color: $white-middle;
-}
-
-.box__list {
-  display: flex;
-
-  margin: 0;
-  margin-left: 18px;
-  margin-right: auto;
-  padding: 0;
-
-  list-style-type: none;
-}
-
-.box__item {
-  display: block;
-
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-
-  background-color: gray;
 }

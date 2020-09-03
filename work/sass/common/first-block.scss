@@ -58,7 +58,7 @@
   }
 }
 
-.first-block--special .container {
+.container-outter--special {
   position: relative;
 
   &::after {
@@ -94,57 +94,19 @@
       background-image: url(../../img/traveller-illustration-desktop@1x.png);
     };
   };
+
+  @media (min-width: 768px) {
+    display: block;
+  };
 }
 
-// .first-block__wrap {
-//   position: relative;
-
-//   width: 268px;
-//   height: 100%;  // ВРЕМЕННО
-//   margin: 0 auto;
-
-//   &::after {
-//     position: absolute;
-//     bottom: 285px;
-//     right: 22px;
-
-//     width: 192px;
-//     height: 255px;
-
-//     content: "";
-
-//     background-image: url(../../img/traveller-illustration-mobile@1x.png);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-
-//     @media (min-width: 768px) {
-//       bottom: 140px;
-
-//       width: 372px;
-//       height: 451px;
-
-//       background-image: url(../../img/traveller-illustration-tablet@1x.png);
-//     };
-
-//     @media (min-width: 1440px) {
-//       bottom: 0;
-//       right: 345px;
-
-//       width: 431px;
-//       height: 640px;
-
-//       background-image: url(../../img/traveller-illustration-desktop@1x.png);
-//     };
-//   };
-
-//   @media (min-width: 768px) {
-//     width: 668px;
-//   };
-
-//   @media (min-width: 1440px) {
-//     width: 1320px;
-//   };
-// }
+.first-block .container-outter {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  };
+}
 
 .first-block__content {
   display: flex;
@@ -277,7 +239,7 @@
 
   @media (min-width: 1440px) {
     flex-direction: row-reverse;
-    width: 26.56%;
+    width: 26.70%;
     padding: 30px 32px;
   };
 }
@@ -360,5 +322,53 @@
 
   @media (min-width: 1440px) {
     width: 74%;
+  };
+}
+
+.first-block__btn-back {
+  display: none;
+
+  position: relative;
+
+  text-transform: uppercase;
+
+  @include font(700, normal);
+  @include font-size(20px, 20px);
+  color: $white-middle;
+
+  &::after {
+    display: inline-block;
+
+    position: relative;
+
+    width: 28px;
+    height: 13px;
+    margin-left: 28px;
+    border: 2px solid $white-middle;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: none;
+
+    content: "";
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 28px;
+    transform: translate(80%, -10%);
+
+    width: 9px;
+    height: 7px;
+
+    content: "";
+
+    background-image: url(../img/triangle-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
   };
 }

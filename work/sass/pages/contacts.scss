@@ -37,6 +37,11 @@
   height: 40px;
   border-radius: 50%;
 
+  @media (min-width: 768px) {
+    width: 65px;
+    height: 65px;
+  };
+
   @media (min-width: 1440px) {
     width: 50px;
     height: 50px;
@@ -60,6 +65,10 @@
   @include font(700, normal);
   @include font-size(16px, 40px);
   color: $blue-high;
+
+  @media (min-width: 768px) {
+    @include font-size(28px, 65px);
+  };
 }
 
 .contacts--col {

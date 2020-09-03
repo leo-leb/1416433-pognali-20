@@ -1,0 +1,11 @@
+.alphabet-full.filter-countries__alphabet-full
+  each n in filterCountries.alphabet
+    .alphabet-full__block
+      span.alphabet-full__desc= n.letter
+      fieldset.alphabet-full__names
+        ul.alphabet-full__list
+          each c in n.names
+            li.alphabet-full__item
+              label
+                input(name= name type="checkbox" class="alphabet-full__checkbox visually-hidden" value= c)
+                span.alphabet-full__country= c

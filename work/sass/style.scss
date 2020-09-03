@@ -12,6 +12,7 @@
 @import "./common/action-buttons";
 
 @import "./pages/header";
+@import "./pages/menu-popup";
 @import "./pages/footer";
 @import "./pages/social";
 @import "./pages/contacts";
@@ -30,7 +31,8 @@
 @import "./pages/directions/plans-actual";
 @import "./pages/directions/plans-create";
 @import "./pages/directions/calendar";
-@import "./pages/directions/alphabet";
+@import "./pages/directions/alphabet-short";
+@import "./pages/directions/alphabet-full";
 
 @import "./pages/companions/companions";
 @import "./pages/companions/filter-countries";

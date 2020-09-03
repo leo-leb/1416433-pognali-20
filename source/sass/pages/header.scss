@@ -3,59 +3,20 @@
   z-index: 8;
 
   min-width: 320px;
+  padding: 0 25px;
   padding-top: 27px;
 
   @include environment-blue;
 
   @media (min-width: 768px) {
+    padding: 0 40px;
     padding-top: 40px;
   };
 
   @media (min-width: 1440px) {
+    padding: 0 60px;
     padding-top: 46px;
   };
-
-  & .header__nav-list {
-    display: none;
-
-    @media (min-width: 1440px) {
-      display: flex;
-      flex-grow: 1;
-
-      @include font-size(20px, 20px);
-
-      &::before {
-        width: 60px;
-        height: 2px;
-        margin-left: 40px;
-        margin-right: 45px;
-        margin-top: auto;
-        margin-bottom: auto;
-
-        background-color: #fff;
-
-        content: "";
-      }
-    };
-  }
-
-  & .header__nav-link-wrap {
-    @media (min-width: 1440px) {
-      margin-right: 34px;
-    };
-  }
-
-  & .header__nav-link {
-    @media (min-width: 1440px) {
-      color: $white-middle;
-    };
-  }
-
-  & .action-buttons--row {
-    @media (min-width: 768px) {
-      display: flex;
-    };
-  }
 
   &--main {
     @include environment-blue-special;
@@ -74,17 +35,54 @@
   }
 }
 
-.header .container-outter {
+.header__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  @media (min-width: 768px) {
-    padding: 0;
-  };
+.header__nav-list {
+  display: none;
 
   @media (min-width: 1440px) {
-    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    list-style-type: none;
+
+    text-transform: uppercase;
+
+    @include font-size(20px, 20px);
+
+    &::before {
+      width: 60px;
+      height: 2px;
+      margin-left: 40px;
+      margin-right: 45px;
+      margin-top: auto;
+      margin-bottom: auto;
+
+      background-color: #fff;
+
+      content: "";
+    }
+  };
+}
+
+.header__nav-link-wrap {
+  @media (min-width: 1440px) {
+    margin-right: 34px;
+  };
+}
+
+.header__nav-link {
+  @media (min-width: 1440px) {
+    color: $white-middle;
+  };
+}
+
+.action-buttons--row {
+  @media (min-width: 768px) {
+    display: flex;
   };
 }
 
@@ -97,32 +95,10 @@
   z-index: 10;
 
   width: 100%;
-  height: 569px;
   padding-top: 27px;
   padding-bottom: 41px;
 
   background-color: $white-middle;
-}
-
-.header__nav {
-  margin-top: 76px;
-  margin-bottom: 51px;
-}
-
-.header__nav-list {
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-  text-align: center;
-  text-transform: uppercase;
-
-  @include font(500, normal);
-  @include font-size(30px, 35px);
-}
-
-.header__nav-link {
-  color: $blue-high;
 }
 
 // BUTTONS
@@ -184,11 +160,3 @@
   }
 }
 
-.header__btn-cross {
-  width: 18.6px;
-  height: 18.6px;
-
-  cursor: pointer;
-
-  color: $gray-middle;
-}

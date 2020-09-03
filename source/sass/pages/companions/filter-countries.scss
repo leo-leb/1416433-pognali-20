@@ -1,10 +1,17 @@
 .filter-countries {
   position: relative;
 
-  padding-top: 53px;
-  padding-bottom: 17px;
+  padding: 53px 0 17px;
 
   background-color: $white-dirty-two;
+
+  @media (min-width: 768px) {
+    padding: 99px 0 56px;
+  };
+
+  @media (min-width: 1440px) {
+    padding-top: 131px;
+  };
 }
 
 .filter-countries__row {
@@ -12,73 +19,152 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+  };
+
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  };
+}
+
+.filter-countries__row .title-fourth {
   &::before {
-    position: absolute;
-    top: 45%;
-    left: 0;
-    transform: translateY(-50%);
+    display: inline-block;
+
+    position: relative;
 
     width: 15px;
     height: 10px;
+    margin-right: 12px;
 
     background-image: url(../img/filter.svg);
     background-repeat: no-repeat;
 
     content: "";
+
+    @media (min-width: 1440px) {
+      width: 23px;
+      height: 15px;
+      margin-right: 22px;
+    };
   }
+
+  @media (min-width: 768px) {
+    display: none;
+  };
+
+  @media (min-width: 1440px) {
+    display: block;
+    margin-right: 30px;
+  };
 }
 
-.filter-countries__form {
-  position: absolute;
-  top: 68px;
-  left: 0;
-
-  display: none;
+.filter-countries__form-parts {
+  // display: none;
 
   width: 100%;
-  padding-top: 35px;
-  padding-bottom: 28px;
-  @include shape-bottom;
+  margin: 35px 25px 21px;
 
   background-color: inherit;
+
+  @include font(700, normal);
+  @include font-size(16px, 18px);
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    // display: none;
+
+
+    width: auto;
+    margin: 0;
+    padding-top: 0;
+
+    @include font-size(20px, 20px);
+  };
+
+  @media (min-width: 1440px) {
+    flex-grow: 1;
+  };
 }
 
 .filter-countries__parts {
   margin: 0;
-  margin-bottom: 21px;
   padding: 0;
   border: none;
 
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  };
 }
 
 .filter-countries__parts-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+  };
+}
+
+.filter-countries__parts-value:not(:last-child) {
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 28px;
+  };
+
+  @media (min-width: 1440px) {
+    margin-right: 32px;
+  };
 }
 
 .filter-countries__parts-item {
   color: $blue-high;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  };
+
+  &:active {
+    opacity: 1;
+  }
 }
 
-.filter-countries__parts-radio:hover + .filter-countries__parts-item {
-  opacity: 0.6;
-}
+.filter-countries__form-countries {
+  // display: none;
+  margin-bottom: 11px;
 
-.filter-countries__parts-radio:checked + .filter-countries__parts-item {
-  opacity: 1;
-}
+  @media (min-width: 768px) {
+    margin-top: 63px;
+    margin-bottom: 19px;
+  };
 
-// BUTTONS
+  @media (min-width: 1440px) {
+    margin-top: 60px;
+    margin-bottom: 0;
+  };
+}
 
 .filter-countries__btn {
   display: block;
 
   width: 100%;
-  margin-top: 28px;
   border: none;
   border-radius: 20px;
 
@@ -88,20 +174,37 @@
   background-color: $blue-light-three;
   text-transform: uppercase;
 }
+
 .filter-countries__btn-dots {
   border: none;
-  display: block;
+  display: flex;
+  align-items: center;
 
-  width: 17px;
+  display: none;
+
+  cursor: pointer;
+  text-transform: uppercase;
 
   background-color: inherit;
 
-  cursor: pointer;
+  @media (min-width: 1440px) {
+    order: 1;
+  };
+}
+
+.filter-countries__btn-dots-desc {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    margin-right: 20px;
+  };
 }
 
 .filter-countries__btn-dots-img {
   position: relative;
   top: -1px;
+  right: 10px;
 
   display: block;
 
@@ -113,7 +216,10 @@
 
   &::after,
   &::before {
+    display: block;
+
     position: absolute;
+    top: 0;
 
     width: 3px;
     height: 3px;
@@ -125,12 +231,122 @@
   };
 
   &::before {
-    left: 4px;
-    transform: translateX(100%);
+    margin-left: 7px;
   };
 
   &::after {
-    right: 4px;
-    transform: translateX(-100%);
+    margin-left: 14px;
   }
+}
+
+.filter-countries__btn-hide {
+  display: flex;
+  align-items: center;
+
+  border: none;
+
+  text-transform: uppercase;
+
+  background-color: inherit;
+
+  @media (min-width: 1440px) {
+    order: 1;
+  };
+}
+
+.filter-countries__btn-hide-desc {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    @include font(700, normal);
+    @include font-size(20px, 20px);
+  };
+}
+
+.filter-countries__btn-hide-img {
+  width: 18px;
+  height: 18px;
+
+  @media (min-width: 768px) {
+    margin-left: 60px;
+  };
+}
+
+// ALPHABET //
+
+.filter-countries__alphabet-short {
+  margin: 0 25px;
+  margin-bottom: 28px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: 1440px) {
+    display: none;
+  };
+}
+
+.filter-countries__alphabet-short .alphabet-short__table {
+  grid-auto-rows: 45px;
+
+  margin-bottom: 20px;
+
+  @include font-size(14px, 45px);
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(5, auto);
+    gap: 30px;
+
+    width: 345px;
+    margin-bottom: 0;
+
+    @include font(700, normal);
+    @include font-size(60px, 50px);
+  };
+}
+
+.filter-countries__alphabet-short .alphabet-short__desc {
+  &:hover,
+  &:active {
+    height: 44px;
+    margin-right: 1px;
+    padding-left: 1px;
+
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4),
+    &:nth-last-child(5) {
+      height: inherit;
+    }
+  }
+
+  @media (min-width: 768px) {
+    outline: none;
+
+    background-color: inherit;
+    color: $blue-high;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  
+    &:active {
+      opacity: 1;
+    }
+  };
+}
+
+.filter-countries__alphabet-short .alphabet-short__names {
+  @media (min-width: 768px) {
+    width: 173px;
+    line-height: 30px;
+  };
 }
