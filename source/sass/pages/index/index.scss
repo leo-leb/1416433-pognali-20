@@ -1,6 +1,6 @@
 .index {
   position: relative;
-	min-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 
   @media (min-width: 768px) {
@@ -55,10 +55,10 @@
 }
 
 .index__business {
-	bottom: 0;
-	left: 0;
-	right: 0;
-	transform: translateY(-989px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-989px);
   z-index: 5;
 }
 

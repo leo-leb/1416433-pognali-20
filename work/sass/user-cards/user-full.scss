@@ -6,7 +6,7 @@
 
   text-align: left;
 
-  @include environment-white;
+  @include environment-white-middle($white-middle, $black-low)
 
   @media (min-width: 768px) {
     display: flex;
