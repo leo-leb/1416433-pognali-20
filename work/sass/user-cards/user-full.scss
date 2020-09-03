@@ -17,8 +17,8 @@
 
   @media (min-width: 1440px) {
     width: 951px;
-		padding: 0;
-		border-radius: 20px;
+    padding: 0;
+    border-radius: 20px;
   };
 
   &:not(:last-child) {
@@ -53,8 +53,8 @@
 
   @media (min-width: 1440px) {
     flex-direction: row;
-		flex-wrap: wrap;
-		flex-basis: 666px;
+    flex-wrap: wrap;
+    flex-basis: 666px;
     align-content: space-between;
 
     padding: 46px 43px 42px 62px;
