@@ -2,7 +2,7 @@
   position: relative;
 
   width: 270px;
-  height: 100%;  // ВРЕМЕННО
+  height: 100%;
   margin: 0 auto;
 
   @media (min-width: 768px) {
@@ -13,5 +13,20 @@
     width: 1320px;
     padding: 0;
     padding-left: 70px;
+  };
+}
+
+.container-outter--special {
+  position: relative;
+
+  width: 270px;
+  height: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 688px;
+  };
+  @media (min-width: 1440px) {
+    width: 1320px;
   };
 }

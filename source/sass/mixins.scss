@@ -1,6 +1,9 @@
-// ENVIRONMENT
-
 @mixin environment-blue ($background: $blue-high, $color: $white-middle) {
+  background-color: $background;
+  color: $color;
+}
+
+@mixin environment-blue-middle ($background: $blue-middle, $color: $white-middle) {
   background-color: $background;
   color: $color;
 }
@@ -11,26 +14,29 @@
 }
 
 @mixin environment-white-dirty ($background: $white-dirty, $color: $black-low) {
-  background-color: $white-dirty;
-  color: $black-low;
+  background-color: $background;
+  color: $color;
 }
 
 @mixin environment-white ($background: $white-dirty, $color: $black-low) {
-  background-color: $white-middle;
-  color: $black-low;
+  background-color: $background;
+  color: $color;
+}
+
+@mixin environment-white-middle ($background: $white-middle, $color: $blue-middle) {
+  background-color: $background;
+  color: $color;
 }
 
 @mixin environment-white-alt ($background: $white-dirty, $color: $black-low) {
-  background-color: $white-middle;
-  color: $blue-middle;
+  background-color: $background;
+  color: $color;
 }
 
 @mixin environment-yellow ($background: $yellow-low, $color: $blue-middle) {
-  background-color: $yellow-low;
-  color: $blue-middle;
+  background-color: $background;
+  color: $color;
 }
-
-// SHAPES
 
 @mixin shape-bottom ($radius: 30px) {
   border-bottom-left-radius: $radius;
@@ -42,8 +48,6 @@
   border-top-right-radius: $radius;
 }
 
-// FONTS
-
 @mixin font($weight: "400", $style: "normal") {
   font-weight: $weight;
   font-style: $style;
@@ -53,8 +57,6 @@
   font-size: $size;
   line-height: $height;
 }
-
-// POSITION
 
 @mixin zero-centered() {
   position: absolute;

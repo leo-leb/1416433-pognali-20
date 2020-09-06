@@ -1,0 +1,11 @@
+.alphabet-short(class= pageDirections?"plans-create__alphabet-short":"filter-countries__alphabet-short")
+  .alphabet-short__table
+    each n in filterCountries.alphabet
+      a.alphabet-short__desc(href="#")= n.letter
+  fieldset.alphabet-short__names
+    ul.alphabet-short__list
+      each n in filterCountries.alphabet.A.names
+        li.alphabet-short__item
+          label
+            input(name= name type="checkbox" class="alphabet-short__checkbox visually-hidden" value= n)
+            span.alphabet-short__country= n

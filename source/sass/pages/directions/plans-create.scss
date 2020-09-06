@@ -206,6 +206,8 @@
   border: 1px solid $gray-light;
   border-radius: 4px;
 
+  text-transform: uppercase;
+
   @media (min-width: 768px) {
     height: 70px;
     vertical-align: middle;
@@ -331,18 +333,6 @@
 
 .plans-create__wrap--size-l .plans-create__btn {
   right: 13px;
-}
-
-// FILTER
-
-.plans-create__filter {
-  display: none;
-
-  position: absolute;
-  bottom: 0;
-  transform: translateY(100%);
-
-  width: 100%;
 }
 
 // STEP-THIRD
@@ -599,6 +589,8 @@
   }
 }
 
+
+
 .plans-create__btn-arrow {
   display: block;
 
@@ -646,4 +638,199 @@
     background-position: center;
     background-size: contain;
   }
+}
+
+// FILTER
+
+.plans-create__filter {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  z-index: 2;
+
+  width: 100%;
+  @include shape-top(4px);
+
+  @media (min-width: 768px) {
+    width: auto;
+  };
+
+  @media (min-width: 1440px) {
+    width: auto;
+  };
+
+
+  & .plans-create__box-country {
+    @include environment-blue-middle;
+    @include shape-top(4px);
+  };
+
+  & .plans-create__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    height: 42px;
+    border: none;
+
+    @media (min-width: 768px) {
+      height: 70px;
+    };
+
+    &--size-l {
+      padding: 0 17px;
+
+      @media (min-width: 768px) {
+        width: 369px;
+        margin-right: 0;
+        padding: 0 24px;
+      };
+
+      @media (min-width: 1440px) {
+        width: 730px;
+      };
+    }
+  };
+}
+
+.plans-create__box-country-wrap:nth-child(3) .plans-create__filter {
+  display: block;
+}
+
+.plans-create__btn-cross-alt {
+  width: 9px;
+  height: 9px;
+  margin-bottom: 3px;
+  border: none;
+
+  cursor: pointer;
+
+  background-color: inherit;
+
+  background-image: url(../img/small-cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media (min-width: 768px) {
+    width: 16px;
+    height: 16px;
+  };
+
+  @media (min-width: 1440px) {
+    width: 18px;
+    height: 18px;
+  };
+}
+
+// ALPHABET //
+
+
+.plans-create__alphabet-short {
+  @media (min-width: 768px) {
+    display: flex;
+
+    position: absolute;
+    top: 100%;
+
+    width: 575px;
+    min-height: 414px;
+    @include shape-bottom(4px);
+
+    background-color: $white-middle;
+  };
+
+  @media (min-width: 1440px) {
+    width: 100%;
+  };
+}
+
+.plans-create__alphabet-short .alphabet-short__table {
+  grid-auto-rows: 41px;
+
+  @include font-size(14px, 41px);
+
+  @media (min-width: 768px) {
+    grid-auto-rows: 70px;
+
+    width: 262px;
+    margin: 35px 80px 35px 27px;
+
+    @include font-size(20px, 70px);
+  };
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(5, auto);
+    gap: 15px;
+
+    width: 361px;
+    margin: 32px 102px 36px 26px;
+  };
+}
+
+.plans-create__alphabet-short .alphabet-short__desc {
+  &:hover,
+  &:active {
+    height: 40px;
+    margin-right: 1px;
+    padding-left: 1px;
+
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4),
+    &:nth-last-child(5) {
+      height: inherit;
+    }
+
+    @media (min-width: 768px) {
+      height: 69px;
+      margin-right: 1px;
+      padding-left: 1px;
+
+      &:nth-last-child(1),
+      &:nth-last-child(2),
+      &:nth-last-child(3),
+      &:nth-last-child(4),
+      &:nth-last-child(5) {
+        height: inherit;
+      };
+    };
+
+    @media (min-width: 1440px) {
+      height: auto;
+      margin-right: 0;
+      padding-left: 0;
+    };
+  }
+}
+
+.plans-create__alphabet-short .alphabet-short__names {
+  padding: 19px 19px 27px;
+  background-color: $white-middle;
+
+  @media (min-width: 768px) {
+    width: 206px;
+    padding: 35px 23px;
+    border-left: 1px solid $gray-light;
+    border-bottom-right-radius: 4px;
+
+    line-height: 20px;
+  };
+
+  @media (min-width: 1440px) {
+    width: 241px;
+    padding: 35px 26px;
+  };
+}
+
+.plans-create__alphabet-short .alphabet-short__item:not(:last-child) {
+  margin-bottom: 5px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 10px;
+  };
 }

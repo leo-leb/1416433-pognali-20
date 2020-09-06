@@ -1,6 +1,6 @@
 .companions {
   position: relative;
-	min-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -30,6 +30,9 @@
     padding: 0;
   };
   @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     padding: 0;
   };
 }
