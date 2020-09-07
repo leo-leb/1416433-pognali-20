@@ -35,15 +35,31 @@
   }
 }
 
+.header .container-outter {
+  @media (min-width: 768px) {
+    padding: 0;
+  };
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  };
+}
+
 .header__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header__nav-list {
+.header__nav {
   display: none;
 
+  @media (min-width: 1440px) {
+    display: block;
+  }
+}
+
+.header__nav-list {
   @media (min-width: 1440px) {
     display: flex;
     flex-grow: 1;
@@ -99,6 +115,11 @@
   padding-bottom: 41px;
 
   background-color: $white-middle;
+
+  @media (min-width: 768px) {
+    padding-top: 45px;
+    padding-bottom: 90px;
+  };
 }
 
 // BUTTONS

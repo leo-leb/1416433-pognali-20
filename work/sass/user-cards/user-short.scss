@@ -26,21 +26,28 @@
   height: 270px;
   @include shape-top(10px);
 
-  background-image: url(../../img/demin-desktop@1x.jpg);
+  background-image: url(../img/demin-desktop@1x.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (min-width: 768px) {
+    height: 285px;
+  };
 }
 
 .user-short__info {
   position: relative;
 
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 20px;
+  padding: 27px 36px 20px;
   @include shape-bottom(10px);
 
   background-color: $white-middle;
   color: $black-low;
+
+  @media (min-width: 768px) {
+    padding: 31px 31px 27px;
+  };
 }
 
 .user-short__name-wrap {
@@ -77,6 +84,9 @@
 }
 
 .user-short__user {
+  margin: 0;
+  margin-bottom: 15px;
+
   &::after {
     position: absolute;
     top: 50%;
@@ -88,6 +98,13 @@
     border-radius: 50%;
 
     content: "";
+
+    @media (min-width: 768px) {
+      left: -22px;
+
+      width: 8px;
+      height: 8px;
+    };
   };
 }
 
@@ -115,4 +132,8 @@
   margin: 0;
   @include font;
   @include font-size(14px, 14px);
+}
+
+.user-short .moves__item:not(:last-child) {
+  margin-right: 13px;
 }

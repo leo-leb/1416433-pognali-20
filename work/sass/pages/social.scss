@@ -3,6 +3,12 @@
   justify-content: center;
 }
 
+.menu-popup__social {
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  };
+}
+
 .social__link {
   position: relative;
 

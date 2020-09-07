@@ -32,7 +32,7 @@
 
   list-style-type: none;
 
-  @include environment-white-alt;
+  @include environment-white-middle;
 
   @media (min-width: 768px) {
     display: flex;

@@ -3,37 +3,67 @@
 
   position: absolute;
 
-  width: 268px;
+  width: 270px;
   margin: 0 auto;
   padding-top: 34px;
   border-radius: 20px;
   box-shadow: 0px 2px 8px $black-light;
 
-  @include environment-white;
+  @include environment-white($white-middle, $black-low);
+
+  @media (min-width: 768px) {
+    width: 688px;
+    padding-top: 55px;
+  };
+
+  @media (min-width: 1440px) {
+    width: 750px;
+  };
 }
 
 .business__title-second {
   margin: 0;
-  margin-bottom: 28px;
+  text-align: center;
 }
 
 .business__list {
-  margin: 0;
-  margin-top: 28px;
-  margin-bottom: 34px;
-  padding: 0;
+  margin: 28px 0 34px;
+  padding: 0 25px;
 
   @include font(300, normal);
   @include font-size;
+
+  @media (min-width: 768px) {
+    margin: 46px 0 52px;
+    padding: 0 91px;
+  };
+
+  @media (min-width: 1440px) {
+    padding: 0 60px;
+  };
 }
 
 .business__item {
   padding: 11px 0;
   list-style: none;
+  border-top: 1px solid $white-dirty;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  };
+
+  &:last-child {
+    border-bottom: 1px solid $white-dirty;
+  }
 }
 
 .business__paragraph {
   margin: 0;
+
+  @media (min-width: 768px) {
+    @include font-size(22px, 28px)
+  };
 }
 
 .business__btn {
@@ -49,4 +79,8 @@
   @include font(700, normal);
   color: $blue-dark;
   background-color: $blue-light;
+
+  @media (min-width: 768px) {
+    @include font-size(24px, 108px);
+  };
 }

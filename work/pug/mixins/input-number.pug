@@ -1,9 +1,8 @@
-mixin input-number(title, unit, amount)
-  fieldset.plans-create__clicker
-    .plans-create__clicker-wrap
-      p.plans-create__title= title
-      span.plans-create__unit= unit
+mixin input-number(title, unit, amount, name)
+  .plans-create__clicker
+    p.plans-create__title= title
+    p.plans-create__unit= unit
     .plans-create__stepper
-      input.plans-create__input(type="number" min="0" max="100" step="1" value= amount autofocus)
+      input.plans-create__input(type="number" name= name min="0" max="100" step="1" value= amount autofocus)
       button.plans-create__btn-stepper.plans-create__btn-stepper--right
       button.plans-create__btn-stepper.plans-create__btn-stepper--left

@@ -1,30 +1,39 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   position: relative;
   z-index: 5;
 
   min-width: 320px;
-  padding: 37px 25px 18px;
+  padding: 37px 0 18px;
 
   @include shape-top;
 
   text-align: center;
 
-  @include environment-white;
+  @include environment-white-middle($white-middle, $black-low);
 
   @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding: 46px 40px 32px;
+    padding: 46px 0 32px;
     @include shape-top(55px);
   };
 
   @media (min-width: 1440px) {
-    padding: 60px 60px 43px;
+    padding: 60px 0 43px;
+  };
+}
+
+.footer .container-outter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  };
+
+  @media (min-width: 1440px) {
+    padding: 0;
   };
 }
 

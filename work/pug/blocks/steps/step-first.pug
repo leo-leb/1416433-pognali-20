@@ -13,62 +13,204 @@ include ../../mixins/checkbox-without-title
 include ../../mixins/input-number
 
 block content
-  +input-number('ищу попутчиков:', 'чел.', '2')
-  +input-number('длительность:', 'дн.', '2')
-  +checkbox-without-title('additional', additional)
-  fieldset.plans-create__month
-    input.plans-create__input(type="month" value="2019-03")
-    //- button.plans-create__btn-stepper-alt.plans-create__btn-stepper-alt--right
-    //- button.plans-create__btn-stepper-alt.plans-create__btn-stepper-alt--right
+  .plans-create__step-first-filter
+    +input-number('ищу попутчиков:', 'чел.', '2', 'companions')
+    +input-number('длительность:', 'дн.', '2', 'days')
+    +checkbox-without-title('additional', additional)
+  .plans-create__month
+    //- input.plans-create__input(type="month" value="2019-03")
+    .plans-create__month-value Март 2019
+    button.plans-create__btn-stepper-alt.plans-create__btn-stepper-alt--left
+    button.plans-create__btn-stepper-alt.plans-create__btn-stepper-alt--right
   .calendar.plans-create__calendar
     ul.calendar__days-list
-      li.calendar__days-item П
-      li.calendar__days-item В
-      li.calendar__days-item С
-      li.calendar__days-item Ч
-      li.calendar__days-item П
-      li.calendar__days-item.calendar__days-item--red С
-      li.calendar__days-item.calendar__days-item--red В
+      li.calendar__days-item
+        span.calendar__days-desc-min П
+        span.calendar__days-desc-max Пн
+      li.calendar__days-item
+        span.calendar__days-desc-min В
+        span.calendar__days-desc-max Вт
+      li.calendar__days-item
+        span.calendar__days-desc-min С
+        span.calendar__days-desc-max Ср
+      li.calendar__days-item
+        span.calendar__days-desc-min Ч
+        span.calendar__days-desc-max Чт
+      li.calendar__days-item
+        span.calendar__days-desc-min П
+        span.calendar__days-desc-max Пт
+      li.calendar__days-item.calendar__days-item--red
+        span.calendar__days-desc-min С
+        span.calendar__days-desc-max Сб
+      li.calendar__days-item.calendar__days-item--red
+        span.calendar__days-desc-min В
+        span.calendar__days-desc-max Вс
     ul.calendar__dates-list
-      li.calendar__dates-item 23
-      li.calendar__dates-item 24
-      li.calendar__dates-item 25
-      li.calendar__dates-item 26
-      li.calendar__dates-item 27
-      li.calendar__dates-item 28
-      li.calendar__dates-item 1
-      li.calendar__dates-item 2
-      li.calendar__dates-item 3
-      li.calendar__dates-item 4
-      li.calendar__dates-item 5
-      li.calendar__dates-item 6
-      li.calendar__dates-item 7
-      li.calendar__dates-item 8
-      li.calendar__dates-item 9
-      li.calendar__dates-item 10
-      li.calendar__dates-item 11
-      li.calendar__dates-item 12
-      li.calendar__dates-item 13
-      li.calendar__dates-item 14
-      li.calendar__dates-item 15
-      li.calendar__dates-item 16
-      li.calendar__dates-item 17
-      li.calendar__dates-item 18
-      li.calendar__dates-item 19
-      li.calendar__dates-item 20
-      li.calendar__dates-item 21
-      li.calendar__dates-item 22
-      li.calendar__dates-item 23
-      li.calendar__dates-item 24
-      li.calendar__dates-item 25
-      li.calendar__dates-item.calendar__dates-item--colored.calendar__dates-item--active.calendar__dates-item--first 26
-      li.calendar__dates-item.calendar__dates-item--colored.calendar__dates-item--active 27
-      li.calendar__dates-item.calendar__dates-item--colored.calendar__dates-item--active 28
-      li.calendar__dates-item.calendar__dates-item--colored 29
-      li.calendar__dates-item.calendar__dates-item--colored 30
-      li.calendar__dates-item.calendar__dates-item--colored 31
-      li.calendar__dates-item.calendar__dates-item--colored 1
-      li.calendar__dates-item.calendar__dates-item--colored 2
-      li.calendar__dates-item.calendar__dates-item--colored 3
-      li.calendar__dates-item.calendar__dates-item--colored 4
-      li.calendar__dates-item.calendar__dates-item--colored 5
+      li.calendar__dates-item
+        span.calendar__dates-value 23
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 24
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 25
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 26
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 27
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 28
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 1 мар
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 2
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 3
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 4
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 5
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 6
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 7
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 8
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 9
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 10
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 11
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 12
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 13
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 14
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 15
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 16
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 17
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 18
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 19
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 20
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 21
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 22
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 23
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 24
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item
+        span.calendar__dates-value 25
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored.calendar__dates-item--active.calendar__dates-item--start
+        span.calendar__dates-value 26
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored.calendar__dates-item--active
+        span.calendar__dates-value 27
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored.calendar__dates-item--active.calendar__dates-item--finish
+        span.calendar__dates-value 28
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored
+        span.calendar__dates-value 29
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored
+        span.calendar__dates-value 30
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored
+        span.calendar__dates-value 31
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored
+        span.calendar__dates-value 1 апр
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored
+        span.calendar__dates-value 2
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored
+        span.calendar__dates-value 3
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored
+        span.calendar__dates-value 4
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд
+      li.calendar__dates-item.calendar__dates-item--colored
+        span.calendar__dates-value 5
+        span.calendar__dates-status--start Заезд
+        span.calendar__dates-status--finish Выезд

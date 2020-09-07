@@ -74,7 +74,6 @@
 
 .user-full__name-wrap {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
 
   position: relative;
@@ -92,19 +91,12 @@
     margin-left: 0;
     margin-bottom: 19px;
   };
-}
-
-.user-full__user {
-  &:first-child {
-    @media (min-width: 768px) {
-      margin-right: 12px;
-    };
-  }
 
   &::after {
     position: absolute;
     top: 8px;
     left: 100%;
+    transform: translateX(-100%);
 
     width: 6px;
     height: 6px;
@@ -113,7 +105,38 @@
     content: "";
 
     @media (min-width: 768px) {
-      transform: translateX(22px);
+      top: 50%;
+      transform: translate(30px, -50%);
+
+      width: 8px;
+      height: 8px;
+    };
+
+    @media (min-width: 1440px) {
+      left: 0;
+      transform: translate(-24px, -50%);
+    };
+  };
+
+  &--online {
+    &::after {
+      background-color: $status-online;
+    };
+  };
+
+  &--offline {
+    &::after {
+      background-color: $status-offline;
+    };
+  };
+}
+
+.user-full__user {
+  margin: 0;
+
+  &:first-child {
+    @media (min-width: 768px) {
+      margin-right: 12px;
     };
   };
 }
