@@ -37,43 +37,69 @@
   };
 }
 
+.companions__another-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.companions__users-wrap {
+  @media (min-width: 768px) {
+    width: 100%;
+  };
+}
+
 // BUTTONS
 
 .companions__btn-open {
-  position: relative;
+  display: inline-flex;
+  align-items: center;
 
-  display: block;
-
-  padding-left: 31px;
-
-  @include font(700, normal);
-  @include font-size(18px, 66px);
-  color: $blue-middle;
+  margin: 22px 0 26px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-transform: uppercase;
   text-align: center;
-
   cursor: pointer;
 
-  &::before {
-    position: absolute;
-    top: 49%;
-    left: 60px;
-    transform: translateY(-50%);
+  @include font(700, normal);
+  @include font-size(17px, 17px);
+  color: $blue-middle;
 
+  @media (min-width: 768px) {
+    margin: 46px 0 51px;
+    @include font-size(20px, 20px);
+  };
+
+  @media (min-width: 1440px) {
+    margin: 62px 0 71px;
+  };
+
+  &::before {
     width: 18px;
     height: 18px;
+    margin-right: 15px;
 
     background-image: url(../img/show-more-plus.svg);
     background-repeat: no-repeat;
+    background-position: 50%;
 
     content: "";
+
+    @media (min-width: 768px) {
+      width: 26px;
+      height: 26px;
+      margin-right: 25px;
+    };
   }
 }
 
 .companions__clicker-wrap {
-  position: relative;
   display: flex;
+
+  position: relative;
+
   width: 100%;
   height: 51px;
   border-radius: 20px;
@@ -88,14 +114,28 @@
     background-color: $white-dirty;
 
     content: "";
+
+    @media (min-width: 768px) {
+      display: none;
+    };
   }
+
+  @media (min-width: 768px) {
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100px;
+    padding: 0 25px;
+  };
 }
 
 .companions__btn-clicker{
-  position: relative;
-  width: 50%;
-  height: 100%;
   display: block;
+  flex-grow: 1;
+
+  position: relative;
+
+  height: 100%;
 
   &--left,
   &--right {
@@ -119,4 +159,45 @@
       transform: rotate(180deg);
     }
   };
+
+  @media (min-width: 768px) {
+    flex-grow: unset;
+    display: block;
+    width: 40px;
+    height: 50%;
+  };
+}
+
+.companions__pages {
+  display: none;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  @include font(700, normal);
+  @include font-size(20px, 50px);
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+  };
+}
+
+.companions__page-number {
+  width: 50px;
+  border-radius: 50%;
+
+  text-align: center;
+
+  color: $blue-middle;
+
+  &--active {
+    background-color: $yellow-low;
+  }
+}
+
+.companions__page-link {
+  color: $blue-middle;
 }

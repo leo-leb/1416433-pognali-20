@@ -11,6 +11,11 @@
 .menu-popup__nav {
   margin-top: 76px;
   margin-bottom: 51px;
+
+  @media (min-width: 768px) {
+    margin-top: 98px;
+    margin-bottom: 144px;
+  };
 }
 
 .menu-popup__nav-list {
@@ -51,6 +56,9 @@
     right: auto;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    width: 22px;
+    height: 22px;
   };
 }
 
@@ -59,9 +67,6 @@
 
   margin-bottom: 51px;
   padding: 0;
-
-  @include font-size(17px, 50px);
-  @include font(700, normal);
 
   @media (min-width: 768px) {
     position: absolute;

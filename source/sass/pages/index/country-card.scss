@@ -3,41 +3,40 @@
 
   border-radius: 10px;
 
-  background-image: url(../../img/thailand-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+  };
 
-    height: 140px;
+  @media (min-width: 1440px) {
+    width: 560px;
   };
 }
 
 .country__img {
   height: 110px;
   margin-bottom: -10px;
-  border-radius: 10px;
+  @include shape-top(10px);
 
-  background-image: url(../../img/thailand-mobile@1x.jpg);
+  background-image: url(../img/thailand-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
 
   @media (min-width: 768px) {
-    width: 185px;
-    height: 100%;
+    width: 186px;
+    height: 140px;
     margin-bottom: 0;
-    margin-left: -10px;
     border-radius: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 
-    background-image: none;
-    background-color: red;
+    background-image: url(../img/thailand-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
   };
 }
 
@@ -47,11 +46,7 @@
 
   position: relative;
 
-  width: 100%;
-  padding-top: 26px;
-  padding-bottom: 24px;
-  padding-left: 23px;
-  padding-right: 23px;
+  padding: 26px 23px 24px;
   border-radius: 10px;
 
   @include font(500, normal);
@@ -65,11 +60,13 @@
 
     width: 35px;
     height: 24px;
+    border-radius: 3px;
 
     content: "";
 
     background-image: url(../img/flag-bosnia-and-herzegovina.png);
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-width: 768px) {
       top: 17px;
@@ -77,21 +74,34 @@
       right: 0;
       transform: none;
       transform: translateX(50%);
+
+      width: 70px;
+      height: 47px;
+      border-radius: 5px;
+
+      padding: 30px 26px 20px;
     };
   }
 
   @media (min-width: 768px) {
-    flex-grow: 1;
     flex-direction: column;
+    width: auto;
+    flex-grow: 1;
+
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   };
 }
 
-.country-card__info-wrap {
-}
-
 .country-card__title-third {
+  margin: 0;
   margin-bottom: 2px;
   color: $black-middle;
+
+  @media (min-width: 768px) {
+    margin-bottom: 5px;
+  };
 }
 
 .country-card__moto {
@@ -100,26 +110,45 @@
   @include font-size(16px, 18px);
   color: $black-low;
   opacity: 0.3;
+
+  @media (min-width: 768px) {
+    @include font-size(20px, 20px);
+  };
 }
 
 .country-card__visitors {
-  display: flex;
-
   position: relative;
+  align-self: flex-start;
 
   @include font-size(16px, 16px);
-  color: $black-low;
+  color: $blue-dark;
   opacity: 0.3;
 
-  &::before {
-    position: relative;
+  @media (min-width: 768px) {
+    @include font-size(20px, 20px);
+    margin-left: 25px;
+  };
 
-    width: 14px;
-    height: 14px;
+  &::before {
+    position: absolute;
+    top: 45%;
+    left: -7px;
+    transform: translate(-100%, -50%);
+
+    width: 11px;
+    height: 12px;
     margin-right: 5px;
 
     content: "";
 
-    background-image: url(../../img/user.svg);
+    color: $blue-high;
+    opacity: 0.5;
+
+    background-image: url(../img/user.svg);
+
+    @media (min-width: 768px) {
+      width: 18px;
+      height: 20px;
+    };
   }
 }

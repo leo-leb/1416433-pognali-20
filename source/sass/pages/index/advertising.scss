@@ -33,7 +33,6 @@
 .advertising__moto {
   width: 40%;
   margin: 0;
-  // margin-left: 23px;
 
   @include font(700, normal);
   @include font-size(24px, 24px);
@@ -59,7 +58,6 @@
   margin: 0;
   margin-top: 46px;
   margin-bottom: 31px;
-  // margin-left: 23px;
   padding: 0;
 
   counter-reset: myCounter;
@@ -247,5 +245,21 @@
       background-position: center;
       background-size: 30%;
     };
+  };
+}
+
+.advertising__business {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+
+  @media (min-width: 768px) {
+    top: 55px;
+  };
+
+  @media (min-width: 1044px) {
+    top: 55%;
+    transform: translateY(-50%);
   };
 }

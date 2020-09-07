@@ -1,9 +1,9 @@
 mixin checkbox-without-title(name, massive)
-  fieldset(class= "plans-create__" + name)
+  div(class= "plans-create__" + name)
     ul(class= "plans-create__" + name + "-list")
       each n in massive
         li(class= "plans-create__" + name + "-item")
           label(class= "plans-create__" + name + "-content")
-            input.plans-create__real-checkbox.visually-hidden(name= name type="checkbox" value= n)
+            input.plans-create__real-checkbox.visually-hidden(name="additional requirments" type="checkbox" value= n)
             span.plans-create__custom-checkbox
             = n

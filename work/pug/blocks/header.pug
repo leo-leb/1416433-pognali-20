@@ -1,18 +1,19 @@
 header.header(class= pageIndex?"header--main":null)
-  .header__row
-    a.logo.logo--white(href="#")
-    .header__btn-menu(type="button")
-      span.header__btn-menu-line
-      span.visually-hidden Открыть шапку страницы
-        nav.header__nav
-    ul.header__nav-list
-      li.header__nav-link-wrap
-        a.header__nav-link(href="#") о сервисе
-      li.header__nav-link-wrap
-        a.header__nav-link(href="directions.html") направления
-      li.header__nav-link-wrap
-        a.header__nav-link(href="companions.html") попутчики
-    .action-buttons.action-buttons--row
-      include contacts-short
-      a.action-buttons__btn(href="#") авторизация
-  include menu-popup
+  .container-outter
+    .header__row
+      a.logo.logo--white(href="#")
+      .header__btn-menu(type="button")
+        span.header__btn-menu-line
+        span.visually-hidden Открыть шапку страницы
+      nav.header__nav
+        ul.header__nav-list
+          li.header__nav-link-wrap
+            a.header__nav-link(href= pageIndex?"#":"index.html") о сервисе
+          li.header__nav-link-wrap
+            a.header__nav-link(href="directions.html") направления
+          li.header__nav-link-wrap
+            a.header__nav-link(href="companions.html") попутчики
+      .action-buttons.action-buttons--row
+        include contacts-short
+        a.action-buttons__btn(href="#") авторизация
+    include menu-popup

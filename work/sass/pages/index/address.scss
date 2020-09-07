@@ -1,4 +1,4 @@
-.adress {
+.address {
   position: relative;
 
   padding: 50px 0;
@@ -14,7 +14,7 @@
   };
 }
 
-.adress .container-outter {
+.address .container-outter {
   @media (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@
   };
 }
 
-.adress__desc {
+.address__desc {
   display: flex;
 
   margin: 0;
@@ -48,19 +48,23 @@
     background-color: $blue-dark;
     background-image: url(../img/contacts-location.svg);
     background-repeat: no-repeat;
-    background-size: 15.75px 21px;
+    background-size: 21px 21px;
     background-position: center;
 
     @media (min-width: 768px) {
       width: 68px;
       height: 68px;
       margin-right: 26px;
+
+      background-size: 32px 32px;
     };
 
     @media (min-width: 1440px) {
       width: 90px;
       height: 90px;
       margin-right: 26px;
+
+      background-size: 42px 42px;
     };
   };
 
@@ -75,7 +79,7 @@
   };
 }
 
-.adress .index__btn-content {
+.address .index__btn-content {
   @media (min-width: 768px) {
     line-height: 74px;
   };

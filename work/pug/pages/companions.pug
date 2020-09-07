@@ -13,7 +13,7 @@ block content
       .container-outter
         h1.title-first= firstTitle
         a.first-block__btn-back(href="index.html") на главную
-    .filter-countries.companions__filter-countries
+    aside.filter-countries.companions__filter-countries
       .container-outter
         .filter-countries__row
           h4.title-fourth.filter-countries__title-fourth фильтрация по странам:
@@ -72,8 +72,8 @@ block content
                 .user-avatar.user-avatar--small
                 .user-full__content
                   .user-full__row-upper
-                    .user-full__name-wrap
-                      p.user.user-full__user(class= "user--" + user.status)= user.firstname
+                    .user-full__name-wrap(class= "user-full__name-wrap--" + user.status)
+                      p.user.user-full__user= user.firstname
                       p.user.user-full__user= user.lastname
                     ul.tags.user-full__tags
                       each n in user.tags
@@ -100,5 +100,14 @@ block content
                   a.user-full__btn-user(href="#") позвать!
           a.companions__btn-open(href="#") показать еще
           .companions__clicker-wrap
+            ul.companions__pages
+              li.companions__page-number.companions__page-number--active
+                a.companions__page-link(href="#") 1
+              li.companions__page-number
+                a.companions__page-link(href="#") 2
+              li.companions__page-number
+                a.companions__page-link(href="#") 3
+              li.companions__page-number
+                a.companions__page-link(href="#") 4
             a.companions__btn-clicker.companions__btn-clicker--left(href="#")
             a.companions__btn-clicker.companions__btn-clicker--right(href="#")
