@@ -31,8 +31,8 @@
 
     & .action-buttons--row {
       display: flex;
-    }
-  }
+    };
+  };
 }
 
 .header .container-outter {
@@ -56,7 +56,7 @@
 
   @media (min-width: 1440px) {
     display: block;
-  }
+  };
 }
 
 .header__nav-list {
@@ -80,7 +80,7 @@
       background-color: #fff;
 
       content: "";
-    }
+    };
   };
 }
 
@@ -163,7 +163,7 @@
     content: "";
 
     background-color: white;
-  }
+  };
 }
 
 .header__menu.active {
@@ -177,6 +177,6 @@
     &::after {
       top: 0;
       transform: rotate(-45deg);
-    }
-  }
+    };
+  };
 }

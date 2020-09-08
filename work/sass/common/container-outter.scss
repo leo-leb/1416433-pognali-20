@@ -9,6 +9,7 @@
     width: 688px;
     padding: 0 35px;
   };
+
   @media (min-width: 1440px) {
     width: 1320px;
     padding: 0;
@@ -24,9 +25,45 @@
   margin: 0 auto;
 
   @media (min-width: 768px) {
+    display: block;
     width: 688px;
   };
+
   @media (min-width: 1440px) {
     width: 1320px;
+  };
+
+  &::after {
+    position: absolute;
+    bottom: 285px;
+    right: 22px;
+
+    width: 192px;
+    height: 255px;
+
+    content: "";
+
+    background-image: url(../img/traveller-illustration-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 768px) {
+      bottom: 140px;
+
+      width: 372px;
+      height: 451px;
+
+      background-image: url(../img/traveller-illustration-tablet@1x.png);
+    };
+
+    @media (min-width: 1440px) {
+      bottom: 0;
+      right: 345px;
+
+      width: 431px;
+      height: 640px;
+
+      background-image: url(../img/traveller-illustration-desktop@1x.png);
+    };
   };
 }

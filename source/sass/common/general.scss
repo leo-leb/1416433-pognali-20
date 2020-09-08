@@ -12,16 +12,3 @@ body {
 a {
   text-decoration: none;
 }
-
-.wrap-inner {
-
-  @media (min-width: 768px) {
-    margin-left: 35px;
-    margin-right: 35px;
-  };
-
-  @media (min-width: 1440px) {
-    margin-left: 70px;
-    margin-right: 70px;
-  };
-}

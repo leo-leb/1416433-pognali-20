@@ -10,10 +10,14 @@
   @include environment-blue;
 
   @media (min-width: 768px) {
-    @include shape-bottom(55px);
-
+    height: 905px;
     padding-top: 134px;
     padding-bottom: 67px;
+    @include shape-bottom(55px);
+  };
+
+  @media (min-width: 1440px) {
+    height: 651px;
   };
 
   &--special{
@@ -45,58 +49,6 @@
         background-image: url(../img/globe-back-desktop@1x.jpg);
       };
     };
-
-    @media (min-width: 768px) {
-      height: 905px;
-      @include environment-blue;
-    };
-
-    @media (min-width: 1440px) {
-      height: 651px;
-      @include environment-blue;
-    };
-  }
-}
-
-.container-outter--special {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    bottom: 285px;
-    right: 22px;
-
-    width: 192px;
-    height: 255px;
-
-    content: "";
-
-    background-image: url(../img/traveller-illustration-mobile@1x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (min-width: 768px) {
-      bottom: 140px;
-
-      width: 372px;
-      height: 451px;
-
-      background-image: url(../img/traveller-illustration-tablet@1x.png);
-    };
-
-    @media (min-width: 1440px) {
-      bottom: 0;
-      right: 345px;
-
-      width: 431px;
-      height: 640px;
-
-      background-image: url(../img/traveller-illustration-desktop@1x.png);
-    };
-  };
-
-  @media (min-width: 768px) {
-    display: block;
   };
 }
 
@@ -225,16 +177,13 @@
     @media (min-width: 768px) {
       @include font-size(30px, 30px);
     };
-  }
+  };
 
   @media (min-width: 768px) {
     flex-direction: column-reverse;
 
     width: 51.3%;
-    padding-right: 0;
-    padding-top: 31px;
-    padding-bottom: 21px;
-    padding-left: 33px;
+    padding: 31px 0 21px 33px;
   };
 
   @media (min-width: 1440px) {
@@ -350,7 +299,7 @@
     border-left: none;
 
     content: "";
-  }
+  };
 
   &::before {
     position: absolute;
@@ -366,7 +315,7 @@
     background-image: url(../img/triangle-arrow-left.svg);
     background-repeat: no-repeat;
     background-size: contain;
-  }
+  };
 
   @media (min-width: 768px) {
     display: block;

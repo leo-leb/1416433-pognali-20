@@ -25,25 +25,24 @@
 
   justify-content: space-between;
 
-  @include font(500, normal);
-  text-transform: uppercase;
-}
-
-.box-level__heading-wrap {
   width: 100%;
+
+  text-transform: uppercase;
+
+  @include font(500, normal);
 }
 
 .box-level__heading-wrap .title-fourth {
   margin-bottom: 14px;
 
   @media (min-width: 768px) {
-    line-height: 46px;
     margin-bottom: 0;
+    line-height: 46px;
   };
 
   @media (min-width: 1440px) {
-    line-height: auto;
     margin-bottom: 14px;
+    line-height: auto;
   };
 }
 

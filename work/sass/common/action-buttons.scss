@@ -27,8 +27,8 @@
 
     @media (min-width: 768px) {
       margin-bottom: 129px;
-    }
-  }
+    };
+  };
 }
 
 .action-buttons__btn {
@@ -45,7 +45,16 @@
   @media (min-width: 768px) {
     display: inline;
     padding: 0 28px;
-  }
+  };
+}
+
+.action-buttons--row .action-buttons__btn {
+  @include font-size(17px, 40px);
+  @include font(700, normal);
+
+  @media (min-width: 768px) {
+    @include font-size(20px, 50px);
+  };
 }
 
 .action-buttons--col .action-buttons__btn {
@@ -55,14 +64,5 @@
   @media (min-width: 768px) {
     font-size: 20px;
     font-weight: 400;
-  }
-}
-
-.action-buttons--row .action-buttons__btn {
-  @include font-size(17px, 40px);
-  @include font(700, normal);
-
-  @media (min-width: 768px) {
-    @include font-size(20px, 50px);
-  }
+  };
 }

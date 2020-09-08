@@ -36,7 +36,7 @@ block content
           include ../blocks/alphabet-short
           include ../blocks/alphabet-full
           button.filter-countries__btn свернуть
-    .companions__content-wrap
+    .companions__wrap
       .container-outter
         .filter-users.companions__filter-users
           h4.visually-hidden фильтрация по попутчикам
@@ -47,7 +47,7 @@ block content
               +checkbox('музыка', 'music', filterUsers.music)
               +checkbox('еда', 'food', filterUsers.food)
               +checkbox-without-name('транспорт', 'transport', filterUsers.transport)
-              .box-level.filter-users__box-level
+              .box-level
                 label.box-level__heading-wrap
                   h3.title-fourth левел:
                   .box__btn.box__btn--close
@@ -65,7 +65,7 @@ block content
                     .box-level__toggle-min
                     .box-level__toggle-max
             button.filter-users__btn(type="submit") показать
-        .companions__another-wrap
+        .companions__content-wrap
           .companions__users-wrap
             each user in users.slice(0,4)
               article.user-full

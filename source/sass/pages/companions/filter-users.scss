@@ -13,12 +13,6 @@
   };
 }
 
-.companions__filter-users {
-  @media (min-width: 1440px) {
-    align-self: flex-start;
-  };
-}
-
 .filter-users__fieldset {
   margin: 22px 0;
   padding: 0;
@@ -26,8 +20,7 @@
 
   @media (min-width: 768px) {
     margin: 37px 0;
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding: 34px 0;
     border-top: 1px solid $separator-line;
     border-bottom: 1px solid $separator-line;
   };
@@ -53,6 +46,5 @@
 
   @include font-size(17px, 40px);
   @include font(700, normal);
-  color: $blue-dark;
-  background-color: $white-middle;
+  @include environment-white-middle($white-middle, $blue-dark);
 }
