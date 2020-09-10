@@ -8,7 +8,7 @@ block variables
   - var additional = ['Можно с детьми']
   - var stepFirst = true
   - var stepLast = false
-
+ 
 include ../../mixins/checkbox-without-title
 include ../../mixins/input-number
 
@@ -18,11 +18,13 @@ block content
     +input-number('длительность:', 'дн.', '2', 'days')
     +checkbox-without-title('additional', additional)
   .plans-create__month
-    //- input.plans-create__input(type="month" value="2019-03")
     .plans-create__month-value Март 2019
+    input.visually-hidden(type="month" name="month" value="2019-03")
     button.plans-create__btn-stepper-alt.plans-create__btn-stepper-alt--left
     button.plans-create__btn-stepper-alt.plans-create__btn-stepper-alt--right
   .calendar.plans-create__calendar
+    input.visually-hidden(type="date" name="date-start" value="2019-03-26")
+    input.visually-hidden(type="date" name="date-finish" value="2019-03-28")
     ul.calendar__days-list
       li.calendar__days-item
         span.calendar__days-desc-min П

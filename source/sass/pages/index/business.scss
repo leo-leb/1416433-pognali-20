@@ -1,15 +1,23 @@
 .business {
   display: none;
 
-  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
 
   width: 270px;
-  margin: 0 auto;
+  height: fit-content;
+  margin: auto;
   padding-top: 34px;
   border-radius: 20px;
   box-shadow: 0px 2px 8px $black-light;
 
   @include environment-white($white-middle, $black-low);
+  opacity: 0;
+  pointer-events: none;
 
   @media (min-width: 768px) {
     width: 688px;
@@ -19,7 +27,19 @@
   @media (min-width: 1440px) {
     width: 750px;
   };
+
+  &--show {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+  };
 }
+
+.business:target {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+};
 
 .business__title-second {
   margin: 0;
@@ -74,6 +94,7 @@
   @include shape-bottom(20px);
 
   text-transform: uppercase;
+  text-align: center;
 
   @include font-size(16px, 60px);
   @include font(700, normal);

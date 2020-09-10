@@ -1,8 +1,9 @@
 header.header(class= pageIndex?"header--main":null)
+  include menu-popup
   .container-outter
     .header__row
-      a.logo.logo--white(href= pageIndex?null:"index.html") Погнали
-      .header__btn-menu(type="button")
+      a.logo.logo--white(href="index.html")
+      .header__btn-menu.header__btn-menu--no-js(type="button")
         span.header__btn-menu-line
         span.visually-hidden Открыть шапку страницы
       nav.header__nav
@@ -16,4 +17,3 @@ header.header(class= pageIndex?"header--main":null)
       .action-buttons.action-buttons--row
         include contacts-short
         a.action-buttons__btn(href="#") авторизация
-    include menu-popup

@@ -10,20 +10,23 @@
   @include environment-blue;
 
   @media (min-width: 768px) {
-    height: 905px;
     padding-top: 134px;
     padding-bottom: 67px;
     @include shape-bottom(55px);
-  };
-
-  @media (min-width: 1440px) {
-    height: 651px;
   };
 
   &--special{
     height: 720px;
     padding: 0;
     @include shape-bottom(0px);
+
+    @media (min-width: 768px) {
+      height: 905px;
+    };
+
+    @media (min-width: 1440px) {
+      height: 651px;
+    };
 
     &::before {
       position: absolute;

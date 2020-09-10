@@ -77,14 +77,24 @@
 }
 
 .index__map {
-  margin-top: -30px;
-  margin-bottom: -30px;
   height: 310px;
-  background-color: gray;
+  margin: -30px 0;
+  border: none;
+
+  // background-image: url(../img/block_map-mobile.png);
+  background-size: cover;
+  background-position: 50% 20%;
 
   @media (min-width: 768px) {
-    margin-top: -55px;
-    margin-bottom: -55px;
+    height: 574px;
+    margin: -55px 0;
+    background-image: url(../img/block_map-tablet.png);
+    background-position: center;
+  };
+
+  @media (min-width: 1440px) {
+    height: 504px;
+    background-image: url(../img/block_map-desktop.png);
   };
 }
 

@@ -916,7 +916,8 @@
   };
 }
 
-.plans-create__btn-cross {
+.plans-create__btn-cross,
+.plans-create__btn-cross-second {
   position: absolute;
   top: 0;
   right: 0;
@@ -956,11 +957,16 @@
       height: 18px;
     };
   }
+
+  &--hide {
+    display: none;
+  }
 }
 
 
 
-.plans-create__btn-arrow {
+.plans-create__btn-arrow,
+.plans-create__btn-arrow-alt {
   display: block;
 
   position: absolute;
@@ -976,7 +982,8 @@
   background-color: inherit;
 }
 
-.plans-create__btn-arrow img {
+.plans-create__btn-arrow img,
+.plans-create__btn-arrow-alt img {
   transform: rotate(90deg);
 }
 
@@ -1029,6 +1036,9 @@
     width: auto;
   };
 
+  &--show {
+    display: block;
+  };
 
   & .plans-create__box-country {
     @include environment-blue-middle;
@@ -1062,6 +1072,11 @@
         width: 730px;
       };
     }
+  };
+
+  & .plans-create__country-desc {
+    color: $white-middle;
+    padding-left: 0;
   };
 }
 

@@ -38,18 +38,18 @@ block content
     section.about.index__about
       .container-outter
         h2.title-second.title-second--orange.about__title-second О сервисе
-        p.paragraph.about__paragraph Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        p.paragraph.about__paragraph Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой! Делитесь своими идеями путешествий и черпайте вдохновение в&nbsp;чужих.
         p.paragraph.paragraph--bold.about__paragraph А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         a.index__btn-content(href=".directions.html") Подробнее
     section.countries.index__countries
       .container-outter
         .countries-wrap
           h2.title-second.title-second--orange.countries__title-second Направления
-          p.paragraph.countries__paragraph Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+          p.paragraph.countries__paragraph Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
           .countries__wrap
             each country in countries
               article.country-card.countries__country-card
-                  .country__img
+                  .country-card__img
                   .country-card__info
                     .country-card__info-wrap
                       h3.title-third.country-card__title-third= country.name
@@ -59,7 +59,7 @@ block content
     section.travelers.index__travelers
       .container-outter
         h2.title-second.title-second--orange.travelers__title-second.wrap-inner Попутчики
-        p.paragraph.travelers__paragraph.wrap-inner Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        p.paragraph.travelers__paragraph.wrap-inner Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а&nbsp;другому маршрут для хайкинга.
         p.paragraph.paragraph--bold.travelers__paragraph.wrap-inner Теперь можно легко найти единомышленников!
         .travelers__wrap
           each user in users.slice(0,2)
@@ -96,23 +96,15 @@ block content
               .advertising__desc-wrap
                 p.advertising__desc= n.desc
                 p.advertising__desc= n.price
-        a.advertising__btn(href="#") Показать тарифы для бизнеса
-      .business.advertising__business
-        h2.title-second.title-second--orange.business__title-second Бизнес-тарифы
-        ul.business__list
-          each n in advertising.business
-            li.business__item
-              p.paragraph.business__paragraph= n.desc
-              p.paragraph.business__paragraph= n.price
-        button.business__btn закрыть окно
+        button.advertising__btn(href="#business-modal") Показать тарифы для бизнеса
     section.check-in.index__check-in
       .container-outter
         h2.visually-hidden Раздел регистрации
         p.title-second.title-second--orange.check-in__title-second Заинтересовались?
-        p.paragraph
-          | Зарегистрируйтесь, это быстро и бесплатно!
+        p.paragraph.check-in__paragraph
+          | Зарегистрируйтесь, это&nbsp;быстро и бесплатно!
           br
-          | Уже зарегистрированы? Тогда скорее
+          | Уже&nbsp;зарегистрированы? Тогда скорее 
           a.check-in__link(href="#") авторизуйтесь
           |.
         form.check-in__email(action="https://echo.htmlacademy.ru" method="get")

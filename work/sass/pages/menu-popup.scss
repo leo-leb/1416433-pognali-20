@@ -1,3 +1,35 @@
+.menu-popup {
+  display: none;
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 41px;
+
+  background-color: $white-middle;
+
+  @media (min-width: 768px) {
+    padding-top: 45px;
+    padding-bottom: 90px;
+  };
+
+  @media (min-width: 1440px) {
+    display: none;
+  };
+
+  &--no-js {
+    display: block;
+    position: relative;
+  };
+
+  &--show {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  };
+}
+
 .menu-popup__row {
   position: relative;
 
@@ -40,6 +72,8 @@
 }
 
 .menu-popup__btn-cross {
+  display: none;
+
   position: absolute;
   top: 50%;
   right: 0;
@@ -60,6 +94,10 @@
     width: 22px;
     height: 22px;
   };
+
+  &--show {
+    display: block;
+  }
 }
 
 .menu-popup .action-buttons__btn {

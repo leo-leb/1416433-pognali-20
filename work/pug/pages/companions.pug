@@ -17,22 +17,22 @@ block content
       .container-outter
         .filter-countries__row
           h4.title-fourth.filter-countries__title-fourth фильтрация по странам:
-          button.filter-countries__btn-dots
+          button.filter-countries__btn-dots.filter-countries__btn-dots--no-js
             span.visually-hidden показать все
             span.filter-countries__btn-dots-desc показать все
             span.filter-countries__btn-dots-img
-          button.filter-countries__btn-hide
+          button.filter-countries__btn-hide.filter-countries__btn-hide--no-js
             span.filter-countries__btn-hide-desc свернуть
             svg.filter-countries__btn-hide-img#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 18.6 18.6', style='enable-background:new 0 0 18.6 18.6;', xml:space='preserve')
               path(fill='currentColor', d='M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7\
               L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z')
-          form.filter-countries__form-parts(action="https://echo.htmlacademy.ru" method="get")
+          form.filter-countries__form-parts.filter-countries__form-parts--no-js(action="https://echo.htmlacademy.ru" method="get")
             fieldset.filter-countries__parts
               ul.filter-countries__parts-list
                 each n in filterCountries.parts
                   li.filter-countries__parts-value
                     a.filter-countries__parts-item(href="#")= n
-        form.filter-countries__form-countries(action="https://echo.htmlacademy.ru" method="get")
+        form.filter-countries__form-countries.filter-countries__form-countries--no-js(action="https://echo.htmlacademy.ru" method="get")
           include ../blocks/alphabet-short
           include ../blocks/alphabet-full
           button.filter-countries__btn свернуть

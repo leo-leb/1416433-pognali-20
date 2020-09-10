@@ -8,7 +8,20 @@ html(lang="ru")
     link(rel="stylesheet", href="./css/normalize.css")
     link(rel="stylesheet", href="./css/style.css")
     title= pageTitle
-  body
+  body(id= pageIndex?"pageIndex":pageDirections?"pageDirections":"pageCompanions")
     include blocks/header
     block content
     include blocks/footer
+    if pageIndex
+      .business#business-modal
+        h2.title-second.title-second--orange.business__title-second Бизнес-тарифы
+        ul.business__list
+          each n in advertising.business
+            li.business__item
+              p.paragraph.business__paragraph= n.desc
+              p.paragraph.business__paragraph= n.price
+        a.business__btn(href="#") закрыть окно
+    else
+    script(src="../js/main.js")
+    if pageIndex
+      script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiGZcNtlWVDJD0U1TiXQn8Sj3cgFsZGWk&callback=initMap" async defer)

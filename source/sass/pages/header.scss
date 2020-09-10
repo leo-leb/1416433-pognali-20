@@ -3,20 +3,10 @@
   z-index: 8;
 
   min-width: 320px;
-  padding: 0 25px;
-  padding-top: 27px;
+  // padding: 0 25px;
+  // padding-top: 27px;
 
   @include environment-blue;
-
-  @media (min-width: 768px) {
-    padding: 0 40px;
-    padding-top: 40px;
-  };
-
-  @media (min-width: 1440px) {
-    padding: 0 60px;
-    padding-top: 46px;
-  };
 
   &--main {
     @include environment-blue-special;
@@ -49,6 +39,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding-top: 27px;
+
+  @media (min-width: 768px) {
+    padding-top: 40px;
+  };
+
+  @media (min-width: 1440px) {
+    padding-top: 46px;
+  };
 }
 
 .header__nav {
@@ -102,30 +102,11 @@
   };
 }
 
-.header__menu-popup {
-  display: none;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 41px;
-
-  background-color: $white-middle;
-
-  @media (min-width: 768px) {
-    padding-top: 45px;
-    padding-bottom: 90px;
-  };
-}
-
 // BUTTONS
 
 .header__btn-menu {
   display: block;
+  // display: none;
 
   position: relative;
 
@@ -134,6 +115,10 @@
   cursor: pointer;
 
   @media (min-width: 1440px) {
+    display: none;
+  };
+
+  &--no-js {
     display: none;
   };
 }

@@ -6,23 +6,6 @@
 
   @include environment-blue;
 
-  &::before {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 12px;
-    z-index: -1;
-
-    width: 292px;
-    height: 352px;
-    margin: 0 auto;
-
-    content: "";
-
-    background-image: url(../img/about-mobile@1x.png);
-    background-repeat: no-repeat;
-  }
-
   @media (min-width: 768px) {
     padding-top: 277px;
     padding-bottom: 89px;
@@ -32,6 +15,85 @@
     padding-top: 132px;
     padding-bottom: 163px;
   };
+}
+
+.about .container-outter {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: -5px;
+    bottom: -82px;
+    transform: translate(0, -12px);
+    z-index: -1;
+
+    width: 292px;
+    height: 353px;
+    margin: 0;
+
+    content: "";
+
+    background-image: url(../img/about-mobile@1x.png);
+    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      bottom: 0;
+      left: unset;
+      right: 0;
+      transform: translate(32px, 0);
+
+      width: 376px;
+      height: 548px;
+      background-image: url(../img/about-tablet@1x.png);
+    };
+
+    @media (min-width: 1440px) {
+      bottom: 0;
+      transform: translate(0, 163px);
+      width: 630px;
+      height: 665px;
+      background-image: url(../img/about-desktop@1x.png);
+    };
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 283px;
+    left: -25px;
+    transform: translateY(100%);
+    z-index: -2;
+
+    width: 113px; 
+    height: 132px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    content: "";
+
+    background-color: $blue-middle-three;
+
+    @media (min-width: 768px) {
+      left: 0;
+      bottom: unset;
+      top: 0;
+      transform: translateY(-41px);
+
+      width: 100%;
+      height: 212px;
+      border-radius: 20px;
+    };
+
+    @media (min-width: 1440px) {
+      left: 0;
+      bottom: unset;
+      top: 0;
+      transform: translateY(-41px);
+
+      width: 212px;
+      height: 212px;
+      border-radius: 20px;
+    };
+  }
 }
 
 .about__title-second {
@@ -54,7 +116,7 @@
     margin: 0;
   };
 
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     margin-bottom: 22.5px;
 
     @media (min-width: 768px) {
@@ -63,6 +125,16 @@
 
     @media (min-width: 768px) {
       margin-bottom: 38px;
+    };
+  };
+
+  &:last-of-type {
+    @media (min-width: 768px) {
+      margin-bottom: 52px;
+    };
+
+    @media (min-width: 1440px) {
+      margin-bottom: 85px;
     };
   };
 }

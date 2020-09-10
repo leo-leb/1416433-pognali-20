@@ -28,6 +28,19 @@
   };
 }
 
+.check-in__paragraph {
+  margin: 0 35px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  };
+}
+
+.check-in__link {
+  text-decoration: underline;
+  color: $yellow-low;
+}
+
 .check-in__email {
   position: relative;
   display: block;
