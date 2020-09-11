@@ -38,14 +38,24 @@
   color: $color;
 }
 
+@mixin shape-top ($radius: 30px) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
 @mixin shape-bottom ($radius: 30px) {
   border-bottom-left-radius: $radius;
   border-bottom-right-radius: $radius;
 }
 
-@mixin shape-top ($radius: 30px) {
+@mixin shape-left ($radius: 30px) {
   border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin shape-right ($radius: 30px) {
   border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
 }
 
 @mixin font($weight: "400", $style: "normal") {

@@ -26,24 +26,6 @@
   }
 }
 
-.user-avatar--small {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-
-  @media (min-width: 768px) {
-    position: relative;
-    top: auto;
-    left: auto;
-
-    margin-right: 29px;
-  };
-
-  @media (min-width: 1440px) {
-    margin-right: 0;
-  };
-}
-
 .user-full__content {
   @media (min-width: 768px) {
     display: flex;
@@ -69,6 +51,31 @@
 
   @media (min-width: 1440px) {
     flex-basis: 50%;
+  };
+}
+
+.user-full__img {
+  display: block;
+
+  position: absolute;
+  top: 15px;
+  left: 20px;
+
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    margin-right: 29px;
+    border-radius: 20px;
+  };
+
+  @media (min-width: 1440px) {
+    margin-right: 0;
+    border-radius: 0;
+    @include shape-left(20px);
   };
 }
 

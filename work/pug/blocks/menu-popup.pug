@@ -1,7 +1,11 @@
 .menu-popup.menu-popup--no-js
   .container-outter
     .menu-popup__row
-      a.logo.logo--blue(href="index.html")
+      a.menu-popup__logo(href="index.html")
+        picture
+          source(media="(min-width: 1440px)", srcset="./img/logo-desktop-blue@1x.png 1x, ./img/logo-desktop-blue@2x.png 2x")
+          source(media="(min-width: 768px)", srcset="./img/logo-tablet-blue@1x.png 1x, ./img/logo-tablet-blue@2x.png 2x")
+          img.logo(src="./img/logo-mobile-blue@1x.png", srcset="./img/logo-mobile-blue@2x.png 2x", alt="Логотип компании")
       .menu-popup__btn-cross.menu-popup__btn-cross--no-js(type="button")
         span.visually-hidden Скрыть шапку страницы
         svg.btn__img#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 18.6 18.6', style='enable-background:new 0 0 18.6 18.6;', xml:space='preserve')

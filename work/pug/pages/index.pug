@@ -49,12 +49,14 @@ block content
           .countries__wrap
             each country in countries
               article.country-card.countries__country-card
-                  .country-card__img
-                  .country-card__info
-                    .country-card__info-wrap
-                      h3.title-third.country-card__title-third= country.name
-                      p.country-card__moto= country.moto
-                    span.country-card__visitors= country.visitors
+                picture
+                  source(media="(min-width: 768px)", srcset="./img/" + country.class + "-desktop@1x.jpg")
+                  img.country-card__img(src="./img/" + country.class + "-mobile@1x.jpg", alt="Фото страны")
+                .country-card__info
+                  .country-card__info-wrap
+                    h3.title-third.country-card__title-third= country.name
+                    p.country-card__moto= country.moto
+                  span.country-card__visitors= country.visitors
           a.index__btn-content(href=".directions.html") Показать все
     section.travelers.index__travelers
       .container-outter
@@ -64,7 +66,7 @@ block content
         .travelers__wrap
           each user in users.slice(0,2)
             article.user-short
-              .user-short__img
+              img.user-short__image(src="./img/" + user.class + "-desktop@1x.jpg", srcset="./img/" + user.class + "-desktop@2x.jpg 2x", alt="Фото пользователя", width="100%")
               .user-short__info
                 ul.wishes.user-short__wishes
                   each n in user.wishes

@@ -70,6 +70,22 @@
   @include font-size(18px, 18px);
 }
 
+.user-box__img {
+  display: block;
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    width: 94px;
+    border-radius: 5px;
+  };
+
+  @media (min-width: 1440px) {
+    width: auto;
+    border-radius: 0;
+    @include shape-top(10px);
+  };
+}
+
 .user-box__tags-wrap,
 .user-box__moves-wrap {
   position: relative;

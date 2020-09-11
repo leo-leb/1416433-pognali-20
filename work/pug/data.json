@@ -12,16 +12,16 @@
       "moto": "Трэ бьен, манифик!",
       "visitors": 12518
     },
-    "chezh": {
+    "czech": {
       "name": "Чехия",
-      "class": "chezh",
+      "class": "czech",
       "moto": "Закоулки старой Европы",
       "visitors": 5326
     }
   },
   "users": [
     {
-      "class": "tanya-firsova",
+      "class": "firsova",
       "firstname": "Таня",
       "lastname": "Фирсова",
       "status": "offline",
@@ -38,7 +38,7 @@
         }
     },
     {
-      "class": "petya-demin",
+      "class": "demin",
       "firstname": "Петя",
       "lastname": "Демин",
       "status": "online",
@@ -52,10 +52,14 @@
           "drive": {"name": "автобус", "condition": true},
           "ride": {"name": "велосипед", "condition": false},
           "run": {"name": "бег", "condition": true}
-        }
+        },
+      "plans": ["1", "2"],
+      "direction": {"1": "Франция, Италия", "2": "Таиланд, Индонезия"},
+      "companion": {"1": "3 попутчика", "2": "1 попутчик"},
+      "period": {"1": "26 МАР - 29 МАР", "2": "1 ИЮЛ - 15 ИЮЛ"}
     },
     {
-      "class": "mark-smolov",
+      "class": "smolov",
       "firstname": "Марк",
       "lastname": "Смолов",
       "status": "offline",
@@ -69,14 +73,10 @@
           "drive": {"name": "автобус", "condition": false},
           "ride": {"name": "велосипед", "condition": true},
           "run": {"name": "бег", "condition": false}
-        },
-      "plans": ["1", "2"],
-      "direction": {"1": "Франция, Италия", "2": "Таиланд, Индонезия"},
-      "companion": {"1": "3 попутчика", "2": "1 попутчик"},
-      "period": {"1": "26 МАР - 29 МАР", "2": "1 ИЮЛ - 15 ИЮЛ"}
+        }
     },
     {
-      "class": "larisa-rogovaya",
+      "class": "rogovaya",
       "firstname": "Лариса",
       "lastname": "Роговая",
       "status": "online",

@@ -4,7 +4,7 @@ block variables
   - var pageDirections = true
   - var pageTitle = 'Погнали: Направления'
   - var firstTitle = 'Направления'
-  - var person = users[2]
+  - var person = users[1]
 
 block content
   main.directions
@@ -18,7 +18,7 @@ block content
             .user-box__skill-wrap
               span.user-box__skill-level= person.skill
               p.user-box__skill-unit level
-          .user-avatar.user-avatar--big
+          img.user-box__img(src="./img/" + person.class + "-tablet@1x.jpg", alt="Фото пользователя", width="100")
         .user-box__btn сменить фото
         .user-box__btn.user-box__btn--alt фото
         .user-box__tags-wrap

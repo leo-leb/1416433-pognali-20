@@ -15,28 +15,14 @@
 }
 
 .country-card__img {
-  height: 110px;
+  display: block;
   margin-bottom: -10px;
   @include shape-top(10px);
 
-  background-image: url(../img/thailand-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-
   @media (min-width: 768px) {
-    width: 186px;
-    height: 140px;
     margin-bottom: 0;
-    border-radius: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    background-image: url(../img/thailand-desktop@1x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-
+    @include shape-top(0);
+    @include shape-right(10px);
   };
 }
 

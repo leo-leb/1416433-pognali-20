@@ -20,19 +20,9 @@
   };
 }
 
-.user-short__img {
+.user-short__image {
   display: block;
-
-  height: 270px;
   @include shape-top(10px);
-
-  background-image: url(../img/demin-desktop@1x.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (min-width: 768px) {
-    height: 285px;
-  };
 }
 
 .user-short__info {
