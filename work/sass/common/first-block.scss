@@ -176,7 +176,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+
   position: relative;
+
   width: 100%;
   padding: 22px 24px;
   @include shape-top(10px);
