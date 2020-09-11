@@ -81,20 +81,32 @@
   margin: -30px 0;
   border: none;
 
-  // background-image: url(../img/block_map-mobile.png);
+  background-image: url(../img/map-mobile@1x.jpg);
   background-size: cover;
   background-position: 50% 20%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/map-mobile@2x.jpg);
+  };
 
   @media (min-width: 768px) {
     height: 574px;
     margin: -55px 0;
-    background-image: url(../img/block_map-tablet.png);
+    background-image: url(../img/map-tablet@1x.jpg);
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/map-tablet@2x.jpg);
+    };
   };
 
   @media (min-width: 1440px) {
     height: 504px;
-    background-image: url(../img/block_map-desktop.png);
+    background-image: url(../img/map-desktop@1x.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/map-desktop@2x.jpg);
+    };
   };
 }
 

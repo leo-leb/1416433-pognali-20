@@ -18,7 +18,9 @@ block content
             .user-box__skill-wrap
               span.user-box__skill-level= person.skill
               p.user-box__skill-unit level
-          img.user-box__img(src="./img/" + person.class + "-tablet@1x.jpg", alt="Фото пользователя", width="100")
+          picture
+            source(media="(min-width: 768px)", srcset="./img/photo-account-tablet@1x.jpg, ./img/photo-account-tablet@2x.jpg 2x")
+            img.user-box__img(src="./img/photo-account-mobile@1x.jpg", srcset="./img/photo-account-mobile@2x.jpg 2x", alt="Фото пользователя")
         .user-box__btn сменить фото
         .user-box__btn.user-box__btn--alt фото
         .user-box__tags-wrap

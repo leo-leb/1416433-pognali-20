@@ -80,6 +80,10 @@
     background-repeat: no-repeat;
     background-size: contain;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/rates@2x.png);
+    };
+
     @media (min-width: 768px) {
       top: 100%;
       right: 45px;

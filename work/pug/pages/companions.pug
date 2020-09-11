@@ -70,8 +70,8 @@ block content
             each user in users.slice(0,4)
               article.user-full
                 picture
-                  source(media="(min-width: 1440px)", srcset="./img/" + user.class + "-desktop@1x.jpg 1x, ./img/" + user.class + "-desktop@2x.jpg 2x")
-                  source(media="(min-width: 768px)", srcset="./img/" + user.class + "-tablet@1x.jpg 1x, ./img/" + user.class + "-tablet@2x.jpg 2x")
+                  source(media="(min-width: 1440px)", srcset="./img/" + user.class + "-desktop@1x.jpg, ./img/" + user.class + "-desktop@2x.jpg 2x")
+                  source(media="(min-width: 768px)", srcset="./img/" + user.class + "-tablet@1x.jpg, ./img/" + user.class + "-tablet@2x.jpg 2x")
                   img.user-full__img(src="./img/" + user.class + "-mobile@1x.jpg", srcset="./img/" + user.class + "-mobile@2x.jpg 2x", alt="Фото пользователя")
                 .user-full__content
                   .user-full__row-upper

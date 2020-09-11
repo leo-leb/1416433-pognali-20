@@ -50,8 +50,8 @@ block content
             each country in countries
               article.country-card.countries__country-card
                 picture
-                  source(media="(min-width: 768px)", srcset="./img/" + country.class + "-desktop@1x.jpg")
-                  img.country-card__img(src="./img/" + country.class + "-mobile@1x.jpg", alt="Фото страны")
+                  source(media="(min-width: 768px)", srcset="./img/" + country.class + "-desktop@1x.jpg, ./img/" + country.class + "-desktop@2x.jpg 2x")
+                  img.country-card__img(src="./img/" + country.class + "-mobile@1x.jpg", srcset="./img/" + country.class + "-mobile@2x.jpg 2x", alt="Фото страны")
                 .country-card__info
                   .country-card__info-wrap
                     h3.title-third.country-card__title-third= country.name

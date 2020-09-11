@@ -40,6 +40,11 @@
       width: 288px;
       height: 574px;
       background-image: url(../img/flags-back@1x.png);
+      background-size: contain;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/flags-back@2x.png);
+      };
     };
 
     @media (min-width: 1440px) {
