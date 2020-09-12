@@ -25,7 +25,8 @@
       "firstname": "Таня",
       "lastname": "Фирсова",
       "status": "offline",
-      "likes": 1500000,
+      "like": true,
+      "likes": "1,5 М",
       "skill": 99,
       "tags": ["ЗОЖ", "ПП", "Фитнес", "пляж", "авокадо", "смузи"],
       "wishes": [

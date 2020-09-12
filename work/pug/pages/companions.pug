@@ -88,7 +88,6 @@ block content
                         li.wishes__item
                           svg.wishes__country-flag
                             use(xlink:href="./img/general.svg#flag-" + n.en)
-                          //- img.wishes__country-flag(src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
                           p.wishes__country-name= n.ru
                   .user-full__row-lower
                     .user-full__moves-wrap
@@ -105,7 +104,13 @@ block content
                       .user-full__level-wrap
                         span.user-full__skill-level= user.skill
                         p.user-full__skill-unit level
-                  a.user-full__btn-user(href="#") позвать!
+                  .user-full__btn-wrap
+                    a.user-full__btn-user(href="#") позвать!
+                    .user-full__like-wrap
+                      button.user-full__btn-like(class= user.like?"user-full__btn-like--alt":null)
+                        svg.user-full__btn-like-img
+                          use(xlink:href= user.like?"./img/general.svg#heart-active":"./img/general.svg#heart")
+                      p.user-full__like-amount= user.likes
           a.companions__btn-open(href="#") показать еще
           .companions__clicker-wrap
             ul.companions__pages
