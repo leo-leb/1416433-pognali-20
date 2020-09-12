@@ -28,14 +28,38 @@
       "likes": 1500000,
       "skill": 99,
       "tags": ["ЗОЖ", "ПП", "Фитнес", "пляж", "авокадо", "смузи"],
-      "wishes": ["шри-ланка", "тайланд", "сейшелы"],
-      "moves":
+      "wishes": [
         {
-          "fly": {"name": "самолет", "condition": true},
-          "drive": {"name": "автобус", "condition": false},
-          "ride": {"name": "велосипед", "condition": false},
-          "run": {"name": "бег", "condition": false}
+          "en": "sri-lanka",
+          "ru": "Шри-Ланка"
+        },
+        {
+          "en": "thailand",
+          "ru": "Тайланд"
+        },
+        {
+          "en": "seychelles",
+          "ru": "Сейшелы"
         }
+      ],
+      "moves": [
+        {
+          "name": "plane",
+          "condition": true
+        },
+        {
+          "name": "bus",
+          "condition": false
+        },
+        {
+          "name": "bike",
+          "condition": false
+        },
+        {
+          "name": "run",
+          "condition": false
+        }
+      ]
     },
     {
       "class": "demin",
@@ -45,14 +69,34 @@
       "likes": 1500,
       "skill": 80,
       "tags": ["бургег", "бар", "футбол", "концерт", "крафт"],
-      "wishes": ["бельгия", "чехия"],
-      "moves":
+      "wishes": [
         {
-          "fly": {"name": "самолет", "condition": true},
-          "drive": {"name": "автобус", "condition": true},
-          "ride": {"name": "велосипед", "condition": false},
-          "run": {"name": "бег", "condition": true}
+          "en": "belgium",
+          "ru": "Бельгия"
         },
+        {
+          "en": "czech",
+          "ru": "Чехия"
+        }
+      ],
+      "moves": [
+        {
+          "name": "plane",
+          "condition": true
+        },
+        {
+          "name": "bus",
+          "condition": true
+        },
+        {
+          "name": "bike",
+          "condition": false
+        },
+        {
+          "name": "run",
+          "condition": true
+        }
+      ],
       "plans": ["1", "2"],
       "direction": {"1": "Франция, Италия", "2": "Таиланд, Индонезия"},
       "companion": {"1": "3 попутчика", "2": "1 попутчик"},
@@ -66,14 +110,38 @@
       "likes": 170,
       "skill": 25,
       "tags": ["рэп", "тату", "хайпбист", "кроссовки", "суприм"],
-      "wishes": ["сша", "австралия", "доминикана"],
-      "moves":
+      "wishes": [
         {
-          "fly": {"name": "самолет", "condition": true},
-          "drive": {"name": "автобус", "condition": false},
-          "ride": {"name": "велосипед", "condition": true},
-          "run": {"name": "бег", "condition": false}
+          "en": "usa",
+          "ru": "США"
+        },
+        {
+          "en": "australia",
+          "ru": "Австралия"
+        },
+        {
+          "en": "dominica",
+          "ru": "Доминика"
         }
+      ],
+      "moves": [
+        {
+          "name": "plane",
+          "condition": true
+        },
+        {
+          "name": "bus",
+          "condition": false
+        },
+        {
+          "name": "bike",
+          "condition": true
+        },
+        {
+          "name": "run",
+          "condition": false
+        }
+      ]
     },
     {
       "class": "rogovaya",
@@ -83,14 +151,34 @@
       "likes": 23,
       "skill": 50,
       "tags": ["образование", "карьера", "учеба", "линкедин"],
-      "wishes": ["великобритания", "германия"],
-      "moves":
+      "wishes": [
         {
-          "fly": {"name": "самолет", "condition": true},
-          "drive": {"name": "автобус", "condition": true},
-          "ride": {"name": "велосипед", "condition": false},
-          "run": {"name": "бег", "condition": false}
+          "en": "united-kingdom",
+          "ru": "Великобритания"
+        },
+        {
+          "en": "germany",
+          "ru": "Германия"
         }
+      ],
+      "moves": [
+        {
+          "name": "plane",
+          "condition": true
+        },
+        {
+          "name": "bus",
+          "condition": true
+        },
+        {
+          "name": "bike",
+          "condition": false
+        },
+        {
+          "name": "run",
+          "condition": false
+        }
+      ]
     }
   ],
   "filterCountries":
@@ -204,7 +292,7 @@
       "hobby": ["Спортзал", "Кальян", "Диван"],
       "music": ["Тяжелый рок", "Русский рэп", "Евроденс"],
       "food": ["Мясоед", "ПП", "Веган-сыроед"],
-      "transport": ["Самолет", "Автобус", "Велосипед", "Бег"]
+      "transport": ["plane", "bus", "bike", "run"]
     },
   "advertising":
     {

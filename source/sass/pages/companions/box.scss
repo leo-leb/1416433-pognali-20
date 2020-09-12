@@ -111,9 +111,38 @@
 .box__item {
   display: block;
 
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
 
-  background-color: gray; // ВРЕМЕННО!!!
+  & .custom-checkbox-img {
+    position: relative;
+
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: $white-middle;
+  
+    @media (min-width: 768px) {
+      width: 43px;
+      height: 43px;
+    };
+  }
+
+  & .custom-checkbox-svg {
+    @include zero-centered;
+
+    width: 17px;
+    height: 17px;
+
+    color: $blue-middle;
+    opacity: 0.15;
+
+    @media (min-width: 768px) {
+      width: 23px;
+      height: 23px;
+    };
+  }
+
+  & .real-checkbox:checked ~ .custom-checkbox-img .custom-checkbox-svg {
+    opacity: 1;
+  }
 }

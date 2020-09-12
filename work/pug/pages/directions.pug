@@ -33,8 +33,8 @@ block content
           ul.moves.user-box__moves
             each n in person.moves
               li.moves__item
-                span.visually-hidden= "Иконка " + n.name
-                //- svg.moves__icon(class= n.condition?"moves__icon--active":null)
+                svg.moves__icon.moves__icon--alt(class= n.condition?"moves__icon--active":null)
+                  use(xlink:href= "./img/general.svg#icon-" + n.name)
     section.plans-actual.directions__plans-actual
       .container-outter
         h2.title-second.title-second--color-blue-middle.plans-actual__title-second Мои планы:

@@ -657,23 +657,19 @@
 
   @media (min-width: 1440px) {
   };
+}
 
-  &::after {
-    position: relative;
+.plans-create__country-flag {
+  position: relative;
 
-    content: "";
-    width: 35px;
-    height: 24px;
+  content: "";
+  width: 35px;
+  height: 24px;
 
-    background-image: url(../img/flag-bosnia-and-herzegovina.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (min-width: 768px) {
-      width: 70px;
-      height: 47px;
-    };
-  }
+  @media (min-width: 768px) {
+    width: 70px;
+    height: 47px;
+  };
 }
 
 .plans-create__country-spec {

@@ -58,6 +58,7 @@
 }
 
 .user-short__tags {
+  justify-content: center;
   margin: 0;
   margin-bottom: 14px;
 }
@@ -106,11 +107,33 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 1px solid red;
 
   text-align: center;
 
-  background-color: gray;
+  background-color: $black-middle-two;
+  color: $white-middle;
+}
+
+.user-short__level-wrap {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &::after {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 1px;
+
+    content: "";
+
+    background-color: $white-middle;
+    opacity: 0.3;
+  }
 }
 
 .user-short__skill-level {
@@ -126,4 +149,8 @@
 
 .user-short .moves__item:not(:last-child) {
   margin-right: 13px;
+
+  @media (min-width: 768px) {
+    margin-right: 0;
+  };
 }

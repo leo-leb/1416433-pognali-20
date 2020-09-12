@@ -11,8 +11,48 @@
 }
 
 .moves__item {
-  width: 20px;
-  height: 20px;
-  background-color: gray;
-  color: red;
+  position: relative;
+
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background-color: $white-middle;
+
+  @media (min-width: 768px) {
+    width: 43px;
+    height: 43px;
+  };
+
+  &--alt {
+    background-color: $white-dirty;
+
+    @media (min-width: 768px) {
+      background-color: inherit;
+      width: 23px;
+      height: 23px;
+    };
+  }
+}
+
+.moves__icon {
+  @include zero-centered;
+
+  width: 24px;
+  height: 24px;
+  color: $blue-middle;
+  opacity: 0.15;
+
+  &--alt {
+    width: 17px;
+    height: 17px;
+
+    @media (min-width: 768px) {
+      width: 23px;
+      height: 23px;
+    };
+  }
+
+  &--active {
+    opacity: 1;
+  }
 }

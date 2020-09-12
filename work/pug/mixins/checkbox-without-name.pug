@@ -7,7 +7,8 @@ mixin checkbox-without-name(title, name, massive)
     ul.box__list
       each n in massive
         li.box__item
-          label.box__option
+          label
             input.real-checkbox.visually-hidden(name= name type="checkbox" value= n)
-            span.custom-checkbox
-            span.visually-hidden= n
+            .custom-checkbox-img
+              svg.custom-checkbox-svg
+                use(xlink:href= "./img/general.svg#icon-" + n)

@@ -1,14 +1,15 @@
-mixin input-country(countryName)
+mixin input-country(countryEn, countryRu)
   .plans-create__box-country-wrap
-    if countryName
+    if countryEn
       .plans-create__box-country
         label.plans-create__wrap.plans-create__wrap--size-m
-          input(type="text" name="countrys" value= countryName).plans-create__country-desc
+          input(type="text" name="countrys" value= countryRu).plans-create__country-desc
           button.plans-create__btn-arrow(type="button", alt="Раскрыть список стран")
             img(src="./img/month-arrow-right.svg" width="16" height="12")
           span.plans-create__status.plans-create__status--active
         .plans-create__wrap.plans-create__wrap--flag.plans-create__wrap--size-s
-          img.plans-create__flag(src="./img/flag-bosnia-and-herzegovina.png" alt= "Флаг " + countryName)
+          svg.plans-create__flag
+            use(xlink:href="./img/general.svg#flag-" + countryEn)
         button.plans-create__btn-cross
           span.visually-hidden Удалить выбранную страну
     else

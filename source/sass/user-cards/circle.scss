@@ -1,0 +1,30 @@
+.circle {
+  width: 60px;
+  height: 60px;
+
+  &--alt {
+    width: 45px;
+    height: 45px;
+
+    @media (min-width: 768px) {
+      width: 60px;
+      height: 60px;
+    };
+  }
+
+  &--firsova {
+    @include circle(96);
+  };
+
+  &--demin {
+    @include circle(80);
+  };
+
+  &--smolov {
+    @include circle(25);
+  };
+
+  &--rogovaya {
+    @include circle(50);
+  }
+}

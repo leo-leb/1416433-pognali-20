@@ -319,8 +319,6 @@
 
 .user-full__moves .moves__item {
   &:not(:last-child) {
-    margin-right: 13px;
-
     @media (min-width: 768px) {
       margin-right: 0;
     };
@@ -340,20 +338,52 @@
 }
 
 .user-full__skill-wrap {
+  position: relative;
+
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  border: 1px solid red;
 
   text-align: center;
 
-  background-color: gray;
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  };
+}
+
+.user-full__level-wrap {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &::after {
+    display: none;
+
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 1px;
+
+    content: "";
+
+    background-color: $black-middle;
+    opacity: 0.1;
+
+    @media (min-width: 768px) {
+      display: block;
+    };
+  }
 }
 
 .user-full__skill-wrap .user-full__title-fifth {
   left: auto;
   right: 0;
-  transform: translate(11px, -50%);
+  transform: translate(11px, -150%);
 
   @media (min-width: 768px) {
     display: none;
@@ -363,6 +393,22 @@
 .user-full__skill-level {
   @include font(700, normal);
   @include font-size(24px, 24px);
+
+  color: $blue-middle;
+}
+
+.user-full__skill-unit {
+  display: none;
+  margin: 0;
+
+  @include font(); 
+  @include font-size(14px, 14px);
+
+  color: $black-middle-two;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  };
 }
 
 .user-full__btn-user {

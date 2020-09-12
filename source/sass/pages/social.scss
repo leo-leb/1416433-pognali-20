@@ -16,7 +16,7 @@
   height: 45px;
   border-radius: 50%;
 
-  &--orange{
+  &--alt{
     background-color: $yellow-low;
   };
 }
@@ -38,13 +38,17 @@
 .social__svg {
   @include zero-centered;
 
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 21px;
 
   color: $blue-high;
 
   @media (min-width: 768px) {
-    width: 28px;
+    width: 31px;
     height: 28px;
   }
+
+  &--alt{
+    background-color: $yellow-low;
+  };
 }

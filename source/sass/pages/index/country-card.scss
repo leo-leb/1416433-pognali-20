@@ -38,36 +38,36 @@
   @include font(500, normal);
   background-color: $white-middle;
 
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 23px;
-    transform: translateY(-50%);
+  // &::after {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 23px;
+  //   transform: translateY(-50%);
 
-    width: 35px;
-    height: 24px;
-    border-radius: 3px;
+  //   width: 35px;
+  //   height: 24px;
+  //   border-radius: 3px;
 
-    content: "";
+  //   content: "";
 
-    background-image: url(../img/flag-bosnia-and-herzegovina.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  //   background-image: url(../img/flag-bosnia-and-herzegovina.png);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
 
-    @media (min-width: 768px) {
-      top: 17px;
-      left: auto;
-      right: 0;
-      transform: none;
-      transform: translateX(50%);
+  //   @media (min-width: 768px) {
+  //     top: 17px;
+  //     left: auto;
+  //     right: 0;
+  //     transform: none;
+  //     transform: translateX(50%);
 
-      width: 70px;
-      height: 47px;
-      border-radius: 5px;
+  //     width: 70px;
+  //     height: 47px;
+  //     border-radius: 5px;
 
-      padding: 30px 26px 20px;
-    };
-  }
+  //     padding: 30px 26px 20px;
+  //   };
+  // }
 
   @media (min-width: 768px) {
     flex-direction: column;
@@ -137,4 +137,28 @@
       height: 20px;
     };
   }
+}
+
+.country-card__flag {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  transform: translateY(-50%);
+
+  width: 35px;
+  height: 24px;
+  border-radius: 3px;
+
+  content: "";
+
+  @media (min-width: 768px) {
+    top: 17px;
+    left: auto;
+    right: 0;
+    transform: translateX(50%);
+
+    width: 71px;
+    height: 48px;
+    border-radius: 5px;
+  };
 }

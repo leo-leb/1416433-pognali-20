@@ -86,20 +86,25 @@ block content
                     ul.wishes.user-full__wishes
                       each n in user.wishes
                         li.wishes__item
-                          img.wishes__country-flag(src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
-                          p.wishes__country-name= n
+                          svg.wishes__country-flag
+                            use(xlink:href="./img/general.svg#flag-" + n.en)
+                          //- img.wishes__country-flag(src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
+                          p.wishes__country-name= n.ru
                   .user-full__row-lower
                     .user-full__moves-wrap
                       h5.title-fifth.user-full__title-fifth транспорт:
                       ul.moves.user-full__moves
                         each n in user.moves
-                          li.moves__item
-                            span.visually-hidden= "Иконка " + n.name
-                            //- svg.moves__icon(class= n.condition?"moves__icon--active":null)
+                          li.moves__item.moves__item--alt
+                            svg.moves__icon.moves__icon--alt(class= n.condition?"moves__icon--active":null)
+                              use(xlink:href= "./img/general.svg#icon-" + n.name)
                     .user-full__skill-wrap
+                      svg.circle.circle--alt(class= "circle--" + user.class)
+                        use(xlink:href="./img/general.svg#circle")
                       h5.title-fifth.user-full__title-fifth левел:
                       .user-full__level-wrap
                         span.user-full__skill-level= user.skill
+                        p.user-full__skill-unit level
                   a.user-full__btn-user(href="#") позвать!
           a.companions__btn-open(href="#") показать еще
           .companions__clicker-wrap

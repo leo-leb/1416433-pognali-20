@@ -57,6 +57,8 @@ block content
                     h3.title-third.country-card__title-third= country.name
                     p.country-card__moto= country.moto
                   span.country-card__visitors= country.visitors
+                  svg.country-card__flag
+                    use(xlink:href="./img/general.svg#flag-" + country.class)
           a.index__btn-content(href=".directions.html") Показать все
     section.travelers.index__travelers
       .container-outter
@@ -71,19 +73,21 @@ block content
                 ul.wishes.user-short__wishes
                   each n in user.wishes
                     li.wishes__item
-                      img.wishes__country-flag(src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
+                      svg.wishes__country-flag
+                        use(xlink:href="./img/general.svg#flag-" + n.en)
+                      //- img.wishes__country-flag(src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
                 p.user.user-short__user(class= "user--" + user.status)= user.firstname + " " + user.lastname
                 ul.tags.user-short__tags
                   each n in user.tags
                     li.tags__item= "#" + n
-                ul.moves
+                ul.moves.user-short__moves
                   each n in user.moves
                     li.moves__item
-                      span.visually-hidden= "Иконка " + n.name
-                      //- img.moves__img(src="./img/bus.svg")
-                      .moves__img
-                      //- svg.moves__icon(class= n.condition?"moves__icon--active":null)
+                      svg.moves__icon(class= n.condition?"moves__icon--active":null)
+                        use(xlink:href= "./img/general.svg#icon-" + n.name)
               .user-short__skill
+                svg.circle(class= "circle--" + user.class)
+                  use(xlink:href="./img/general.svg#circle")
                 .user-short__level-wrap
                   span.user-short__skill-level= user.skill
                   p.user-short__skill-unit level

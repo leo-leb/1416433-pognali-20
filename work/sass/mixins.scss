@@ -76,3 +76,14 @@
   left: 0;
   margin: auto;
 }
+
+@mixin circle($procent) {
+  $circumference: 100px;
+  $arc: $circumference * $procent / 100;
+  $gap: $circumference - $arc;
+
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-dashoffset: 25px;
+  stroke-dasharray: $arc $gap;
+}
