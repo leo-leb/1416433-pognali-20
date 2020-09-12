@@ -8,6 +8,6 @@ mixin checkbox(title, name, massive)
       each n in massive
         li.box__value-item
           label.box__option
-            input.real-checkbox(name= name type="checkbox" value= n)
+            input.real-checkbox.visually-hidden(name= name type="checkbox" value= n)
             span.custom-checkbox
             = n

@@ -32,8 +32,24 @@
   };
 }
 
+.filter-users .title-third{
+  width: 50%;
+  margin: 0;
+
+  @include font-size(20px, 20px);
+
+  @media (min-width: 768px) {
+    width: unset;
+    @include font-size(30px, 30px);
+  };
+
+  @media (min-width: 1440px) {
+    @include font-size(30px, 30px);
+  };
+}
+
 .filter-users .title-fourth{
-  width: 40%;
+  margin: 0;
 }
 
 .filter-users__btn {
