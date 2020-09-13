@@ -70,6 +70,9 @@ block content
             each user in users.slice(0,4)
               article.user-full
                 picture
+                  source(type="image/webp", media="(min-width: 1440px)", srcset="./img/" + user.class + "-desktop@1x.webp, ./img/" + user.class + "-desktop@2x.webp 2x")
+                  source(type="image/webp", media="(min-width: 768px)", srcset="./img/" + user.class + "-tablet@1x.webp, ./img/" + user.class + "-tablet@2x.webp 2x")
+                  source(type="image/webp", srcset="./img/" + user.class + "-mobile@1x.webp, ./img/" + user.class + "-mobile@2x.webp 2x")
                   source(media="(min-width: 1440px)", srcset="./img/" + user.class + "-desktop@1x.jpg, ./img/" + user.class + "-desktop@2x.jpg 2x")
                   source(media="(min-width: 768px)", srcset="./img/" + user.class + "-tablet@1x.jpg, ./img/" + user.class + "-tablet@2x.jpg 2x")
                   img.user-full__img(src="./img/" + user.class + "-mobile@1x.jpg", srcset="./img/" + user.class + "-mobile@2x.jpg 2x", alt="Фото пользователя")

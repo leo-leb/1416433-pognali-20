@@ -50,6 +50,8 @@ block content
             each country in countries
               article.country-card.countries__country-card
                 picture
+                  source(type="image/webp", media="(min-width: 768px)", srcset="./img/" + country.class + "-desktop@1x.webp, ./img/" + country.class + "-desktop@2x.webp 2x")
+                  source(type="image/webp", srcset="./img/" + country.class + "-mobile@1x.webp, ./img/" + country.class + "-mobile@2x.webp 2x")
                   source(media="(min-width: 768px)", srcset="./img/" + country.class + "-desktop@1x.jpg, ./img/" + country.class + "-desktop@2x.jpg 2x")
                   img.country-card__img(src="./img/" + country.class + "-mobile@1x.jpg", srcset="./img/" + country.class + "-mobile@2x.jpg 2x", alt="Фото страны")
                 .country-card__info
@@ -68,7 +70,9 @@ block content
         .travelers__wrap
           each user in users.slice(0,2)
             article.user-short
-              img.user-short__image(src="./img/" + user.class + "-desktop@1x.jpg", srcset="./img/" + user.class + "-desktop@2x.jpg 2x", alt="Фото пользователя", width="100%")
+              picture
+                source(type="image/webp", srcset="./img/" + user.class + "-desktop@1x.webp, ./img/" + user.class + "-desktop@2x.webp 2x")
+                img.user-short__image(src="./img/" + user.class + "-desktop@1x.jpg", srcset="./img/" + user.class + "-desktop@2x.jpg 2x", alt="Фото пользователя", width="100%")
               .user-short__info
                 ul.wishes.user-short__wishes
                   each n in user.wishes
@@ -102,7 +106,7 @@ block content
               .advertising__desc-wrap
                 p.advertising__desc= n.desc
                 p.advertising__desc= n.price
-        button.advertising__btn(href="#business-modal") Показать тарифы для бизнеса
+        a.advertising__btn(href="#business-modal") Показать тарифы для бизнеса
     section.check-in.index__check-in
       .container-outter
         h2.visually-hidden Раздел регистрации

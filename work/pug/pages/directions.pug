@@ -21,6 +21,8 @@ block content
               span.user-box__skill-level= person.skill
               p.user-box__skill-unit level
           picture
+            source(type="image/webp", media="(min-width: 768px)", srcset="./img/photo-account-tablet@1x.webp, ./img/photo-account-tablet@2x.webp 2x")
+            source(type="image/webp", srcset="./img/photo-account-mobile@1x.webp, ./img/photo-account-mobile@2x.webp 2x")
             source(media="(min-width: 768px)", srcset="./img/photo-account-tablet@1x.jpg, ./img/photo-account-tablet@2x.jpg 2x")
             img.user-box__img(src="./img/photo-account-mobile@1x.jpg", srcset="./img/photo-account-mobile@2x.jpg 2x", alt="Фото пользователя")
         .user-box__btn сменить фото
