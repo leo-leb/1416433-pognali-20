@@ -401,7 +401,7 @@
   display: none;
   margin: 0;
 
-  @include font(); 
+  @include font();
   @include font-size(14px, 14px);
 
   color: $black-middle-two;
