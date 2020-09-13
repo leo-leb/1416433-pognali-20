@@ -10,7 +10,17 @@
       width: 60px;
       height: 60px;
     };
-  }
+  };
+
+  &--alt-second {
+    width: 100px;
+    height: 100px;
+
+    @media (min-width: 768px) {
+      width: 94px;
+      height: 94px;
+    };
+  };
 
   &--firsova {
     @include circle(96);

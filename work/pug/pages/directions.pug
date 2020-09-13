@@ -15,7 +15,9 @@ block content
       .container-outter
         .user-box__row
           .user-box__skill
-            .user-box__skill-wrap
+            svg.circle.circle--alt-second(class= "circle--" + person.class)
+              use(xlink:href="./img/general.svg#circle")
+            .user-box__level-wrap
               span.user-box__skill-level= person.skill
               p.user-box__skill-unit level
           picture
@@ -24,8 +26,8 @@ block content
         .user-box__btn сменить фото
         .user-box__btn.user-box__btn--alt фото
         .user-box__tags-wrap
+            h4.title-fourth.user-box__title-fourth тэги
             ul.tags.user-box__tags
-              h4.title-fourth.user-box__title-fourth тэги
               each n in person.tags
                 li.tags__item= "#" + n
         .user-box__moves-wrap

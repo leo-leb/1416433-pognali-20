@@ -139,7 +139,10 @@
         <div class="container-outter">
           <div class="user-box__row">
             <div class="user-box__skill">
-              <div class="user-box__skill-wrap">
+              <svg class="circle circle--alt-second circle--demin">
+                <use xlink:href="./img/general.svg#circle"></use>
+              </svg>
+              <div class="user-box__level-wrap">
                 <span class="user-box__skill-level">80</span>
                 <p class="user-box__skill-unit">level</p>
               </div>
@@ -152,8 +155,8 @@
           <div class="user-box__btn">сменить фото</div>
           <div class="user-box__btn user-box__btn--alt">фото</div>
           <div class="user-box__tags-wrap">
+            <h4 class="title-fourth user-box__title-fourth">тэги</h4>
             <ul class="tags user-box__tags">
-              <h4 class="title-fourth user-box__title-fourth">тэги</h4>
               <li class="tags__item">#бургег</li>
               <li class="tags__item">#бар</li>
               <li class="tags__item">#футбол</li>
@@ -227,11 +230,18 @@
           </div>
           <form class="plans-create__form" id="step-form" action="https://echo.htmlacademy.ru" method="get">
             <article class="plans-create__step-first">
-              <div class="plans-create__title-wrap">
-                <p class="title-sixth plans-create__title-sixth">Шаг 1.</p>
-                <h6 class="title-sixth plans-create__title-sixth">Даты пребывания</h6>
+              <div class="plans-create__row">
+                <div class="plans-create__title-wrap">
+                  <p class="title-sixth plans-create__title-sixth">Шаг 1.</p>
+                  <h6 class="title-sixth plans-create__title-sixth">Даты пребывания</h6>
+                </div>
+                <p class="plans-create__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                <ul class="plans-create__list">
+                  <li class="plans-create__item plans-create__item--active">даты</li>
+                  <li class="plans-create__item">маршрут</li>
+                  <li class="plans-create__item">развлечения</li>
+                </ul>
               </div>
-              <p class="plans-create__desc">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
               <div class="plans-create__step-first-filter">
                 <div class="plans-create__clicker">
                   <p class="plans-create__title">ищу попутчиков:</p>
@@ -519,11 +529,18 @@
               </div>
             </article>
             <article class="plans-create__step-second">
-              <div class="plans-create__title-wrap">
-                <p class="title-sixth plans-create__title-sixth">Шаг 2.</p>
-                <h6 class="title-sixth plans-create__title-sixth">Маршрут</h6>
+              <div class="plans-create__row">
+                <div class="plans-create__title-wrap">
+                  <p class="title-sixth plans-create__title-sixth">Шаг 2.</p>
+                  <h6 class="title-sixth plans-create__title-sixth">Маршрут</h6>
+                </div>
+                <p class="plans-create__desc">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                <ul class="plans-create__list">
+                  <li class="plans-create__item">даты</li>
+                  <li class="plans-create__item plans-create__item--active">маршрут</li>
+                  <li class="plans-create__item">развлечения</li>
+                </ul>
               </div>
-              <p class="plans-create__desc">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
               <div class="plans-create__step-second-wrap">
                 <div class="plans-create__box-country-wrap">
                   <div class="plans-create__box-country">
@@ -690,7 +707,7 @@
                   <label class="plans-create__wrap plans-create__wrap--size-l">
                     <span class="plans-create__country-desc">добавить страну</span>
                     <button class="plans-create__btn-plus"></button>
-                    <span class="plans-create__status"></span>
+                    <span class="plans-create__status plans-create__status--passive"></span>
                   </label>
                 </div>
               </div>
@@ -700,11 +717,18 @@
               </div>
             </article>
             <article class="plans-create__step-third">
-              <div class="plans-create__title-wrap">
-                <p class="title-sixth plans-create__title-sixth">Шаг 3.</p>
-                <h6 class="title-sixth plans-create__title-sixth">Развлечения</h6>
+              <div class="plans-create__row">
+                <div class="plans-create__title-wrap">
+                  <p class="title-sixth plans-create__title-sixth">Шаг 3.</p>
+                  <h6 class="title-sixth plans-create__title-sixth">Развлечения</h6>
+                </div>
+                <p class="plans-create__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                <ul class="plans-create__list">
+                  <li class="plans-create__item">даты</li>
+                  <li class="plans-create__item plans-create__item--active">маршрут</li>
+                  <li class="plans-create__item plans-create__item--active">развлечения</li>
+                </ul>
               </div>
-              <p class="plans-create__desc">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
               <div class="plans-create__step-third-wrap">
                 <article class="plans-create__plan-country">
                   <p class="plans-create__country-name">Босния и Герцеговина <svg class="plans-create__country-flag">

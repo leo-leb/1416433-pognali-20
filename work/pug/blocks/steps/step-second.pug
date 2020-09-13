@@ -7,6 +7,7 @@ block variables
   - var stepDesc = 'Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.'
   - var stepFirst = false
   - var stepLast = false
+  - var stepMiddle = true
 
 include ../../mixins/input-country
 
@@ -19,4 +20,4 @@ block content
       label.plans-create__wrap.plans-create__wrap--size-l
         span.plans-create__country-desc добавить страну
         button.plans-create__btn-plus
-        span.plans-create__status
+        span.plans-create__status.plans-create__status--passive

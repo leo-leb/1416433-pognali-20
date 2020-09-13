@@ -1,10 +1,15 @@
 block variables
 
 article(class= 'plans-create__' + stepClass)
-  .plans-create__title-wrap
-    p.title-sixth.plans-create__title-sixth= 'Шаг ' + stepNumber + '.'
-    h6.title-sixth.plans-create__title-sixth= stepName
-  p.plans-create__desc= stepDesc
+  .plans-create__row
+    .plans-create__title-wrap
+      p.title-sixth.plans-create__title-sixth= 'Шаг ' + stepNumber + '.'
+      h6.title-sixth.plans-create__title-sixth= stepName
+    p.plans-create__desc= stepDesc
+    ul.plans-create__list
+      li.plans-create__item(class= stepFirst?"plans-create__item--active":null) даты
+      li.plans-create__item(class= stepMiddle?"plans-create__item--active":null) маршрут
+      li.plans-create__item(class= stepLast?"plans-create__item--active":null) развлечения
   block content
   .plans-create__buttons-wrap
     if stepLast
