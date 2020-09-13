@@ -58,12 +58,12 @@
   border-bottom-right-radius: $radius;
 }
 
-@mixin font($weight: "400", $style: "normal") {
+@mixin font($weight: 400, $style: normal) {
   font-weight: $weight;
   font-style: $style;
 }
 
-@mixin font-size($size: "16px", $height: "1") {
+@mixin font-size($size: 16px, $height: 1) {
   font-size: $size;
   line-height: $height;
 }

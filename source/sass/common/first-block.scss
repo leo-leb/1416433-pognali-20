@@ -107,7 +107,7 @@
   @include font-size(36px, 40px);
 
   @media (min-width: 768px) {
-    margin-bottom: 86pxpx;
+    margin-bottom: 86px;
     @include font-size(60px, 70px);
   };
 
@@ -164,7 +164,7 @@
 
   @media (min-width: 1440px) {
     flex-direction: row;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
 
     transform: translateY(-123px);
 
