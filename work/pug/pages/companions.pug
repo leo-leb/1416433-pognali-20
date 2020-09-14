@@ -102,7 +102,7 @@ block content
                               use(xlink:href= "./img/general.svg#icon-" + n.name)
                     .user-full__skill-wrap
                       svg.circle.circle--alt(class= "circle--" + user.class)
-                        use(xlink:href="./img/general.svg#circle")
+                        use(xlink:href="./img/general.svg#icon-circle")
                       h5.title-fifth.user-full__title-fifth левел:
                       .user-full__level-wrap
                         span.user-full__skill-level= user.skill
@@ -112,7 +112,7 @@ block content
                     .user-full__like-wrap
                       button.user-full__btn-like(class= user.like?"user-full__btn-like--alt":null)
                         svg.user-full__btn-like-img
-                          use(xlink:href= user.like?"./img/general.svg#heart-active":"./img/general.svg#heart")
+                          use(xlink:href= user.like?"./img/general.svg#icon-heart-active":"./img/general.svg#icon-heart")
                       p.user-full__like-amount= user.likes
           a.companions__btn-open(href="#") показать еще
           .companions__clicker-wrap

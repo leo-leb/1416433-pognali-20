@@ -1,9 +1,0 @@
-.title-sixth {
-  margin: 0;
-  @include font(700, normal);
-  @include font-size(20px, 20px);
-
-  @media (min-width: 768px) {
-    @include font-size(36px, 36px);
-  };
-}
