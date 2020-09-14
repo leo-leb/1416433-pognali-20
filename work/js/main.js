@@ -1,4 +1,4 @@
-// --- BUSINESS-POPUP --- //
+// ---- BUSINESS-POPUP ---- //
 
 var business = document.querySelector(".business");
 var business__open = document.querySelector(".advertising__btn");
