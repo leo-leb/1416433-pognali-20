@@ -1,8 +1,6 @@
 @import "./mixins.scss";
 @import "./variables.scss";
 @import "./fonts.scss";
-
-
 @import "./common/general.scss";
 @import "./common/container-outter";
 @import "./common/visually-hidden";
@@ -10,13 +8,11 @@
 @import "./common/logo";
 @import "./common/first-block";
 @import "./common/action-buttons";
-
 @import "./pages/header";
 @import "./pages/menu-popup";
 @import "./pages/footer";
 @import "./pages/social";
 @import "./pages/contacts";
-
 @import "./pages/index/index";
 @import "./pages/index/about";
 @import "./pages/index/countries";
@@ -26,30 +22,24 @@
 @import "./pages/index/business";
 @import "./pages/index/check-in";
 @import "./pages/index/address";
-
 @import "./pages/directions/directions";
 @import "./pages/directions/plans-actual";
 @import "./pages/directions/plans-create";
 @import "./pages/directions/calendar";
 @import "./pages/directions/alphabet-short";
 @import "./pages/directions/alphabet-full";
-
 @import "./pages/companions/companions";
 @import "./pages/companions/filter-countries";
 @import "./pages/companions/filter-users";
 @import "./pages/companions/box";
 @import "./pages/companions/box-level";
 @import "./pages/companions/check-box";
-
-
 @import "./titles/title-first";
 @import "./titles/title-second";
 @import "./titles/title-third";
 @import "./titles/title-fourth";
 @import "./titles/title-fifth";
 @import "./titles/title-sixth";
-
-
 @import "./user-cards/user-short";
 @import "./user-cards/user-full";
 @import "./user-cards/user-box";
