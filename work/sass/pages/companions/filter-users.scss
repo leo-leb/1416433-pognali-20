@@ -1,16 +1,17 @@
-.filter-users{
+.filter-users {
   padding: 26px 25px 22px;
   border-radius: 20px;
+
   @include environment-yellow;
 
   @media (min-width: 768px) {
     padding: 37px 35px;
-  };
+  }
 
   @media (min-width: 1440px) {
     width: 285px;
     padding: 45px;
-  };
+  }
 }
 
 .filter-users__fieldset {
@@ -23,16 +24,16 @@
     padding: 34px 0;
     border-top: 1px solid $separator-line;
     border-bottom: 1px solid $separator-line;
-  };
+  }
 
   @media (min-width: 1440px) {
     margin: 34px 0 38px;
     padding: 0;
     border: none;
-  };
+  }
 }
 
-.filter-users .title-third{
+.filter-users .title-third {
   width: 50%;
   margin: 0;
 
@@ -40,15 +41,16 @@
 
   @media (min-width: 768px) {
     width: unset;
+
     @include font-size(30px, 30px);
-  };
+  }
 
   @media (min-width: 1440px) {
     @include font-size(30px, 30px);
-  };
+  }
 }
 
-.filter-users .title-fourth{
+.filter-users .title-fourth {
   margin: 0;
 }
 

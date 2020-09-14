@@ -7,7 +7,7 @@
 .directions .title-second {
   @media (min-width: 768px) {
     @include font-size(36px, 36px);
-  };
+  }
 }
 
 .directions__user-box {
@@ -15,30 +15,33 @@
 
   @media (min-width: 768px) {
     margin: -55px 0 -30px;
-  };
+  }
 }
 
 .directions__plans-actual {
   z-index: 2;
   margin-bottom: -30px;
+
   @include shape-top;
 
   @media (min-width: 1440px) {
     margin-bottom: -55px;
+
     @include shape-top(55px);
-  };
+  }
 }
 
 .directions__plans-create {
   z-index: 3;
   margin-bottom: -30px;
+
   @include shape-top;
 
   @media (min-width: 768px) {
     margin-bottom: -55px;
-  };
+  }
 
   @media (min-width: 1440px) {
     @include shape-top(55px);
-  };
+  }
 }

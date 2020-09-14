@@ -12,16 +12,17 @@
 
     @media (min-width: 768px) {
       margin-bottom: 0;
-    };
+    }
   }
 
   @media (min-width: 768px) {
     width: 285px;
-  };
+  }
 }
 
 .user-short__image {
   display: block;
+
   @include shape-top(10px);
 }
 
@@ -30,6 +31,7 @@
 
   width: 100%;
   padding: 27px 36px 20px;
+
   @include shape-bottom(10px);
 
   background-color: $white-middle;
@@ -37,7 +39,7 @@
 
   @media (min-width: 768px) {
     padding: 31px 31px 27px;
-  };
+  }
 }
 
 .user-short__name-wrap {
@@ -95,8 +97,8 @@
 
       width: 8px;
       height: 8px;
-    };
-  };
+    }
+  }
 }
 
 .user-short__skill {
@@ -143,6 +145,7 @@
 
 .user-short__skill-unit {
   margin: 0;
+
   @include font;
   @include font-size(14px, 14px);
 }
@@ -152,5 +155,5 @@
 
   @media (min-width: 768px) {
     margin-right: 0;
-  };
+  }
 }

@@ -9,14 +9,14 @@
   @media (min-width: 768px) {
     padding-top: 120px;
     padding-bottom: 88px;
-  };
+  }
 }
 
 .user-box .container-outter {
   @media (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
-  };
+  }
 }
 
 .user-box__row {
@@ -36,7 +36,7 @@
     padding: 0;
 
     z-index: 7;
-  };
+  }
 }
 
 .user-box__skill {
@@ -51,11 +51,11 @@
   @media (min-width: 768px) {
     width: 94px;
     height: 94px;
-  };
+  }
 
   @media (min-width: 1440px) {
     margin-right: 44px;
-  };
+  }
 }
 
 .user-box__level-wrap {
@@ -80,12 +80,12 @@
     @media (min-width: 1440px) {
       background-color: $white-middle;
       opacity: 0.3;
-    };
+    }
 
     @media (min-width: 1440px) {
       background-color: $white-middle;
       opacity: 0.3;
-    };
+    }
   }
 }
 
@@ -95,11 +95,12 @@
 
   @media (min-width: 1440px) {
     color: $white-middle;
-  };
+  }
 }
 
 .user-box__skill-unit {
   margin: 0;
+
   @include font;
   @include font-size(18px, 18px);
 
@@ -107,7 +108,7 @@
 
   @media (min-width: 1440px) {
     color: $white-middle;
-  };
+  }
 }
 
 .user-box__img {
@@ -117,13 +118,14 @@
   @media (min-width: 768px) {
     width: 94px;
     border-radius: 5px;
-  };
+  }
 
   @media (min-width: 1440px) {
     width: 190px;
     border-radius: 0;
+
     @include shape-top(10px);
-  };
+  }
 }
 
 .user-box__tags-wrap,
@@ -142,12 +144,12 @@
 
   @media (min-width: 768px) {
     padding: 36px 40px;
-  };
+  }
 
   @media (min-width: 1440px) {
     width: 732px;
     margin-bottom: 0;
-  };
+  }
 }
 
 .user-box__tags {
@@ -156,7 +158,7 @@
 
   @media (min-width: 768px) {
     justify-content: left;
-  };
+  }
 }
 
 .user-box__moves-wrap {
@@ -170,7 +172,7 @@
 
     width: 308px;
     padding: 25px 25px;
-  };
+  }
 
   @media (min-width: 1440px) {
     position: relative;
@@ -179,7 +181,7 @@
     transform: none;
 
     width: 384px;
-  };
+  }
 }
 
 .user-box__moves {
@@ -205,7 +207,7 @@
   @media (min-width: 768px) {
     top: 100%;
     transform: translate(-50%, -50%);
-  };
+  }
 }
 
 .user-box__btn {
@@ -222,17 +224,18 @@
   @media (min-width: 768px) {
     line-height: 60px;
     border-radius: 10px;
-  };
+  }
 
   @media (min-width: 1440px) {
     display: none;
-  };
+  }
 
   &--alt {
     display: none;
 
     width: 190px;
     border-radius: 0;
+
     @include shape-bottom(10px);
 
     line-height: 47px;
@@ -244,6 +247,6 @@
 
       top: -65px;
       right: 95px;
-    };
+    }
   }
 }

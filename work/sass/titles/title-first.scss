@@ -10,7 +10,7 @@
 
   @media (min-width: 768px) {
     @include font-size(60px, 60px);
-  };
+  }
 
   &::after {
     position: absolute;
@@ -28,6 +28,6 @@
     @media (min-width: 768px) {
       bottom: -71px;
       height: 8px;
-    };
-  };
+    }
+  }
 }

@@ -9,11 +9,16 @@
   z-index: 1;
 
   margin-top: -30px;
+
   @include shape-bottom;
 }
 
 .companions__filter-users {
   margin-bottom: 28px;
+
+  @media (min-width: 1440px) {
+    align-self: flex-start;
+  }
 }
 
 .companions__wrap {
@@ -27,7 +32,7 @@
 .companions__wrap .container-outter {
   @media (min-width: 768px) {
     padding: 0;
-  };
+  }
 
   @media (min-width: 1440px) {
     display: flex;
@@ -35,13 +40,7 @@
     justify-content: space-between;
 
     padding: 0;
-  };
-}
-
-.companions__filter-users {
-  @media (min-width: 1440px) {
-    align-self: flex-start;
-  };
+  }
 }
 
 .companions__content-wrap {
@@ -53,7 +52,7 @@
 .companions__users-wrap {
   @media (min-width: 768px) {
     width: 100%;
-  };
+  }
 }
 
 .companions__btn-open {
@@ -75,7 +74,7 @@
     height: 18px;
     margin-right: 15px;
 
-    background-image: url(../img/show-more-plus.svg);
+    background-image: url("../img/show-more-plus.svg");
     background-repeat: no-repeat;
     background-position: 50%;
 
@@ -85,17 +84,18 @@
       width: 26px;
       height: 26px;
       margin-right: 25px;
-    };
-  };
+    }
+  }
 
   @media (min-width: 768px) {
     margin: 46px 0 51px;
+
     @include font-size(20px, 20px);
-  };
+  }
 
   @media (min-width: 1440px) {
     margin: 62px 0 71px;
-  };
+  }
 }
 
 .companions__clicker-wrap {
@@ -120,8 +120,8 @@
 
     @media (min-width: 768px) {
       display: none;
-    };
-  };
+    }
+  }
 
   @media (min-width: 768px) {
     justify-content: space-between;
@@ -129,7 +129,7 @@
 
     height: 100px;
     padding: 0 25px;
-  };
+  }
 }
 
 .companions__pages {
@@ -146,7 +146,7 @@
   @media (min-width: 768px) {
     display: flex;
     flex-grow: 1;
-  };
+  }
 }
 
 .companions__page-number {
@@ -159,14 +159,14 @@
 
   &--active {
     background-color: $yellow-low;
-  };
+  }
 }
 
 .companions__page-link {
   color: $blue-middle;
 }
 
-.companions__btn-clicker{
+.companions__btn-clicker {
   display: block;
   flex-grow: 1;
 
@@ -184,18 +184,18 @@
 
       content: "";
 
-      background-image: url(../img/triangle-arrow-right.svg);
+      background-image: url("../img/triangle-arrow-right.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-    };
-  };
+    }
+  }
 
   &--left {
     &::after {
       transform: rotate(180deg);
-    };
-  };
+    }
+  }
 
   @media (min-width: 768px) {
     display: block;
@@ -203,5 +203,5 @@
 
     width: 40px;
     height: 50%;
-  };
+  }
 }

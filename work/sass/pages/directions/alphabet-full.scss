@@ -9,7 +9,7 @@
 
     width: 100%;
     margin-bottom: 50px;
-  };
+  }
 }
 
 .alphabet-full__desc {
@@ -23,15 +23,13 @@
     @include font(700, normal);
     @include font-size(60px, 60px);
     color: $blue-high;
-  };
+  }
 }
 
 .alphabet-full__names {
   margin: 0;
   padding: 0;
   border: 0;
-
-
 
   @include font();
   @include font-size(20px, 30px);

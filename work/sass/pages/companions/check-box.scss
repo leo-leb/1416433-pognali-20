@@ -20,16 +20,16 @@
     margin-right: 12px;
 
     @include font-size(15px, 24px);
-  };
+  }
 }
 
 .real-checkbox:checked ~ .custom-checkbox {
-  background-image: url(../img/tick.svg);
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 8px;
 
   @media (min-width: 768px) {
     background-size: 11px;
-  };
+  }
 }

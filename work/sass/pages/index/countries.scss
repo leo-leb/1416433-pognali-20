@@ -9,12 +9,12 @@
   @media (min-width: 768px) {
     padding-top: 128px;
     padding-bottom: 80px;
-  };
+  }
 
   @media (min-width: 1440px) {
     padding-top: 216px;
     padding-bottom: 138px;
-  };
+  }
 }
 
 .countries .container-outter {
@@ -39,17 +39,17 @@
 
       width: 288px;
       height: 574px;
-      background-image: url(../img/flags-back@1x.png);
+      background-image: url("../img/flags-back@1x.png");
       background-size: contain;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/flags-back@2x.png);
-      };
-    };
+        background-image: url("../img/flags-back@2x.png");
+      }
+    }
 
     @media (min-width: 1440px) {
       transform: translateY(-70px);
-    };
+    }
   }
 
   &::after {
@@ -73,23 +73,23 @@
 
       width: 141px;
       height: 141px;
-    };
+    }
 
     @media (min-width: 1440px) {
       transform: translateY(-50%);
-    };
+    }
   }
 
   @media (min-width: 1440px) {
     display: flex;
     justify-content: flex-end;
-  };
+  }
 }
 
 .countries-wrap {
   @media (min-width: 1440px) {
     margin-right: 168px;
-  };
+  }
 }
 
 .countries__title-second {
@@ -98,7 +98,7 @@
   @media (min-width: 768px) {
     margin: 0;
     margin-bottom: 57px;
-  };
+  }
 }
 
 .countries__wrap {
@@ -108,7 +108,7 @@
     position: absolute;
     top: 0;
     left: 70px;
-  };
+  }
 }
 
 .countries__country-card:not(:last-child) {
@@ -121,11 +121,11 @@
   @media (min-width: 768px) {
     margin: 0;
     margin-bottom: 104px;
-  };
+  }
 }
 
 .countries .paragraph {
   @media (min-width: 768px) {
     width: 350px;
-  };
+  }
 }

@@ -7,11 +7,11 @@
 
   @media (min-width: 768px) {
     padding: 103px 0 84px;
-  };
+  }
 
   @media (min-width: 1440px) {
     padding: 110px 0 55px;
-  };
+  }
 }
 
 .address .container-outter {
@@ -22,7 +22,7 @@
 
     padding-left: 223px;
     padding-right: 55px;
-  };
+  }
 }
 
 .address__desc {
@@ -46,7 +46,7 @@
     content: "";
 
     background-color: $blue-dark;
-    background-image: url(../img/contacts-location.svg);
+    background-image: url("../img/contacts-location.svg");
     background-repeat: no-repeat;
     background-size: 21px 21px;
     background-position: center;
@@ -57,7 +57,7 @@
       margin-right: 26px;
 
       background-size: 32px 32px;
-    };
+    }
 
     @media (min-width: 1440px) {
       width: 90px;
@@ -65,22 +65,22 @@
       margin-right: 26px;
 
       background-size: 42px 42px;
-    };
-  };
+    }
+  }
 
   @media (min-width: 768px) {
     @include font-size(28px, 68px);
-  };
+  }
 
   @media (min-width: 1440px) {
     margin-bottom: 0;
 
     line-height: 90px;
-  };
+  }
 }
 
 .address .index__btn-content {
   @media (min-width: 768px) {
     line-height: 74px;
-  };
+  }
 }

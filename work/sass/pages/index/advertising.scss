@@ -9,12 +9,12 @@
   @media (min-width: 768px) {
     padding-top: 129px;
     padding-bottom: 60px;
-  };
+  }
 
   @media (min-width: 1440px) {
     padding-top: 162px;
     padding-bottom: 165px;
-  };
+  }
 }
 
 .advertising .container-outter {
@@ -22,12 +22,12 @@
 
   @media (min-width: 768px) {
     padding: 0;
-  };
+  }
 
   @media (min-width: 1440px) {
     padding-left: 70px;
     padding-right: 70px;
-  };
+  }
 }
 
 .advertising__moto {
@@ -45,11 +45,11 @@
     text-align: center;
 
     @include font-size(45px, 45px);
-  };
+  }
 
   @media (min-width: 1440px) {
     margin-bottom: 83px;
-  };
+  }
 }
 
 .advertising__list {
@@ -76,19 +76,19 @@
 
     content: "";
 
-    background-image: url(../img/rates@1x.png);
+    background-image: url("../img/rates@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/rates@2x.png);
-    };
+      background-image: url("../img/rates@2x.png");
+    }
 
     @media (min-width: 768px) {
       top: 100%;
       right: 45px;
       transform: translateY(18px);
-    };
+    }
 
     @media (min-width: 1440px) {
       top: 50%;
@@ -96,7 +96,7 @@
       transform: translateY(-50%);
       width: 198px;
       height: 198px;
-    };
+    }
   }
 
   &::before {
@@ -113,23 +113,24 @@
       content: "";
 
       background: $white-dirty-two;
-    };
+    }
 
     @media (min-width: 1440px) {
       right: 111px;
       width: 446px;
-    };
+    }
   }
 
   @media (min-width: 768px) {
     margin-top: 74px;
     padding-right: 34px;
+
     @include font-size(28px, 28px);
-  };
+  }
 
   @media (min-width: 1440px) {
     padding-right: 272px;
-  };
+  }
 }
 
 .advertising__item {
@@ -154,7 +155,7 @@
     margin-left: 10px;
     border-radius: 50%;
 
-    content:counter(myCounter);
+    content: counter(myCounter);
     counter-increment: myCounter;
     text-align: center;
 
@@ -168,12 +169,12 @@
 
       @include font(400, normal);
       @include font-size(28px, 68px);
-    };
+    }
   }
 
   @media (min-width: 768px) {
     flex-direction: row;
-  };
+  }
 
   &:first-child::before {
     background-color: $orange-middle;
@@ -207,7 +208,7 @@
     justify-content: space-between;
 
     padding: 20px 0;
-  };
+  }
 }
 
 .advertising__desc {
@@ -230,7 +231,7 @@
     display: flex;
 
     @include font-size(20px, 68px);
-  };
+  }
 
   &::before {
     @media (min-width: 768px) {
@@ -244,10 +245,10 @@
       content: "";
 
       background-color: $white-dirty-two;
-      background-image: url(../img/user.svg);
+      background-image: url("../img/user.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 30%;
-    };
-  };
+    }
+  }
 }

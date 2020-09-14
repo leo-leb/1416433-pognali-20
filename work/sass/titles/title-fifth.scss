@@ -1,5 +1,6 @@
 .title-fifth {
   margin: 0;
+
   @include font;
   @include font-size(15px, 16px);
 }

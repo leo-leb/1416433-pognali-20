@@ -9,7 +9,7 @@
   @media (min-width: 768px) {
     padding-top: 57px;
     padding-bottom: 106px;
-  };
+  }
 }
 
 .plans-actual__title-second {
@@ -18,7 +18,7 @@
 
   @media (min-width: 768px) {
     margin-bottom: 48px;
-  };
+  }
 }
 
 .plans-actual__list {
@@ -44,12 +44,12 @@
     &::after {
       position: absolute;
     }
-  };
+  }
 
   @media (min-width: 1440px) {
     align-items: center;
     padding: 36px 43px;
-  };
+  }
 
   &:not(:last-child) {
     margin-bottom: 10px;
@@ -73,7 +73,7 @@
     margin-bottom: 53px;
 
     @include font-size(24px, 24px);
-  };
+  }
 
   @media (min-width: 1440px) {
     flex-direction: row;
@@ -82,7 +82,7 @@
 
     width: auto;
     margin-bottom: 0;
-  };
+  }
 }
 
 .plans-actual__number,
@@ -95,11 +95,11 @@
 
   @media (min-width: 768px) {
     margin: 0;
-  };
+  }
 
   @media (min-width: 1440px) {
     margin-right: 7px;
-  };
+  }
 }
 
 .plans-actual__wrap {
@@ -118,11 +118,11 @@
     margin: 0;
 
     @include font-size(20px, 20px);
-  };
+  }
 
   @media (min-width: 1440px) {
     flex-grow: 0.15;
-  };
+  }
 }
 
 .plans-actual__desc {
@@ -137,7 +137,7 @@
       margin: 0;
 
       letter-spacing: 0.1em;
-    };
+    }
   }
 }
 
@@ -160,9 +160,9 @@
 
     @include font-size(20px, 20px);
     letter-spacing: 0.03em;
-  };
+  }
 
   @media (min-width: 1440px) {
     flex-grow: 0.15;
-  };
+  }
 }

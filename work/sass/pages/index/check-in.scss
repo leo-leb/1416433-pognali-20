@@ -11,12 +11,12 @@
   @media (min-width: 768px) {
     padding-top: 134px;
     padding-bottom: 60px;
-  };
+  }
 
   @media (min-width: 1440px) {
     padding-top: 164px;
     padding-bottom: 102px;
-  };
+  }
 }
 
 .check-in__title-second {
@@ -25,7 +25,7 @@
 
   @media (min-width: 768px) {
     margin-bottom: 58px;
-  };
+  }
 }
 
 .check-in__paragraph {
@@ -33,7 +33,7 @@
 
   @media (min-width: 768px) {
     margin: 0;
-  };
+  }
 }
 
 .check-in__link {
@@ -49,11 +49,11 @@
 
   @media (min-width: 768px) {
     margin: 65px 35px 60px;
-  };
+  }
 
   @media (min-width: 1440px) {
     margin: 60px 0 70px;
-  };
+  }
 }
 
 .check-in__input {
@@ -72,8 +72,9 @@
 
   @media (min-width: 768px) {
     padding-left: 36px;
+
     @include font-size(24px, 80px);
-  };
+  }
 }
 
 .check-in__btn {
@@ -98,20 +99,20 @@
 
     content: "";
 
-    background-image: url(../img/triangle-arrow-right.svg);
+    background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
 
     @media (min-width: 1440px) {
       right: 34px;
       margin-right: 0;
-    };
+    }
   }
 
   @media (min-width: 768px) {
     width: 80px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-  };
+  }
 
   @media (min-width: 1440px) {
     width: 324px;
@@ -121,7 +122,7 @@
 
     @include font(700, normal);
     @include font-size(24px, 80px);
-  };
+  }
 }
 
 .check-in__btn-desc {
@@ -129,7 +130,7 @@
 
   @media (min-width: 1440px) {
     display: inline;
-  };
+  }
 }
 
 .check-in .contacts {
@@ -138,12 +139,12 @@
   @media (min-width: 768px) {
     margin: 0 35px;
     margin-top: 40px;
-  };
+  }
 
   @media (min-width: 1440px) {
     display: flex;
     justify-content: space-around;
     margin: 0;
     margin-top: 44px;
-  };
+  }
 }

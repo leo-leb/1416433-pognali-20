@@ -12,7 +12,7 @@
 
   @media (min-width: 768px) {
     @include font-size(20px, 23px);
-  };
+  }
 }
 
 .tags__item {
@@ -24,7 +24,7 @@
 .user-full .tags {
   @media (min-width: 768px) {
     color: $black-middle;
-  };
+  }
 }
 
 .user-box .tags {

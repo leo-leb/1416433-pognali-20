@@ -7,23 +7,25 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-  };
+  }
 
   @media (min-width: 1440px) {
     width: 560px;
-  };
+  }
 }
 
 .country-card__img {
   display: block;
   margin-bottom: -10px;
+
   @include shape-top(10px);
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+
     @include shape-top(0);
     @include shape-right(10px);
-  };
+  }
 }
 
 .country-card__info {
@@ -38,37 +40,6 @@
   @include font(500, normal);
   background-color: $white-middle;
 
-  // &::after {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 23px;
-  //   transform: translateY(-50%);
-
-  //   width: 35px;
-  //   height: 24px;
-  //   border-radius: 3px;
-
-  //   content: "";
-
-  //   background-image: url(../img/flag-bosnia-and-herzegovina.png);
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-
-  //   @media (min-width: 768px) {
-  //     top: 17px;
-  //     left: auto;
-  //     right: 0;
-  //     transform: none;
-  //     transform: translateX(50%);
-
-  //     width: 70px;
-  //     height: 47px;
-  //     border-radius: 5px;
-
-  //     padding: 30px 26px 20px;
-  //   };
-  // }
-
   @media (min-width: 768px) {
     flex-direction: column;
     width: auto;
@@ -77,7 +48,7 @@
     border-radius: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-  };
+  }
 }
 
 .country-card__title-third {
@@ -87,7 +58,7 @@
 
   @media (min-width: 768px) {
     margin-bottom: 5px;
-  };
+  }
 }
 
 .country-card__moto {
@@ -99,7 +70,7 @@
 
   @media (min-width: 768px) {
     @include font-size(20px, 20px);
-  };
+  }
 }
 
 .country-card__visitors {
@@ -113,7 +84,7 @@
   @media (min-width: 768px) {
     @include font-size(20px, 20px);
     margin-left: 25px;
-  };
+  }
 
   &::before {
     position: absolute;
@@ -130,12 +101,12 @@
     color: $blue-high;
     opacity: 0.5;
 
-    background-image: url(../img/user.svg);
+    background-image: url("../img/user.svg");
 
     @media (min-width: 768px) {
       width: 18px;
       height: 20px;
-    };
+    }
   }
 }
 
@@ -160,5 +131,5 @@
     width: 71px;
     height: 48px;
     border-radius: 5px;
-  };
+  }
 }

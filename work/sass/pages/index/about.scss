@@ -9,12 +9,12 @@
   @media (min-width: 768px) {
     padding-top: 277px;
     padding-bottom: 89px;
-  };
+  }
 
   @media (min-width: 1440px) {
     padding-top: 132px;
     padding-bottom: 163px;
-  };
+  }
 }
 
 .about .container-outter {
@@ -33,13 +33,13 @@
 
     content: "";
 
-    background-image: url(../img/about-mobile@1x.png);
+    background-image: url("../img/about-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/about-mobile@2x.png);
-    };
+      background-image: url("../img/about-mobile@2x.png");
+    }
 
     @media (min-width: 768px) {
       bottom: 0;
@@ -49,24 +49,24 @@
 
       width: 376px;
       height: 548px;
-      background-image: url(../img/about-tablet@1x.png);
+      background-image: url("../img/about-tablet@1x.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/about-tablet@2x.png);
-      };
-    };
+        background-image: url("../img/about-tablet@2x.png");
+      }
+    }
 
     @media (min-width: 1440px) {
       bottom: 0;
       transform: translate(0, 163px);
       width: 630px;
       height: 665px;
-      background-image: url(../img/about-desktop@1x.png);
+      background-image: url("../img/about-desktop@1x.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/about-desktop@2x.png);
-      };
-    };
+        background-image: url("../img/about-desktop@2x.png");
+      }
+    }
   }
 
   &::after {
@@ -94,7 +94,7 @@
       width: 100%;
       height: 212px;
       border-radius: 20px;
-    };
+    }
 
     @media (min-width: 1440px) {
       left: 0;
@@ -105,7 +105,7 @@
       width: 212px;
       height: 212px;
       border-radius: 20px;
-    };
+    }
   }
 }
 
@@ -115,11 +115,11 @@
   @media (min-width: 768px) {
     margin: 0;
     margin-bottom: 40px;
-  };
+  }
 
   @media (min-width: 1440px) {
     margin-bottom: 55px;
-  };
+  }
 }
 
 .about__paragraph {
@@ -127,29 +127,29 @@
 
   @media (min-width: 768px) {
     margin: 0;
-  };
+  }
 
   &:not(:last-of-type) {
     margin-bottom: 22.5px;
 
     @media (min-width: 768px) {
       margin-bottom: 31px;
-    };
+    }
 
     @media (min-width: 768px) {
       margin-bottom: 38px;
-    };
-  };
+    }
+  }
 
   &:last-of-type {
     @media (min-width: 768px) {
       margin-bottom: 52px;
-    };
+    }
 
     @media (min-width: 1440px) {
       margin-bottom: 85px;
-    };
-  };
+    }
+  }
 }
 
 .about .container-inner {
@@ -157,25 +157,27 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-  };
+  }
 }
 
 .about .paragraph:not(:last-of-type) {
   @media (min-width: 768px) {
     width: 310px;
-  };
+  }
+
   @media (min-width: 1440px) {
     width: 619px;
-  };
+  }
 }
 
 .about .paragraph:last-of-type {
   @media (min-width: 768px) {
     width: 310px;
-  };
+  }
+
   @media (min-width: 1440px) {
     width: 425px;
-  };
+  }
 }
 
 .about .index__btn-content {
@@ -184,5 +186,5 @@
   @media (min-width: 768px) {
     display: block;
     width: 275px;
-  };
+  }
 }
