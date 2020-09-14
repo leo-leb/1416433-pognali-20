@@ -6,13 +6,13 @@
 
   @media (min-width: 768px) {
     @include font-size(28px, 33px);
-  };
+  }
 
   &--bold {
     @include font(700, normal);
 
     @media (min-width: 768px) {
       @include font-size(21px, 25px);
-    };
-  };
+    }
+  }
 }

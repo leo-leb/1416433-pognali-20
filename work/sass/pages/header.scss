@@ -3,8 +3,6 @@
   z-index: 8;
 
   min-width: 320px;
-  // padding: 0 25px;
-  // padding-top: 27px;
 
   @include environment-blue;
 
@@ -13,26 +11,26 @@
 
     @media (min-width: 768px) {
       @include environment-blue;
-    };
+    }
 
     @media (min-width: 1440px) {
       @include environment-blue-special;
-    };
+    }
 
     & .action-buttons--row {
       display: flex;
-    };
-  };
+    }
+  }
 }
 
 .header .container-outter {
   @media (min-width: 768px) {
     padding: 0;
-  };
+  }
 
   @media (min-width: 1440px) {
     padding: 0;
-  };
+  }
 }
 
 .header__row {
@@ -44,11 +42,11 @@
 
   @media (min-width: 768px) {
     padding-top: 40px;
-  };
+  }
 
   @media (min-width: 1440px) {
     padding-top: 46px;
-  };
+  }
 }
 
 .header__nav {
@@ -56,7 +54,7 @@
 
   @media (min-width: 1440px) {
     display: block;
-  };
+  }
 }
 
 .header__nav-list {
@@ -80,33 +78,32 @@
       background-color: #fff;
 
       content: "";
-    };
-  };
+    }
+  }
 }
 
 .header__nav-link-wrap {
   @media (min-width: 1440px) {
     margin-right: 34px;
-  };
+  }
 }
 
 .header__nav-link {
   @media (min-width: 1440px) {
     color: $white-middle;
-  };
+  }
 }
 
 .action-buttons--row {
   @media (min-width: 768px) {
     display: flex;
-  };
+  }
 }
 
 // BUTTONS
 
 .header__btn-menu {
   display: block;
-  // display: none;
 
   position: relative;
 
@@ -116,11 +113,11 @@
 
   @media (min-width: 1440px) {
     display: none;
-  };
+  }
 
   &--no-js {
     display: none;
-  };
+  }
 }
 
 .header__btn-menu-line {
@@ -148,7 +145,7 @@
     content: "";
 
     background-color: white;
-  };
+  }
 }
 
 .header__menu.active {
@@ -159,9 +156,10 @@
       top: 0;
       transform: rotate(45deg);
     }
+
     &::after {
       top: 0;
       transform: rotate(-45deg);
-    };
-  };
+    }
+  }
 }

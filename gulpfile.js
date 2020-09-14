@@ -143,7 +143,7 @@ exports.images = images;
 const webpFunc = () => {
   return gulp.src('./work/img/**/*.{jpg,png}')
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest('./build/img'))
+    .pipe(gulp.dest('./work/img'))
 }
 
 exports.webp = webpFunc;
@@ -152,7 +152,6 @@ const build = gulp.series(
   clean,
   copy,
   styles,
-  webpFunc,
   sprite,
   gulpPug
 )
