@@ -14,7 +14,7 @@
     width: 1320px;
     padding: 0;
     padding-left: 70px;
-  };
+  }
 }
 
 .container-outter--special {
@@ -48,7 +48,7 @@
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/traveller-illustration-mobile@2x.png);
+      background-image: url(../img/traveller-illustration-mobile@2x.png)
     };
 
     @media (min-width: 768px) {
@@ -61,7 +61,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url(../img/traveller-illustration-tablet@2x.png);
-      };
+      }
     };
 
     @media (min-width: 1440px) {
@@ -75,7 +75,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url(../img/traveller-illustration-desktop@2x.png);
-      };
-    };
-  };
+      }
+    }
+  }
 }
