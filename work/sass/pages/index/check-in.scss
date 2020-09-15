@@ -1,21 +1,22 @@
 .check-in {
   position: relative;
 
-  padding-top: 90px;
-  padding-bottom: 50px;
+  padding: 90px 0 39px;
 
   text-align: center;
 
   @include environment-blue;
 
   @media (min-width: 768px) {
-    padding-top: 134px;
-    padding-bottom: 60px;
+    padding: 134px 0 60px;
   }
 
   @media (min-width: 1440px) {
-    padding-top: 164px;
-    padding-bottom: 102px;
+    padding: 164px 0 102px;
+  }
+
+  & .contacts__desc {
+    color: $yellow-low;
   }
 }
 
@@ -29,7 +30,7 @@
 }
 
 .check-in__paragraph {
-  margin: 0 35px;
+  margin: 0 23px;
 
   @media (min-width: 768px) {
     margin: 0;
@@ -44,11 +45,10 @@
 .check-in__email {
   position: relative;
   display: block;
-  margin-top: 29px;
-  margin-bottom: 29px;
+  margin: 29px 0;
 
   @media (min-width: 768px) {
-    margin: 65px 35px 60px;
+    margin: 65px 0px 60px;
   }
 
   @media (min-width: 1440px) {
@@ -72,6 +72,7 @@
 
   @media (min-width: 768px) {
     padding-left: 36px;
+    border-radius: 20px;
 
     @include font-size(24px, 80px);
   }
@@ -110,6 +111,7 @@
 
   @media (min-width: 768px) {
     width: 80px;
+    border-radius: 20px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -126,7 +128,7 @@
 }
 
 .check-in__btn-desc {
-  display: none;
+  display: none; 
 
   @media (min-width: 1440px) {
     display: inline;
@@ -137,8 +139,7 @@
   margin-top: 17px;
 
   @media (min-width: 768px) {
-    margin: 0 35px;
-    margin-top: 40px;
+    margin-top: 35px;
   }
 
   @media (min-width: 1440px) {

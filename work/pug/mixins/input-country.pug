@@ -4,26 +4,26 @@ mixin input-country(countryEn, countryRu)
       .plans-create__box-country
         label.plans-create__wrap.plans-create__wrap--size-m
           input(type="text" name="countrys" value= countryRu).plans-create__country-desc
-          button.plans-create__btn-arrow(type="button", alt="Раскрыть список стран")
-            img(src="./img/month-arrow-right.svg" width="16" height="12")
           span.plans-create__status.plans-create__status--active
+        button.plans-create__btn-arrow(type="button")
+          img(src="./img/month-arrow-right.svg", width="16", height="12", alt="Раскрыть список стран")
         .plans-create__wrap.plans-create__wrap--flag.plans-create__wrap--size-s
-          svg.plans-create__flag
+          svg.plans-create__flag(viewBox="0 0 70 47")
             use(xlink:href="./img/general.svg#flag-" + countryEn)
         button.plans-create__btn-cross
           span.visually-hidden Удалить выбранную страну
     else
       .plans-create__box-country
-        label.plans-create__wrap.plans-create__wrap--size-l
+        .plans-create__wrap.plans-create__wrap--size-l
           span.plans-create__country-desc выберите страну
-          button.plans-create__btn-arrow-alt(type="button", alt="Раскрыть список стран")
-            img(src="./img/month-arrow-right.svg" width="16" height="12")
+          button.plans-create__btn-arrow-alt(type="button")
+            img(src="./img/month-arrow-right.svg", width="16", height="12", alt="Раскрыть список стран")
           span.plans-create__status
         button.plans-create__btn-cross-second
           span.visually-hidden Удалить выбранную страну
       .plans-create__filter
         .plans-create__box-country
-          label.plans-create__wrap.plans-create__wrap--size-l
+          .plans-create__wrap.plans-create__wrap--size-l
             span.plans-create__country-desc выберите страну
             button.plans-create__btn-cross-alt
               span.visually-hidden Свернуть меню стран

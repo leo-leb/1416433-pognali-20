@@ -13,6 +13,7 @@ block content
         h1.title-first= firstTitle
     section.user-box.directions__user-box
       .container-outter
+        h2.visually-hidden Информация о пользователе
         .user-box__row
           .user-box__skill
             svg.circle.circle--alt-second(class= "circle--" + person.class)
@@ -28,12 +29,12 @@ block content
         .user-box__btn сменить фото
         .user-box__btn.user-box__btn--alt фото
         .user-box__tags-wrap
-            h4.title-fourth.user-box__title-fourth тэги
+            p.title-fourth.user-box__title-fourth тэги
             ul.tags.user-box__tags
               each n in person.tags
                 li.tags__item= "#" + n
         .user-box__moves-wrap
-          h4.title-fourth.user-box__title-fourth транспорт
+          p.title-fourth.user-box__title-fourth транспорт
           ul.moves.user-box__moves
             each n in person.moves
               li.moves__item
@@ -63,4 +64,3 @@ block content
           include ../blocks/steps/step-first
           include ../blocks/steps/step-second
           include ../blocks/steps/step-third
-          //- button.plans-create__btn-step(type="submit" form="step-form") Отправить

@@ -49,9 +49,9 @@ block content
               +checkbox-without-name('транспорт', 'transport', filterUsers.transport)
               .box-level
                 label.box-level__heading-wrap
-                  h3.title-fourth левел:
-                  .box__btn.box__btn--close
-                    img.box__img(src="./img/triangle-arrow-right.svg" width="10" height="7")
+                  span.title-fourth левел:
+                  button.box-level__btn.box-level__btn--close(type="button")
+                    img.box-level__img(src="./img/triangle-arrow-right.svg" width="10" height="7" alt="Кнопка управления состоянием списка")
                 .box-level__value
                   .box-level__number
                     label.box-level__min-level
@@ -59,13 +59,12 @@ block content
                     label.box-level__max-level
                       input.box-level__input(type="number" name="max-level" value="100" step="1")
                   .box-level__line
-                    // main-line
                     .box-level__active-line
-                    // active-line
                     .box-level__toggle.box-level__toggle--min
                     .box-level__toggle.box-level__toggle--max
             button.filter-users__btn(type="submit") показать
         .companions__content-wrap
+          h4.visually-hidden список попутчиков
           .companions__users-wrap
             each user in users.slice(0,4)
               article.user-full
@@ -85,16 +84,16 @@ block content
                       each n in user.tags
                         li.tags__item= "#" + n
                   .user-full__wishes-wrap
-                    h5.title-fifth.user-full__title-fifth хочет посетить:
+                    h6.title-sixth.user-full__title-sixth хочет посетить:
                     ul.wishes.user-full__wishes
                       each n in user.wishes
                         li.wishes__item
-                          svg.wishes__country-flag
+                          svg.wishes__country-flag(viewBox="0 0 70 47")
                             use(xlink:href="./img/general.svg#flag-" + n.en)
                           p.wishes__country-name= n.ru
                   .user-full__row-lower
                     .user-full__moves-wrap
-                      h5.title-fifth.user-full__title-fifth транспорт:
+                      h6.title-sixth.user-full__title-sixth транспорт:
                       ul.moves.user-full__moves
                         each n in user.moves
                           li.moves__item.moves__item--alt
@@ -103,7 +102,7 @@ block content
                     .user-full__skill-wrap
                       svg.circle.circle--alt(class= "circle--" + user.class)
                         use(xlink:href="./img/general.svg#icon-circle")
-                      h5.title-fifth.user-full__title-fifth левел:
+                      h6.title-sixth.user-full__title-sixth левел:
                       .user-full__level-wrap
                         span.user-full__skill-level= user.skill
                         p.user-full__skill-unit level

@@ -9,7 +9,7 @@ block content
   main.index
     section.first-block.first-block--special
       h1.visually-hidden= firstTitle
-      .container-outter--special
+      .container-outter.container-outter--special
         .first-block__content
           p.first-block__moto
             | В путешествие
@@ -32,7 +32,7 @@ block content
           li.first-block__item
             p.first-block__desc Изучите идеи путешественников
           li.first-block__item
-            p.first-block__desc Находите тех, кто похож на вас
+            p.first-block__desc Находите тех, кто&nbsp;похож на вас
           li.first-block__item
             p.first-block__desc Путешествуйте вместе!
     section.about.index__about
@@ -59,27 +59,27 @@ block content
                     h3.title-third.country-card__title-third= country.name
                     p.country-card__moto= country.moto
                   span.country-card__visitors= country.visitors
-                  svg.country-card__flag
+                  svg.country-card__flag(viewBox="0 0 70 47")
                     use(xlink:href="./img/general.svg#flag-" + country.class)
           a.index__btn-content(href=".directions.html") Показать все
     section.travelers.index__travelers
       .container-outter
         h2.title-second.title-second--orange.travelers__title-second.wrap-inner Попутчики
-        p.paragraph.travelers__paragraph.wrap-inner Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а&nbsp;другому маршрут для хайкинга.
+        p.paragraph.travelers__paragraph.wrap-inner Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         p.paragraph.paragraph--bold.travelers__paragraph.wrap-inner Теперь можно легко найти единомышленников!
         .travelers__wrap
           each user in users.slice(0,2)
             article.user-short
+              h3.visually-hidden Карточка пользователя
               picture
                 source(type="image/webp", srcset="./img/" + user.class + "-desktop@1x.webp, ./img/" + user.class + "-desktop@2x.webp 2x")
-                img.user-short__image(src="./img/" + user.class + "-desktop@1x.jpg", srcset="./img/" + user.class + "-desktop@2x.jpg 2x", alt="Фото пользователя", width="100%")
+                img.user-short__image(src="./img/" + user.class + "-desktop@1x.jpg", srcset="./img/" + user.class + "-desktop@2x.jpg 2x", alt="Фото пользователя")
               .user-short__info
                 ul.wishes.user-short__wishes
                   each n in user.wishes
                     li.wishes__item
-                      svg.wishes__country-flag
+                      svg.wishes__country-flag(viewBox="0 0 70 47")
                         use(xlink:href="./img/general.svg#flag-" + n.en)
-                      //- img.wishes__country-flag(src="./img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt= "Флаг " + n)
                 p.user.user-short__user(class= "user--" + user.status)= user.firstname + " " + user.lastname
                 ul.tags.user-short__tags
                   each n in user.tags
@@ -122,11 +122,15 @@ block content
           input.check-in__input(type="email" name="login" placeholder="E-mail" required)
           button.check-in__btn(type="submit")
             span.check-in__btn-desc Регистрация
-        p.paragraph Остались вопросы? Мы с радостью на них ответим!
+        p.paragraph.check-in__paragraph Остались вопросы? Мы&nbsp;с&nbsp;радостью на них ответим!
         include ../blocks/contacts-full
     section.address.index__address
       .container-outter
         h2.visually-hidden Раздел адреса и карты
-        p.address__desc ул. Большая Конюшенная, 19/8
+        .address__wrap
+          div.address__img
+            svg.address__svg(fill="currentColor")
+              use(xlink:href="./img/general.svg#icon-location")
+          p.address__desc ул. Большая Конюшенная, 19/8
         a.index__btn-content.index__btn-content--border(href="#") Проложить маршрут
     .index__map#map

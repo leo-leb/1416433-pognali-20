@@ -1,6 +1,6 @@
 .menu-popup.menu-popup--no-js
-  .container-outter
-    .menu-popup__row
+  .menu-popup__row
+    .container-outter
       a.menu-popup__logo(href="index.html")
         picture
           source(type="image/webp", media="(min-width: 1440px)", srcset="./img/logo-desktop-blue@1x.webp, ./img/logo-desktop-blue@2x.webp 2x")
@@ -9,11 +9,9 @@
           source(media="(min-width: 1440px)", srcset="./img/logo-desktop-blue@1x.png, ./img/logo-desktop-blue@2x.png 2x")
           source(media="(min-width: 768px)", srcset="./img/logo-tablet-blue@1x.png, ./img/logo-tablet-blue@2x.png 2x")
           img.logo(src="./img/logo-mobile-blue@1x.png", srcset="./img/logo-mobile-blue@2x.png 2x", alt="Логотип компании")
-      .menu-popup__btn-cross.menu-popup__btn-cross--no-js(type="button")
-        span.visually-hidden Скрыть шапку страницы
-        svg.btn__img#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 18.6 18.6', style='enable-background:new 0 0 18.6 18.6;', xml:space='preserve')
-          path(fill='#CCCCCC', d='M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7\
-          L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z')
+      button.menu-popup__btn-cross.menu-popup__btn-cross--no-js(type="button")
+        img(src="./img/menu-close.svg", width="18", height="18", alt="скрыть шапку страницы")
+  .container-outter
     nav.menu-popup__nav
       ul.menu-popup__nav-list
         li
@@ -26,7 +24,7 @@
       a.action-buttons__btn(href="#") авторизация
       include contacts-full
     .social.menu-popup__social
-      h2.visually-hidden Ссылки на социальные сети
+      span.visually-hidden Ссылки на социальные сети
       a.social__link(href="#")
         svg.social__svg
           use(xlink:href="./img/general.svg#icon-fb")

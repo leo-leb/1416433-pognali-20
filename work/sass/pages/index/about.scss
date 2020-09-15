@@ -1,8 +1,8 @@
 .about {
   position: relative;
 
-  padding-top: 312px;
-  padding-bottom: 82px;
+  padding-top: 281px;
+  padding-bottom: 94px;
 
   @include environment-blue;
 
@@ -130,14 +130,14 @@
   }
 
   &:not(:last-of-type) {
-    margin-bottom: 22.5px;
+    margin-bottom: 18.5px;
 
     @media (min-width: 768px) {
-      margin-bottom: 31px;
+      margin-bottom: 32px;
     }
 
-    @media (min-width: 768px) {
-      margin-bottom: 38px;
+    @media (min-width: 1440px) {
+      margin-bottom: 41px;
     }
   }
 

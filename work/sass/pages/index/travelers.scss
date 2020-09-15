@@ -103,7 +103,7 @@
 .travelers__wrap {
   position: relative;
 
-  margin-top: 55px;
+  margin-top: 53px;
   margin-bottom: 20px;
 
   &::before {
@@ -144,7 +144,7 @@
     flex-wrap: wrap;
 
     width: 100%;
-    margin-top: 60px;
+    margin-top: 57px;
     margin-bottom: 80px;
   }
 
@@ -169,7 +169,7 @@
     margin-bottom: 22.5px;
 
     @media (min-width: 768px) {
-      margin-bottom: 39px;
+      margin-bottom: 44px;
     }
 
     @media (min-width: 1440px) {
@@ -192,4 +192,9 @@
   @media (min-width: 1440px) {
     margin-bottom: 85px;
   }
+}
+
+.travelers .moves__icon {
+  width: 18px;
+  height: 20px;
 }

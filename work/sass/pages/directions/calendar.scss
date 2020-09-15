@@ -124,7 +124,7 @@
     outline: 2px solid $red-middle;
     z-index: 1;
 
-    & .calendar__dates-status--start {
+    & .calendar__dates--start {
       @media (min-width: 1440px) {
         display: inline;
       }
@@ -137,13 +137,13 @@
   margin: 0;
 }
 
-.calendar__dates-status--start,
-.calendar__dates-status--finish {
+.calendar__dates--start,
+.calendar__dates--finish {
   display: none;
 }
 
 .calendar__dates-item--finish {
-  & .calendar__dates-status--finish {
+  & .calendar__dates--finish {
     @media (min-width: 1440px) {
       display: inline;
     }

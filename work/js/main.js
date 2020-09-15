@@ -64,6 +64,18 @@ popupMenu__close.addEventListener("click", function (evt) {
   popupMenu__close.classList.remove("menu-popup__btn-cross--show");
 });
 
+// --- HEADER-WHILE-SCROLL --- //
+
+var headerRow = document.querySelector(".header__row");
+
+window.addEventListener("scroll", function(){
+  if(window.pageYOffset > 73){
+    headerRow.classList.add("header__row--scroll")
+    header.classList.add("header--scroll")
+  }
+})
+
+
 // --- ALPHABET-POPUP --- //
 
 var alphabet = document.querySelector(".plans-create__filter");

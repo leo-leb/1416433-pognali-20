@@ -2,21 +2,24 @@
   z-index: 8;
 
   &--row {
-    display: none;
+    display: flex;
 
     position: absolute;
-    bottom: -40px;
+    bottom: -404px;
     left: 50%;
-    transform: translate(-50%, 415px);
+    transform: translate(-50%, 50%);
 
+    width: 270px;
     margin: 0 auto;
 
     @media (min-width: 768px) {
+      display: none;
       position: relative;
       bottom: 0;
       left: 0;
       transform: none;
 
+      width: unset;
       margin: 0;
     }
   }
@@ -32,8 +35,7 @@
 }
 
 .action-buttons__btn {
-  padding-left: 28px;
-  padding-right: 28px;
+  flex-grow: 1;
   border-radius: 25px;
 
   text-align: center;
@@ -43,17 +45,18 @@
   background-color: $yellow-low;
 
   @media (min-width: 768px) {
+    flex-grow: unset;
     display: inline;
     padding: 0 28px;
   }
 }
 
 .action-buttons--row .action-buttons__btn {
-  @include font-size(17px, 40px);
+  @include font-size(20px, 40px);
   @include font(700, normal);
 
   @media (min-width: 768px) {
-    @include font-size(20px, 50px);
+    line-height: 50px;
   }
 }
 

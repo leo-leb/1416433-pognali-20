@@ -39,6 +39,10 @@
 }
 
 .box__heading-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   margin-bottom: 14px;
   text-transform: uppercase;
 
@@ -49,16 +53,27 @@
   }
 
   @media (min-width: 1440px) {
+    width: 100%;
     margin-bottom: 14px;
   }
 }
 
 .box__btn {
-  display: none;
-
+  margin: 0;
   padding: 0;
+  border: none;
 
-  line-height: 41px;
+  cursor: pointer;
+
+  background-color: inherit;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1440px) {
+    display: block;
+  }
 
   &--open .box__img {
     transform: rotate(90deg);

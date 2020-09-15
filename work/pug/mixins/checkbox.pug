@@ -1,9 +1,9 @@
 mixin checkbox(title, name, massive)
   .box
     label.box__heading-wrap
-      h3.title-fourth= title + ":"
-      .box__btn.box__btn--open
-        img.box__img(src="./img/triangle-arrow-left.svg" width="10" height="7")
+      span.title-fourth= title + ":"
+      button.box__btn.box__btn--open(type="button")
+        img.box__img(src="./img/triangle-arrow-right.svg" width="10" height="7" alt="Кнопка управления состоянием списка")
     ul.box__value-list
       each n in massive
         li.box__value-item

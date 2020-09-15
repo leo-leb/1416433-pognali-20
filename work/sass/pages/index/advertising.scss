@@ -1,19 +1,15 @@
 .advertising {
   position: relative;
-
-  padding-top: 71px;
-  padding-bottom: 45px;
+  padding: 71px 0 50px;
 
   @include environment-white-dirty;
 
   @media (min-width: 768px) {
-    padding-top: 129px;
-    padding-bottom: 60px;
+    padding: 129px 0 57px;
   }
 
   @media (min-width: 1440px) {
-    padding-top: 162px;
-    padding-bottom: 165px;
+    padding: 162px 0 165px;
   }
 }
 
@@ -25,8 +21,7 @@
   }
 
   @media (min-width: 1440px) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 0 70px;
   }
 }
 
@@ -55,15 +50,13 @@
 .advertising__list {
   position: relative;
 
-  margin: 0;
-  margin-top: 46px;
-  margin-bottom: 31px;
+  margin: 46px 0 35px;
   padding: 0;
 
   counter-reset: myCounter;
 
   @include font(300, normal);
-  @include font-size;
+  @include font-size(16px, 20.8px);
 
   &::after {
     position: absolute;
@@ -122,7 +115,7 @@
   }
 
   @media (min-width: 768px) {
-    margin-top: 74px;
+    margin: 74px 0 31px;
     padding-right: 34px;
 
     @include font-size(28px, 28px);
@@ -199,7 +192,7 @@
   align-self: center;
   flex-grow: 1;
 
-  padding: 23px 0;
+  padding: 11px 0;
   border-top: 1px solid $separator-line-two;
 
   @media (min-width: 768px) {
@@ -207,7 +200,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 20px 0;
+    padding: 19px 0;
   }
 }
 

@@ -1,14 +1,64 @@
-.contacts--row {
-  display: flex;
-  height: 40px;
-
-  @media (min-width: 768px) {
-    display: none;
+.contacts {
+  &--col {
+    & .contacts__img {
+      width: 45px;
+      height: 45px;
+      margin-right: 16px;
+      background-color: $blue-dark-two;
+    
+      @media (min-width: 768px) {
+        width: 68px;
+        height: 68px;
+        margin-right: 22px;
+      }
+    
+      @media (min-width: 1440px) {
+        width: 90px;
+        height: 90px;
+        margin-right: 31px;
+      }
+    }
+  
+    & .contacts__svg {
+      color: $yellow-low;
+    }
+  
+    & .btn-contact {
+      display: flex;
+    }
   }
 
-  @media (min-width: 1440px) {
+  &--row {
     display: flex;
-    height: 50px;
+    height: 40px;
+  
+    @media (min-width: 768px) {
+      display: none;
+    }
+  
+    @media (min-width: 1440px) {
+      display: flex;
+      height: 50px;
+    }
+  
+    & .contacts__img {
+      width: 40px;
+      height: 40px;
+    
+      @media (min-width: 1440px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  
+    & .contacts__svg {
+      color: $blue-dark;
+
+      @media (min-width: 1440px) {
+        width: 18px;
+        height: 18px;
+      }
+    }
   }
 }
 
@@ -16,46 +66,17 @@
   display: flex;
 }
 
-.contacts__img--phone {
-  background-color: $orange-middle;
-}
-
-.contacts__img--mail {
-  background-color: $yellow-middle;
-}
-
 .contacts__img {
   display: inline-block;
   position: relative;
   border-radius: 50%;
-}
 
-.contacts--row .contacts__img {
-  width: 40px;
-  height: 40px;
-
-  @media (min-width: 1440px) {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-.contacts--col .contacts__img {
-  width: 45px;
-  height: 45px;
-  margin-right: 16px;
-  background-color: $blue-dark-two;
-
-  @media (min-width: 768px) {
-    width: 68px;
-    height: 68px;
-    margin-right: 22px;
+  &--phone {
+    background-color: $orange-middle;
   }
 
-  @media (min-width: 1440px) {
-    width: 90px;
-    height: 90px;
-    margin-right: 31px;
+  &--mail {
+    background-color: $yellow-middle;
   }
 }
 
@@ -65,8 +86,6 @@
   width: 18px;
   height: 18px;
 
-  color: $blue-dark;
-
   @media (min-width: 768px) {
     width: 28px;
     height: 28px;
@@ -75,13 +94,6 @@
   @media (min-width: 1440px) {
     width: 37px;
     height: 37px;
-  }
-}
-
-.contacts--row .contacts__svg {
-  @media (min-width: 1440px) {
-    width: 18px;
-    height: 18px;
   }
 }
 
@@ -100,21 +112,5 @@
 
   @media (min-width: 1440px) {
     @include font-size(28px, 90px);
-  }
-}
-
-.contacts--col {
-  & .btn-contact {
-    display: flex;
-  }
-
-  & .contacts__svg {
-    color: $yellow-low;
-  }
-}
-
-.check-in {
-  & .contacts__desc {
-    color: $yellow-low;
   }
 }

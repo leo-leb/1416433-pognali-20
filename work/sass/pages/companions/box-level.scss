@@ -232,3 +232,29 @@
 .box-level__max-level {
   width: 50%;
 }
+
+.box-level__btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  cursor: pointer;
+
+  background-color: inherit;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1440px) {
+    display: block;
+  }
+
+  &--open .box__img {
+    transform: rotate(90deg);
+  }
+
+  &--close .box__img {
+    transform: rotate(-90deg);
+  }
+}

@@ -7,6 +7,11 @@
 
   @include environment-white;
 
+  @media (min-width: 768px) {
+    width: 285px;
+    border-radius: 15px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 10px;
 
@@ -14,16 +19,17 @@
       margin-bottom: 0;
     }
   }
-
-  @media (min-width: 768px) {
-    width: 285px;
-  }
 }
 
 .user-short__image {
   display: block;
+  width: 100%;
 
   @include shape-top(10px);
+
+  @media (min-width: 768px) {
+    @include shape-top(15px);
+  }
 }
 
 .user-short__info {
@@ -38,7 +44,8 @@
   color: $black-low;
 
   @media (min-width: 768px) {
-    padding: 31px 31px 27px;
+    padding: 31px 30px 20px;
+    @include shape-bottom(15px);
   }
 }
 
@@ -62,7 +69,11 @@
 .user-short__tags {
   justify-content: center;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 9px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 21px;
+  }
 }
 
 .user-short__wishes {
@@ -78,7 +89,11 @@
 
 .user-short__user {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 
   &::after {
     position: absolute;
@@ -103,8 +118,8 @@
 
 .user-short__skill {
   position: absolute;
-  top: 10px;
-  left: 20px;
+  top: 17px;
+  left: 17px;
 
   width: 60px;
   height: 60px;
@@ -150,10 +165,21 @@
   @include font-size(14px, 14px);
 }
 
-.user-short .moves__item:not(:last-child) {
-  margin-right: 13px;
+.user-short__moves {
+  margin: 0;
+}
 
+.user-short .moves__item {
   @media (min-width: 768px) {
-    margin-right: 0;
+    width: 35px;
+    height: 35px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 3px;
+  
+    @media (min-width: 768px) {
+      margin-right: 0;
+    }
   }
 }

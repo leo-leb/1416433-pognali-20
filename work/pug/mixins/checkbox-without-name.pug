@@ -1,14 +1,14 @@
 mixin checkbox-without-name(title, name, massive)
   .box
     .box__heading-wrap
-      h3.title-fourth= title + ":"
-      .box__btn.box__btn--close
-        img.box__img(src="./img/triangle-arrow-right.svg" width="10" height="7")
+      span.title-fourth= title + ":"
+      button.box__btn.box__btn--close(type="button")
+        img.box__img(src="./img/triangle-arrow-right.svg" width="10" height="7" alt="Кнопка управления состоянием списка")
     ul.box__list
       each n in massive
         li.box__item
           label
             input.real-checkbox.visually-hidden(name= name type="checkbox" value= n)
-            .custom-checkbox-img
+            span.custom-checkbox-img
               svg.custom-checkbox-svg
                 use(xlink:href= "./img/general.svg#icon-" + n)

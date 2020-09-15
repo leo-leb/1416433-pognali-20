@@ -1,7 +1,7 @@
 .address {
   position: relative;
 
-  padding: 50px 0;
+  padding: 50px 0 43px;
 
   @include environment-yellow;
 
@@ -25,57 +25,78 @@
   }
 }
 
-.address__desc {
+.address__wrap {
   display: flex;
-
-  margin: 0;
+  justify-content: flex-start;
   margin-bottom: 32px;
 
-  text-transform: uppercase;
-  white-space: break-spaces;
-
-  @include font(700, normal);
-  @include font-size(16px, 22px);
-
-  &::before {
-    width: 53px;
-    height: 45px;
-    margin-right: 16px;
-    border-radius: 50%;
-
-    content: "";
-
-    background-color: $blue-dark;
-    background-image: url("../img/contacts-location.svg");
-    background-repeat: no-repeat;
-    background-size: 21px 21px;
-    background-position: center;
-
-    @media (min-width: 768px) {
-      width: 68px;
-      height: 68px;
-      margin-right: 26px;
-
-      background-size: 32px 32px;
-    }
-
-    @media (min-width: 1440px) {
-      width: 90px;
-      height: 90px;
-      margin-right: 26px;
-
-      background-size: 42px 42px;
-    }
-  }
-
   @media (min-width: 768px) {
-    @include font-size(28px, 68px);
+    margin-bottom: 44px;
   }
 
   @media (min-width: 1440px) {
     margin-bottom: 0;
+  }
+}
+
+.address__desc {
+  margin: 0;
+
+  text-transform: uppercase;
+  width: 143px;
+
+  @include font(700, normal);
+  @include font-size(16px, 22px);
+
+  @media (min-width: 768px) {
+    width: unset;
+    @include font-size(28px, 68px);
+  }
+
+  @media (min-width: 1440px) {
+    flex-grow: 1;
+    margin-bottom: 0;
 
     line-height: 90px;
+  }
+}
+
+.address__img {
+  position: relative;
+
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+  border-radius: 50%;
+  background-color: $blue-dark;
+
+  @media (min-width: 768px) {
+    width: 68px;
+    height: 68px;
+    margin-right: 26px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 90px;
+    height: 90px;
+    margin-right: 26px;
+  }
+}
+
+.address__svg {
+  @include zero-centered;
+
+  width: 16px;
+  height: 21px;
+
+  @media (min-width: 768px) {
+    width: 24px;
+    height: 32px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 32px;
+    height: 42px;
   }
 }
 

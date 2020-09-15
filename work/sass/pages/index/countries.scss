@@ -102,7 +102,11 @@
 }
 
 .countries__wrap {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  }
 
   @media (min-width: 1440px) {
     position: absolute;
@@ -116,7 +120,7 @@
 }
 
 .countries__paragraph {
-  margin: 0 45px 50px 25px;
+  margin: 0 45px 60px 25px;
 
   @media (min-width: 768px) {
     margin: 0;
