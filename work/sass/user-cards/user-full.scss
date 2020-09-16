@@ -344,15 +344,15 @@
 }
 
 .user-full__moves .moves__item:not(:last-child) {
-    @media (min-width: 768px) {
-      margin-right: 0;
-      margin-bottom: 11px;
-    }
+  @media (min-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 11px;
+  }
 
-    @media (min-width: 1440px) {
-      margin-right: 13px;
-      margin-bottom: 0;
-    }
+  @media (min-width: 1440px) {
+    margin-right: 13px;
+    margin-bottom: 0;
+  }
 }
 
 .user-full__skill-wrap {
@@ -524,5 +524,19 @@
 
   @media (min-width: 768px) {
     @include font-size(20px, 20px);
+  }
+}
+
+.user-full .tags {
+  @media (min-width: 768px) {
+    color: $black-middle;
+  }
+}
+
+.user-full .user {
+  @include font-size(20px, 20px);
+
+  @media (min-width: 768px) {
+    @include font-size(30px, 30px);
   }
 }

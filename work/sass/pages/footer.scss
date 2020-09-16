@@ -96,3 +96,10 @@
     @include font-size(20px, 33px);
   }
 }
+
+.footer .social__link {
+  @media (min-width: 768px) {
+    width: 62px;
+    height: 62px;
+  }
+}

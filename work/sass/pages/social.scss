@@ -3,12 +3,6 @@
   justify-content: center;
 }
 
-.menu-popup__social {
-  @media (min-width: 768px) {
-    justify-content: flex-start;
-  }
-}
-
 .social__link {
   position: relative;
 
@@ -18,20 +12,6 @@
 
   &--alt {
     background-color: $yellow-low;
-  }
-}
-
-.header .social__link {
-  @media (min-width: 768px) {
-    width: 68px;
-    height: 68px;
-  }
-}
-
-.footer .social__link {
-  @media (min-width: 768px) {
-    width: 62px;
-    height: 62px;
   }
 }
 

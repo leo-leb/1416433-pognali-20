@@ -17,19 +17,3 @@
     }
   }
 }
-
-.user-short .user {
-  @include font-size(21px, 21px);
-
-  @media (min-width: 768px) {
-    @include font-size(24px, 24px);
-  }
-}
-
-.user-full .user {
-  @include font-size(20px, 20px);
-
-  @media (min-width: 768px) {
-    @include font-size(30px, 30px);
-  }
-}

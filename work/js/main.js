@@ -27,7 +27,7 @@ function initMap() {
   var myMap = new google.maps.Map(document.getElementById("map"), opt);
 
   var image = {
-    url: "../img/map-marker.svg",
+    url: "./img/map-marker.svg",
     scaledSize: new google.maps.Size(41, 41)
   };
 
@@ -60,12 +60,15 @@ popupMenu__close.addEventListener("click", function (evt) {
 
 var headerRow = document.querySelector(".header__row");
 
-window.addEventListener("scroll", function(){
-  if(window.pageYOffset > 73){
+window.addEventListener("scroll", function() {
+  if(window.pageYOffset > 73) {
     headerRow.classList.add("header__row--scroll")
     header.classList.add("header--scroll")
+  } else {
+    headerRow.classList.remove("header__row--scroll");
+    header.classList.remove("header--scroll");
   }
-})
+});
 
 var alphabet = document.querySelector(".plans-create__filter");
 var alphabet__open = document.querySelector(".plans-create__btn-arrow-alt");

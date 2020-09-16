@@ -134,3 +134,9 @@
     padding: 0 28px;
   }
 }
+
+.menu-popup__social {
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}

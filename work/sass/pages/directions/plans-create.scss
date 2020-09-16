@@ -174,8 +174,6 @@
   }
 }
 
-// STEP-FIRST
-
 .plans-create__step-first-filter {
   display: flex;
   flex-direction: column;
@@ -362,6 +360,16 @@
     height: 36px;
     margin-right: 22px;
   }
+
+  &:hover {
+    border-color: $gray-light-four;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $white-dirty-three;
+    background-color: $white-dirty-three;
+  }
 }
 
 .plans-create__real-checkbox:checked ~ .plans-create__custom-checkbox {
@@ -373,6 +381,20 @@
   @media (min-width: 768px) {
     background-size: 11px;
   }
+
+  &:hover {
+    border-color: $gray-light-four;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $white-dirty-three;
+    background-color: $white-dirty-three;
+  }
+}
+
+.plans-create__real-checkbox:focus ~ .plans-create__custom-checkbox {
+  border-color: $white-dirty-three;
 }
 
 .plans-create__month {
@@ -458,8 +480,6 @@
     margin-bottom: 57px;
   }
 }
-
-// STEP-SECOND
 
 .plans-create__box-country-wrap {
   position: relative;
@@ -555,6 +575,8 @@
   border: 1px solid $gray-light;
   border-radius: 4px;
 
+  cursor: pointer;
+
   text-transform: uppercase;
 
   @media (min-width: 768px) {
@@ -604,6 +626,10 @@
     @media (min-width: 1440px) {
       width: 730px;
     }
+  }
+
+  &:hover {
+    border-color: $gray-light-four;
   }
 }
 
@@ -706,8 +732,6 @@
 .plans-create__wrap--size-l .plans-create__btn {
   right: 13px;
 }
-
-// STEP-THIRD
 
 .plans-create__plan-country {
   position: relative;
@@ -866,8 +890,6 @@
   }
 }
 
-// COMMON
-
 .plans-create__desc {
   margin: 15px 0 21px;
 
@@ -888,8 +910,6 @@
     grid-area: b;
   }
 }
-
-// BUTTONS
 
 .plans-create__buttons-wrap {
   @media (min-width: 768px) {
@@ -993,6 +1013,14 @@
 
       content: "";
     }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -1236,8 +1264,6 @@
   }
 }
 
-// FILTER
-
 .plans-create__filter {
   display: none;
 
@@ -1326,9 +1352,6 @@
     height: 18px;
   }
 }
-
-// ALPHABET //
-
 
 .plans-create__alphabet-short {
   @media (min-width: 768px) {

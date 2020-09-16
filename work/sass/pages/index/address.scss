@@ -50,6 +50,7 @@
 
   @media (min-width: 768px) {
     width: unset;
+
     @include font-size(28px, 68px);
   }
 

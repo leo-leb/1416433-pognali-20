@@ -150,6 +150,7 @@
 .user-box__tags {
   width: 100%;
   height: 90px;
+
   @include font;
   @include font-size(16px, 18px);
   color: $black-low;
@@ -161,6 +162,7 @@
 
   @media (min-width: 768px) {
     height: 95px;
+
     @include font-size(20px, 22px);
     margin-bottom: 0;
     padding: 35px 40px;
@@ -272,6 +274,20 @@
     display: none;
   }
 
+  &:hover {
+    background-color: $blue-light-four;
+  }
+
+  &:active {
+    background-color: $blue-light-two;
+    outline: none;
+  }
+
+  &:active .user-box__btn-desc {
+    background-color: $blue-light-two;
+    opacity: 0.3;
+  }
+
   &--alt {
     display: none;
 
@@ -301,9 +317,13 @@
       outline: none;
     }
 
-    &:active .user-box__btn-desc{
+    &:active .user-box__btn-desc {
       background-color: $blue-light-two;
       opacity: 0.3;
     }
   }
+}
+
+.user-box .tags {
+  opacity: 0.6;
 }

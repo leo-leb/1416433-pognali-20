@@ -36,7 +36,7 @@
   }
 
   &:active {
-    outline: 1px solid $border-active;
+    outline: none;
 
     @include environment-blue-middle;
   }

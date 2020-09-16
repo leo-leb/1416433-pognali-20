@@ -50,6 +50,7 @@
 
   @media (min-width: 768px) {
     padding: 31px 30px 20px;
+
     @include shape-bottom(15px);
   }
 }
@@ -182,9 +183,17 @@
 
   &:not(:last-child) {
     margin-right: 3px;
-  
+
     @media (min-width: 768px) {
       margin-right: 0;
     }
+  }
+}
+
+.user-short .user {
+  @include font-size(21px, 21px);
+
+  @media (min-width: 768px) {
+    @include font-size(24px, 24px);
   }
 }

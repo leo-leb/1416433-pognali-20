@@ -52,7 +52,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    // .pipe(csso())
+    .pipe(csso())
     .pipe(rename('styles.min.css'))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest('./build/css'))

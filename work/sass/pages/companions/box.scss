@@ -119,11 +119,13 @@
 
 .box__value-item {
   color: $black-middle;
+
   @include font;
   @include font-size(15px, 18px);
 
   @media (min-width: 768px) {
     flex-basis: 33.333%;
+
     @include font-size(20px, 24px);
   }
 
@@ -187,7 +189,7 @@
       &:hover {
         color: $gray-middle-two;
       }
-  
+
       &:active {
         color: $blue-middle;
         opacity: 0.1;

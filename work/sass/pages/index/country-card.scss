@@ -39,7 +39,7 @@
   position: relative;
 
   height: 88px;
-  padding: 26px 23px 0px;
+  padding: 26px 23px 0;
   border-radius: 10px;
 
   @include font(500, normal);
@@ -99,7 +99,6 @@
   align-self: flex-start;
 
   width: 42px;
-  // flex-grow: 0.4;
 
   @include font-size(16px, 16px);
   color: $blue-dark;
