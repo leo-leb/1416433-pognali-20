@@ -8,7 +8,12 @@
 
   @media (min-width: 768px) {
     padding-top: 120px;
-    padding-bottom: 88px;
+    padding-bottom: 81px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 129px;
+    padding-bottom: 90px;
   }
 }
 
@@ -27,13 +32,18 @@
   padding: 0 16px;
   padding-bottom: 18px;
 
+  @media (min-width: 768px) {
+    padding: 0;
+    margin-bottom: 53px;
+  }
+
   @media (min-width: 1440px) {
     position: absolute;
-    top: -65px;
+    top: -74px;
     right: 95px;
     transform: translateY(-100%);
 
-    padding: 0;
+    margin-bottom: 0;
 
     z-index: 7;
   }
@@ -128,41 +138,69 @@
   }
 }
 
-.user-box__tags-wrap,
-.user-box__moves-wrap {
-  position: relative;
-
-  border: 1px solid $gray-light;
-
-  @include shape-top(10px);
-  @include shape-bottom(10px);
-}
-
 .user-box__tags-wrap {
-  margin-bottom: 25px;
-  padding: 27px 25px;
+  position: relative;
+  margin-bottom: 19px;
 
   @media (min-width: 768px) {
-    padding: 36px 40px;
-  }
-
-  @media (min-width: 1440px) {
-    width: 732px;
     margin-bottom: 0;
   }
 }
 
 .user-box__tags {
-  margin: 0;
-  justify-content: center;
+  width: 100%;
+  height: 90px;
+  @include font;
+  @include font-size(16px, 18px);
+  color: $black-low;
+
+  padding: 26px 27px;
+  border: 1px solid $gray-light;
+  border-radius: 10px;
+  background-color: inherit;
 
   @media (min-width: 768px) {
-    justify-content: left;
+    height: 95px;
+    @include font-size(20px, 22px);
+    margin-bottom: 0;
+    padding: 35px 40px;
+  }
+
+  @media (min-width: 1440px) {
+    @include font-size(20px, 22px);
+    width: 732px;
+  }
+
+  &::placeholder {
+    color: $black-low-three;
+  }
+
+  &:hover {
+    border-color: $gray-dirty;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $black-middle;
+    outline: none;
+  }
+}
+
+.user-box__tags-wrap .user-box__title-fourth {
+  @media (min-width: 1440px) {
+    transform: translate(0, -50%);
+    left: 20px;
   }
 }
 
 .user-box__moves-wrap {
+  position: relative;
+
   padding: 16px 25px;
+  border: 1px solid $gray-light;
+
+  @include shape-top(10px);
+  @include shape-bottom(10px);
 
   @media (min-width: 768px) {
     position: absolute;
@@ -211,19 +249,23 @@
 }
 
 .user-box__btn {
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   border-radius: 20px;
+  border: none;
+  width: 100%;
 
   text-transform: uppercase;
   text-align: center;
 
   @include font(500, normal);
   @include font-size(20px, 40px);
+  color: $blue-dark;
   background-color: $blue-light-two;
 
   @media (min-width: 768px) {
     line-height: 60px;
     border-radius: 10px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: 1440px) {
@@ -235,6 +277,7 @@
 
     width: 190px;
     border-radius: 0;
+    cursor: pointer;
 
     @include shape-bottom(10px);
 
@@ -245,8 +288,22 @@
 
       position: absolute;
 
-      top: -65px;
+      top: -74px;
       right: 95px;
+    }
+
+    &:hover {
+      background-color: $blue-light-four;
+    }
+
+    &:active {
+      background-color: $blue-light-two;
+      outline: none;
+    }
+
+    &:active .user-box__btn-desc{
+      background-color: $blue-light-two;
+      opacity: 0.3;
     }
   }
 }

@@ -3,7 +3,7 @@
   z-index: 8;
 
   min-width: 320px;
-  height: 73px;
+  height: 57px;
 
   @include environment-blue;
 
@@ -18,13 +18,36 @@
 
   &--main {
     @include environment-blue-special;
+    height: 71px;
 
     @media (min-width: 768px) {
       @include environment-blue;
+      height: 132px;
     }
 
     @media (min-width: 1440px) {
       @include environment-blue-special;
+      height: unset;
+    }
+
+    & .header__row {
+      height: 71px;
+
+      @media (min-width: 768px) {
+        height: 132px;
+      }
+
+      @media (min-width: 1440px) {
+        height: 90px;
+      }
+    }
+
+    & .action-buttons--row {
+      display: flex;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
   }
 
@@ -45,7 +68,7 @@
 }
 
 .header__row {
-  height: 73px;
+  height: 57px;
   width: 100%;
   position: unset;
 
@@ -59,7 +82,7 @@
     height: auto;
   }
 
-  & .container-outter {
+  & > .container-outter {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,6 +101,22 @@
     @media (min-width: 768px) {
       display: flex;
     }
+  }
+
+  & .header__nav-link {
+    @media (min-width: 1440px) {
+      &:hover .header__nav-desc {
+        transform: translateY(-100%);
+      }
+  
+      &:active {
+        opacity: 0.3;
+      }
+
+      &:focus .header__nav-desc {
+        color: $yellow-low;
+      }
+    } 
   }
 
   &--scroll {
@@ -114,6 +153,14 @@
     & .header__nav-link {
       @media (min-width: 1440px) {
         color: $blue-high;
+
+        &:hover .header__nav-desc {
+          transform: unset;
+        }
+
+        &:active {
+          opacity: unset;
+        }
       }
     }
   }
@@ -153,13 +200,38 @@
 
 .header__nav-link-wrap {
   @media (min-width: 1440px) {
-    margin-right: 39px;
+    overflow: hidden;
+    height: 1em;
+
+    &:last-child {
+      margin-left: 33px;
+    }
   }
 }
 
 .header__nav-link {
   @media (min-width: 1440px) {
     color: $white-middle;
+  }
+}
+
+.header__nav-desc {
+  display: none;
+  width: 131px;
+
+  @media (min-width: 1440px) {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+  
+    &::before {
+      position: absolute;
+      top: 100%;
+      content: attr(data-hover);
+      color: $yellow-low;
+      font-weight: 700;
+      transform: translate3d(0,0,0);
+    }
   }
 }
 
@@ -175,7 +247,7 @@
   cursor: pointer;
 
   @media (min-width: 768px) {
-    display: none;
+    margin-left: 20px;
   }
 
   @media (min-width: 1440px) {

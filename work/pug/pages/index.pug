@@ -43,30 +43,30 @@ block content
         a.index__btn-content(href=".directions.html") Подробнее
     section.countries.index__countries
       .container-outter
-        .countries-wrap
-          h2.title-second.title-second--orange.countries__title-second Направления
-          p.paragraph.countries__paragraph Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
-          .countries__wrap
-            each country in countries
-              article.country-card.countries__country-card
-                picture
-                  source(type="image/webp", media="(min-width: 768px)", srcset="./img/" + country.class + "-desktop@1x.webp, ./img/" + country.class + "-desktop@2x.webp 2x")
-                  source(type="image/webp", srcset="./img/" + country.class + "-mobile@1x.webp, ./img/" + country.class + "-mobile@2x.webp 2x")
-                  source(media="(min-width: 768px)", srcset="./img/" + country.class + "-desktop@1x.jpg, ./img/" + country.class + "-desktop@2x.jpg 2x")
-                  img.country-card__img(src="./img/" + country.class + "-mobile@1x.jpg", srcset="./img/" + country.class + "-mobile@2x.jpg 2x", alt="Фото страны")
-                .country-card__info
-                  .country-card__info-wrap
-                    h3.title-third.country-card__title-third= country.name
-                    p.country-card__moto= country.moto
-                  span.country-card__visitors= country.visitors
-                  svg.country-card__flag(viewBox="0 0 70 47")
-                    use(xlink:href="./img/general.svg#flag-" + country.class)
-          a.index__btn-content(href=".directions.html") Показать все
+        h2.title-second.title-second--orange.countries__title-second Направления
+        p.paragraph.countries__paragraph Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+        .countries__wrap
+          each country in countries
+            article.country-card.countries__country-card
+              picture
+                source(type="image/webp", media="(min-width: 768px)", srcset="./img/" + country.class + "-desktop@1x.webp, ./img/" + country.class + "-desktop@2x.webp 2x")
+                source(type="image/webp", srcset="./img/" + country.class + "-mobile@1x.webp, ./img/" + country.class + "-mobile@2x.webp 2x")
+                source(media="(min-width: 768px)", srcset="./img/" + country.class + "-desktop@1x.jpg, ./img/" + country.class + "-desktop@2x.jpg 2x")
+                img.country-card__img(src="./img/" + country.class + "-mobile@1x.jpg", srcset="./img/" + country.class + "-mobile@2x.jpg 2x", alt="Фото страны")
+              .country-card__info
+                .country-card__info-wrap
+                  h3.title-third.country-card__title-third= country.name
+                  p.country-card__moto= country.moto
+                span.country-card__visitors= country.visitors
+                svg.country-card__flag(viewBox="0 0 70 47" aria-label= "флаг" + " " + country.name)
+                  use(xlink:href="./img/general.svg#flag-" + country.class)
+        a.index__btn-content(href=".directions.html") Показать все
     section.travelers.index__travelers
       .container-outter
-        h2.title-second.title-second--orange.travelers__title-second.wrap-inner Попутчики
-        p.paragraph.travelers__paragraph.wrap-inner Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-        p.paragraph.paragraph--bold.travelers__paragraph.wrap-inner Теперь можно легко найти единомышленников!
+        h2.title-second.title-second--orange.travelers__title-second Попутчики
+        .travelers__desc
+          p.paragraph.travelers__paragraph Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+          p.paragraph.paragraph--bold.travelers__paragraph Теперь можно легко найти единомышленников!
         .travelers__wrap
           each user in users.slice(0,2)
             article.user-short
@@ -78,7 +78,7 @@ block content
                 ul.wishes.user-short__wishes
                   each n in user.wishes
                     li.wishes__item
-                      svg.wishes__country-flag(viewBox="0 0 70 47")
+                      svg.wishes__country-flag(viewBox="0 0 70 47", aria-label= "флаг" + " " + n.ru)
                         use(xlink:href="./img/general.svg#flag-" + n.en)
                 p.user.user-short__user(class= "user--" + user.status)= user.firstname + " " + user.lastname
                 ul.tags.user-short__tags
@@ -87,7 +87,7 @@ block content
                 ul.moves.user-short__moves
                   each n in user.moves
                     li.moves__item
-                      svg.moves__icon(class= n.condition?"moves__icon--active":null)
+                      svg.moves__icon(class= n.condition?"moves__icon--active":null, aria-label= n.name)
                         use(xlink:href= "./img/general.svg#icon-" + n.name)
               .user-short__skill
                 svg.circle(class= "circle--" + user.class)
@@ -129,7 +129,7 @@ block content
         h2.visually-hidden Раздел адреса и карты
         .address__wrap
           div.address__img
-            svg.address__svg(fill="currentColor")
+            svg.address__svg(fill="currentColor" aria-label="изображение метки на карте")
               use(xlink:href="./img/general.svg#icon-location")
           p.address__desc ул. Большая Конюшенная, 19/8
         a.index__btn-content.index__btn-content--border(href="#") Проложить маршрут

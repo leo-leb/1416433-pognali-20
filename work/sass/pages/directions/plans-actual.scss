@@ -10,11 +10,15 @@
     padding-top: 57px;
     padding-bottom: 106px;
   }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 119px;
+  }
 }
 
 .plans-actual__title-second {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   @media (min-width: 768px) {
     margin-bottom: 48px;
@@ -27,10 +31,18 @@
 }
 
 .plans-actual__item {
-  padding: 23px 25px;
+  padding: 22px 25px;
   border-radius: 10px;
 
   list-style-type: none;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media (min-width: 1440px) {
+      margin-bottom: 13px;
+    }
+  }
 
   @include environment-white-middle;
 
@@ -48,11 +60,7 @@
 
   @media (min-width: 1440px) {
     align-items: center;
-    padding: 36px 43px;
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 10px;
+    padding: 38px 43px;
   }
 }
 
@@ -77,7 +85,6 @@
 
   @media (min-width: 1440px) {
     flex-direction: row;
-    flex-grow: 0.6;
     justify-content: flex-start;
 
     width: auto;
@@ -95,10 +102,11 @@
 
   @media (min-width: 768px) {
     margin: 0;
+    font-size: 20px;
   }
 
   @media (min-width: 1440px) {
-    margin-right: 7px;
+    margin-right: 35px;
   }
 }
 
@@ -113,7 +121,7 @@
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    flex-grow: 0.55;
+    flex-grow: 1;
 
     margin: 0;
 
@@ -121,7 +129,8 @@
   }
 
   @media (min-width: 1440px) {
-    flex-grow: 0.15;
+    justify-content: flex-end;
+    flex-grow: 1;
   }
 }
 
@@ -131,12 +140,16 @@
   letter-spacing: 0.06em;
 
   &:not(:last-child) {
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 
     @media (min-width: 768px) {
       margin: 0;
 
       letter-spacing: 0.1em;
+    }
+
+    @media (min-width: 1440px) {
+      margin-right: 40px;
     }
   }
 }
@@ -155,14 +168,22 @@
   letter-spacing: 0.1em;
 
   @media (min-width: 768px) {
-    flex-grow: 0.45;
+    margin-left: 95px;
     text-align: right;
 
     @include font-size(20px, 20px);
-    letter-spacing: 0.03em;
+    letter-spacing: 0.08em;
   }
 
   @media (min-width: 1440px) {
-    flex-grow: 0.15;
+    margin-left: 137px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }

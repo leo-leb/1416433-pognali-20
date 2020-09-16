@@ -80,6 +80,23 @@
   }
 }
 
+.contacts__action {
+  &:hover .contacts__img--phone {
+    background-color: $orange-middle-three;
+  }
+
+  &:hover .contacts__img--mail {
+    background-color: $orange-middle;
+  }
+
+  &:active .contacts__img--phone,
+  &:active .contacts__img--mail {
+    & .contacts__svg {
+      opacity: 0.3;
+    }
+  }
+}
+
 .contacts__svg {
   @include zero-centered;
 

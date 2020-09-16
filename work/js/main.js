@@ -1,5 +1,3 @@
-// ---- BUSINESS-POPUP ---- //
-
 var business = document.querySelector(".business");
 var business__open = document.querySelector(".advertising__btn");
 var business__close = document.querySelector(".business__btn");
@@ -17,8 +15,6 @@ if (business__close) {
     business.classList.remove("business--show");
   });
 }
-
-// --- MAP --- //
 
 function initMap() {
   var pos = { lat: 59.938829, lng: 30.323069 };
@@ -42,8 +38,6 @@ function initMap() {
   });
 }
 
-// --- MENU-POPUP --- //
-
 var header = document.querySelector(".header");
 var popupMenu = header.querySelector(".menu-popup");
 var popupMenu__open = header.querySelector(".header__btn-menu");
@@ -64,8 +58,6 @@ popupMenu__close.addEventListener("click", function (evt) {
   popupMenu__close.classList.remove("menu-popup__btn-cross--show");
 });
 
-// --- HEADER-WHILE-SCROLL --- //
-
 var headerRow = document.querySelector(".header__row");
 
 window.addEventListener("scroll", function(){
@@ -74,9 +66,6 @@ window.addEventListener("scroll", function(){
     header.classList.add("header--scroll")
   }
 })
-
-
-// --- ALPHABET-POPUP --- //
 
 var alphabet = document.querySelector(".plans-create__filter");
 var alphabet__open = document.querySelector(".plans-create__btn-arrow-alt");
@@ -98,9 +87,6 @@ if (alphabet__close) {
     alphabet__cross.classList.remove("plans-create__btn-cross-second--hide");
   });
 }
-
-
-// --- FILTER-POPUP --- //
 
 var filter = document.querySelector(".filter-countries");
 var formParts = document.querySelector(".filter-countries__form-parts");

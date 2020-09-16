@@ -13,9 +13,11 @@ article(class= 'plans-create__' + stepClass)
   block content
   .plans-create__buttons-wrap
     if stepLast
-      button.plans-create__btn-step(type="submit" form="step-form") Отправить
+      button.plans-create__btn-step(type="submit" form="step-form")
+        span.plans-create__btn-step-desc Отправить
     else
-      a.plans-create__btn-step(href="#") Следующий шаг
+      a.plans-create__btn-step(href="#")
+        span.plans-create__btn-step-desc Следующий шаг
     if stepFirst
     else
       a.plans-create__btn-step-back(href="#") На шаг назад

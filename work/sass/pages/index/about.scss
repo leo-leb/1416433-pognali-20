@@ -107,6 +107,10 @@
       border-radius: 20px;
     }
   }
+
+  @media (min-width: 1440px) {
+    padding-left: 70px;
+  }
 }
 
 .about__title-second {

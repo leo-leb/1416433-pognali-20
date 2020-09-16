@@ -2,13 +2,13 @@
   display: none;
 
   width: 100%;
-  padding-top: 27px;
+  padding-top: 19px;
   padding-bottom: 41px;
 
   background-color: $white-middle;
 
   @media (min-width: 768px) {
-    padding-top: 45px;
+    padding-top: 41px;
     padding-bottom: 90px;
   }
 
@@ -41,10 +41,6 @@
 }
 
 .menu-popup__row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   position: relative;
 
   @media (min-width: 768px) {
@@ -103,6 +99,7 @@
 
   height: 18px;
   margin: 0;
+  margin-right: 4px;
   padding: 0;
   border: none;
 
@@ -130,10 +127,10 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    top: 45px;
-    right: 35px;
+    top: 41px;
+    right: 40px;
 
     margin-bottom: 0;
-    padding: 0 31px;
+    padding: 0 28px;
   }
 }

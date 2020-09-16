@@ -21,7 +21,7 @@
 }
 
 .calendar__dates-list {
-  grid-auto-rows: 32px;
+  grid-auto-rows: 31px;
 
   @media (min-width: 768px) {
     grid-auto-rows: 69px;
@@ -147,5 +147,14 @@
     @media (min-width: 1440px) {
       display: inline;
     }
+  }
+}
+
+.calendar__dates-month {
+  display: none;
+  margin: 0;
+
+  @media (min-width: 1440px) {
+    display: inline;
   }
 }

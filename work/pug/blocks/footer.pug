@@ -9,17 +9,16 @@ footer.footer
         source(media="(min-width: 768px)", srcset="./img/logo-tablet-blue@1x.png, ./img/logo-tablet-blue@2x.png 2x")
         img.logo(src="./img/logo-mobile-blue@1x.png", srcset="./img/logo-mobile-blue@2x.png 2x", alt="Логотип компании")
     .social.footer__social
-      span.visually-hidden Ссылки на социальные сети
       a.social__link.social__link--alt(href="#")
-        svg.social__svg
+        svg.social__svg(aria-label="facebook")
           use(xlink:href="./img/general.svg#icon-fb")
       a.social__link.social__link--alt(href="#")
-        svg.social__svg
+        svg.social__svg(aria-label="вконтакте")
           use(xlink:href="./img/general.svg#icon-vk")
       a.social__link.social__link--alt(href="#")
-        svg.social__svg
+        svg.social__svg(aria-label="инстаграм")
           use(xlink:href="./img/general.svg#icon-inst")
     .footer__creator
       p.footer__creator-desc Разработано
-      a.footer__creator-logo(href="#")
+      a.footer__creator-logo(href="https://htmlacademy.ru")
         img(src="./img/htmlacademy.svg" width="27" height="33" alt="Логотип создателя сайта")

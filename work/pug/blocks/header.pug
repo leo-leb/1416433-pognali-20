@@ -1,6 +1,6 @@
 header.header(class= pageIndex?"header--main":null)
-  include menu-popup
   .header__row
+    include menu-popup
     .container-outter
       a.header__logo(href="index.html")
         picture
@@ -24,14 +24,19 @@ header.header(class= pageIndex?"header--main":null)
       nav.header__nav
         ul.header__nav-list
           li.header__nav-link-wrap
-            a.header__nav-link(href= pageIndex?"#":"index.html") о сервисе
+            a.header__nav-link(href= pageIndex?"#":"index.html")
+              span.header__nav-desc(data-hover="о сервисе") о сервисе
           li.header__nav-link-wrap
-            a.header__nav-link(href="directions.html") направления
+            a.header__nav-link(href="directions.html")
+              span.header__nav-desc(data-hover="направления") направления
           li.header__nav-link-wrap
-            a.header__nav-link(href="companions.html") попутчики
+            a.header__nav-link(href="companions.html")
+              span.header__nav-desc(data-hover="попутчики") попутчики
       .action-buttons.action-buttons--row
         include contacts-short
-        a.action-buttons__btn(href="#") авторизация
+        a.action-buttons__btn(href="#")
+          span.action-buttons__btn-desc авторизация
   .action-buttons.action-buttons--row
     include contacts-short
-    a.action-buttons__btn(href="#") авторизация
+    a.action-buttons__btn(href="#")
+      span.action-buttons__btn-desc авторизация

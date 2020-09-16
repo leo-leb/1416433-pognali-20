@@ -18,7 +18,7 @@
   }
 
   @media (min-width: 1440px) {
-    padding: 60px 0 43px;
+    padding: 50px 0 43px;
   }
 }
 
@@ -44,6 +44,10 @@
 
   @media (min-width: 768px) {
     margin: 0;
+  }
+
+  @media (min-width: 1440px) {
+    flex-grow: 1;
   }
 }
 
@@ -73,6 +77,10 @@
     &::before {
       display: none;
     }
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 50px;
   }
 }
 

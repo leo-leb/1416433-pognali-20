@@ -2,7 +2,7 @@
   position: relative;
 
   padding: 15px 20px 22px;
-  border-radius: 10px;
+  border-radius: 15px;
 
   text-align: left;
 
@@ -11,7 +11,7 @@
   @media (min-width: 768px) {
     display: flex;
     justify-content: flex-start;
-    padding: 25px 25px 107px 35px;
+    padding: 35px 25px 107px 35px;
   }
 
   @media (min-width: 1440px) {
@@ -22,6 +22,10 @@
 
   &:not(:last-child) {
     margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -30,6 +34,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-basis: 260px;
   }
 
   @media (min-width: 1440px) {
@@ -38,7 +43,7 @@
     flex-basis: 666px;
     align-content: space-between;
 
-    padding: 46px 43px 42px 62px;
+    padding: 46px 43px 39px 62px;
   }
 }
 
@@ -67,7 +72,7 @@
     top: 0;
     left: 0;
 
-    margin-right: 29px;
+    margin-right: 33px;
     border-radius: 20px;
   }
 
@@ -86,7 +91,7 @@
   position: relative;
 
   margin-left: 86px;
-  margin-bottom: 44px;
+  margin-bottom: 43px;
 
   color: $blue-middle;
 
@@ -96,7 +101,7 @@
     align-self: flex-start;
 
     margin-left: 0;
-    margin-bottom: 19px;
+    margin-bottom: 16px;
   }
 
   &::after {
@@ -113,7 +118,7 @@
 
     @media (min-width: 768px) {
       top: 50%;
-      transform: translate(30px, -50%);
+      transform: translate(20px, -50%);
 
       width: 8px;
       height: 8px;
@@ -150,7 +155,7 @@
 
 .user-full__tags {
   justify-content: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 21px;
 
   @media (min-width: 768px) {
     margin: 0;
@@ -161,16 +166,17 @@
   position: relative;
 
   width: 100%;
-  padding: 20px 0;
+  padding: 26px 0 20px;
 
   @media (min-width: 768px) {
     position: absolute;
-    bottom: 0;
-    left: 35px;
+    bottom: 11px;
+    left: 37px;
+    padding: 26px 0 16px;
   }
 
   @media (min-width: 1440px) {
-    flex-basis: 50%;
+    flex-basis: 42%;
 
     position: relative;
     bottom: unset;
@@ -218,13 +224,33 @@
 
 .user-full__wishes {
   flex-direction: column;
+  padding-left: 4px;
 
   @media (min-width: 768px) {
     flex-direction: row;
+    padding-left: 0;
   }
 
   @media (min-width: 1440px) {
     flex-direction: column;
+  }
+}
+
+.user-full .wishes {
+  padding-left: 4px;
+
+  @media (min-width: 768px) {
+    padding-left: 0;
+  }
+}
+
+.user-full .wishes__country-flag {
+  width: 27px;
+  height: 18px;
+
+  @media (min-width: 768px) {
+    width: 35px;
+    height: 24px;
   }
 }
 
@@ -247,7 +273,7 @@
 }
 
 .user-full__wishes .wishes__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
@@ -269,7 +295,7 @@
 
   width: 100%;
   padding-top: 17px;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 
   @media (min-width: 768px) {
     display: flex;
@@ -287,7 +313,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-basis: 50%;
+    flex-basis: 42%;
     order: 1;
 
     position: relative;
@@ -317,24 +343,16 @@
   }
 }
 
-.user-full__moves .moves__item {
-  &:not(:last-child) {
+.user-full__moves .moves__item:not(:last-child) {
     @media (min-width: 768px) {
       margin-right: 0;
+      margin-bottom: 11px;
     }
 
     @media (min-width: 1440px) {
       margin-right: 13px;
+      margin-bottom: 0;
     }
-  }
-
-  @media (min-width: 768px) {
-    margin-bottom: 11px;
-  }
-
-  @media (min-width: 1440px) {
-    margin-bottom: 0;
-  }
 }
 
 .user-full__skill-wrap {
@@ -433,9 +451,7 @@
 
   @media (min-width: 768px) {
     width: fit-content;
-    padding-left: 32px;
-    padding-right: 32px;
-
+    padding: 0 37px;
     line-height: 50px;
   }
 

@@ -26,19 +26,19 @@ block content
             source(type="image/webp", srcset="./img/photo-account-mobile@1x.webp, ./img/photo-account-mobile@2x.webp 2x")
             source(media="(min-width: 768px)", srcset="./img/photo-account-tablet@1x.jpg, ./img/photo-account-tablet@2x.jpg 2x")
             img.user-box__img(src="./img/photo-account-mobile@1x.jpg", srcset="./img/photo-account-mobile@2x.jpg 2x", alt="Фото пользователя")
-        .user-box__btn сменить фото
-        .user-box__btn.user-box__btn--alt фото
+        button.user-box__btn(type="button")
+          span.user-box__btn-desc сменить фото
+        button.user-box__btn.user-box__btn--alt(type="button")
+          span.user-box__btn-desc фото
         .user-box__tags-wrap
-            p.title-fourth.user-box__title-fourth тэги
-            ul.tags.user-box__tags
-              each n in person.tags
-                li.tags__item= "#" + n
+          p.title-fourth.user-box__title-fourth тэги
+          textarea.user-box__tags(name="about-me", type="text" placeholder="Коротко о себе в виде 5-8 хештегов")= "#" + person.tags[0] + " " + "#" + person.tags[1] + " " + "#" + person.tags[2] + " " + "#" + person.tags[3] + " " + "#" + person.tags[4]
         .user-box__moves-wrap
           p.title-fourth.user-box__title-fourth транспорт
           ul.moves.user-box__moves
             each n in person.moves
               li.moves__item
-                svg.moves__icon.moves__icon--alt(class= n.condition?"moves__icon--active":null)
+                svg.moves__icon.moves__icon--alt(class= n.condition?"moves__icon--active":null, aria-label= n.name)
                   use(xlink:href= "./img/general.svg#icon-" + n.name)
     section.plans-actual.directions__plans-actual
       .container-outter

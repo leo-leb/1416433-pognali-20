@@ -16,7 +16,7 @@
   @media (min-width: 1440px) {
     display: block;
 
-    padding-top: 12px;
+    padding-top: 16px;
   }
 }
 
@@ -250,11 +250,11 @@
     display: block;
   }
 
-  &--open .box__img {
+  &--open .box-level__img {
     transform: rotate(90deg);
   }
 
-  &--close .box__img {
+  &--close .box-level__img {
     transform: rotate(-90deg);
   }
 }

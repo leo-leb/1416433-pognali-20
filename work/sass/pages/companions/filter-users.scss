@@ -21,13 +21,13 @@
 
   @media (min-width: 768px) {
     margin: 37px 0;
-    padding: 34px 0;
+    padding: 35px 0;
     border-top: 1px solid $separator-line;
     border-bottom: 1px solid $separator-line;
   }
 
   @media (min-width: 1440px) {
-    margin: 34px 0 38px;
+    margin: 29px 0 44px;
     padding: 0;
     border: none;
   }
@@ -37,7 +37,7 @@
   width: 50%;
   margin: 0;
 
-  @include font-size(20px, 20px);
+  @include font-size(20px, 22px);
 
   @media (min-width: 768px) {
     width: unset;
@@ -62,7 +62,11 @@
   text-align: center;
   text-transform: uppercase;
 
-  @include font-size(17px, 40px);
+  @include font-size(17px, 41px);
   @include font(700, normal);
   @include environment-white-middle($white-middle, $blue-dark);
+
+  @media (min-width: 768px) {
+    @include font-size(20px, 50px);
+  }
 }

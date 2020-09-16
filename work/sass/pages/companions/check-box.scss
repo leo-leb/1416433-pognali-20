@@ -33,3 +33,7 @@
     background-size: 11px;
   }
 }
+
+.real-checkbox:focus ~ .custom-checkbox {
+  outline: 1px solid $blue-dark;
+}

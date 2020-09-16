@@ -20,12 +20,22 @@
   }
 }
 
+.check-in .container-outter {
+  @media (min-width: 1440px) {
+    padding: 0 71px;
+  }
+}
+
 .check-in__title-second {
   margin: 0;
   margin-bottom: 19px;
 
   @media (min-width: 768px) {
     margin-bottom: 58px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 54px;
   }
 }
 
@@ -52,7 +62,7 @@
   }
 
   @media (min-width: 1440px) {
-    margin: 60px 0 70px;
+    margin: 56px 0 70px;
   }
 }
 
@@ -144,8 +154,14 @@
 
   @media (min-width: 1440px) {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0;
-    margin-top: 44px;
+    margin-top: 40px;
+  }
+}
+
+.check-in .contacts__action:first-child {
+  @media (min-width: 1440px) {
+    margin-right: 110px;
   }
 }

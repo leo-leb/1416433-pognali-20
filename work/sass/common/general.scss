@@ -10,6 +10,13 @@ body {
   margin: 0;
 }
 
+button,
+textarea,
+input {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }

@@ -3,10 +3,10 @@
   z-index: 7;
 
   min-width: 320px;
-  padding-top: 22px;
+  padding-top: 38px;
   padding-bottom: 12px;
 
-  @include shape-bottom;
+  @include shape-bottom(20px);
   @include environment-blue;
 
   @media (min-width: 768px) {
@@ -31,7 +31,7 @@
     }
 
     @media (min-width: 1440px) {
-      height: 661px;
+      height: 644px;
     }
 
     &::before {
@@ -102,7 +102,7 @@
     justify-content: space-between;
 
     min-height: 640px;
-    padding: 119px 5px 246px 68px;
+    padding: 100px 5px 246px 68px;
   }
 }
 
@@ -213,14 +213,13 @@
   @media (min-width: 768px) {
     flex-direction: column-reverse;
 
-    width: 353px;
+    width: 344px;
     padding: 31px 0 21px 33px;
     @include shape-top(20px);
   }
 
   @media (min-width: 1440px) {
     flex-direction: row-reverse;
-    width: 370px;
   }
 }
 
@@ -229,6 +228,8 @@
   background-color: $orange-middle;
 
   @media (min-width: 768px) {
+    width: 365px;
+    margin-right: -21px;
     margin-bottom: 0;
 
     @include shape-top(0);
@@ -261,6 +262,8 @@
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    width: 365px;
+    margin-right: -21px;
 
     @include shape-top(0);
     border-bottom-left-radius: 20px;
@@ -288,12 +291,6 @@
     padding-right: 31px;
     border-radius: 20px;
     width: 315px;
-  }
-}
-
-.first-block__item:nth-child(odd) {
-  @media (min-width: 768px) {
-    margin-right: -18px;
   }
 }
 
@@ -338,39 +335,11 @@
   @include font-size(20px, 20px);
   color: $white-middle;
 
-  &::after {
-    display: inline-block;
-
-    position: relative;
-
-    width: 28px;
-    height: 13px;
-    margin-left: 28px;
-    border: 2px solid $white-middle;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-left: none;
-
-    content: "";
-  }
-
-  &::before {
-    position: absolute;
-    top: 0;
-    right: 28px;
-    transform: translate(80%, -10%);
-
-    width: 9px;
-    height: 7px;
-
-    content: "";
-
-    background-image: url("../img/triangle-arrow-left.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
   @media (min-width: 768px) {
     display: block;
   }
+}
+
+.first-block__btn-back-img {
+  margin-left: 21px;
 }

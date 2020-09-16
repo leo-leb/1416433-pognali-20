@@ -2,6 +2,6 @@ mixin textarea-country(countryNameRu, countryNameEn, countryPlan)
   article.plans-create__plan-country
     h6.visually-hidden Карточка планов для одной страны
     p.plans-create__country-name= countryNameRu
-      svg.plans-create__country-flag(viewBox="0 0 70 47")
+      svg.plans-create__country-flag(viewBox="0 0 70 47", aria-label= "флаг" + " " + countryNameRu)
         use(xlink:href="./img/general.svg#flag-" + countryNameEn)
     textarea.plans-create__country-spec(name="plan-" + countryNameEn rows="9" form="step-form" placeholder="План действий")= countryPlan

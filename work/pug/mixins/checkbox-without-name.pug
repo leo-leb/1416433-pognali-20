@@ -10,5 +10,5 @@ mixin checkbox-without-name(title, name, massive)
           label
             input.real-checkbox.visually-hidden(name= name type="checkbox" value= n)
             span.custom-checkbox-img
-              svg.custom-checkbox-svg
+              svg.custom-checkbox-svg(aria-label= n)
                 use(xlink:href= "./img/general.svg#icon-" + n)

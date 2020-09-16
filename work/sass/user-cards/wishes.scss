@@ -19,6 +19,14 @@
 
   @include font(500, normal);
   @include font-size(15px, 24px);
+
+  @media (min-width: 768px) {
+    @include font-size(20px, 24px);
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 19px;
+  }
 }
 
 .wishes__country-flag {

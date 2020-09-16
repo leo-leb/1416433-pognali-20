@@ -137,7 +137,7 @@
   &::after {
     position: absolute;
     top: 50%;
-    right: 32px;
+    right: 19px;
     transform: translateY(-50%);
 
     width: 14px;
@@ -147,6 +147,10 @@
     background-repeat: no-repeat;
 
     content: "";
+
+    @media (min-width: 768px) {
+      right: 32px;
+    }
   }
 
   &--border {

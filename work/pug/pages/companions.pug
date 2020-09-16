@@ -13,14 +13,14 @@ block content
       .container-outter
         h1.title-first= firstTitle
         a.first-block__btn-back(href="index.html") на главную
+          img.first-block__btn-back-img(src="./img/return.svg", alt="на главную", width="32", height="16")
     aside.filter-countries.companions__filter-countries
       .container-outter
         .filter-countries__row
           h4.title-fourth.filter-countries__title-fourth фильтрация по странам:
           button.filter-countries__btn-dots.filter-countries__btn-dots--no-js
-            span.visually-hidden показать все
             span.filter-countries__btn-dots-desc показать все
-            span.filter-countries__btn-dots-img
+            img.filter-countries__btn-dots-img(src="./img/dots.svg", alt="Показать все")
           button.filter-countries__btn-hide.filter-countries__btn-hide--no-js
             span.filter-countries__btn-hide-desc свернуть
             svg.filter-countries__btn-hide-img#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 18.6 18.6', style='enable-background:new 0 0 18.6 18.6;', xml:space='preserve')
@@ -88,7 +88,7 @@ block content
                     ul.wishes.user-full__wishes
                       each n in user.wishes
                         li.wishes__item
-                          svg.wishes__country-flag(viewBox="0 0 70 47")
+                          svg.wishes__country-flag(viewBox="0 0 70 47", aria-label= "флаг" + " " + n.ru)
                             use(xlink:href="./img/general.svg#flag-" + n.en)
                           p.wishes__country-name= n.ru
                   .user-full__row-lower
@@ -97,7 +97,7 @@ block content
                       ul.moves.user-full__moves
                         each n in user.moves
                           li.moves__item.moves__item--alt
-                            svg.moves__icon.moves__icon--alt(class= n.condition?"moves__icon--active":null)
+                            svg.moves__icon.moves__icon--alt(class= n.condition?"moves__icon--active":null, aria-label= n.name)
                               use(xlink:href= "./img/general.svg#icon-" + n.name)
                     .user-full__skill-wrap
                       svg.circle.circle--alt(class= "circle--" + user.class)
@@ -110,7 +110,7 @@ block content
                     a.user-full__btn-user(href="#") позвать!
                     .user-full__like-wrap
                       button.user-full__btn-like(class= user.like?"user-full__btn-like--alt":null)
-                        svg.user-full__btn-like-img
+                        svg.user-full__btn-like-img(aria-label= "поставить лайк")
                           use(xlink:href= user.like?"./img/general.svg#icon-heart-active":"./img/general.svg#icon-heart")
                       p.user-full__like-amount= user.likes
           a.companions__btn-open(href="#") показать еще

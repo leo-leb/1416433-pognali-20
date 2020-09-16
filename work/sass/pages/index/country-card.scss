@@ -26,6 +26,10 @@
     @include shape-top(0);
     @include shape-right(10px);
   }
+
+  @media (min-width: 1440px) {
+    @include shape-right(20px);
+  }
 }
 
 .country-card__info {
@@ -51,6 +55,12 @@
     border-radius: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 24px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 }
 
@@ -145,5 +155,9 @@
     width: 71px;
     height: 48px;
     border-radius: 5px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 21px;
   }
 }

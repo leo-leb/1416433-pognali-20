@@ -21,7 +21,7 @@
     align-items: center;
 
     padding-left: 223px;
-    padding-right: 55px;
+    padding-right: 75px;
   }
 }
 
@@ -79,7 +79,7 @@
   @media (min-width: 1440px) {
     width: 90px;
     height: 90px;
-    margin-right: 26px;
+    margin-right: 31px;
   }
 }
 
@@ -103,5 +103,10 @@
 .address .index__btn-content {
   @media (min-width: 768px) {
     line-height: 74px;
+  }
+
+  @media (min-width: 1440px) {
+    line-height: 74px;
+    width: 323px;
   }
 }
